@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "sg5UaSwA6jNT3OnS/aLGIclxwQBpptUq2rnMP6Iwc44jcORvLyiOaOyx6i2gn/24WHQWT9JjdBqapqCqRpIurA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\autum\\Projects\\HelpfulNeighbor\\HelpfulNeighbor.web\\HelpfulNeighbor.web.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\autum\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.9\\microsoft.aspnetcore.openapi.7.0.9.nupkg.sha512",
+    "C:\\Users\\autum\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\autum\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
+    "C:\\Users\\autum\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "C:\\Users\\autum\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "C:\\Users\\autum\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "C:\\Users\\autum\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
