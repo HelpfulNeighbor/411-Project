@@ -13,6 +13,20 @@
 
   <ItemGroup>
     <Folder Include="Controllers\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Repositories\" />
+    <Folder Include="Resources\Affordable Housing\Models\" />
+    <Folder Include="Resources\Charities\Models\" />
+    <Folder Include="Resources\Clothing Donation Centers\Models\" />
+    <Folder Include="Resources\Domestic Violence Help\Models\" />
+    <Folder Include="Resources\Food Banks-Distribution Centers\Models\" />
+    <Folder Include="Resources\Govermental Help Organizations-Legal Programs\Models\" />
+    <Folder Include="Resources\Group Housing\Models\" />
+    <Folder Include="Resources\Mental Health Treatment Centers\Models\" />
+    <Folder Include="Resources\Shelters\Models\" />
+    <Folder Include="Resources\Social Service Organizations\Models\" />
+    <Folder Include="Resources\Substance Abuse Treatment Centers\Models\" />
+    <Folder Include="Resources\Veteran Organizations\Models\" />
   </ItemGroup>
 
 </Project>
