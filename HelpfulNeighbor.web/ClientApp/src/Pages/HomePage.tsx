@@ -20,6 +20,7 @@ import {
 import { Link as ReactRouterLink } from "react-router-dom";
 import { Icon } from "@chakra-ui/react";
 import { MdPerson, MdLogin, MdAttachMoney, MdSearch } from "react-icons/md";
+import NavBar from "../Components/NavBar";
 
 export default function HomePage() {
 
@@ -27,7 +28,8 @@ export default function HomePage() {
 
   return (
     <div>
-      <Flex minWidth="max-content" align-items="center" gap="3" p="20px">
+        <NavBar />
+      {/* <Flex minWidth="max-content" align-items="center" gap="3" p="20px">
         <Box p="2">
           <Heading size="md">
             <ChakraLink as={ReactRouterLink} to="/">
@@ -71,7 +73,7 @@ export default function HomePage() {
         </ButtonGroup>
       </Flex>
 
-      <Divider />
+      <Divider /> */}
 
       <Flex
         minWidth="max-content"
