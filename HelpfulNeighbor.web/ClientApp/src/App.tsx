@@ -13,6 +13,13 @@ import HomePage from './Pages/HomePage';
 import AboutUsPage from './Pages/AboutUsPage';
 import FeedbackPage from './Pages/FeedbackPage';
 
+// importing themes
+import {extendTheme} from '@chakra-ui/react'
+import '@fontsource/bigshot-one/400.css'
+import '@fontsource/aleo/700.css'
+import '@fontsource/urbanist/400.css';
+import '@fontsource/source-serif-4/400.css';
+
 // making temporary router and routes (Find the individual pages by doing /the name of the page .. in the url)
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -23,10 +30,18 @@ const router = createBrowserRouter(
     </Route>
   )
 )
+
+const theme = extendTheme({
+  fonts: {
+    heading: `'Aleo', sans-serif`,
+    body: `'Source Serif 4', sans-serif`,
+  },
+})
+
 function App() {
   // 2. Wrapping ChakraProvider at the root of the application
   return (
-    <ChakraProvider>
+    <ChakraProvider theme={theme}>
       <RouterProvider router={router} />
       </ChakraProvider>
   );
