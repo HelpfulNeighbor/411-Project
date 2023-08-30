@@ -10,8 +10,7 @@ import {
 } from "@chakra-ui/react";
 
 import { Link as ReactRouterLink } from "react-router-dom";
-import { Icon } from "@chakra-ui/react";
-import { MdPerson, MdLogin, MdAttachMoney } from "react-icons/md";
+import {  MdLogin, MdAttachMoney } from "react-icons/md";
 
 export default function NavBar() {
   return (
@@ -27,20 +26,12 @@ export default function NavBar() {
         <Box p="2">
           <Heading size="md">Search</Heading>
         </Box>
-        <Box p="2" display="flex">
-          <Icon as={MdPerson} color="purple" boxSize={6} mr="1px" />
-          <Heading size="md">Profile</Heading>
-        </Box>
         <Box p="2">
           <Heading size="md">
             <ChakraLink as={ReactRouterLink} to="/about">
               About Us
             </ChakraLink>
           </Heading>
-        </Box>
-        <Box p="2" display="flex">
-          <Icon as={MdAttachMoney} color="green" boxSize={6} mr="1px" />
-          <Heading size="md">Donate</Heading>
         </Box>
         <Box p="2">
           <Heading size="md">
@@ -51,6 +42,9 @@ export default function NavBar() {
         </Box>
         <Spacer />
         <ButtonGroup spacing="3" pr="10px">
+        <Button rightIcon={<MdAttachMoney />} colorScheme="yellow" p="20px">
+            Donate
+          </Button>
           <Button colorScheme="purple" p="20px">
             Sign Up
           </Button>
