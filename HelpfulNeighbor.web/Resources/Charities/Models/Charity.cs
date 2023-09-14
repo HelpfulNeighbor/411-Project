@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace Charity.Models
+namespace HelpfulNeighbor.web.Resources.Charities.Models
 {
     public class Charity
     {
@@ -12,6 +12,6 @@ namespace Charity.Models
         public string Parish { get; set; }
         public string PhoneNumber { get; set; }
         public string Website { get; set; }
-        public int ResourceType { get; set; }
+        public string ResourceType { get; set; }
     }
 }

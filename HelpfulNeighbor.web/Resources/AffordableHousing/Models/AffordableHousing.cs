@@ -12,7 +12,7 @@ namespace HelpfulNeighbor.web.Resources.AffordableHousing.Models
         public string Parish { get; set; }
         public string PhoneNumber { get; set; }
         public string Website { get; set; }
-        public int ResourceType { get; set; }
+        public string ResourceType { get; set; }
     }
 }
 
