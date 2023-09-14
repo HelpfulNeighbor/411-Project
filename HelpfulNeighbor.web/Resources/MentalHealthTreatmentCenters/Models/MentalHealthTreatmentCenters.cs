@@ -1,8 +1,6 @@
-using Microsoft.EntityFrameworkCore;
-
-namespace Charity.Models
+﻿namespace HelpfulNeighbor.web.Resources.MentalHealthTreatmentCenters.Models
 {
-    public class Charity
+    public class MentalHealthTreatmentCenters
     {
         public int ResourceId { get; set; }
         public string Name { get; set; }

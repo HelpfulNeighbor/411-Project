@@ -1,8 +1,6 @@
-using Microsoft.EntityFrameworkCore;
-
-namespace Charity.Models
+﻿namespace HelpfulNeighbor.web.Resources.VeteranOrganizations.Models
 {
-    public class Charity
+    public class VeteranOrganizations
     {
         public int ResourceId { get; set; }
         public string Name { get; set; }

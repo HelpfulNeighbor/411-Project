@@ -1,8 +1,6 @@
-using Microsoft.EntityFrameworkCore;
-
-namespace Charity.Models
+﻿namespace HelpfulNeighbor.web.Resources.GovermentalHelpOrganizations_LegalPrograms.Models
 {
-    public class Charity
+    public class GovermentalHelpOrganizations_LegalPrograms
     {
         public int ResourceId { get; set; }
         public string Name { get; set; }

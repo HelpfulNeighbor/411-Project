@@ -1,4 +1,4 @@
-namespace HelpfulNeighbor.Interfaces
+namespace HelpfulNeighbor.web.Interfaces
 {
     public interface IAffordableHousingRepositiory
     {

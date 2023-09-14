@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace Charity.Models
+namespace HelpfulNeighbor.web.Resources.AffordableHousing.Models
 {
-    public class Charity
+    public class AffordableHousing
     {
         public int ResourceId { get; set; }
         public string Name { get; set; }
@@ -15,3 +15,5 @@ namespace Charity.Models
         public int ResourceType { get; set; }
     }
 }
+
+

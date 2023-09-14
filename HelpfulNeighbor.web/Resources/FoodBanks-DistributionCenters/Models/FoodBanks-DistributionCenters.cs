@@ -1,8 +1,6 @@
-using Microsoft.EntityFrameworkCore;
-
-namespace Charity.Models
+﻿namespace HelpfulNeighbor.web.Resources.FoodBanks_DistributionCenters.Models
 {
-    public class Charity
+    public class FoodBanks_DistributionCenters
     {
         public int ResourceId { get; set; }
         public string Name { get; set; }
