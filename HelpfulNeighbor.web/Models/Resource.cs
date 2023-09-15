@@ -1,7 +1,10 @@
-﻿namespace HelpfulNeighbor.web.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace HelpfulNeighbor.web.Models
 {
     public class Resource
     {
+        [Key]
         public int ResourceId { get; set; }
         public string Name { get; set; }
         public string City { get; set; }
