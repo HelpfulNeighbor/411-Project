@@ -13,6 +13,13 @@ namespace HelpfulNeighbor.web.Data
         public DbSet<Resource> Resources { get; set; }
         public DbSet<Shelter> Shelters { get; set; }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Resource>()
+                .HasKey(r => r.ResourceId);
+            modelBuilder.Entity<Shelter>()
+                .HasKey(r => r.ResourceId);
+        }
 
     }
 }

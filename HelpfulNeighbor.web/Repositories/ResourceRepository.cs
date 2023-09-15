@@ -1,9 +1,10 @@
 ﻿using HelpfulNeighbor.web.Data;
+using HelpfulNeighbor.web.Interfaces;
 using HelpfulNeighbor.web.Models;
 
 namespace HelpfulNeighbor.web.Repositories
 {
-    public class ResourceRepository
+    public class ResourceRepository :IResourceRepository
     {
         private readonly DataContext _context;
 
@@ -13,7 +14,7 @@ namespace HelpfulNeighbor.web.Repositories
         }
         public ICollection<Resource> GetResources()
         {
-            return _context.Resources.OrderBy(r => r.Name).ToList();    
+            return _context.Resources.OrderBy(r => r.ResourceId).ToList();    
         }
     }
 }

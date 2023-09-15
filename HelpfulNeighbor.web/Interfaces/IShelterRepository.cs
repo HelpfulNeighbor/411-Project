@@ -2,7 +2,7 @@
 
 namespace HelpfulNeighbor.web.Interfaces
 {
-    public interface IShelterRepositorycs
+    public interface IShelterRepository
     {
         ICollection<Shelter> GetShelters();
     }
