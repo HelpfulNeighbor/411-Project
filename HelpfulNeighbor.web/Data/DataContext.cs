@@ -1,6 +1,4 @@
 ﻿using HelpfulNeighbor.web.Models;
-using HelpfulNeighbor.web.Resources.AffordableHousing.Models;
-using Humanizer.Localisation;
 using Microsoft.EntityFrameworkCore;
 using System.Net;
 
