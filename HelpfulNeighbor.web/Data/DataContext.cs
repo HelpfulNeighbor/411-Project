@@ -23,6 +23,14 @@ namespace HelpfulNeighbor.web.Data
                 .HasKey(r => r.ResourceId);
             modelBuilder.Entity<Shelter>()
                 .HasKey(r => r.ResourceId);
+            modelBuilder.Entity<User>()
+                .HasKey(u => u.UserId);
+            modelBuilder.Entity<Location>()
+                .HasKey(l => l.LocationId);
+            modelBuilder.Entity<UserRole>()
+                .HasKey(ur => ur.UserRoleId);
+            modelBuilder.Entity<Role>()
+                .HasKey(r => r.RoleId);
         }
 
     }

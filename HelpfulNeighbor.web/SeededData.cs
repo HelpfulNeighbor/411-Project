@@ -1,5 +1,4 @@
 ﻿using HelpfulNeighbor.web.Data;
-using HelpfulNeighbor.web.Resources.AffordableHousing.Models;
 
 namespace HelpfulNeighbor.web
 {
