@@ -12,6 +12,10 @@ namespace HelpfulNeighbor.web.Data
         }
         public DbSet<Resource> Resources { get; set; }
         public DbSet<Shelter> Shelters { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Location> Locations { get; set; }
+        public DbSet<UserRole> UserRoles { get; set; }
+        public DbSet<Role> Roles { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
