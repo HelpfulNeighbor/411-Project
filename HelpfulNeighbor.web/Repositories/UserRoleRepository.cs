@@ -1,20 +1,20 @@
 ﻿using HelpfulNeighbor.web.Data;
 using HelpfulNeighbor.web.Interfaces;
 using HelpfulNeighbor.web.Models;
+using System.Reflection.Metadata.Ecma335;
 
 namespace HelpfulNeighbor.web.Repositories
 {
-    public class ResourceRepository : IResourceRepository
+    public class UserRoleRepository : IUserRoleRepository
     {
         private readonly DataContext _context;
-
-        public ResourceRepository(DataContext context) 
+        public UserRoleRepository(DataContext context) 
         {
             _context = context;
         }
-        public ICollection<Resource> GetResources()
+        public ICollection<UserRole> GetUserRoles()
         {
-            return _context.Resources.OrderBy(r => r.ResourceId).ToList();    
+            return _context.UserRoles.OrderBy(ur=>ur.RoleId).ToList();
         }
     }
 }

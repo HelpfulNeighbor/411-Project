@@ -4,17 +4,16 @@ using HelpfulNeighbor.web.Models;
 
 namespace HelpfulNeighbor.web.Repositories
 {
-    public class ResourceRepository : IResourceRepository
+    public class LocationRepository : ILocationRepository
     {
         private readonly DataContext _context;
-
-        public ResourceRepository(DataContext context) 
+        public LocationRepository(DataContext context) 
         {
             _context = context;
         }
-        public ICollection<Resource> GetResources()
+        public ICollection<Location> GetLocations() 
         {
-            return _context.Resources.OrderBy(r => r.ResourceId).ToList();    
+            return _context.Locations.OrderBy(l=>l.LocationId).ToList();
         }
     }
 }
