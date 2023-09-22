@@ -56,6 +56,20 @@ namespace HelpfulNeighbor.web.Data
             //Role
             modelBuilder.Entity<Role>()
                 .HasKey(r => r.RoleId);
+
+            //HoursOfOperation
+            modelBuilder.Entity<HoursOfOperation>()
+                .HasKey(ho => ho.HoursId);
+
+            //SavedResources
+            modelBuilder.Entity<SavedResource>()
+                .HasKey(sr => sr.SavedResourcceId);
+
+            //UserCurrentLocation
+            modelBuilder.Entity<UserCurrentLocation>()
+                .HasKey(cl => cl.UserId);
+
+
         }
 
     }
