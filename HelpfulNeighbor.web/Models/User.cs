@@ -8,5 +8,7 @@
         public string Email { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
+        public ICollection<UserRole> UserRoles { get; set; }// Navigation property to UserRole (one-to-many)
+        public UserCurrentLocation CurrentLocation { get; set; }// Navigation property to UserCurrentLocation (one-to-one)
     }
 }
