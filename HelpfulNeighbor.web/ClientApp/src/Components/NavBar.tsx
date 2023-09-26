@@ -24,7 +24,11 @@ export default function NavBar() {
           </Heading>
         </Box>
         <Box p="2">
-          <Heading size="md">Search</Heading>
+          <Heading size="md">
+            <ChakraLink as={ReactRouterLink} to="/search">
+              Search
+            </ChakraLink>
+          </Heading>
         </Box>
         <Box p="2">
           <Heading size="md">

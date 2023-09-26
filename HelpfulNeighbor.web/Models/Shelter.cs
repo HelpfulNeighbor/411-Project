@@ -12,5 +12,13 @@
         public string PhoneNumber { get; set; }
         public string Website { get; set; }
         public string ResourceType { get; set; }
+        public int LocationId { get; set; }
+        public Location Location { get; set; }// Navigation property to Location (one-to-one)
+        /*           
+         *           If we decide to make ResourceType an int
+         *           
+        public int ResourceTypeId { get; set; }// Foreign key to ResourceType (many-to-one)
+        public ResourceType ResourceType { get; set; }// Navigation property to ResourceType (many-to-one)
+        */
     }
 }
