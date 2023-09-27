@@ -1,39 +1,47 @@
-using HelpfulNeighbor.web;
 using HelpfulNeighbor.web.Data;
-using HelpfulNeighbor.web.Interfaces;
-using HelpfulNeighbor.web.Repositories;
+using HelpfulNeighbor.web.Features.Authorization;
+using HelpfulNeighbor.web.Features.Interfaces;
+using HelpfulNeighbor.web.Features.Repositories;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
-builder.Services.AddControllers();
-builder.Services.AddTransient<SeededData>();
-builder.Services.AddScoped<IResourceRepository, ResourceRepository>();
-builder.Services.AddScoped<IShelterRepository, ShelterRepository>();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<DataContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DataContext"));
 });
 
-var app = builder.Build();
-/*if (args.Length == 1 && args[0].ToLower() == "seeddata")
-    SeedData(app);
+builder.Services.AddIdentity<User, Role>().AddEntityFrameworkStores<DataContext>().AddDefaultTokenProviders();
 
-void SeedData(IHost app)
+/*builder.Services.AddControllers();*/
+
+builder.Services.AddControllers().AddJsonOptions(options =>
 {
-    var scopedFactory = app.Services.GetService<IServiceScopeFactory>();
+    options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+    options.JsonSerializerOptions.WriteIndented = true;
+});
+;
+var services = builder.Services;
 
-    using (var scope = scopedFactory.CreateScope())
-    {
-        var service = scope.ServiceProvider.GetService<SeededData>();
-        service.SeedDataContext();
-    }
-}*/
+/*builder.Services.AddScoped<IResourceRepository, ResourceRepository>();
+builder.Services.AddScoped<IShelterRepository, ShelterRepository>();*/
+
+// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+services.AddMvc();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
+
+var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    await SeedHelper.MigrateAndSeed(scope.ServiceProvider);
+}
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -43,8 +51,6 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
-app.UseAuthorization();
 
 app.UseRouting();
 app.UseAuthorization();
