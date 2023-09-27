@@ -24,7 +24,7 @@ import {
   import React from "react";
   import { AttachmentIcon, HamburgerIcon } from "@chakra-ui/icons";
   import { Link as ReactRouterLink } from "react-router-dom";
-  import Map from 'react-map-gl';
+  // import Map from 'react-map-gl';
   
   export default function SearchPage() {
     const { isOpen, onOpen, onClose } = useDisclosure();
