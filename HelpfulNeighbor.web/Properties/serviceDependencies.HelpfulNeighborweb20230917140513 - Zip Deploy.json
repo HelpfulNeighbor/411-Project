@@ -1,9 +1,9 @@
 {
   "dependencies": {
-    "mssql2": {
+    "mssql3": {
       "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourcegroups/[parameters('resourceGroupName')]/providers/Microsoft.Web/sites/HelpfulNeighborweb20230917140513/providers/Microsoft.ServiceLinker/linkers/DataContext_DBDBFA8C7D",
       "secretStore": "AzureAppSettings",
-      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/helpful-neighbor/databases/helpful-neighbor",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/helpful-neighbor/databases/helpful-neighbor-db",
       "type": "mssql.azure",
       "connectionId": "DataContext"
     }

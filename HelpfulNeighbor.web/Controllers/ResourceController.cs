@@ -1,5 +1,5 @@
-﻿using HelpfulNeighbor.web.Interfaces;
-using HelpfulNeighbor.web.Models;
+﻿using HelpfulNeighbor.web.Features.Interfaces;
+using HelpfulNeighbor.web.Features.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HelpfulNeighbor.web.Controllers

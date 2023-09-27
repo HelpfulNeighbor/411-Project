@@ -9,12 +9,18 @@
 
 	<ItemGroup>
 		<!-- Don't publish the SPA source files, but do show them in the project files list -->
+		<Compile Remove="Features\Resources\Shelters\**" />
 		<Content Remove="$(SpaRoot)**" />
+		<Content Remove="Features\Resources\Shelters\**" />
+		<EmbeddedResource Remove="Features\Resources\Shelters\**" />
 		<None Remove="$(SpaRoot)**" />
+		<None Remove="Features\Resources\Shelters\**" />
 		<None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
 	</ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.11" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.11" />
     <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="7.0.11" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.11" />

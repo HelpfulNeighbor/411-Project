@@ -1,10 +1,13 @@
-﻿using HelpfulNeighbor.web.Models;
+﻿using HelpfulNeighbor.web.Features.Authorization;
+using HelpfulNeighbor.web.Features.Models;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System.Net;
 
 namespace HelpfulNeighbor.web.Data
 {
-    public class DataContext : DbContext
+    public class DataContext : IdentityDbContext<User, Role, int, IdentityUserClaim<int>, UserRole, IdentityUserLogin<int>, IdentityRoleClaim<int>, IdentityUserToken<int>>
     {
         public DataContext(DbContextOptions<DataContext> options) : base(options)
         {
@@ -21,8 +24,14 @@ namespace HelpfulNeighbor.web.Data
         public DbSet<UserCurrentLocation> UserCurrentLocations { get; set; }
         public DbSet<UserRole> UserRoles { get; set; }
 
+        public DataContext()
+        {
+        }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
+
             // Resource
             modelBuilder.Entity<Resource>()
                 .HasKey(r => r.ResourceId);
@@ -30,10 +39,6 @@ namespace HelpfulNeighbor.web.Data
             //Shelter
             modelBuilder.Entity<Shelter>()
                 .HasKey(r => r.ResourceId);
-
-            //User
-            modelBuilder.Entity<User>()
-                .HasKey(u => u.UserId);
 
             //Location
             modelBuilder.Entity<Location>()
@@ -67,11 +72,13 @@ namespace HelpfulNeighbor.web.Data
 
             //SavedResources
             modelBuilder.Entity<SavedResource>()
-                .HasKey(sr => sr.SavedResourcceId);
+                .HasKey(sr => sr.SavedResourceId);
 
             //UserCurrentLocation
             modelBuilder.Entity<UserCurrentLocation>()
                 .HasKey(cl => cl.UserId);
+
+            modelBuilder.ApplyConfigurationsFromAssembly(typeof(DataContext).Assembly);
 
 
         }

@@ -1,11 +1,17 @@
 {
   "dependencies": {
+    "mssql2": {
+      "ignored": "true",
+      "type": "mssql",
+      "connectionId": "ConnectionStrings:DataContext"
+    },
     "mssql1": {
+      "ignored": "true",
       "type": "mssql",
       "connectionId": "ConnectionStrings:DefaultConnection",
       "dynamicId": null
     },
-    "mssql2": {
+    "mssql3": {
       "type": "mssql",
       "connectionId": "DataContext"
     }
