@@ -55,7 +55,7 @@ namespace HelpfulNeighbor.web.Data
             .HasKey(ur => new { ur.UserId, ur.RoleId });
             modelBuilder.Entity<UserRole>()
                 .HasOne(ur => ur.User)
-                .WithMany(u => u.UserRoles)
+                .WithMany(u => u.Roles)
                 .HasForeignKey(ur => ur.UserId);
             modelBuilder.Entity<UserRole>()
                 .HasOne(ur => ur.Role)
@@ -64,7 +64,7 @@ namespace HelpfulNeighbor.web.Data
 
             //Role
             modelBuilder.Entity<Role>()
-                .HasKey(r => r.RoleId);
+                .HasKey(r => r.Id);
 
             //HoursOfOperation
             modelBuilder.Entity<HoursOfOperation>()

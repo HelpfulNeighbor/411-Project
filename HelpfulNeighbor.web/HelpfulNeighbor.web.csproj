@@ -10,11 +10,15 @@
 	<ItemGroup>
 		<!-- Don't publish the SPA source files, but do show them in the project files list -->
 		<Compile Remove="Features\Resources\Shelters\**" />
+		<Compile Remove="Resources\**" />
 		<Content Remove="$(SpaRoot)**" />
 		<Content Remove="Features\Resources\Shelters\**" />
+		<Content Remove="Resources\**" />
 		<EmbeddedResource Remove="Features\Resources\Shelters\**" />
+		<EmbeddedResource Remove="Resources\**" />
 		<None Remove="$(SpaRoot)**" />
 		<None Remove="Features\Resources\Shelters\**" />
+		<None Remove="Resources\**" />
 		<None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
 	</ItemGroup>
 
@@ -54,7 +58,6 @@
 
   <ItemGroup>
     <Folder Include="Migrations\" />
-    <Folder Include="Resources\Shelters\Models\" />
   </ItemGroup>
 
 </Project>
