@@ -9,8 +9,12 @@
 
 	<ItemGroup>
 		<!-- Don't publish the SPA source files, but do show them in the project files list -->
+		<Compile Remove="Resources\Shelters\**" />
 		<Content Remove="$(SpaRoot)**" />
+		<Content Remove="Resources\Shelters\**" />
+		<EmbeddedResource Remove="Resources\Shelters\**" />
 		<None Remove="$(SpaRoot)**" />
+		<None Remove="Resources\Shelters\**" />
 		<None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
 	</ItemGroup>
 
@@ -45,9 +49,5 @@
 			</ResolvedFileToPublish>
 		</ItemGroup>
 	</Target>
-
-  <ItemGroup>
-    <Folder Include="Resources\Shelters\Models\" />
-  </ItemGroup>
 
 </Project>
