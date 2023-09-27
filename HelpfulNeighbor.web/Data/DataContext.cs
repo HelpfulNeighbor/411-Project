@@ -43,7 +43,28 @@ namespace HelpfulNeighbor.web.Data
             //Location
             modelBuilder.Entity<Location>()
                 .HasKey(l => l.LocationId);
+            modelBuilder.Entity<Location>()
+                .Property(l => l.Latitude)
+                .HasColumnType("decimal(8, 6)");
+            modelBuilder.Entity<Location>()
+                .Property(l => l.Longitude)
+                .HasColumnType("decimal(9, 6)");
 
+            //UserRole
+            modelBuilder.Entity<UserRole>()
+            .HasKey(ur => new { ur.UserId, ur.RoleId });
+            modelBuilder.Entity<UserRole>()
+                .HasOne(ur => ur.User)
+                .WithMany(u => u.UserRoles)
+                .HasForeignKey(ur => ur.UserId);
+            modelBuilder.Entity<UserRole>()
+                .HasOne(ur => ur.Role)
+                .WithMany()
+                .HasForeignKey(ur => ur.RoleId);
+
+            //Role
+            modelBuilder.Entity<Role>()
+                .HasKey(r => r.RoleId);
 
             //HoursOfOperation
             modelBuilder.Entity<HoursOfOperation>()
