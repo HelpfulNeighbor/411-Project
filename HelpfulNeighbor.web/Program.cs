@@ -14,43 +14,50 @@ builder.Services.AddDbContext<DataContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DataContext"));
 });
 
-var app = builder.Build();
+/*var app = builder.Build();
 if (args.Length == 1 && args[0].ToLower() == "seeddata")
-    SeedData(app);
+    SeedHelper(app);*/
+
 builder.Services.AddIdentity<User, Role>().AddEntityFrameworkStores<DataContext>().AddDefaultTokenProviders();
 
-/*builder.Services.AddControllers();*/
-
-builder.Services.AddControllers().AddJsonOptions(options =>
+builder.Services.ConfigureApplicationCookie(options =>
 {
-    options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
-    options.JsonSerializerOptions.WriteIndented = true;
-});
-;
-var services = builder.Services;
+    options.Events.OnRedirectToLogin = context =>
+    {
+        context.Response.StatusCode = 401;
+        return Task.CompletedTask;
+    };
 
-/*builder.Services.AddScoped<IResourceRepository, ResourceRepository>();
-builder.Services.AddScoped<IShelterRepository, ShelterRepository>();*/
+    options.Events.OnRedirectToAccessDenied = context =>
+    {
+        context.Response.StatusCode = 403;
+        return Task.CompletedTask;
+    };
+});
+
+
+builder.Services.AddScoped<IResourceRepository, ResourceRepository>();
+builder.Services.AddScoped<IShelterRepository, ShelterRepository>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-services.AddMvc();
+builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 
 var app = builder.Build();
 
-using (var scope = app.Services.CreateScope())
+/*using (var scope = app.Services.CreateScope())
 {
     await SeedHelper.MigrateAndSeed(scope.ServiceProvider);
-}
+}*/
 
-    using (var scope = scopedFactory.CreateScope())
+/*    using (var scope = scopedFactory.CreateScope())
         var service = scope.ServiceProvider.GetService<SeededData>();
     {
         service.SeedDataContext();
     }
-}
+}*/
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -60,6 +67,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseAuthentication();
 
 app.UseRouting();
 app.UseAuthorization();

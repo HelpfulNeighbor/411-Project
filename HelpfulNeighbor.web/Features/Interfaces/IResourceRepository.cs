@@ -4,6 +4,6 @@ namespace HelpfulNeighbor.web.Features.Interfaces
 {
     public interface IResourceRepository
     {
-        ICollection<Resource> GetResources();
+        public ICollection<Resource> GetResources();
     }
 }
