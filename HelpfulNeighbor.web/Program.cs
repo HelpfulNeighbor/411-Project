@@ -21,7 +21,7 @@ builder.Services.AddDbContext<DataContext>(options =>
 });
 
 var app = builder.Build();
-/*if (args.Length == 1 && args[0].ToLower() == "seeddata")
+if (args.Length == 1 && args[0].ToLower() == "seeddata")
     SeedData(app);
 
 void SeedData(IHost app)
@@ -33,7 +33,7 @@ void SeedData(IHost app)
         var service = scope.ServiceProvider.GetService<SeededData>();
         service.SeedDataContext();
     }
-}*/
+}
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
