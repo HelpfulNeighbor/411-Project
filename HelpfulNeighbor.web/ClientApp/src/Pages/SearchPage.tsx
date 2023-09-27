@@ -22,13 +22,13 @@ import {
   } from "@chakra-ui/react";
   import NavBar from "../Components/NavBar";
   import React from "react";
-  import { AttachmentIcon, HamburgerIcon } from "@chakra-ui/icons";
-  import { Link as ReactRouterLink } from "react-router-dom";
+  import { HamburgerIcon } from "@chakra-ui/icons";
+  // import { Link as ReactRouterLink } from "react-router-dom";
   // import Map from 'react-map-gl';
   
   export default function SearchPage() {
     const { isOpen, onOpen, onClose } = useDisclosure();
-    const btnRef = React.useRef();
+    // const btnRef = React.useRef();
   
     return (
       <div>
