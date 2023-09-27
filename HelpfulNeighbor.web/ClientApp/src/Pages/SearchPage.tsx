@@ -28,7 +28,7 @@ import {
   
   export default function SearchPage() {
     const { isOpen, onOpen, onClose } = useDisclosure();
-    const btnRef = React.useRef();
+    // const btnRef = React.useRef();
   
     return (
       <div>
