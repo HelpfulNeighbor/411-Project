@@ -12,6 +12,7 @@ import { ChakraProvider } from '@chakra-ui/react';
 import HomePage from './Pages/HomePage';
 import AboutUsPage from './Pages/AboutUsPage';
 import FeedbackPage from './Pages/FeedbackPage';
+import SearchPage from './Pages/SearchPage';
 
 // importing themes
 import {extendTheme} from '@chakra-ui/react'
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
   {
     path: "/about",
     element: <AboutUsPage />,
+  },
+  {
+    path: "/search",
+    element: <SearchPage />,
   },
 ]);
 
