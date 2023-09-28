@@ -81,6 +81,9 @@ namespace HelpfulNeighbor.web.Controllers
             var newUser = new User
             {
                 UserName = dto.UserName,
+                FirstName = dto.FirstName,
+                LastName = dto.LastName,
+
             };
             var createResult = await userManager.CreateAsync(newUser, dto.Password);
             if (!createResult.Succeeded)
@@ -108,6 +111,9 @@ namespace HelpfulNeighbor.web.Controllers
                 Id = newUser.Id,
                 Roles = dto.Roles,
                 UserName = newUser.UserName,
+                FirstName = newUser.FirstName,
+                LastName = newUser.LastName,
+                EmailAddress = newUser.Email,
             });
         }
     }

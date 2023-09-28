@@ -16,13 +16,10 @@ namespace HelpfulNeighbor.web.Data
         public DbSet<HoursOfOperation> HoursOfOperations { get; set; }
         public DbSet<Location> Locations { get; set; }
         public DbSet<Resource> Resources { get; set; }
-        public DbSet<Role> Roles { get; set; }
         public DbSet<SavedResource> SavedResources { get; set; }
         public DbSet<SavedShelter> SavedShelters { get; set; }
         public DbSet<Shelter> Shelters { get; set; }
-        public DbSet<User> Users { get; set; }
         public DbSet<UserCurrentLocation> UserCurrentLocations { get; set; }
-        public DbSet<UserRole> UserRoles { get; set; }
 
         public DataContext()
         {
@@ -76,7 +73,7 @@ namespace HelpfulNeighbor.web.Data
 
             //UserCurrentLocation
             modelBuilder.Entity<UserCurrentLocation>()
-                .HasKey(cl => cl.UserId);
+                .HasKey(cl => cl.Id);
 
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(DataContext).Assembly);
 

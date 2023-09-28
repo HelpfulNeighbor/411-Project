@@ -4,6 +4,7 @@ namespace HelpfulNeighbor.web.Features.Models
 {
     public class UserCurrentLocation
     {
+        public int Id { get; set; }
         public int UserId { get; set; } // Foreign key 
         public int LocationId { get; set; } // Foreign key 
         public DateTime Timestamp { get; set; }

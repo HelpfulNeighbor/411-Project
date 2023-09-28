@@ -38,6 +38,7 @@ builder.Services.ConfigureApplicationCookie(options =>
 
 builder.Services.AddScoped<IResourceRepository, ResourceRepository>();
 builder.Services.AddScoped<IShelterRepository, ShelterRepository>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddControllers();
@@ -47,10 +48,10 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-/*using (var scope = app.Services.CreateScope())
+using (var scope = app.Services.CreateScope())
 {
-    await SeedHelper.MigrateAndSeed(scope.ServiceProvider);
-}*/
+    await SeedHelper.Something(scope.ServiceProvider);
+}
 
 /*    using (var scope = scopedFactory.CreateScope())
         var service = scope.ServiceProvider.GetService<SeededData>();
