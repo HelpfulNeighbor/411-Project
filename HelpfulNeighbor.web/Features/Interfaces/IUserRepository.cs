@@ -4,6 +4,6 @@ namespace HelpfulNeighbor.web.Features.Interfaces
 {
     public interface IUserRepository
     {
-        ICollection<User> GetUsers();
+        ICollection<UserDto> GetUsers();
     }
 }
