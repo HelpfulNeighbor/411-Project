@@ -1,4 +1,5 @@
-﻿using HelpfulNeighbor.web.Features.Authorization;
+﻿using Bogus;
+using HelpfulNeighbor.web.Features.Authorization;
 using HelpfulNeighbor.web.Features.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -17,6 +18,57 @@ namespace HelpfulNeighbor.web.Data
         public SeedHelper(DataContext context)
         {
             _context = context;
+        }
+
+        public static async Task Something(IServiceProvider provider)
+        {
+            var context = provider.GetService<DataContext>();
+            var userManager = provider.GetService<UserManager<User>>();
+            var roleManager = provider.GetService<RoleManager<Role>>();
+            Faker<User> faker = new();
+
+            faker.RuleFor(x => x.UserName, f => f.Internet.UserName());
+            faker.RuleFor(x => x.FirstName, f => f.Person.FirstName);
+            faker.RuleFor(x => x.LastName, f => f.Person.LastName);
+            faker.RuleFor(x => x.Email, f => f.Person.Email);
+            faker.RuleFor(x => x.SecurityStamp, "porjfioereriofj");
+            var list = faker.Generate(5);
+
+            if (!roleManager.Roles.Any(x => x.Name.Equals("Admin")))
+            {
+                Role role = new()
+                {
+                    Name = "Admin"
+                };
+                await roleManager.CreateAsync(role);
+            }
+
+            if (!roleManager.Roles.Any(x => x.Name.Equals("Basic")))
+            {
+                Role role = new()
+                {
+                    Name = "Basic"
+                };
+                await roleManager.CreateAsync(role);
+            }
+
+            foreach (var user in list)
+            {
+                Random random = new();
+                int randomNumber = random.Next(0, 10);
+
+
+                var result = await userManager.CreateAsync(user, "SomePassword234!");
+                await context.SaveChangesAsync();
+
+                User? newUser = await userManager.FindByEmailAsync(user.Email);
+
+                string role = randomNumber > 5 ? "Admin" : "Basic";
+
+                await userManager.AddToRoleAsync(newUser, role);
+                await context.SaveChangesAsync();
+
+            }
         }
 
         public void SeedDataFromJson(List<string> jsonFilePaths)
