@@ -3,9 +3,12 @@ using HelpfulNeighbor.web.Features.Authorization;
 using HelpfulNeighbor.web.Features.Interfaces;
 using HelpfulNeighbor.web.Features.Repositories;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc.ApplicationModels;
 using Microsoft.EntityFrameworkCore;
-using System.Text.Json.Serialization;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -42,28 +45,11 @@ builder.Services.AddDbContext<DataContext>(options =>
 
 var app = builder.Build();
 
-if (args.Length == 1 && args[0].ToLower() == "seeddata")
-    SeedHelper(app);
-
-void SeedHelper(IHost app)
+using (var scope = app.Services.CreateScope())
 {
-    var scopedFactory = app.Services.GetService<IServiceScopeFactory>();
-
-    using (var scope = scopedFactory.CreateScope())
-    {
-        var service = scope.ServiceProvider.GetService<SeedHelper>();
-
-        // Provide a list of JSON file paths here
-        var jsonFilePaths = new List<string>
-        {
-            "DataObjects/Resource.json",
-            "DataObjects/Shelter.json",
-            "DataObjects/Location.json",
-            "DataObjects/HoursOperation.json"
-        };
-        service.SeedDataFromJson(jsonFilePaths);
-    }
+    await SeedHelper(scope.ServiceProvider);
 }
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -96,3 +82,24 @@ app.UseSpa(spaBuilder =>
 });
 
 app.Run();
+
+async Task SeedHelper(IServiceProvider app)
+{
+    var scopedFactory = app.GetService<IServiceScopeFactory>();
+
+    using (var scope = scopedFactory.CreateScope())
+    {
+        var service = scope.ServiceProvider.GetService<SeedHelper>();
+
+        // Provide a list of JSON file paths here
+        var jsonFilePaths = new List<string>
+        {
+            "DataObjects/Resource.json",
+            "DataObjects/Shelter.json",
+            "DataObjects/Location.json",
+            "DataObjects/HoursOperation.json"
+        };
+        await service.SeedDataFromJson(jsonFilePaths);
+    }
+}
+
