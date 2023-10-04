@@ -3,7 +3,6 @@ using HelpfulNeighbor.web.Features.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using System.Net;
 
 namespace HelpfulNeighbor.web.Data
 {
@@ -11,7 +10,7 @@ namespace HelpfulNeighbor.web.Data
     {
         public DataContext(DbContextOptions<DataContext> options) : base(options)
         {
-            
+
         }
         public DbSet<HoursOfOperation> HoursOfOperations { get; set; }
         public DbSet<Location> Locations { get; set; }
@@ -21,10 +20,6 @@ namespace HelpfulNeighbor.web.Data
         public DbSet<Shelter> Shelters { get; set; }
         public DbSet<UserCurrentLocation> UserCurrentLocations { get; set; }
 
-        public DataContext()
-        {
-        }
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -33,11 +28,11 @@ namespace HelpfulNeighbor.web.Data
             modelBuilder.Entity<Resource>()
                 .HasKey(r => r.ResourceId);
 
-            //Shelter
+            // Shelter
             modelBuilder.Entity<Shelter>()
                 .HasKey(r => r.ResourceId);
 
-            //Location
+            // Location
             modelBuilder.Entity<Location>()
                 .HasKey(l => l.LocationId);
             modelBuilder.Entity<Location>()
@@ -65,9 +60,9 @@ namespace HelpfulNeighbor.web.Data
                 .WithOne(ucl => ucl.Location)
                 .HasForeignKey<UserCurrentLocation>(ucl => ucl.LocationId);
 
-            //UserRole
+            // UserRole
             modelBuilder.Entity<UserRole>()
-            .HasKey(ur => new { ur.UserId, ur.RoleId });
+                .HasKey(ur => new { ur.UserId, ur.RoleId });
             modelBuilder.Entity<UserRole>()
                 .HasOne(ur => ur.User)
                 .WithMany(u => u.Roles)
@@ -77,28 +72,40 @@ namespace HelpfulNeighbor.web.Data
                 .WithMany()
                 .HasForeignKey(ur => ur.RoleId);
 
-            //Role
+            // Role
             modelBuilder.Entity<Role>()
                 .HasKey(r => r.Id);
 
-            //HoursOfOperation
+            // HoursOfOperation
             modelBuilder.Entity<HoursOfOperation>()
                 .HasKey(ho => ho.HoursId);
 
-            //SavedResources
+            // SavedResources
             modelBuilder.Entity<SavedResource>()
                 .HasKey(sr => sr.SavedResourceId);
 
-            //UserCurrentLocation
+            // UserCurrentLocation
             modelBuilder.Entity<UserCurrentLocation>()
                 .HasKey(cl => cl.Id);
 
+            // IdentityUserRole configuration
+            modelBuilder.Entity<IdentityUserRole<int>>()
+                .HasKey(ur => new { ur.UserId, ur.RoleId });
 
+            // IdentityUserClaim configuration
+            modelBuilder.Entity<IdentityUserClaim<int>>()
+                .ToTable("UserClaims");
 
-            modelBuilder.ApplyConfigurationsFromAssembly(typeof(DataContext).Assembly);
+            // IdentityUserLogin configuration
+            modelBuilder.Entity<IdentityUserLogin<int>>()
+                .ToTable("UserLogins")
+                .HasKey(ul => new { ul.LoginProvider, ul.ProviderKey, ul.UserId });
 
-
+            // IdentityUserToken configuration
+            modelBuilder.Entity<IdentityUserToken<int>>()
+                .ToTable("UserTokens")
+                .HasKey(ut => new { ut.UserId, ut.LoginProvider, ut.Name });
         }
-
     }
 }
+
