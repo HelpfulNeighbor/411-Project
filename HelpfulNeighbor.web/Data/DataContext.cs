@@ -47,6 +47,24 @@ namespace HelpfulNeighbor.web.Data
                 .Property(l => l.Longitude)
                 .HasColumnType("decimal(9, 6)");
 
+            // Location to Resource (one-to-one)
+            modelBuilder.Entity<Location>()
+                .HasOne(l => l.Resource)
+                .WithOne(r => r.Location)
+                .HasForeignKey<Resource>(r => r.LocationId);
+
+            // Location to Shelter (one-to-one)
+            modelBuilder.Entity<Location>()
+                .HasOne(l => l.Shelter)
+                .WithOne(s => s.Location)
+                .HasForeignKey<Shelter>(s => s.LocationId);
+
+            // Location to UserCurrentLocation (one-to-one)
+            modelBuilder.Entity<Location>()
+                .HasOne(l => l.UserCurrentLocation)
+                .WithOne(ucl => ucl.Location)
+                .HasForeignKey<UserCurrentLocation>(ucl => ucl.LocationId);
+
             //UserRole
             modelBuilder.Entity<UserRole>()
             .HasKey(ur => new { ur.UserId, ur.RoleId });
@@ -74,6 +92,8 @@ namespace HelpfulNeighbor.web.Data
             //UserCurrentLocation
             modelBuilder.Entity<UserCurrentLocation>()
                 .HasKey(cl => cl.Id);
+
+
 
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(DataContext).Assembly);
 
