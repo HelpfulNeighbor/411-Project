@@ -1,0 +1,6617 @@
+[
+  {
+    "HoursId": 1,
+    "ResourceId": 1,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 2,
+    "ResourceId": 1,
+    "DayOfWeek": "Monday",
+    "OpenTime": "7:30 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 3,
+    "ResourceId": 1,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "7:30 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 4,
+    "ResourceId": 1,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "7:30 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 5,
+    "ResourceId": 1,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "7:30 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 6,
+    "ResourceId": 1,
+    "DayOfWeek": "Friday",
+    "OpenTime": "7:30 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 7,
+    "ResourceId": 1,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 8,
+    "ResourceId": 2,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 9,
+    "ResourceId": 2,
+    "DayOfWeek": "Monday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 10,
+    "ResourceId": 2,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 11,
+    "ResourceId": 2,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 12,
+    "ResourceId": 2,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 13,
+    "ResourceId": 2,
+    "DayOfWeek": "Friday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 14,
+    "ResourceId": 2,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 15,
+    "ResourceId": 3,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 16,
+    "ResourceId": 4,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 17,
+    "ResourceId": 4,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 18,
+    "ResourceId": 4,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 19,
+    "ResourceId": 4,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 20,
+    "ResourceId": 4,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 21,
+    "ResourceId": 4,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 22,
+    "ResourceId": 4,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 23,
+    "ResourceId": 5,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 24,
+    "ResourceId": 6,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 25,
+    "ResourceId": 7,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 26,
+    "ResourceId": 8,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 27,
+    "ResourceId": 8,
+    "DayOfWeek": "Monday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 28,
+    "ResourceId": 8,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 29,
+    "ResourceId": 8,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 30,
+    "ResourceId": 8,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 31,
+    "ResourceId": 8,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 32,
+    "ResourceId": 8,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 33,
+    "ResourceId": 9,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 34,
+    "ResourceId": 9,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 35,
+    "ResourceId": 9,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 36,
+    "ResourceId": 9,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 37,
+    "ResourceId": 9,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 38,
+    "ResourceId": 9,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 39,
+    "ResourceId": 9,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 40,
+    "ResourceId": 10,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 41,
+    "ResourceId": 10,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 42,
+    "ResourceId": 10,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 43,
+    "ResourceId": 10,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 44,
+    "ResourceId": 10,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 45,
+    "ResourceId": 10,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 46,
+    "ResourceId": 10,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 47,
+    "ResourceId": 11,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 48,
+    "ResourceId": 11,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 49,
+    "ResourceId": 11,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 50,
+    "ResourceId": 11,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 51,
+    "ResourceId": 11,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 52,
+    "ResourceId": 11,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 53,
+    "ResourceId": 11,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 54,
+    "ResourceId": 12,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 55,
+    "ResourceId": 12,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 56,
+    "ResourceId": 12,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 57,
+    "ResourceId": 12,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 58,
+    "ResourceId": 12,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 59,
+    "ResourceId": 12,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 60,
+    "ResourceId": 12,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 61,
+    "ResourceId": 13,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 62,
+    "ResourceId": 14,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 63,
+    "ResourceId": 15,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 64,
+    "ResourceId": 15,
+    "DayOfWeek": "Monday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 65,
+    "ResourceId": 15,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 66,
+    "ResourceId": 15,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 67,
+    "ResourceId": 15,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 68,
+    "ResourceId": 15,
+    "DayOfWeek": "Friday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 69,
+    "ResourceId": 15,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 70,
+    "ResourceId": 16,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 71,
+    "ResourceId": 16,
+    "DayOfWeek": "Monday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 72,
+    "ResourceId": 16,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "10:00 AM",
+    "CloseTime": "2:00 PM"
+  },
+  {
+    "HoursId": 73,
+    "ResourceId": 16,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 74,
+    "ResourceId": 16,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "10:00 AM",
+    "CloseTime": "2:00 PM"
+  },
+  {
+    "HoursId": 75,
+    "ResourceId": 16,
+    "DayOfWeek": "Friday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 76,
+    "ResourceId": 16,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 77,
+    "ResourceId": 17,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 78,
+    "ResourceId": 18,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 79,
+    "ResourceId": 19,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 80,
+    "ResourceId": 19,
+    "DayOfWeek": "Monday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 81,
+    "ResourceId": 19,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 82,
+    "ResourceId": 19,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 83,
+    "ResourceId": 19,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 84,
+    "ResourceId": 19,
+    "DayOfWeek": "Friday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 85,
+    "ResourceId": 19,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 86,
+    "ResourceId": 20,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 87,
+    "ResourceId": 20,
+    "DayOfWeek": "Monday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 88,
+    "ResourceId": 20,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 89,
+    "ResourceId": 20,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 90,
+    "ResourceId": 20,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 91,
+    "ResourceId": 20,
+    "DayOfWeek": "Friday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "2:00 PM"
+  },
+  {
+    "HoursId": 92,
+    "ResourceId": 20,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "2:00 PM"
+  },
+  {
+    "HoursId": 93,
+    "ResourceId": 21,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 94,
+    "ResourceId": 21,
+    "DayOfWeek": "Monday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 95,
+    "ResourceId": 21,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 96,
+    "ResourceId": 21,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 97,
+    "ResourceId": 21,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 98,
+    "ResourceId": 21,
+    "DayOfWeek": "Friday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 99,
+    "ResourceId": 21,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 100,
+    "ResourceId": 22,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 101,
+    "ResourceId": 23,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 102,
+    "ResourceId": 23,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 103,
+    "ResourceId": 23,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 104,
+    "ResourceId": 23,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 105,
+    "ResourceId": 23,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 106,
+    "ResourceId": 23,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 107,
+    "ResourceId": 23,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 108,
+    "ResourceId": 24,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 109,
+    "ResourceId": 24,
+    "DayOfWeek": "Monday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 110,
+    "ResourceId": 24,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 111,
+    "ResourceId": 24,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 112,
+    "ResourceId": 24,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 113,
+    "ResourceId": 24,
+    "DayOfWeek": "Friday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 114,
+    "ResourceId": 24,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 115,
+    "ResourceId": 25,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 116,
+    "ResourceId": 25,
+    "DayOfWeek": "Monday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 117,
+    "ResourceId": 25,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 118,
+    "ResourceId": 25,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 119,
+    "ResourceId": 25,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 120,
+    "ResourceId": 25,
+    "DayOfWeek": "Friday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 121,
+    "ResourceId": 25,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "10:00 AM",
+    "CloseTime": "2:00 PM"
+  },
+  {
+    "HoursId": 122,
+    "ResourceId": 26,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 123,
+    "ResourceId": 26,
+    "DayOfWeek": "Monday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 124,
+    "ResourceId": 26,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 125,
+    "ResourceId": 26,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 126,
+    "ResourceId": 26,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 127,
+    "ResourceId": 26,
+    "DayOfWeek": "Friday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 128,
+    "ResourceId": 26,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 129,
+    "ResourceId": 27,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 130,
+    "ResourceId": 27,
+    "DayOfWeek": "Monday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 131,
+    "ResourceId": 27,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 132,
+    "ResourceId": 27,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 133,
+    "ResourceId": 27,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 134,
+    "ResourceId": 27,
+    "DayOfWeek": "Friday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 135,
+    "ResourceId": 27,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 136,
+    "ResourceId": 28,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 137,
+    "ResourceId": 29,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 138,
+    "ResourceId": 29,
+    "DayOfWeek": "Monday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "12:00 PM"
+  },
+  {
+    "HoursId": 139,
+    "ResourceId": 29,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 140,
+    "ResourceId": 29,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "12:00 PM"
+  },
+  {
+    "HoursId": 141,
+    "ResourceId": 29,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 142,
+    "ResourceId": 29,
+    "DayOfWeek": "Friday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "12:00 PM"
+  },
+  {
+    "HoursId": 143,
+    "ResourceId": 29,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 144,
+    "ResourceId": 30,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 145,
+    "ResourceId": 31,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 146,
+    "ResourceId": 32,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 147,
+    "ResourceId": 33,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 148,
+    "ResourceId": 33,
+    "DayOfWeek": "Monday",
+    "OpenTime": "9:30 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 149,
+    "ResourceId": 33,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "9:30 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 150,
+    "ResourceId": 33,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "9:30 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 151,
+    "ResourceId": 33,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "9:30 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 152,
+    "ResourceId": 33,
+    "DayOfWeek": "Friday",
+    "OpenTime": "9:30 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 153,
+    "ResourceId": 33,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "9:30 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 154,
+    "ResourceId": 34,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 155,
+    "ResourceId": 34,
+    "DayOfWeek": "Monday",
+    "OpenTime": "10:00 AM",
+    "CloseTime": "3:00 PM"
+  },
+  {
+    "HoursId": 156,
+    "ResourceId": 34,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "10:00 AM",
+    "CloseTime": "3:00 PM"
+  },
+  {
+    "HoursId": 157,
+    "ResourceId": 34,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "10:00 AM",
+    "CloseTime": "3:00 PM"
+  },
+  {
+    "HoursId": 158,
+    "ResourceId": 34,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "10:00 AM",
+    "CloseTime": "3:00 PM"
+  },
+  {
+    "HoursId": 159,
+    "ResourceId": 34,
+    "DayOfWeek": "Friday",
+    "OpenTime": "10:00 AM",
+    "CloseTime": "3:00 PM"
+  },
+  {
+    "HoursId": 160,
+    "ResourceId": 34,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 161,
+    "ResourceId": 35,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 162,
+    "ResourceId": 35,
+    "DayOfWeek": "Monday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 163,
+    "ResourceId": 35,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 164,
+    "ResourceId": 35,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 165,
+    "ResourceId": 35,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 166,
+    "ResourceId": 35,
+    "DayOfWeek": "Friday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 167,
+    "ResourceId": 35,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 168,
+    "ResourceId": 36,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 169,
+    "ResourceId": 36,
+    "DayOfWeek": "Monday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 170,
+    "ResourceId": 36,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "12:00 PM"
+  },
+  {
+    "HoursId": 171,
+    "ResourceId": 36,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 172,
+    "ResourceId": 36,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 173,
+    "ResourceId": 36,
+    "DayOfWeek": "Friday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 174,
+    "ResourceId": 36,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 175,
+    "ResourceId": 37,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 176,
+    "ResourceId": 37,
+    "DayOfWeek": "Monday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 177,
+    "ResourceId": 37,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 178,
+    "ResourceId": 37,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "12:00 PM"
+  },
+  {
+    "HoursId": 179,
+    "ResourceId": 37,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 180,
+    "ResourceId": 37,
+    "DayOfWeek": "Friday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 181,
+    "ResourceId": 37,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 182,
+    "ResourceId": 38,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 183,
+    "ResourceId": 38,
+    "DayOfWeek": "Monday",
+    "OpenTime": "7:30 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 184,
+    "ResourceId": 38,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "7:30 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 185,
+    "ResourceId": 38,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "7:30 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 186,
+    "ResourceId": 38,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "7:30 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 187,
+    "ResourceId": 38,
+    "DayOfWeek": "Friday",
+    "OpenTime": "7:30 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 188,
+    "ResourceId": 38,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 189,
+    "ResourceId": 38,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 190,
+    "ResourceId": 38,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 191,
+    "ResourceId": 38,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 192,
+    "ResourceId": 38,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 193,
+    "ResourceId": 38,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 194,
+    "ResourceId": 38,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 195,
+    "ResourceId": 38,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 196,
+    "ResourceId": 40,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 197,
+    "ResourceId": 40,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 198,
+    "ResourceId": 40,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 199,
+    "ResourceId": 40,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 200,
+    "ResourceId": 40,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 201,
+    "ResourceId": 40,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 202,
+    "ResourceId": 40,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 203,
+    "ResourceId": 41,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 204,
+    "ResourceId": 41,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 205,
+    "ResourceId": 41,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 206,
+    "ResourceId": 41,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 207,
+    "ResourceId": 41,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 208,
+    "ResourceId": 41,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 209,
+    "ResourceId": 41,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 210,
+    "ResourceId": 42,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 211,
+    "ResourceId": 43,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 212,
+    "ResourceId": 44,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 213,
+    "ResourceId": 45,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 214,
+    "ResourceId": 46,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 215,
+    "ResourceId": 47,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 216,
+    "ResourceId": 48,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 217,
+    "ResourceId": 49,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 218,
+    "ResourceId": 50,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 219,
+    "ResourceId": 51,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 220,
+    "ResourceId": 51,
+    "DayOfWeek": "Monday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 221,
+    "ResourceId": 51,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 222,
+    "ResourceId": 51,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 223,
+    "ResourceId": 51,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 224,
+    "ResourceId": 51,
+    "DayOfWeek": "Friday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 225,
+    "ResourceId": 51,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 226,
+    "ResourceId": 52,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 227,
+    "ResourceId": 52,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 228,
+    "ResourceId": 52,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 229,
+    "ResourceId": 52,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 230,
+    "ResourceId": 52,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 231,
+    "ResourceId": 52,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 232,
+    "ResourceId": 52,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 233,
+    "ResourceId": 53,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 234,
+    "ResourceId": 54,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 235,
+    "ResourceId": 55,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 236,
+    "ResourceId": 56,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 237,
+    "ResourceId": 57,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 238,
+    "ResourceId": 58,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 239,
+    "ResourceId": 58,
+    "DayOfWeek": "Monday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 240,
+    "ResourceId": 58,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 241,
+    "ResourceId": 58,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 242,
+    "ResourceId": 58,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 243,
+    "ResourceId": 58,
+    "DayOfWeek": "Friday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 244,
+    "ResourceId": 58,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 245,
+    "ResourceId": 59,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 246,
+    "ResourceId": 60,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 247,
+    "ResourceId": 61,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 248,
+    "ResourceId": 61,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 249,
+    "ResourceId": 61,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 250,
+    "ResourceId": 61,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 251,
+    "ResourceId": 61,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 252,
+    "ResourceId": 61,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 253,
+    "ResourceId": 61,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 254,
+    "ResourceId": 62,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 255,
+    "ResourceId": 62,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 256,
+    "ResourceId": 62,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 257,
+    "ResourceId": 62,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 258,
+    "ResourceId": 62,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 259,
+    "ResourceId": 62,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 260,
+    "ResourceId": 62,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 261,
+    "ResourceId": 63,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 262,
+    "ResourceId": 64,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 263,
+    "ResourceId": 64,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 264,
+    "ResourceId": 64,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 265,
+    "ResourceId": 64,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 266,
+    "ResourceId": 64,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 267,
+    "ResourceId": 64,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "3:00 PM"
+  },
+  {
+    "HoursId": 268,
+    "ResourceId": 64,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 269,
+    "ResourceId": 65,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 270,
+    "ResourceId": 66,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 271,
+    "ResourceId": 66,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 272,
+    "ResourceId": 66,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 273,
+    "ResourceId": 66,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 274,
+    "ResourceId": 66,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 275,
+    "ResourceId": 66,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "3:00 PM"
+  },
+  {
+    "HoursId": 276,
+    "ResourceId": 66,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 277,
+    "ResourceId": 67,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 278,
+    "ResourceId": 68,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 279,
+    "ResourceId": 68,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 280,
+    "ResourceId": 68,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 281,
+    "ResourceId": 68,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 282,
+    "ResourceId": 68,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 283,
+    "ResourceId": 68,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 284,
+    "ResourceId": 68,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 285,
+    "ResourceId": 69,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 286,
+    "ResourceId": 69,
+    "DayOfWeek": "Monday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 287,
+    "ResourceId": 69,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 288,
+    "ResourceId": 69,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 289,
+    "ResourceId": 69,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 290,
+    "ResourceId": 69,
+    "DayOfWeek": "Friday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 291,
+    "ResourceId": 69,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 292,
+    "ResourceId": 70,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 293,
+    "ResourceId": 70,
+    "DayOfWeek": "Monday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 294,
+    "ResourceId": 70,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 295,
+    "ResourceId": 70,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 296,
+    "ResourceId": 70,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 297,
+    "ResourceId": 70,
+    "DayOfWeek": "Friday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 298,
+    "ResourceId": 70,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 299,
+    "ResourceId": 71,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 300,
+    "ResourceId": 72,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 301,
+    "ResourceId": 72,
+    "DayOfWeek": "Monday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 302,
+    "ResourceId": 72,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 303,
+    "ResourceId": 72,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 304,
+    "ResourceId": 72,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 305,
+    "ResourceId": 72,
+    "DayOfWeek": "Friday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "12:00 PM"
+  },
+  {
+    "HoursId": 306,
+    "ResourceId": 72,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 307,
+    "ResourceId": 73,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 308,
+    "ResourceId": 73,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 309,
+    "ResourceId": 73,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 310,
+    "ResourceId": 73,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 311,
+    "ResourceId": 73,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 312,
+    "ResourceId": 73,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 313,
+    "ResourceId": 73,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 314,
+    "ResourceId": 74,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 315,
+    "ResourceId": 75,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 316,
+    "ResourceId": 76,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 317,
+    "ResourceId": 77,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "1:00 PM"
+  },
+  {
+    "HoursId": 318,
+    "ResourceId": 77,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 319,
+    "ResourceId": 77,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 320,
+    "ResourceId": 77,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 321,
+    "ResourceId": 77,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 322,
+    "ResourceId": 77,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 323,
+    "ResourceId": 77,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "1:00 PM"
+  },
+  {
+    "HoursId": 324,
+    "ResourceId": 78,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 325,
+    "ResourceId": 79,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 326,
+    "ResourceId": 79,
+    "DayOfWeek": "Monday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 327,
+    "ResourceId": 79,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "12:00 PM"
+  },
+  {
+    "HoursId": 328,
+    "ResourceId": 79,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 329,
+    "ResourceId": 79,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "12:00 PM"
+  },
+  {
+    "HoursId": 330,
+    "ResourceId": 79,
+    "DayOfWeek": "Friday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 331,
+    "ResourceId": 79,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 332,
+    "ResourceId": 80,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 333,
+    "ResourceId": 80,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 334,
+    "ResourceId": 80,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 335,
+    "ResourceId": 80,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 336,
+    "ResourceId": 80,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 337,
+    "ResourceId": 80,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "12:00 PM"
+  },
+  {
+    "HoursId": 338,
+    "ResourceId": 80,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 339,
+    "ResourceId": 81,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 340,
+    "ResourceId": 82,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 341,
+    "ResourceId": 83,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 342,
+    "ResourceId": 84,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 343,
+    "ResourceId": 84,
+    "DayOfWeek": "Monday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 344,
+    "ResourceId": 84,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 345,
+    "ResourceId": 84,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 346,
+    "ResourceId": 84,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 347,
+    "ResourceId": 84,
+    "DayOfWeek": "Friday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "12:00 PM"
+  },
+  {
+    "HoursId": 348,
+    "ResourceId": 84,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 349,
+    "ResourceId": 85,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 350,
+    "ResourceId": 86,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 351,
+    "ResourceId": 86,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 352,
+    "ResourceId": 86,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 353,
+    "ResourceId": 86,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 354,
+    "ResourceId": 86,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 355,
+    "ResourceId": 86,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 356,
+    "ResourceId": 86,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 357,
+    "ResourceId": 87,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 358,
+    "ResourceId": 87,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 359,
+    "ResourceId": 87,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 360,
+    "ResourceId": 87,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 361,
+    "ResourceId": 87,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 362,
+    "ResourceId": 87,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 363,
+    "ResourceId": 87,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 364,
+    "ResourceId": 88,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 365,
+    "ResourceId": 88,
+    "DayOfWeek": "Monday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 366,
+    "ResourceId": 88,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 367,
+    "ResourceId": 88,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 368,
+    "ResourceId": 88,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 369,
+    "ResourceId": 88,
+    "DayOfWeek": "Friday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 370,
+    "ResourceId": 88,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 371,
+    "ResourceId": 89,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 372,
+    "ResourceId": 89,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "3:00 PM"
+  },
+  {
+    "HoursId": 373,
+    "ResourceId": 89,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "3:00 PM"
+  },
+  {
+    "HoursId": 374,
+    "ResourceId": 89,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "3:00 PM"
+  },
+  {
+    "HoursId": 375,
+    "ResourceId": 89,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "3:00 PM"
+  },
+  {
+    "HoursId": 376,
+    "ResourceId": 89,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "3:00 PM"
+  },
+  {
+    "HoursId": 377,
+    "ResourceId": 89,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 378,
+    "ResourceId": 90,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 379,
+    "ResourceId": 91,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 380,
+    "ResourceId": 92,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 381,
+    "ResourceId": 93,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 382,
+    "ResourceId": 94,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 383,
+    "ResourceId": 95,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 384,
+    "ResourceId": 96,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "8:00 PM"
+  },
+  {
+    "HoursId": 385,
+    "ResourceId": 96,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "8:00 PM"
+  },
+  {
+    "HoursId": 386,
+    "ResourceId": 96,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "8:00 PM"
+  },
+  {
+    "HoursId": 387,
+    "ResourceId": 96,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "8:00 PM"
+  },
+  {
+    "HoursId": 388,
+    "ResourceId": 96,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "8:00 PM"
+  },
+  {
+    "HoursId": 389,
+    "ResourceId": 96,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "8:00 PM"
+  },
+  {
+    "HoursId": 390,
+    "ResourceId": 96,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "8:00 PM"
+  },
+  {
+    "HoursId": 391,
+    "ResourceId": 97,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 392,
+    "ResourceId": 98,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 393,
+    "ResourceId": 98,
+    "DayOfWeek": "Monday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "12:00 PM"
+  },
+  {
+    "HoursId": 394,
+    "ResourceId": 98,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "12:00 PM"
+  },
+  {
+    "HoursId": 395,
+    "ResourceId": 98,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "12:00 PM"
+  },
+  {
+    "HoursId": 396,
+    "ResourceId": 98,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "12:00 PM"
+  },
+  {
+    "HoursId": 397,
+    "ResourceId": 98,
+    "DayOfWeek": "Friday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "12:00 PM"
+  },
+  {
+    "HoursId": 398,
+    "ResourceId": 98,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 399,
+    "ResourceId": 99,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 400,
+    "ResourceId": 100,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 401,
+    "ResourceId": 100,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 402,
+    "ResourceId": 100,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 403,
+    "ResourceId": 100,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 404,
+    "ResourceId": 100,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 405,
+    "ResourceId": 100,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 406,
+    "ResourceId": 100,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 407,
+    "ResourceId": 101,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 408,
+    "ResourceId": 102,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 409,
+    "ResourceId": 102,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 410,
+    "ResourceId": 102,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 411,
+    "ResourceId": 102,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 412,
+    "ResourceId": 102,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 413,
+    "ResourceId": 102,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "12:00 PM"
+  },
+  {
+    "HoursId": 414,
+    "ResourceId": 102,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 415,
+    "ResourceId": 103,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 416,
+    "ResourceId": 104,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 417,
+    "ResourceId": 104,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 418,
+    "ResourceId": 104,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 419,
+    "ResourceId": 104,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 420,
+    "ResourceId": 104,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 421,
+    "ResourceId": 104,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 422,
+    "ResourceId": 104,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 423,
+    "ResourceId": 105,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 424,
+    "ResourceId": 105,
+    "DayOfWeek": "Monday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 425,
+    "ResourceId": 105,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 426,
+    "ResourceId": 105,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 427,
+    "ResourceId": 105,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 428,
+    "ResourceId": 105,
+    "DayOfWeek": "Friday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 429,
+    "ResourceId": 105,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 430,
+    "ResourceId": 106,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "6:30 AM",
+    "CloseTime": "7:15 AM"
+  },
+  {
+    "HoursId": 431,
+    "ResourceId": 106,
+    "DayOfWeek": "Monday",
+    "OpenTime": "6:30 AM",
+    "CloseTime": "7:15 AM"
+  },
+  {
+    "HoursId": 432,
+    "ResourceId": 106,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "6:30 AM",
+    "CloseTime": "7:15 AM"
+  },
+  {
+    "HoursId": 433,
+    "ResourceId": 106,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "6:30 AM",
+    "CloseTime": "7:15 AM"
+  },
+  {
+    "HoursId": 434,
+    "ResourceId": 106,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "6:30 AM",
+    "CloseTime": "7:15 AM"
+  },
+  {
+    "HoursId": 435,
+    "ResourceId": 106,
+    "DayOfWeek": "Friday",
+    "OpenTime": "6:30 AM",
+    "CloseTime": "7:15 AM"
+  },
+  {
+    "HoursId": 436,
+    "ResourceId": 106,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "6:30 AM",
+    "CloseTime": "7:15 AM"
+  },
+  {
+    "HoursId": 437,
+    "ResourceId": 107,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 438,
+    "ResourceId": 107,
+    "DayOfWeek": "Monday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 439,
+    "ResourceId": 107,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 440,
+    "ResourceId": 107,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 441,
+    "ResourceId": 107,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 442,
+    "ResourceId": 107,
+    "DayOfWeek": "Friday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 443,
+    "ResourceId": 107,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 444,
+    "ResourceId": 108,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 445,
+    "ResourceId": 108,
+    "DayOfWeek": "Monday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 446,
+    "ResourceId": 108,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 447,
+    "ResourceId": 108,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 448,
+    "ResourceId": 108,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 449,
+    "ResourceId": 108,
+    "DayOfWeek": "Friday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 450,
+    "ResourceId": 108,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 451,
+    "ResourceId": 109,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 452,
+    "ResourceId": 109,
+    "DayOfWeek": "Monday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "1:00 PM"
+  },
+  {
+    "HoursId": 453,
+    "ResourceId": 109,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "1:00 PM"
+  },
+  {
+    "HoursId": 454,
+    "ResourceId": 109,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "1:00 PM"
+  },
+  {
+    "HoursId": 455,
+    "ResourceId": 109,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "1:00 PM"
+  },
+  {
+    "HoursId": 456,
+    "ResourceId": 109,
+    "DayOfWeek": "Friday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 457,
+    "ResourceId": 109,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "10:00 AM",
+    "CloseTime": "2:00 PM"
+  },
+  {
+    "HoursId": 458,
+    "ResourceId": 110,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 459,
+    "ResourceId": 110,
+    "DayOfWeek": "Monday",
+    "OpenTime": "7:30 AM",
+    "CloseTime": "3:00 PM"
+  },
+  {
+    "HoursId": 460,
+    "ResourceId": 110,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "7:30 AM",
+    "CloseTime": "3:00 PM"
+  },
+  {
+    "HoursId": 461,
+    "ResourceId": 110,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "7:30 AM",
+    "CloseTime": "3:00 PM"
+  },
+  {
+    "HoursId": 462,
+    "ResourceId": 110,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "7:30 AM",
+    "CloseTime": "3:00 PM"
+  },
+  {
+    "HoursId": 463,
+    "ResourceId": 110,
+    "DayOfWeek": "Friday",
+    "OpenTime": "7:30 AM",
+    "CloseTime": "3:00 PM"
+  },
+  {
+    "HoursId": 464,
+    "ResourceId": 110,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 465,
+    "ResourceId": 111,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 466,
+    "ResourceId": 112,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 467,
+    "ResourceId": 113,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 468,
+    "ResourceId": 113,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 469,
+    "ResourceId": 113,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 470,
+    "ResourceId": 113,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 471,
+    "ResourceId": 113,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 472,
+    "ResourceId": 113,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 473,
+    "ResourceId": 113,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 474,
+    "ResourceId": 114,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 475,
+    "ResourceId": 114,
+    "DayOfWeek": "Monday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 476,
+    "ResourceId": 114,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 477,
+    "ResourceId": 114,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 478,
+    "ResourceId": 114,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 479,
+    "ResourceId": 114,
+    "DayOfWeek": "Friday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 480,
+    "ResourceId": 114,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 481,
+    "ResourceId": 115,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 482,
+    "ResourceId": 116,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 483,
+    "ResourceId": 116,
+    "DayOfWeek": "Monday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 484,
+    "ResourceId": 116,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 485,
+    "ResourceId": 116,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 486,
+    "ResourceId": 116,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 487,
+    "ResourceId": 116,
+    "DayOfWeek": "Friday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 488,
+    "ResourceId": 116,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 489,
+    "ResourceId": 117,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 490,
+    "ResourceId": 117,
+    "DayOfWeek": "Monday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 491,
+    "ResourceId": 117,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 492,
+    "ResourceId": 117,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 493,
+    "ResourceId": 117,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 494,
+    "ResourceId": 117,
+    "DayOfWeek": "Friday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 495,
+    "ResourceId": 117,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 496,
+    "ResourceId": 118,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 497,
+    "ResourceId": 119,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 498,
+    "ResourceId": 119,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "12:30 PM"
+  },
+  {
+    "HoursId": 499,
+    "ResourceId": 119,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "12:30 PM"
+  },
+  {
+    "HoursId": 500,
+    "ResourceId": 119,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "12:30 PM"
+  },
+  {
+    "HoursId": 501,
+    "ResourceId": 119,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "12:30 PM"
+  },
+  {
+    "HoursId": 502,
+    "ResourceId": 119,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "12:30 PM"
+  },
+  {
+    "HoursId": 503,
+    "ResourceId": 119,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 504,
+    "ResourceId": 120,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 505,
+    "ResourceId": 121,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 506,
+    "ResourceId": 122,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 507,
+    "ResourceId": 122,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "3:00 PM"
+  },
+  {
+    "HoursId": 508,
+    "ResourceId": 122,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "3:00 PM"
+  },
+  {
+    "HoursId": 509,
+    "ResourceId": 122,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "3:00 PM"
+  },
+  {
+    "HoursId": 510,
+    "ResourceId": 122,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "3:00 PM"
+  },
+  {
+    "HoursId": 511,
+    "ResourceId": 122,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "3:00 PM"
+  },
+  {
+    "HoursId": 512,
+    "ResourceId": 122,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 513,
+    "ResourceId": 123,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 514,
+    "ResourceId": 124,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 515,
+    "ResourceId": 124,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:15 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 516,
+    "ResourceId": 124,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:15 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 517,
+    "ResourceId": 124,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:15 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 518,
+    "ResourceId": 124,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:15 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 519,
+    "ResourceId": 124,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:15 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 520,
+    "ResourceId": 124,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 521,
+    "ResourceId": 125,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 522,
+    "ResourceId": 126,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 523,
+    "ResourceId": 127,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 524,
+    "ResourceId": 127,
+    "DayOfWeek": "Monday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 525,
+    "ResourceId": 127,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 526,
+    "ResourceId": 127,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 527,
+    "ResourceId": 127,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 528,
+    "ResourceId": 127,
+    "DayOfWeek": "Friday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 529,
+    "ResourceId": 127,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 530,
+    "ResourceId": 128,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 531,
+    "ResourceId": 129,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 532,
+    "ResourceId": 129,
+    "DayOfWeek": "Monday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 533,
+    "ResourceId": 129,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 534,
+    "ResourceId": 129,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 535,
+    "ResourceId": 129,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 536,
+    "ResourceId": 129,
+    "DayOfWeek": "Friday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 537,
+    "ResourceId": 129,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 538,
+    "ResourceId": 130,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 539,
+    "ResourceId": 130,
+    "DayOfWeek": "Monday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 540,
+    "ResourceId": 130,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 541,
+    "ResourceId": 130,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 542,
+    "ResourceId": 130,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 543,
+    "ResourceId": 130,
+    "DayOfWeek": "Friday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 544,
+    "ResourceId": 130,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 545,
+    "ResourceId": 131,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 546,
+    "ResourceId": 132,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 547,
+    "ResourceId": 132,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 548,
+    "ResourceId": 132,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 549,
+    "ResourceId": 132,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 550,
+    "ResourceId": 132,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 551,
+    "ResourceId": 132,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 552,
+    "ResourceId": 132,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 553,
+    "ResourceId": 133,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 554,
+    "ResourceId": 134,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "11:30 AM",
+    "CloseTime": "1:15 PM"
+  },
+  {
+    "HoursId": 555,
+    "ResourceId": 134,
+    "DayOfWeek": "Monday",
+    "OpenTime": "11:30 AM",
+    "CloseTime": "1:15 PM"
+  },
+  {
+    "HoursId": 556,
+    "ResourceId": 134,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "11:30 AM",
+    "CloseTime": "1:15 PM"
+  },
+  {
+    "HoursId": 557,
+    "ResourceId": 134,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "11:30 AM",
+    "CloseTime": "1:15 PM"
+  },
+  {
+    "HoursId": 558,
+    "ResourceId": 134,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "11:30 AM",
+    "CloseTime": "1:15 PM"
+  },
+  {
+    "HoursId": 559,
+    "ResourceId": 134,
+    "DayOfWeek": "Friday",
+    "OpenTime": "11:30 AM",
+    "CloseTime": "1:15 PM"
+  },
+  {
+    "HoursId": 560,
+    "ResourceId": 134,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "11:30 AM",
+    "CloseTime": "1:15 PM"
+  },
+  {
+    "HoursId": 561,
+    "ResourceId": 135,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 562,
+    "ResourceId": 136,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 563,
+    "ResourceId": 137,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 564,
+    "ResourceId": 138,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 565,
+    "ResourceId": 139,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 566,
+    "ResourceId": 139,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 567,
+    "ResourceId": 139,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 568,
+    "ResourceId": 139,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 569,
+    "ResourceId": 139,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 570,
+    "ResourceId": 139,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 571,
+    "ResourceId": 139,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 572,
+    "ResourceId": 140,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 573,
+    "ResourceId": 140,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 574,
+    "ResourceId": 140,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 575,
+    "ResourceId": 140,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 576,
+    "ResourceId": 140,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 577,
+    "ResourceId": 140,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 578,
+    "ResourceId": 140,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 579,
+    "ResourceId": 141,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 580,
+    "ResourceId": 142,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 581,
+    "ResourceId": 143,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 582,
+    "ResourceId": 144,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 583,
+    "ResourceId": 145,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 584,
+    "ResourceId": 146,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 585,
+    "ResourceId": 147,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 586,
+    "ResourceId": 147,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 587,
+    "ResourceId": 147,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 588,
+    "ResourceId": 147,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 589,
+    "ResourceId": 147,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 590,
+    "ResourceId": 147,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "12:00 PM"
+  },
+  {
+    "HoursId": 591,
+    "ResourceId": 147,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 592,
+    "ResourceId": 148,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 593,
+    "ResourceId": 149,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 594,
+    "ResourceId": 149,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 595,
+    "ResourceId": 149,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 596,
+    "ResourceId": 149,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 597,
+    "ResourceId": 149,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 598,
+    "ResourceId": 149,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 599,
+    "ResourceId": 149,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 600,
+    "ResourceId": 150,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 601,
+    "ResourceId": 151,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 602,
+    "ResourceId": 151,
+    "DayOfWeek": "Monday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "3:00 PM"
+  },
+  {
+    "HoursId": 603,
+    "ResourceId": 151,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "3:00 PM"
+  },
+  {
+    "HoursId": 604,
+    "ResourceId": 151,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "3:00 PM"
+  },
+  {
+    "HoursId": 605,
+    "ResourceId": 151,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "3:00 PM"
+  },
+  {
+    "HoursId": 606,
+    "ResourceId": 151,
+    "DayOfWeek": "Friday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "12:00 PM"
+  },
+  {
+    "HoursId": 607,
+    "ResourceId": 151,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 608,
+    "ResourceId": 152,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 609,
+    "ResourceId": 153,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 610,
+    "ResourceId": 154,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 611,
+    "ResourceId": 154,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 612,
+    "ResourceId": 154,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 613,
+    "ResourceId": 154,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 614,
+    "ResourceId": 154,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 615,
+    "ResourceId": 154,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "1:00 PM"
+  },
+  {
+    "HoursId": 616,
+    "ResourceId": 154,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 617,
+    "ResourceId": 155,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 618,
+    "ResourceId": 155,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 619,
+    "ResourceId": 155,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 620,
+    "ResourceId": 155,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 621,
+    "ResourceId": 155,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 622,
+    "ResourceId": 155,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 623,
+    "ResourceId": 155,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 624,
+    "ResourceId": 156,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 625,
+    "ResourceId": 156,
+    "DayOfWeek": "Monday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 626,
+    "ResourceId": 156,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "3:00 PM"
+  },
+  {
+    "HoursId": 627,
+    "ResourceId": 156,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "3:00 PM"
+  },
+  {
+    "HoursId": 628,
+    "ResourceId": 156,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "3:00 PM"
+  },
+  {
+    "HoursId": 629,
+    "ResourceId": 156,
+    "DayOfWeek": "Friday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 630,
+    "ResourceId": 156,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 631,
+    "ResourceId": 157,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 632,
+    "ResourceId": 157,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 633,
+    "ResourceId": 157,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 634,
+    "ResourceId": 157,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 635,
+    "ResourceId": 157,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 636,
+    "ResourceId": 157,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "3:00 PM"
+  },
+  {
+    "HoursId": 637,
+    "ResourceId": 157,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 638,
+    "ResourceId": 158,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 639,
+    "ResourceId": 158,
+    "DayOfWeek": "Monday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 640,
+    "ResourceId": 158,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 641,
+    "ResourceId": 158,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 642,
+    "ResourceId": 158,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 643,
+    "ResourceId": 158,
+    "DayOfWeek": "Friday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 644,
+    "ResourceId": 158,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 645,
+    "ResourceId": 159,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 646,
+    "ResourceId": 159,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 647,
+    "ResourceId": 159,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 648,
+    "ResourceId": 159,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 649,
+    "ResourceId": 159,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 650,
+    "ResourceId": 159,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 651,
+    "ResourceId": 159,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 652,
+    "ResourceId": 160,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 653,
+    "ResourceId": 161,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 654,
+    "ResourceId": 161,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 655,
+    "ResourceId": 161,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 656,
+    "ResourceId": 161,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 657,
+    "ResourceId": 161,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 658,
+    "ResourceId": 161,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 659,
+    "ResourceId": 161,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 660,
+    "ResourceId": 162,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 661,
+    "ResourceId": 163,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 662,
+    "ResourceId": 164,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 663,
+    "ResourceId": 164,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 664,
+    "ResourceId": 164,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 665,
+    "ResourceId": 164,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 666,
+    "ResourceId": 164,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 667,
+    "ResourceId": 164,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 668,
+    "ResourceId": 164,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 669,
+    "ResourceId": 165,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 670,
+    "ResourceId": 166,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 671,
+    "ResourceId": 167,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 672,
+    "ResourceId": 168,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 673,
+    "ResourceId": 169,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 674,
+    "ResourceId": 170,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 675,
+    "ResourceId": 170,
+    "DayOfWeek": "Monday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 676,
+    "ResourceId": 170,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 677,
+    "ResourceId": 170,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 678,
+    "ResourceId": 170,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 679,
+    "ResourceId": 170,
+    "DayOfWeek": "Friday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 680,
+    "ResourceId": 170,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "12:00 PM"
+  },
+  {
+    "HoursId": 681,
+    "ResourceId": 171,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 682,
+    "ResourceId": 172,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 683,
+    "ResourceId": 172,
+    "DayOfWeek": "Monday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 684,
+    "ResourceId": 172,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 685,
+    "ResourceId": 172,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 686,
+    "ResourceId": 172,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 687,
+    "ResourceId": 172,
+    "DayOfWeek": "Friday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 688,
+    "ResourceId": 172,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 689,
+    "ResourceId": 173,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 690,
+    "ResourceId": 173,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 691,
+    "ResourceId": 173,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 692,
+    "ResourceId": 173,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 693,
+    "ResourceId": 173,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 694,
+    "ResourceId": 173,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 695,
+    "ResourceId": 173,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 696,
+    "ResourceId": 174,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 697,
+    "ResourceId": 174,
+    "DayOfWeek": "Monday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 698,
+    "ResourceId": 174,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "12:00 PM"
+  },
+  {
+    "HoursId": 699,
+    "ResourceId": 174,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 700,
+    "ResourceId": 174,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 701,
+    "ResourceId": 174,
+    "DayOfWeek": "Friday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 702,
+    "ResourceId": 174,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "12:00 PM"
+  },
+  {
+    "HoursId": 703,
+    "ResourceId": 175,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 704,
+    "ResourceId": 175,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 705,
+    "ResourceId": 175,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 706,
+    "ResourceId": 175,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 707,
+    "ResourceId": 175,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 708,
+    "ResourceId": 175,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 709,
+    "ResourceId": 175,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 710,
+    "ResourceId": 176,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 711,
+    "ResourceId": 177,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 712,
+    "ResourceId": 177,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 713,
+    "ResourceId": 177,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 714,
+    "ResourceId": 177,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 715,
+    "ResourceId": 177,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 716,
+    "ResourceId": 177,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 717,
+    "ResourceId": 177,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 718,
+    "ResourceId": 178,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 719,
+    "ResourceId": 178,
+    "DayOfWeek": "Monday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 720,
+    "ResourceId": 178,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 721,
+    "ResourceId": 178,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 722,
+    "ResourceId": 178,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 723,
+    "ResourceId": 178,
+    "DayOfWeek": "Friday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 724,
+    "ResourceId": 178,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 725,
+    "ResourceId": 179,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 726,
+    "ResourceId": 180,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "1:00 PM"
+  },
+  {
+    "HoursId": 727,
+    "ResourceId": 180,
+    "DayOfWeek": "Monday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 728,
+    "ResourceId": 180,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 729,
+    "ResourceId": 180,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "9:00 PM"
+  },
+  {
+    "HoursId": 730,
+    "ResourceId": 180,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 731,
+    "ResourceId": 180,
+    "DayOfWeek": "Friday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 732,
+    "ResourceId": 180,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 733,
+    "ResourceId": 181,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 734,
+    "ResourceId": 181,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 735,
+    "ResourceId": 181,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 736,
+    "ResourceId": 181,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 737,
+    "ResourceId": 181,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 738,
+    "ResourceId": 181,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 739,
+    "ResourceId": 181,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 740,
+    "ResourceId": 182,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 741,
+    "ResourceId": 182,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 742,
+    "ResourceId": 182,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 743,
+    "ResourceId": 182,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 744,
+    "ResourceId": 182,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 745,
+    "ResourceId": 182,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 746,
+    "ResourceId": 182,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 747,
+    "ResourceId": 183,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 748,
+    "ResourceId": 183,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 749,
+    "ResourceId": 183,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 750,
+    "ResourceId": 183,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 751,
+    "ResourceId": 183,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 752,
+    "ResourceId": 183,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 753,
+    "ResourceId": 183,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 754,
+    "ResourceId": 184,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 755,
+    "ResourceId": 185,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 756,
+    "ResourceId": 186,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 757,
+    "ResourceId": 187,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 758,
+    "ResourceId": 187,
+    "DayOfWeek": "Monday",
+    "OpenTime": "10:00 AM",
+    "CloseTime": "1:00 PM"
+  },
+  {
+    "HoursId": 759,
+    "ResourceId": 187,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 760,
+    "ResourceId": 187,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "10:00 AM",
+    "CloseTime": "1:00 PM"
+  },
+  {
+    "HoursId": 761,
+    "ResourceId": 187,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 762,
+    "ResourceId": 187,
+    "DayOfWeek": "Friday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 763,
+    "ResourceId": 187,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 764,
+    "ResourceId": 188,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 765,
+    "ResourceId": 189,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 766,
+    "ResourceId": 190,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 767,
+    "ResourceId": 191,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 768,
+    "ResourceId": 192,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 769,
+    "ResourceId": 192,
+    "DayOfWeek": "Monday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "10:00 PM"
+  },
+  {
+    "HoursId": 770,
+    "ResourceId": 192,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "10:00 PM"
+  },
+  {
+    "HoursId": 771,
+    "ResourceId": 192,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "10:00 PM"
+  },
+  {
+    "HoursId": 772,
+    "ResourceId": 192,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "10:00 PM"
+  },
+  {
+    "HoursId": 773,
+    "ResourceId": 192,
+    "DayOfWeek": "Friday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "10:00 PM"
+  },
+  {
+    "HoursId": 774,
+    "ResourceId": 192,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 775,
+    "ResourceId": 193,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 776,
+    "ResourceId": 194,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 777,
+    "ResourceId": 195,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 778,
+    "ResourceId": 195,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 779,
+    "ResourceId": 195,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 780,
+    "ResourceId": 195,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 781,
+    "ResourceId": 195,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 782,
+    "ResourceId": 195,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:30 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 783,
+    "ResourceId": 195,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 784,
+    "ResourceId": 196,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 785,
+    "ResourceId": 196,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 786,
+    "ResourceId": 196,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 787,
+    "ResourceId": 196,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 788,
+    "ResourceId": 196,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 789,
+    "ResourceId": 196,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 790,
+    "ResourceId": 196,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 791,
+    "ResourceId": 197,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 792,
+    "ResourceId": 197,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 793,
+    "ResourceId": 197,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 794,
+    "ResourceId": 197,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 795,
+    "ResourceId": 197,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 796,
+    "ResourceId": 197,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 797,
+    "ResourceId": 197,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 798,
+    "ResourceId": 198,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 799,
+    "ResourceId": 198,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 800,
+    "ResourceId": 198,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 801,
+    "ResourceId": 198,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 802,
+    "ResourceId": 198,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 803,
+    "ResourceId": 198,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 804,
+    "ResourceId": 198,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 805,
+    "ResourceId": 199,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 806,
+    "ResourceId": 200,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 807,
+    "ResourceId": 200,
+    "DayOfWeek": "Monday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 808,
+    "ResourceId": 200,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 809,
+    "ResourceId": 200,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 810,
+    "ResourceId": 200,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 811,
+    "ResourceId": 200,
+    "DayOfWeek": "Friday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 812,
+    "ResourceId": 200,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 813,
+    "ResourceId": 201,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 814,
+    "ResourceId": 201,
+    "DayOfWeek": "Monday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 815,
+    "ResourceId": 201,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 816,
+    "ResourceId": 201,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 817,
+    "ResourceId": 201,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 818,
+    "ResourceId": 201,
+    "DayOfWeek": "Friday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 819,
+    "ResourceId": 201,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 820,
+    "ResourceId": 202,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 821,
+    "ResourceId": 202,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 822,
+    "ResourceId": 202,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 823,
+    "ResourceId": 202,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 824,
+    "ResourceId": 202,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 825,
+    "ResourceId": 202,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 826,
+    "ResourceId": 202,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 827,
+    "ResourceId": 203,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "4:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 828,
+    "ResourceId": 203,
+    "DayOfWeek": "Monday",
+    "OpenTime": "4:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 829,
+    "ResourceId": 203,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "4:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 830,
+    "ResourceId": 203,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "4:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 831,
+    "ResourceId": 203,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "4:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 832,
+    "ResourceId": 203,
+    "DayOfWeek": "Friday",
+    "OpenTime": "4:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 833,
+    "ResourceId": 203,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "4:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 834,
+    "ResourceId": 204,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 835,
+    "ResourceId": 205,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 836,
+    "ResourceId": 205,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "6:00 PM"
+  },
+  {
+    "HoursId": 837,
+    "ResourceId": 205,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "6:00 PM"
+  },
+  {
+    "HoursId": 838,
+    "ResourceId": 205,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "6:00 PM"
+  },
+  {
+    "HoursId": 839,
+    "ResourceId": 205,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "6:00 PM"
+  },
+  {
+    "HoursId": 840,
+    "ResourceId": 205,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "6:00 PM"
+  },
+  {
+    "HoursId": 841,
+    "ResourceId": 205,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 842,
+    "ResourceId": 206,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "3:00 PM"
+  },
+  {
+    "HoursId": 843,
+    "ResourceId": 206,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "3:00 PM"
+  },
+  {
+    "HoursId": 844,
+    "ResourceId": 206,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "3:00 PM"
+  },
+  {
+    "HoursId": 845,
+    "ResourceId": 206,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "3:00 PM"
+  },
+  {
+    "HoursId": 846,
+    "ResourceId": 206,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "3:00 PM"
+  },
+  {
+    "HoursId": 847,
+    "ResourceId": 206,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "3:00 PM"
+  },
+  {
+    "HoursId": 848,
+    "ResourceId": 206,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "3:00 PM"
+  },
+  {
+    "HoursId": 849,
+    "ResourceId": 207,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 850,
+    "ResourceId": 208,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 851,
+    "ResourceId": 209,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 852,
+    "ResourceId": 210,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 853,
+    "ResourceId": 210,
+    "DayOfWeek": "Monday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 854,
+    "ResourceId": 210,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 855,
+    "ResourceId": 210,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 856,
+    "ResourceId": 210,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 857,
+    "ResourceId": 210,
+    "DayOfWeek": "Friday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 858,
+    "ResourceId": 210,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 859,
+    "ResourceId": 211,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 860,
+    "ResourceId": 211,
+    "DayOfWeek": "Monday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 861,
+    "ResourceId": 211,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 862,
+    "ResourceId": 211,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 863,
+    "ResourceId": 211,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 864,
+    "ResourceId": 211,
+    "DayOfWeek": "Friday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 865,
+    "ResourceId": 211,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 866,
+    "ResourceId": 212,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 867,
+    "ResourceId": 212,
+    "DayOfWeek": "Monday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 868,
+    "ResourceId": 212,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 869,
+    "ResourceId": 212,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 870,
+    "ResourceId": 212,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 871,
+    "ResourceId": 212,
+    "DayOfWeek": "Friday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 872,
+    "ResourceId": 212,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 873,
+    "ResourceId": 213,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 874,
+    "ResourceId": 214,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 875,
+    "ResourceId": 215,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 876,
+    "ResourceId": 216,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 877,
+    "ResourceId": 217,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": "Sunday: Closed\nMonday: 8:00 AM - 6:00 PM\nTuesday: 8:00 AM - 6:00 PM\nWednesday: 8:00 AM - 6:00 PM\nThursday: 8:00 AM - 6:00 PM\nFriday: 8:00 AM - 6:00 PM\nSaturday: Closed"
+  },
+  {
+    "HoursId": 878,
+    "ResourceId": 217,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "6:00 PM"
+  },
+  {
+    "HoursId": 879,
+    "ResourceId": 217,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "6:00 PM"
+  },
+  {
+    "HoursId": 880,
+    "ResourceId": 217,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "6:00 PM"
+  },
+  {
+    "HoursId": 881,
+    "ResourceId": 217,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "6:00 PM"
+  },
+  {
+    "HoursId": 882,
+    "ResourceId": 217,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "6:00 PM"
+  },
+  {
+    "HoursId": 883,
+    "ResourceId": 217,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 884,
+    "ResourceId": 218,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 885,
+    "ResourceId": 218,
+    "DayOfWeek": "Monday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 886,
+    "ResourceId": 218,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 887,
+    "ResourceId": 218,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 888,
+    "ResourceId": 218,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 889,
+    "ResourceId": 218,
+    "DayOfWeek": "Friday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 890,
+    "ResourceId": 218,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 891,
+    "ResourceId": 219,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 892,
+    "ResourceId": 219,
+    "DayOfWeek": "Monday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 893,
+    "ResourceId": 219,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 894,
+    "ResourceId": 219,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 895,
+    "ResourceId": 219,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 896,
+    "ResourceId": 219,
+    "DayOfWeek": "Friday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 897,
+    "ResourceId": 219,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 898,
+    "ResourceId": 220,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 899,
+    "ResourceId": 220,
+    "DayOfWeek": "Monday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 900,
+    "ResourceId": 220,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 901,
+    "ResourceId": 220,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 902,
+    "ResourceId": 220,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 903,
+    "ResourceId": 220,
+    "DayOfWeek": "Friday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 904,
+    "ResourceId": 220,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "12:00 AM",
+    "CloseTime": "12:00 AM"
+  },
+  {
+    "HoursId": 905,
+    "ResourceId": 221,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 906,
+    "ResourceId": 221,
+    "DayOfWeek": "Monday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 907,
+    "ResourceId": 221,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 908,
+    "ResourceId": 221,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 909,
+    "ResourceId": 221,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:30 PM"
+  },
+  {
+    "HoursId": 910,
+    "ResourceId": 221,
+    "DayOfWeek": "Friday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 911,
+    "ResourceId": 221,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 912,
+    "ResourceId": 222,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 913,
+    "ResourceId": 223,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "7:00 PM"
+  },
+  {
+    "HoursId": 914,
+    "ResourceId": 223,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "7:00 PM"
+  },
+  {
+    "HoursId": 915,
+    "ResourceId": 223,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "7:00 PM"
+  },
+  {
+    "HoursId": 916,
+    "ResourceId": 223,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "7:00 PM"
+  },
+  {
+    "HoursId": 917,
+    "ResourceId": 223,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "7:00 PM"
+  },
+  {
+    "HoursId": 918,
+    "ResourceId": 223,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "7:00 PM"
+  },
+  {
+    "HoursId": 919,
+    "ResourceId": 223,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "7:00 PM"
+  },
+  {
+    "HoursId": 920,
+    "ResourceId": 224,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 921,
+    "ResourceId": 224,
+    "DayOfWeek": "Monday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 922,
+    "ResourceId": 224,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 923,
+    "ResourceId": 224,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 924,
+    "ResourceId": 224,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 925,
+    "ResourceId": 224,
+    "DayOfWeek": "Friday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 926,
+    "ResourceId": 224,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 927,
+    "ResourceId": 225,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 928,
+    "ResourceId": 226,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 929,
+    "ResourceId": 227,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 930,
+    "ResourceId": 227,
+    "DayOfWeek": "Monday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 931,
+    "ResourceId": 227,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 932,
+    "ResourceId": 227,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 933,
+    "ResourceId": 227,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 934,
+    "ResourceId": 227,
+    "DayOfWeek": "Friday",
+    "OpenTime": "8:00 AM",
+    "CloseTime": "4:00 PM"
+  },
+  {
+    "HoursId": 935,
+    "ResourceId": 227,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 936,
+    "ResourceId": 228,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 937,
+    "ResourceId": 229,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 938,
+    "ResourceId": 230,
+    "DayOfWeek": "",
+    "OpenTime": "",
+    "CloseTime": ""
+  },
+  {
+    "HoursId": 939,
+    "ResourceId": 231,
+    "DayOfWeek": "Sunday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 940,
+    "ResourceId": 231,
+    "DayOfWeek": "Monday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 941,
+    "ResourceId": 231,
+    "DayOfWeek": "Tuesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 942,
+    "ResourceId": 231,
+    "DayOfWeek": "Wednesday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 943,
+    "ResourceId": 231,
+    "DayOfWeek": "Thursday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 944,
+    "ResourceId": 231,
+    "DayOfWeek": "Friday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  },
+  {
+    "HoursId": 945,
+    "ResourceId": 231,
+    "DayOfWeek": "Saturday",
+    "OpenTime": "9:00 AM",
+    "CloseTime": "5:00 PM"
+  }
+]

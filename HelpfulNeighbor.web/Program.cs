@@ -3,23 +3,20 @@ using HelpfulNeighbor.web.Features.Authorization;
 using HelpfulNeighbor.web.Features.Interfaces;
 using HelpfulNeighbor.web.Features.Repositories;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc.ApplicationModels;
 using Microsoft.EntityFrameworkCore;
 using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddDbContext<DataContext>(options =>
-{
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DataContext"));
-});
 
-/*var app = builder.Build();
-if (args.Length == 1 && args[0].ToLower() == "seeddata")
-    SeedHelper(app);*/
-
+builder.Services.AddControllers();
+builder.Services.AddTransient<SeedHelper>();
+builder.Services.AddScoped<IResourceRepository, ResourceRepository>();
+builder.Services.AddScoped<IShelterRepository, ShelterRepository>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddIdentity<User, Role>().AddEntityFrameworkStores<DataContext>().AddDefaultTokenProviders();
-
 builder.Services.ConfigureApplicationCookie(options =>
 {
     options.Events.OnRedirectToLogin = context =>
@@ -35,30 +32,38 @@ builder.Services.ConfigureApplicationCookie(options =>
     };
 });
 
-
-builder.Services.AddScoped<IResourceRepository, ResourceRepository>();
-builder.Services.AddScoped<IShelterRepository, ShelterRepository>();
-builder.Services.AddScoped<IUserRepository, UserRepository>();
-
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
+builder.Services.AddDbContext<DataContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DataContext"));
+});
 
 var app = builder.Build();
 
-using (var scope = app.Services.CreateScope())
-{
-    await SeedHelper.Something(scope.ServiceProvider);
-}
+if (args.Length == 1 && args[0].ToLower() == "seeddata")
+    SeedHelper(app);
 
-/*    using (var scope = scopedFactory.CreateScope())
-        var service = scope.ServiceProvider.GetService<SeededData>();
+void SeedHelper(IHost app)
+{
+    var scopedFactory = app.Services.GetService<IServiceScopeFactory>();
+
+    using (var scope = scopedFactory.CreateScope())
     {
-        service.SeedDataContext();
+        var service = scope.ServiceProvider.GetService<SeedHelper>();
+
+        // Provide a list of JSON file paths here
+        var jsonFilePaths = new List<string>
+        {
+            "DataObjects/Resource.json",
+            "DataObjects/Shelter.json",
+            "DataObjects/Location.json",
+            "DataObjects/HoursOperation.json"
+        };
+        service.SeedDataFromJson(jsonFilePaths);
     }
-}*/
+}
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
