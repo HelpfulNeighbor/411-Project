@@ -54,11 +54,17 @@ namespace HelpfulNeighbor.web.Data
                 .WithOne(s => s.Location)
                 .HasForeignKey<Shelter>(s => s.LocationId);
 
-            // Location to UserCurrentLocation (one-to-one)
-            modelBuilder.Entity<Location>()
-                .HasOne(l => l.UserCurrentLocation)
-                .WithOne(ucl => ucl.Location)
-                .HasForeignKey<UserCurrentLocation>(ucl => ucl.LocationId);
+            // User to UserCurrentLocation (one-to-one)
+            modelBuilder.Entity<User>()
+                .HasOne(u => u.UserCurrentLocation)
+                .WithOne(ul => ul.User)
+                .HasForeignKey<UserCurrentLocation>(ul => ul.UserId);
+
+            // UserCurrentLocation to User (one-to-one)
+            modelBuilder.Entity<UserCurrentLocation>()
+                .HasOne(ul => ul.User)
+                .WithOne(u => u.UserCurrentLocation)
+                .HasForeignKey<UserCurrentLocation>(ul => ul.UserId);
 
             // UserRole
             modelBuilder.Entity<UserRole>()
@@ -84,28 +90,18 @@ namespace HelpfulNeighbor.web.Data
             modelBuilder.Entity<SavedResource>()
                 .HasKey(sr => sr.SavedResourceId);
 
+            //SavedShelter
+            modelBuilder.Entity<SavedShelter>()
+                .HasKey(ss => ss.SavedShelterId);
+
             // UserCurrentLocation
             modelBuilder.Entity<UserCurrentLocation>()
                 .HasKey(cl => cl.Id);
-
-            // IdentityUserRole configuration
-            modelBuilder.Entity<IdentityUserRole<int>>()
-                .HasKey(ur => new { ur.UserId, ur.RoleId });
-
-            // IdentityUserClaim configuration
-            modelBuilder.Entity<IdentityUserClaim<int>>()
-                .ToTable("UserClaims");
-
-            // IdentityUserLogin configuration
-            modelBuilder.Entity<IdentityUserLogin<int>>()
-                .ToTable("UserLogins")
-                .HasKey(ul => new { ul.LoginProvider, ul.ProviderKey, ul.UserId });
-
-            // IdentityUserToken configuration
-            modelBuilder.Entity<IdentityUserToken<int>>()
-                .ToTable("UserTokens")
-                .HasKey(ut => new { ut.UserId, ut.LoginProvider, ut.Name });
         }
     }
 }
+
+
+
+
 
