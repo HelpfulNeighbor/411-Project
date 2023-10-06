@@ -1,5 +1,6 @@
-﻿using HelpfulNeighbor.web.Interfaces;
-using HelpfulNeighbor.web.Models;
+﻿using HelpfulNeighbor.web.Features.Interfaces;
+using HelpfulNeighbor.web.Features.Models;
+using HelpfulNeighbor.web.Features.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HelpfulNeighbor.web.Controllers
@@ -13,6 +14,7 @@ namespace HelpfulNeighbor.web.Controllers
         {
             _resourceRepository = resourceRepository;
         }
+
         [HttpGet]
         [ProducesResponseType(200, Type = typeof(IEnumerable<Resource>))]
         public IActionResult GetResources()
@@ -23,6 +25,7 @@ namespace HelpfulNeighbor.web.Controllers
             {
                 return BadRequest(ModelState);
             }
+
             return Ok(resource);
         }
 

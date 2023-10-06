@@ -1,28 +1,19 @@
-import { StatusBar } from 'expo-status-bar';
-import { Button, StyleSheet, Text, View } from 'react-native';
-import HomeScreen from './screens/HomeScreen/HomeScreen';
+import React from 'react';
+import 'react-native-gesture-handler';
+//import { AuthProvider } from "./authentication/AuthContext";
+//import AppNav from './navigation/app.nav';
 import { NavigationContainer } from '@react-navigation/native';
+import BottomTabNavigator from './navigation/BottomTabNav';
 
-export default function App() {
-    return (
-       <View style={styles.container}>
-        <NavigationContainer>
-        <Button
-  onPress={() => {
-    console.log('You tapped the button!');
-  }}
-  title="Press Me"
-/>
-        </NavigationContainer>
-       </View>
-    );
+const App = () => {
+  return (
+    <NavigationContainer>
+      <BottomTabNavigator/>
+    </NavigationContainer>
+    
+  );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
+
+

@@ -1,5 +1,5 @@
-﻿using HelpfulNeighbor.web.Models;
-using HelpfulNeighbor.web.Repositories;
+﻿using HelpfulNeighbor.web.Features.Models;
+using HelpfulNeighbor.web.Features.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HelpfulNeighbor.web.Controllers

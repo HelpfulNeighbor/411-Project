@@ -1,9 +1,17 @@
 import React from "react";
-import { Button } from "@react-native-material/core";
+import { SafeAreaView, ScrollView,Text } from "react-native";
+import Style from "./Style";
 
-const App = () => (
-    <Button title="Click Me"/>
+const ProfileScreen = () => {
 
-);
 
-export default App;
+    return (
+        <SafeAreaView style={Style.container}>
+            <ScrollView>
+                <Text style ={Style.title}>Profile Screen</Text>
+            </ScrollView>
+        </SafeAreaView>
+    )
+}
+
+export default ProfileScreen;
