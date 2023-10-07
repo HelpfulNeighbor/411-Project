@@ -66,22 +66,6 @@ namespace HelpfulNeighbor.web.Data
                 .WithOne(u => u.UserCurrentLocation)
                 .HasForeignKey<UserCurrentLocation>(ul => ul.UserId);
 
-            // UserRole
-            modelBuilder.Entity<UserRole>()
-                .HasKey(ur => new { ur.UserId, ur.RoleId });
-            modelBuilder.Entity<UserRole>()
-                .HasOne(ur => ur.User)
-                .WithMany(u => u.Roles)
-                .HasForeignKey(ur => ur.UserId);
-            modelBuilder.Entity<UserRole>()
-                .HasOne(ur => ur.Role)
-                .WithMany()
-                .HasForeignKey(ur => ur.RoleId);
-
-            // Role
-            modelBuilder.Entity<Role>()
-                .HasKey(r => r.Id);
-
             // HoursOfOperation
             modelBuilder.Entity<HoursOfOperation>()
                 .HasKey(ho => ho.HoursId);
@@ -89,14 +73,34 @@ namespace HelpfulNeighbor.web.Data
             // SavedResources
             modelBuilder.Entity<SavedResource>()
                 .HasKey(sr => sr.SavedResourceId);
+            modelBuilder.Entity<SavedResource>()
+                .HasOne(sr => sr.Resource)
+                .WithMany()
+                .HasForeignKey(sr => sr.ResourceId);
+            modelBuilder.Entity<SavedResource>()
+               .HasOne(sr => sr.User)
+               .WithMany(u => u.SavedResources)
+               .HasForeignKey(sr => sr.UserId);
 
             //SavedShelter
             modelBuilder.Entity<SavedShelter>()
                 .HasKey(ss => ss.SavedShelterId);
+            modelBuilder.Entity<SavedShelter>()
+              .HasOne(ss => ss.Shelter)
+              .WithMany()
+              .HasForeignKey(ss => ss.ResourceId);
+            modelBuilder.Entity<SavedShelter>()
+                .HasOne(ss => ss.User)
+                .WithMany(u => u.SavedShelters)
+                .HasForeignKey(ss => ss.UserId);
 
             // UserCurrentLocation
             modelBuilder.Entity<UserCurrentLocation>()
                 .HasKey(cl => cl.Id);
+            modelBuilder.Entity<UserCurrentLocation>()
+                .HasOne(ul => ul.User)
+                .WithOne(u => u.UserCurrentLocation)
+                .HasForeignKey<UserCurrentLocation>(ul => ul.UserId);
         }
     }
 }

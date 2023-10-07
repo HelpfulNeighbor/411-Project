@@ -2,7 +2,7 @@
 
 namespace HelpfulNeighbor.web.Features.Interfaces
 {
-    public interface IHoursOfOperation
+    public interface IHoursOfOperationRepository
     {
         public ICollection<HoursOfOperation> GetHoursOfOperations();
     }

@@ -10,6 +10,6 @@ namespace HelpfulNeighbor.web.Features.Models
         public int UserId { get; set; } //Foregin key to user (many-to-one)
         public int ResourceId { get; set; } //Foreign key to resource
         public User User { get; set; }// Navigation property to User(many-to-one)
-        public Resource Resource { get; set; } // Navigation property to User(one-to-one)
+        public virtual Resource Resource { get; set; }
     }
 }

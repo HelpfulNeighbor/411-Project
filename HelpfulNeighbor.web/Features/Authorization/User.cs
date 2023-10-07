@@ -9,8 +9,8 @@ namespace HelpfulNeighbor.web.Features.Authorization
         public string LastName { get; set; }
 
         public virtual ICollection<UserRole> Roles { get; set; } = new List<UserRole>();
-
-        // Foreign key to UserCurrentLocation (one-to-one)
+        public virtual ICollection<SavedResource> SavedResources { get; set; } = new List<SavedResource>();
+        public virtual ICollection<SavedShelter> SavedShelters { get; set; } = new List<SavedShelter>();
         public int? UserCurrentLocationId { get; set; }
         public UserCurrentLocation UserCurrentLocation { get; set; }
     }

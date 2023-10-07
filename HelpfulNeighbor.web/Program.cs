@@ -18,7 +18,11 @@ builder.Services.AddControllers();
 builder.Services.AddTransient<SeedHelper>();
 builder.Services.AddScoped<IResourceRepository, ResourceRepository>();
 builder.Services.AddScoped<IShelterRepository, ShelterRepository>();
-builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IHoursOfOperationRepository, HoursOfOperationRepository>();
+builder.Services.AddScoped<ILocationRepository, LocationRepository>();
+builder.Services.AddScoped<ISavedResourceRepository, SavedResourceRepository>();
+builder.Services.AddScoped<ISavedShelterRepository, SavedShelterRepository>();
+builder.Services.AddScoped<IUserCurrentLocationRepository, UserCurrentLocationRepository>();
 builder.Services.AddIdentity<User, Role>().AddEntityFrameworkStores<DataContext>().AddDefaultTokenProviders();
 builder.Services.ConfigureApplicationCookie(options =>
 {
