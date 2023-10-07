@@ -101,6 +101,8 @@ namespace HelpfulNeighbor.web.Data
                 .HasOne(ul => ul.User)
                 .WithOne(u => u.UserCurrentLocation)
                 .HasForeignKey<UserCurrentLocation>(ul => ul.UserId);
+
+            modelBuilder.ApplyConfiguration(new UserRoleConfig());
         }
     }
 }
