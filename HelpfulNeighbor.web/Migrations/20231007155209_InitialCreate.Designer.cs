@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HelpfulNeighbor.web.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20230927225438_UpdateUsers")]
-    partial class UpdateUsers
+    [Migration("20231007155209_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -113,6 +113,9 @@ namespace HelpfulNeighbor.web.Migrations
 
                     b.Property<bool>("TwoFactorEnabled")
                         .HasColumnType("bit");
+
+                    b.Property<int?>("UserCurrentLocationId")
+                        .HasColumnType("int");
 
                     b.Property<string>("UserName")
                         .HasMaxLength(256)
@@ -365,7 +368,8 @@ namespace HelpfulNeighbor.web.Migrations
                     b.HasIndex("LocationId")
                         .IsUnique();
 
-                    b.HasIndex("UserId");
+                    b.HasIndex("UserId")
+                        .IsUnique();
 
                     b.ToTable("UserCurrentLocations");
                 });
@@ -508,7 +512,7 @@ namespace HelpfulNeighbor.web.Migrations
                         .IsRequired();
 
                     b.HasOne("HelpfulNeighbor.web.Features.Authorization.User", "User")
-                        .WithMany()
+                        .WithMany("SavedResources")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -520,19 +524,19 @@ namespace HelpfulNeighbor.web.Migrations
 
             modelBuilder.Entity("HelpfulNeighbor.web.Features.Models.SavedShelter", b =>
                 {
-                    b.HasOne("HelpfulNeighbor.web.Features.Models.Resource", "Resource")
+                    b.HasOne("HelpfulNeighbor.web.Features.Models.Shelter", "Shelter")
                         .WithMany()
                         .HasForeignKey("ResourceId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("HelpfulNeighbor.web.Features.Authorization.User", "User")
-                        .WithMany()
+                        .WithMany("SavedShelters")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Resource");
+                    b.Navigation("Shelter");
 
                     b.Navigation("User");
                 });
@@ -557,8 +561,8 @@ namespace HelpfulNeighbor.web.Migrations
                         .IsRequired();
 
                     b.HasOne("HelpfulNeighbor.web.Features.Authorization.User", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId")
+                        .WithOne("UserCurrentLocation")
+                        .HasForeignKey("HelpfulNeighbor.web.Features.Models.UserCurrentLocation", "UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -611,6 +615,13 @@ namespace HelpfulNeighbor.web.Migrations
             modelBuilder.Entity("HelpfulNeighbor.web.Features.Authorization.User", b =>
                 {
                     b.Navigation("Roles");
+
+                    b.Navigation("SavedResources");
+
+                    b.Navigation("SavedShelters");
+
+                    b.Navigation("UserCurrentLocation")
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("HelpfulNeighbor.web.Features.Models.Location", b =>

@@ -4,22 +4,26 @@ using HelpfulNeighbor.web.Features.Interfaces;
 using HelpfulNeighbor.web.Features.Repositories;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using System.Text.Json.Serialization;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddDbContext<DataContext>(options =>
-{
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DataContext"));
-});
 
-/*var app = builder.Build();
-if (args.Length == 1 && args[0].ToLower() == "seeddata")
-    SeedHelper(app);*/
-
+builder.Services.AddControllers();
+builder.Services.AddTransient<SeedHelper>();
+builder.Services.AddScoped<IResourceRepository, ResourceRepository>();
+builder.Services.AddScoped<IShelterRepository, ShelterRepository>();
+builder.Services.AddScoped<IHoursOfOperationRepository, HoursOfOperationRepository>();
+builder.Services.AddScoped<ILocationRepository, LocationRepository>();
+builder.Services.AddScoped<ISavedResourceRepository, SavedResourceRepository>();
+builder.Services.AddScoped<ISavedShelterRepository, SavedShelterRepository>();
+builder.Services.AddScoped<IUserCurrentLocationRepository, UserCurrentLocationRepository>();
 builder.Services.AddIdentity<User, Role>().AddEntityFrameworkStores<DataContext>().AddDefaultTokenProviders();
-
 builder.Services.ConfigureApplicationCookie(options =>
 {
     options.Events.OnRedirectToLogin = context =>
@@ -35,30 +39,21 @@ builder.Services.ConfigureApplicationCookie(options =>
     };
 });
 
-
-builder.Services.AddScoped<IResourceRepository, ResourceRepository>();
-builder.Services.AddScoped<IShelterRepository, ShelterRepository>();
-builder.Services.AddScoped<IUserRepository, UserRepository>();
-
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
+builder.Services.AddDbContext<DataContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DataContext"));
+});
 
 var app = builder.Build();
 
 using (var scope = app.Services.CreateScope())
 {
-    await SeedHelper.Something(scope.ServiceProvider);
+    await SeedHelper(scope.ServiceProvider);
 }
 
-/*    using (var scope = scopedFactory.CreateScope())
-        var service = scope.ServiceProvider.GetService<SeededData>();
-    {
-        service.SeedDataContext();
-    }
-}*/
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -91,3 +86,24 @@ app.UseSpa(spaBuilder =>
 });
 
 app.Run();
+
+async Task SeedHelper(IServiceProvider app)
+{
+    var scopedFactory = app.GetService<IServiceScopeFactory>();
+
+    using (var scope = scopedFactory.CreateScope())
+    {
+        var service = scope.ServiceProvider.GetService<SeedHelper>();
+
+        // Provide a list of JSON file paths here
+        var jsonFilePaths = new List<string>
+        {
+            "DataObjects/Resource.json",
+            "DataObjects/Shelter.json",
+            "DataObjects/Location.json",
+            "DataObjects/HoursOperation.json"
+        };
+        await service.SeedDataFromJson(jsonFilePaths);
+    }
+}
+

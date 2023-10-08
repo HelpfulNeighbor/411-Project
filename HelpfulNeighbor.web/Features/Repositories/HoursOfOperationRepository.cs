@@ -4,10 +4,10 @@ using HelpfulNeighbor.web.Features.Models;
 
 namespace HelpfulNeighbor.web.Features.Repositories
 {
-    public class IHoursOfOperationRepository : IHoursOfOperation
+    public class HoursOfOperationRepository : IHoursOfOperationRepository
     {
         private readonly DataContext _context;
-        public IHoursOfOperationRepository(DataContext context)
+        public HoursOfOperationRepository(DataContext context)
         {
             _context = context;
         }

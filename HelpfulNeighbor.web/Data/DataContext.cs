@@ -3,7 +3,6 @@ using HelpfulNeighbor.web.Features.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using System.Net;
 
 namespace HelpfulNeighbor.web.Data
 {
@@ -11,7 +10,7 @@ namespace HelpfulNeighbor.web.Data
     {
         public DataContext(DbContextOptions<DataContext> options) : base(options)
         {
-            
+
         }
         public DbSet<HoursOfOperation> HoursOfOperations { get; set; }
         public DbSet<Location> Locations { get; set; }
@@ -21,10 +20,6 @@ namespace HelpfulNeighbor.web.Data
         public DbSet<Shelter> Shelters { get; set; }
         public DbSet<UserCurrentLocation> UserCurrentLocations { get; set; }
 
-        public DataContext()
-        {
-        }
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -33,11 +28,11 @@ namespace HelpfulNeighbor.web.Data
             modelBuilder.Entity<Resource>()
                 .HasKey(r => r.ResourceId);
 
-            //Shelter
+            // Shelter
             modelBuilder.Entity<Shelter>()
                 .HasKey(r => r.ResourceId);
 
-            //Location
+            // Location
             modelBuilder.Entity<Location>()
                 .HasKey(l => l.LocationId);
             modelBuilder.Entity<Location>()
@@ -47,38 +42,72 @@ namespace HelpfulNeighbor.web.Data
                 .Property(l => l.Longitude)
                 .HasColumnType("decimal(9, 6)");
 
-            //UserRole
-            modelBuilder.Entity<UserRole>()
-            .HasKey(ur => new { ur.UserId, ur.RoleId });
-            modelBuilder.Entity<UserRole>()
-                .HasOne(ur => ur.User)
-                .WithMany(u => u.Roles)
-                .HasForeignKey(ur => ur.UserId);
-            modelBuilder.Entity<UserRole>()
-                .HasOne(ur => ur.Role)
-                .WithMany()
-                .HasForeignKey(ur => ur.RoleId);
+            // Location to Resource (one-to-one)
+            modelBuilder.Entity<Location>()
+                .HasOne(l => l.Resource)
+                .WithOne(r => r.Location)
+                .HasForeignKey<Resource>(r => r.LocationId);
 
-            //Role
-            modelBuilder.Entity<Role>()
-                .HasKey(r => r.Id);
+            // Location to Shelter (one-to-one)
+            modelBuilder.Entity<Location>()
+                .HasOne(l => l.Shelter)
+                .WithOne(s => s.Location)
+                .HasForeignKey<Shelter>(s => s.LocationId);
 
-            //HoursOfOperation
+            // User to UserCurrentLocation (one-to-one)
+            modelBuilder.Entity<User>()
+                .HasOne(u => u.UserCurrentLocation)
+                .WithOne(ul => ul.User)
+                .HasForeignKey<UserCurrentLocation>(ul => ul.UserId);
+
+            // UserCurrentLocation to User (one-to-one)
+            modelBuilder.Entity<UserCurrentLocation>()
+                .HasOne(ul => ul.User)
+                .WithOne(u => u.UserCurrentLocation)
+                .HasForeignKey<UserCurrentLocation>(ul => ul.UserId);
+
+            // HoursOfOperation
             modelBuilder.Entity<HoursOfOperation>()
                 .HasKey(ho => ho.HoursId);
 
-            //SavedResources
+            // SavedResources
             modelBuilder.Entity<SavedResource>()
                 .HasKey(sr => sr.SavedResourceId);
+            modelBuilder.Entity<SavedResource>()
+                .HasOne(sr => sr.Resource)
+                .WithMany()
+                .HasForeignKey(sr => sr.ResourceId);
+            modelBuilder.Entity<SavedResource>()
+               .HasOne(sr => sr.User)
+               .WithMany(u => u.SavedResources)
+               .HasForeignKey(sr => sr.UserId);
 
-            //UserCurrentLocation
+            //SavedShelter
+            modelBuilder.Entity<SavedShelter>()
+                .HasKey(ss => ss.SavedShelterId);
+            modelBuilder.Entity<SavedShelter>()
+              .HasOne(ss => ss.Shelter)
+              .WithMany()
+              .HasForeignKey(ss => ss.ResourceId);
+            modelBuilder.Entity<SavedShelter>()
+                .HasOne(ss => ss.User)
+                .WithMany(u => u.SavedShelters)
+                .HasForeignKey(ss => ss.UserId);
+
+            // UserCurrentLocation
             modelBuilder.Entity<UserCurrentLocation>()
                 .HasKey(cl => cl.Id);
+            modelBuilder.Entity<UserCurrentLocation>()
+                .HasOne(ul => ul.User)
+                .WithOne(u => u.UserCurrentLocation)
+                .HasForeignKey<UserCurrentLocation>(ul => ul.UserId);
 
-            modelBuilder.ApplyConfigurationsFromAssembly(typeof(DataContext).Assembly);
-
-
+            modelBuilder.ApplyConfiguration(new UserRoleConfig());
         }
-
     }
 }
+
+
+
+
+

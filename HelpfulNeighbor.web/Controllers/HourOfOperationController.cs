@@ -8,8 +8,8 @@ namespace HelpfulNeighbor.web.Controllers
     [ApiController]
     public class HourOfOperationController : Controller
     {
-        private readonly IHoursOfOperationRepository _hoursOfOperationRepository;
-        public HourOfOperationController(IHoursOfOperationRepository hoursOfOperationRepository)
+        private readonly HoursOfOperationRepository _hoursOfOperationRepository;
+        public HourOfOperationController(HoursOfOperationRepository hoursOfOperationRepository)
         {
                 _hoursOfOperationRepository = hoursOfOperationRepository;
         }
