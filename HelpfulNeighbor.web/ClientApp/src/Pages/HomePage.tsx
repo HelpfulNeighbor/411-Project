@@ -2,7 +2,7 @@ import { Box, Button, Flex, Text, Image, Heading } from "@chakra-ui/react";
 
 import { Link as ReactRouterLink } from "react-router-dom";
 import { MdSearch } from "react-icons/md";
-import NavBar from "../Components/NavBar";
+import NavBar from "../Components/NavBar/NavBar";
 
 export default function HomePage() {
   return (
