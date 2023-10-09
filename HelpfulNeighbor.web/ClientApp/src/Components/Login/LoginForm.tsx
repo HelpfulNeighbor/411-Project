@@ -1,4 +1,3 @@
-// LoginForm.tsx
 import React from 'react';
 import {
   ModalBody,
