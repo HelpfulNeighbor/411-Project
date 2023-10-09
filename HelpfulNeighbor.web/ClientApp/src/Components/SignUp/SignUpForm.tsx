@@ -8,57 +8,67 @@ import {
   Button,
   Flex,
 } from '@chakra-ui/react';
-import { useForm, SubmitHandler } from 'react-hook-form';
+import { useForm} from 'react-hook-form';
+import { CreateUserDto } from '../../Constants/types';
 
 type SignUpFormProps = {
-  onClose: () => void;
+  onClose: (
+    formData?: CreateUserDto
+  ) => void;
 };
 
-type FormValues = {
-  firstname: string;
-  lastname: string;
-  username: string;
-  email: string;
-  password: string;
-};
+// interface IFormInput {
+//   firstName: string;
+//   lastName: string;
+//   username: string;
+//   email: string;
+//   password: string;
+// };
 
-const LoginForm: React.FC<SignUpFormProps> = ({ onClose }) => {
+function SignUpForm({ onClose }: SignUpFormProps) {
   const {
     handleSubmit,
     register,
     formState: { errors },
-  } = useForm<FormValues>();
+  } = useForm<CreateUserDto>({
+    defaultValues: {
+      firstName: '',
+      lastName: '',
+      username: '',
+      email: '',
+      password: '',
+    }
+  });
 
-  const onSubmit: SubmitHandler<FormValues> = (data) => {
+  const onSubmit = (formData: CreateUserDto)=> {
     // Handle form submission here (e.g., send data to the server)
-    console.log(data);
-    onClose();
+    onClose(formData);
   };
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <ModalBody>
 
-      <FormControl isInvalid={!!errors.firstname} mb={4}>
+      <FormControl isInvalid={!!errors.firstName} mb={4}>
           <FormLabel>First Name</FormLabel>
           <Input
-            {...register('firstname', {
+            {...register('firstName', {
               required: 'First name is required',
             })}
             type="text"
           />
-          {errors.firstname && <Text color="red.500">{errors.firstname.message}</Text>}
+          {errors.firstName && <Text color="red.500">{errors.firstName.message}</Text>}
         </FormControl>
 
-        <FormControl isInvalid={!!errors.lastname} mb={4}>
+        <FormControl isInvalid={!!errors.lastName} mb={4}>
           <FormLabel>Last Name</FormLabel>
           <Input
-            {...register('lastname', {
+            {...register('lastName', {
               required: 'Last name is required',
             })}
             type="text"
           />
-          {errors.lastname && <Text color="red.500">{errors.lastname.message}</Text>}
+          {errors.lastName && <Text color="red.500">{errors.lastName.message}</Text>}
         </FormControl>
 
         <FormControl isInvalid={!!errors.username} mb={4}>
@@ -104,4 +114,4 @@ const LoginForm: React.FC<SignUpFormProps> = ({ onClose }) => {
   );
 };
 
-export default LoginForm;
+export default SignUpForm;

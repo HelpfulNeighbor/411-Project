@@ -20,7 +20,7 @@ import {
     AccordionIcon,
   
   } from "@chakra-ui/react";
-  import NavBar from "../Components/NavBar/NavBar";
+  import NavBar from "../../Components/NavBar/NavBar";
   import React from "react";
   import { HamburgerIcon } from "@chakra-ui/icons";
   // import { Link as ReactRouterLink } from "react-router-dom";
