@@ -17,7 +17,6 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllers();
-
 builder.Services.AddTransient<SeedHelper>();
 builder.Services.AddScoped<IResourceRepository, ResourceRepository>();
 builder.Services.AddScoped<IShelterRepository, ShelterRepository>();
@@ -26,11 +25,9 @@ builder.Services.AddScoped<ILocationRepository, LocationRepository>();
 builder.Services.AddScoped<ISavedResourceRepository, SavedResourceRepository>();
 builder.Services.AddScoped<ISavedShelterRepository, SavedShelterRepository>();
 builder.Services.AddScoped<IUserCurrentLocationRepository, UserCurrentLocationRepository>();
-
 builder.Services.AddIdentity<User, Role>()
     .AddEntityFrameworkStores<DataContext>()
     .AddDefaultTokenProviders();
-
 builder.Services.ConfigureApplicationCookie(options =>
 {
     options.Events.OnRedirectToLogin = context =>
@@ -46,7 +43,9 @@ builder.Services.ConfigureApplicationCookie(options =>
     };
 });
 
-// Add database context configuration
+// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<DataContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DataContext"));
@@ -54,8 +53,22 @@ builder.Services.AddDbContext<DataContext>(options =>
 
 var app = builder.Build();
 
+using (var scope = app.Services.CreateScope())
+{
+    await SeedData(scope.ServiceProvider, app.Environment.IsDevelopment());
+}
+
+// Configure the HTTP request pipeline.
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+
 app.UseHttpsRedirection();
+
 app.UseAuthentication();
+
 app.UseRouting();
 app.UseAuthorization();
 app.UseEndpoints(routeBuilder =>
@@ -73,11 +86,6 @@ app.UseSpa(spaBuilder =>
         spaBuilder.UseProxyToSpaDevelopmentServer("https://localhost:3000/");
     }
 });
-
-using (var scope = app.Services.CreateScope())
-{
-    await SeedData(scope.ServiceProvider, app.Environment.IsDevelopment());
-}
 
 app.Run();
 
