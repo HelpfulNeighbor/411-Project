@@ -1,6 +1,5 @@
 [
   {
-    "ResourceId": 1,
     "Name": "Morgan City Housing Authority",
     "City": "Morgan City",
     "Address": "336 Wren St, Morgan City, LA 70380",
@@ -12,7 +11,6 @@
     "LocationId": 1
   },
   {
-    "ResourceId": 2,
     "Name": "Slidell Housing Authority",
     "City": "Slidell",
     "Address": "Jr Drive, 1250 Martin Luther King Dr, Slidell, LA 70458",
@@ -24,7 +22,6 @@
     "LocationId": 2
   },
   {
-    "ResourceId": 3,
     "Name": "Abbeville Housing Authority",
     "City": "Abbeville",
     "Address": "1101 E Oak St, Abbeville, LA 70510",
@@ -36,7 +33,6 @@
     "LocationId": 3
   },
   {
-    "ResourceId": 4,
     "Name": "Leesville Housing Authority",
     "City": "Leesville",
     "Address": "213 Blackburn St, Leesville, LA 71446",
@@ -48,7 +44,6 @@
     "LocationId": 4
   },
   {
-    "ResourceId": 5,
     "Name": "Neighborhood Housing Service",
     "City": "Bogalusa",
     "Address": "2028 S Columbia St, Bogalusa, LA 70427",
@@ -60,7 +55,6 @@
     "LocationId": 5
   },
   {
-    "ResourceId": 6,
     "Name": "Winn Parish Housing Authority",
     "City": "Winnfield",
     "Address": "119 W Main St #102, Winnfield, LA 71483",
@@ -72,7 +66,6 @@
     "LocationId": 6
   },
   {
-    "ResourceId": 7,
     "Name": "Winnfield Housing Authority",
     "City": "Winnfield",
     "Address": "901 Par Rd 610, Winnfield, LA 71483",
@@ -84,7 +77,6 @@
     "LocationId": 7
   },
   {
-    "ResourceId": 8,
     "Name": "Marksville Housing Authority",
     "City": "Marksville",
     "Address": "110 N Hillside Dr, Marksville, LA 71351",
@@ -96,7 +88,6 @@
     "LocationId": 8
   },
   {
-    "ResourceId": 9,
     "Name": "DeQuincy Housing Authority",
     "City": "DeQuincy",
     "Address": "500 S Grand Ave, Dequincy, LA 70633",
@@ -108,7 +99,6 @@
     "LocationId": 9
   },
   {
-    "ResourceId": 10,
     "Name": "Jennings Housing Authority",
     "City": "Jennings",
     "Address": "300 Bangle St, Jennings, LA 70546",
@@ -120,7 +110,6 @@
     "LocationId": 10
   },
   {
-    "ResourceId": 11,
     "Name": "ASSIST Agency, Inc",
     "City": "Jennings",
     "Address": "107 E Nezpique St, Jennings, LA 70546",
@@ -132,7 +121,6 @@
     "LocationId": 11
   },
   {
-    "ResourceId": 12,
     "Name": "Kenner Housing Authority",
     "City": "Kenner",
     "Address": "1013 31st St, Kenner, LA 70065",
@@ -144,7 +132,6 @@
     "LocationId": 12
   },
   {
-    "ResourceId": 13,
     "Name": "Unity Welcome Home",
     "City": "New Orleans",
     "Address": "2407 Baronne St, New Orleans, LA 70113",
@@ -156,7 +143,6 @@
     "LocationId": 13
   },
   {
-    "ResourceId": 14,
     "Name": "New Orleans Woman Space",
     "City": "New Orleans",
     "Address": "3801 Pitt St, New Orleans, LA 70115",
@@ -168,7 +154,6 @@
     "LocationId": 14
   },
   {
-    "ResourceId": 15,
     "Name": "Louisiana Fair Housing Action Center",
     "City": "New Orleans",
     "Address": "1340 Poydras St #710, New Orleans, LA 70112",
@@ -180,7 +165,6 @@
     "LocationId": 15
   },
   {
-    "ResourceId": 16,
     "Name": "Helping Families in Need - AAFINII",
     "City": "Hammond",
     "Address": "609 E Hoover St, Hammond, LA 70401",
@@ -192,7 +176,6 @@
     "LocationId": 16
   },
   {
-    "ResourceId": 17,
     "Name": "Oxford House - Imperial",
     "City": "Lake Charles",
     "Address": "800 Cherryhill St, Lake Charles, LA 70607",
@@ -204,7 +187,6 @@
     "LocationId": 17
   },
   {
-    "ResourceId": 18,
     "Name": "Care Help",
     "City": "Sulphur",
     "Address": "200 N. Huntington St. Sulphur, LA  70663",
@@ -216,7 +198,6 @@
     "LocationId": 18
   },
   {
-    "ResourceId": 19,
     "Name": "Sister 2 Sister’s",
     "City": "Eunice",
     "Address": "750 Ronald Reagan Hwy, Eunice, LA 70535",
@@ -228,7 +209,6 @@
     "LocationId": 19
   },
   {
-    "ResourceId": 20,
     "Name": "Janet’s Korner Thrift Store, Community Christian Concern",
     "City": "Slidell",
     "Address": "2515 Carey St, Slidell, LA 70458",
@@ -240,7 +220,6 @@
     "LocationId": 20
   },
   {
-    "ResourceId": 21,
     "Name": "Society of St. Vincent de Paul",
     "City": "Hammond",
     "Address": "824 N Morrison Blvd, Hammond, LA 70401",
@@ -252,7 +231,6 @@
     "LocationId": 21
   },
   {
-    "ResourceId": 22,
     "Name": "Helping Hands Storefront Ministries",
     "City": "Leesville",
     "Address": "603 South 3rd Street\nLeesville, LA 71496",
@@ -264,7 +242,6 @@
     "LocationId": 22
   },
   {
-    "ResourceId": 23,
     "Name": "Communities Against Domestic",
     "City": "Jennings",
     "Address": "819 N Church St, Jennings, LA 70546",
@@ -276,7 +253,6 @@
     "LocationId": 23
   },
   {
-    "ResourceId": 24,
     "Name": "The Salvation Army’s Men’s Shelter/Offices",
     "City": "Lafayette",
     "Address": "212 Sisth St. Lafayette, LA - 70502",
@@ -288,7 +264,6 @@
     "LocationId": 24
   },
   {
-    "ResourceId": 25,
     "Name": "Care & Hope Ministry",
     "City": "Bastrop",
     "Address": "809 Cleveland Street Bastrop, LA 71220",
@@ -300,7 +275,6 @@
     "LocationId": 25
   },
   {
-    "ResourceId": 26,
     "Name": "New Orleans Mission",
     "City": "New Orleans",
     "Address": "1130 Oretha Castle Haley Blvd, New Orleans, LA 70113",
@@ -312,7 +286,6 @@
     "LocationId": 26
   },
   {
-    "ResourceId": 27,
     "Name": "Ozanam Inn",
     "City": "New Orleans",
     "Address": "2239 Poydras St, New Orleans, LA 70119",
@@ -324,7 +297,6 @@
     "LocationId": 27
   },
   {
-    "ResourceId": 28,
     "Name": "Salvation Army",
     "City": "Monroe",
     "Address": "105 Hart Street Monroe, LA 71201",
@@ -336,7 +308,6 @@
     "LocationId": 28
   },
   {
-    "ResourceId": 29,
     "Name": "Eunice Food Bank",
     "City": "Eunice",
     "Address": "St Edmunds Athletic Field, 521 Samuel Dr, Eunice, LA 70535",
@@ -348,7 +319,6 @@
     "LocationId": 29
   },
   {
-    "ResourceId": 30,
     "Name": "Icons Food Bank",
     "City": "Opelousas",
     "Address": "1411 N Market Street Opelousas, LA - 70570",
@@ -360,7 +330,6 @@
     "LocationId": 30
   },
   {
-    "ResourceId": 31,
     "Name": "St. Bernard St. Francis Food Pantry",
     "City": "Breaux Bridge",
     "Address": "701 W. Bridge St. Breaux Bridge LA 70517",
@@ -372,7 +341,6 @@
     "LocationId": 31
   },
   {
-    "ResourceId": 32,
     "Name": "Pilgrim Grove Baptist Church",
     "City": "Morgan City",
     "Address": "398 Greenwood Rd, Morgan City, LA 70380",
@@ -384,7 +352,6 @@
     "LocationId": 32
   },
   {
-    "ResourceId": 33,
     "Name": "Northshore Food Bank",
     "City": "Covington",
     "Address": "125 W 30th Ave, Covington, LA 70433",
@@ -396,7 +363,6 @@
     "LocationId": 33
   },
   {
-    "ResourceId": 34,
     "Name": "The Samaritan Center",
     "City": "Mandeville",
     "Address": "402 Girod St, Mandeville, LA 70448",
@@ -408,7 +374,6 @@
     "LocationId": 34
   },
   {
-    "ResourceId": 35,
     "Name": "Habitat for Humanity St. Tammany West and ReStore",
     "City": "Mandeville",
     "Address": "1400 North Ln, Mandeville, La 70471",
@@ -420,7 +385,6 @@
     "LocationId": 35
   },
   {
-    "ResourceId": 36,
     "Name": "Community Outreach Center (FOOD BANK)",
     "City": "DeQuincy",
     "Address": "1006 E 4th St, Dequincy, LA 70633",
@@ -432,7 +396,6 @@
     "LocationId": 36
   },
   {
-    "ResourceId": 37,
     "Name": "Bogalusa Help Center",
     "City": "Bogalusa",
     "Address": "350 Martin Luther King Jr Dr, Bogalusa, LA 70427",
@@ -444,7 +407,6 @@
     "LocationId": 37
   },
   {
-    "ResourceId": 38,
     "Name": "CASA (Court Appointed Special Advocates) for Children of West Central Louisiana",
     "City": "DeRidder",
     "Address": "420 McMahon St, DeRidder, LA 70634",
@@ -456,7 +418,6 @@
     "LocationId": 38
   },
   {
-    "ResourceId": 39,
     "Name": "De Soto Parish Office of Community Services",
     "City": "Mansfield",
     "Address": "404 Polk St B, Mansfield, LA 71052",
@@ -468,7 +429,6 @@
     "LocationId": 39
   },
   {
-    "ResourceId": 40,
     "Name": "Humanitarian Enterprises of Lincoln Parish (HELP)",
     "City": "Ruston",
     "Address": "307 N Homer St 2nd floor, Ruston, LA 71270",
@@ -480,7 +440,6 @@
     "LocationId": 40
   },
   {
-    "ResourceId": 41,
     "Name": "Family Support Office",
     "City": "Bastrop",
     "Address": "1045 East Madison\nBastrop, LA 71220",
@@ -492,7 +451,6 @@
     "LocationId": 41
   },
   {
-    "ResourceId": 42,
     "Name": "Options for Independence",
     "City": "Laplace",
     "Address": "490 Belle Terre Blvd, Laplace, LA 70068",
@@ -504,7 +462,6 @@
     "LocationId": 42
   },
   {
-    "ResourceId": 43,
     "Name": "Helen’s House",
     "City": "Hammond",
     "Address": "44333 Easy St, Hammond, LA 70403",
@@ -516,7 +473,6 @@
     "LocationId": 43
   },
   {
-    "ResourceId": 44,
     "Name": "Abbeville Community Home",
     "City": "Abbeville",
     "Address": "1706 Michael St, Abbeville, LA 70510",
@@ -528,7 +484,6 @@
     "LocationId": 44
   },
   {
-    "ResourceId": 45,
     "Name": "Lewisville Community Home",
     "City": "Minden",
     "Address": "1303 Lewisville Rd Minden LA 71055",
@@ -540,7 +495,6 @@
     "LocationId": 45
   },
   {
-    "ResourceId": 46,
     "Name": "Volunteers of America",
     "City": "Minden",
     "Address": "112 W Union St, Minden, LA 71055",
@@ -552,7 +506,6 @@
     "LocationId": 46
   },
   {
-    "ResourceId": 47,
     "Name": "Elisha Ministries",
     "City": "Ruston",
     "Address": "608 S Trenton St, Ruston, LA 71270",
@@ -564,7 +517,6 @@
     "LocationId": 47
   },
   {
-    "ResourceId": 48,
     "Name": "Battered Women’s Program",
     "City": "Gonzales",
     "Address": "1068 E Worthey St, Gonzales, LA 70737",
@@ -576,7 +528,6 @@
     "LocationId": 48
   },
   {
-    "ResourceId": 49,
     "Name": "Volunteer Ascension",
     "City": "Gonzales",
     "Address": "908 N Airline Hwy Suite A, Gonzales, LA 70737",
@@ -588,7 +539,6 @@
     "LocationId": 49
   },
   {
-    "ResourceId": 50,
     "Name": "Quad Area Community Action Agency",
     "City": "Gonzales",
     "Address": "717 East Ascension, Ste. E, Gonzales, LA 70737",
@@ -600,7 +550,6 @@
     "LocationId": 50
   },
   {
-    "ResourceId": 51,
     "Name": "Family Support Office",
     "City": "Gonzales",
     "Address": "1078 E W Worthey St, Gonzales, LA 70737",
@@ -612,7 +561,6 @@
     "LocationId": 51
   },
   {
-    "ResourceId": 52,
     "Name": "The Providence House",
     "City": "Shreveport",
     "Address": "814 Cotton St, Shreveport, LA 71101",
@@ -624,7 +572,6 @@
     "LocationId": 52
   },
   {
-    "ResourceId": 53,
     "Name": "The Salvation Army Family Store",
     "City": "Shreveport",
     "Address": "147 E Stoner Ave, Shreveport, LA 71101",
@@ -636,7 +583,6 @@
     "LocationId": 53
   },
   {
-    "ResourceId": 54,
     "Name": "Volunteers of America",
     "City": "Shreveport",
     "Address": "802 Travis St, Shreveport, LA 71101",
@@ -648,7 +594,6 @@
     "LocationId": 54
   },
   {
-    "ResourceId": 55,
     "Name": "Volunteers of America",
     "City": "Shreveport",
     "Address": "1725 Corbitt St, Shreveport, LA 71108",
@@ -660,7 +605,6 @@
     "LocationId": 55
   },
   {
-    "ResourceId": 56,
     "Name": "Volunteers of America",
     "City": "Shreveport",
     "Address": "453 Jordan St, Shreveport, LA 71101",
@@ -672,7 +616,6 @@
     "LocationId": 56
   },
   {
-    "ResourceId": 57,
     "Name": "Temple Human Services",
     "City": "Shreveport",
     "Address": "361 E 70th St, Shreveport, LA 71106",
@@ -684,7 +627,6 @@
     "LocationId": 57
   },
   {
-    "ResourceId": 58,
     "Name": "Elle Foundation",
     "City": "Shreveport",
     "Address": "1717 Marshall St, Shreveport, LA 71101",
@@ -696,7 +638,6 @@
     "LocationId": 58
   },
   {
-    "ResourceId": 59,
     "Name": "Community Support Program",
     "City": "Shreveport",
     "Address": "1131 Busby St, Shreveport, LA 71101",
@@ -708,7 +649,6 @@
     "LocationId": 59
   },
   {
-    "ResourceId": 60,
     "Name": "Volunteers of American Veterans Services",
     "City": "Shreveport",
     "Address": "725 Jordan St, Shreveport, LA 71101",
@@ -720,7 +660,6 @@
     "LocationId": 60
   },
   {
-    "ResourceId": 61,
     "Name": "Volunteers of America North Louisiana",
     "City": "Shreveport",
     "Address": "360 Jordan St, Shreveport, LA 71101",
@@ -732,7 +671,6 @@
     "LocationId": 61
   },
   {
-    "ResourceId": 62,
     "Name": "Community Support Programs",
     "City": "Shreveport",
     "Address": "2924 Knight St Building #3, Suite 326, Shreveport, LA 71105",
@@ -744,7 +682,6 @@
     "LocationId": 62
   },
   {
-    "ResourceId": 63,
     "Name": "Harbour House",
     "City": "Lake Charles",
     "Address": "2400 Merganser St, Lake Charles, LA 70615",
@@ -756,7 +693,6 @@
     "LocationId": 63
   },
   {
-    "ResourceId": 64,
     "Name": "United Way of Southwest Louisiana",
     "City": "Lake Charles",
     "Address": "815 Ryan St, Lake Charles, LA 70601",
@@ -768,7 +704,6 @@
     "LocationId": 64
   },
   {
-    "ResourceId": 65,
     "Name": "Oxford House Lafitte",
     "City": "Lake Charles",
     "Address": "4119 Common St, Lake Charles, LA 70607",
@@ -780,7 +715,6 @@
     "LocationId": 65
   },
   {
-    "ResourceId": 66,
     "Name": "Capital Area Alliance for the Homeless",
     "City": "Baton Rouge",
     "Address": "153 N 17th St, Baton Rouge, LA 70802",
@@ -792,7 +726,6 @@
     "LocationId": 66
   },
   {
-    "ResourceId": 67,
     "Name": "New Inspiration",
     "City": "Baton Rouge",
     "Address": "1272 Laurel St, Baton Rouge, LA 70802",
@@ -804,7 +737,6 @@
     "LocationId": 67
   },
   {
-    "ResourceId": 68,
     "Name": "The Salvation Army",
     "City": "Baton Rouge",
     "Address": "7361 Airline Hwy, Baton Rouge, LA 70805",
@@ -816,7 +748,6 @@
     "LocationId": 68
   },
   {
-    "ResourceId": 69,
     "Name": "Lean on Me",
     "City": "Baton Rouge",
     "Address": "1628 Leonard Dr, Baton Rouge, LA 70810",
@@ -828,7 +759,6 @@
     "LocationId": 69
   },
   {
-    "ResourceId": 70,
     "Name": "Youth Oasis",
     "City": "Baton Rouge",
     "Address": "260 S Acadian Thruway, Baton Rouge, LA 70806",
@@ -840,7 +770,6 @@
     "LocationId": 70
   },
   {
-    "ResourceId": 71,
     "Name": "Volunteers of America",
     "City": "Baton Rouge",
     "Address": "125 Westmoreland Dr, Baton Rouge, LA 70806",
@@ -852,7 +781,6 @@
     "LocationId": 71
   },
   {
-    "ResourceId": 72,
     "Name": "H&A Support Services, LLC",
     "City": "Baton Rouge",
     "Address": "4202 Mohican-Prescott Cross #219, Baton Rouge, LA 70805",
@@ -864,7 +792,6 @@
     "LocationId": 72
   },
   {
-    "ResourceId": 73,
     "Name": "Volunteers of America South Central Louisiana",
     "City": "Baton Rouge",
     "Address": "7389 Florida Blvd Ste 101 A, Baton Rouge, LA 70806",
@@ -876,7 +803,6 @@
     "LocationId": 73
   },
   {
-    "ResourceId": 74,
     "Name": "Volunteers of America",
     "City": "Baton Rouge",
     "Address": "2549 Drusilla Ln, Baton Rouge, LA 70809",
@@ -888,7 +814,6 @@
     "LocationId": 74
   },
   {
-    "ResourceId": 75,
     "Name": "Volunteers of America",
     "City": "Baton Rouge",
     "Address": "147 Atkinson St, Baton Rouge, LA 70806",
@@ -900,7 +825,6 @@
     "LocationId": 75
   },
   {
-    "ResourceId": 76,
     "Name": "Volunteers of America",
     "City": "Baton Rouge",
     "Address": "625 Kenmore Ave, Baton Rouge, LA 70806",
@@ -912,7 +836,6 @@
     "LocationId": 76
   },
   {
-    "ResourceId": 77,
     "Name": "St. Vincent de Paul Society",
     "City": "Baton Rouge",
     "Address": "220 St Vincent De Paul Dr, Baton Rouge, LA 70802",
@@ -924,7 +847,6 @@
     "LocationId": 77
   },
   {
-    "ResourceId": 78,
     "Name": "Faith House",
     "City": "Ville Platte",
     "Address": "",
@@ -936,7 +858,6 @@
     "LocationId": 78
   },
   {
-    "ResourceId": 79,
     "Name": "Good Samaritan of Franklin Inc",
     "City": "Winnsboro",
     "Address": "2320 West St, Winnsboro, LA 71295",
@@ -948,7 +869,6 @@
     "LocationId": 79
   },
   {
-    "ResourceId": 80,
     "Name": "The Wellspring",
     "City": "Winnsboro",
     "Address": "303 Prairie St, Winnsboro, LA 71295",
@@ -960,7 +880,6 @@
     "LocationId": 80
   },
   {
-    "ResourceId": 81,
     "Name": "ASSIST Agency, Inc",
     "City": "Jennings",
     "Address": "107 E Nezpique St, Jennings, LA 70546",
@@ -972,7 +891,6 @@
     "LocationId": 81
   },
   {
-    "ResourceId": 82,
     "Name": "Hope Center",
     "City": "Gretna",
     "Address": "1900 Lafayette St #2, Gretna, LA 70053",
@@ -984,7 +902,6 @@
     "LocationId": 82
   },
   {
-    "ResourceId": 83,
     "Name": "Jefferson Community Action",
     "City": "Harahan",
     "Address": "1221 Elmwood Park Blvd #402, Harahan, LA 70123",
@@ -996,7 +913,6 @@
     "LocationId": 83
   },
   {
-    "ResourceId": 84,
     "Name": "Catholic Charities of Acadiana",
     "City": "Lafayette",
     "Address": "405 St John St, Lafayette, LA 70502",
@@ -1008,7 +924,6 @@
     "LocationId": 84
   },
   {
-    "ResourceId": 85,
     "Name": "Volunteers of America River Oaks",
     "City": "Lafayette",
     "Address": "1507 LA 728-8, Lafayette, LA 70501",
@@ -1020,7 +935,6 @@
     "LocationId": 85
   },
   {
-    "ResourceId": 86,
     "Name": "United Christian Outreach Inc",
     "City": "Lafayette",
     "Address": "422 Carmel Dr, Lafayette, LA 70501",
@@ -1032,7 +946,6 @@
     "LocationId": 86
   },
   {
-    "ResourceId": 87,
     "Name": "Volunteers of America",
     "City": "Lafayette",
     "Address": "114 Exchange Pl, Lafayette, LA 70503",
@@ -1044,7 +957,6 @@
     "LocationId": 87
   },
   {
-    "ResourceId": 88,
     "Name": "American Red Cross",
     "City": "Lafayette",
     "Address": "215 E Pinhook Rd, Lafayette, LA 70501",
@@ -1056,7 +968,6 @@
     "LocationId": 88
   },
   {
-    "ResourceId": 89,
     "Name": "Monsignor AO Sigur Services Center",
     "City": "Lafayette",
     "Address": "401 St John St, Lafayette, LA 70501",
@@ -1068,7 +979,6 @@
     "LocationId": 89
   },
   {
-    "ResourceId": 90,
     "Name": "Volunteers - America Peaceful Village",
     "City": "Lafayette",
     "Address": "811 Martin Luther King Jr Dr, Lafayette, LA 70501",
@@ -1080,7 +990,6 @@
     "LocationId": 90
   },
   {
-    "ResourceId": 91,
     "Name": "Hearts of Hope",
     "City": "Lafayette",
     "Address": "911 General Mouton Ave, Lafayette, LA 70501",
@@ -1092,7 +1001,6 @@
     "LocationId": 91
   },
   {
-    "ResourceId": 92,
     "Name": "Chez Hope Inc",
     "City": "Thibodaux",
     "Address": "745 Tetreau St, Thibodaux, LA 70301",
@@ -1104,7 +1012,6 @@
     "LocationId": 92
   },
   {
-    "ResourceId": 93,
     "Name": "Circle of Hope",
     "City": "Thibodaux",
     "Address": "722 St Charles St, Thibodaux, LA 70301",
@@ -1116,7 +1023,6 @@
     "LocationId": 93
   },
   {
-    "ResourceId": 94,
     "Name": "Family Support Regional Office",
     "City": "Thibodaux",
     "Address": "1440 Tiger Dr #A, Thibodaux, LA 70301",
@@ -1128,7 +1034,6 @@
     "LocationId": 94
   },
   {
-    "ResourceId": 95,
     "Name": "Youth Advocate Programs",
     "City": "Thibodaux",
     "Address": "501 St Mary St #A, Thibodaux, LA 70301",
@@ -1140,7 +1045,6 @@
     "LocationId": 95
   },
   {
-    "ResourceId": 96,
     "Name": "Merakey",
     "City": "Thibodaux",
     "Address": "303 Hickory St, Thibodaux, LA 70301",
@@ -1152,7 +1056,6 @@
     "LocationId": 96
   },
   {
-    "ResourceId": 97,
     "Name": "Big Brothers Big Sisters",
     "City": "Ruston",
     "Address": "191 N Trenton St, Ruston, LA 71270",
@@ -1164,7 +1067,6 @@
     "LocationId": 97
   },
   {
-    "ResourceId": 98,
     "Name": "Christian Community Action",
     "City": "Ruston",
     "Address": "108 S Bonner St, Ruston, LA 71270",
@@ -1176,7 +1078,6 @@
     "LocationId": 98
   },
   {
-    "ResourceId": 99,
     "Name": "Domestic Abuse Resistance Team",
     "City": "Ruston",
     "Address": "108 W Alabama Ave, Ruston, LA 71270",
@@ -1188,7 +1089,6 @@
     "LocationId": 99
   },
   {
-    "ResourceId": 100,
     "Name": "Florida Parishes Human Services Authority",
     "City": "Denham Springs",
     "Address": "1920 Florida Ave SW, Denham Springs, LA 70726",
@@ -1200,7 +1100,6 @@
     "LocationId": 100
   },
   {
-    "ResourceId": 101,
     "Name": "Southwest Key Programs",
     "City": "Tallulah",
     "Address": "201B S Walnut St, Tallulah, LA 71282",
@@ -1212,7 +1111,6 @@
     "LocationId": 101
   },
   {
-    "ResourceId": 102,
     "Name": "The Wellspring",
     "City": "Bastrop",
     "Address": "111 W Hickory Ave, Bastrop, LA 71220",
@@ -1224,7 +1122,6 @@
     "LocationId": 102
   },
   {
-    "ResourceId": 103,
     "Name": "Casa of Natchitoches Inc",
     "City": "Natchitoches",
     "Address": "1200 Keyser Ave, Natchitoches, LA 71457",
@@ -1236,7 +1133,6 @@
     "LocationId": 103
   },
   {
-    "ResourceId": 104,
     "Name": "The Salvation Army of Greater New Orleans",
     "City": "New Orleans",
     "Address": "4526 S Claiborne Ave, New Orleans, LA 70125",
@@ -1248,7 +1144,6 @@
     "LocationId": 104
   },
   {
-    "ResourceId": 105,
     "Name": "Esther’s Haven House, Inc.",
     "City": "New Orleans",
     "Address": "2112 Iberville St, New Orleans, A 70112",
@@ -1260,7 +1155,6 @@
     "LocationId": 105
   },
   {
-    "ResourceId": 106,
     "Name": "Grace at the Green Light",
     "City": "New Orleans",
     "Address": "1526 Oretha Castle Haley Blvd, New Orleans, LA 70113",
@@ -1272,7 +1166,6 @@
     "LocationId": 106
   },
   {
-    "ResourceId": 107,
     "Name": "Unity of Greater New Orleans",
     "City": "New Orleans",
     "Address": "2475 Canal St #300, New Orleans, LA 70119",
@@ -1284,7 +1177,6 @@
     "LocationId": 107
   },
   {
-    "ResourceId": 108,
     "Name": "Hope House",
     "City": "New Orleans",
     "Address": "916 St Andrew St, New Orleans, LA 70130",
@@ -1296,7 +1188,6 @@
     "LocationId": 108
   },
   {
-    "ResourceId": 109,
     "Name": "UNITY of Greater New Orleans - Warehouse",
     "City": "New Orleans",
     "Address": "506 N St Patrick St, New Orleans, LA 70119",
@@ -1308,7 +1199,6 @@
     "LocationId": 109
   },
   {
-    "ResourceId": 110,
     "Name": "Travelers Aid Society of Greater New Orleans",
     "City": "New Orleans",
     "Address": "1530 Gravier St, New Orleans, LA 70112",
@@ -1320,7 +1210,6 @@
     "LocationId": 110
   },
   {
-    "ResourceId": 111,
     "Name": "Volunteers of America",
     "City": "New Orleans",
     "Address": "1801 Canal St, New Orleans, LA 70112",
@@ -1332,7 +1221,6 @@
     "LocationId": 111
   },
   {
-    "ResourceId": 112,
     "Name": "Armstrong Family Services",
     "City": "New Orleans",
     "Address": "2658 Ursulines Ave, New Orleans, LA 70119",
@@ -1344,7 +1232,6 @@
     "LocationId": 112
   },
   {
-    "ResourceId": 113,
     "Name": "Volunteers of America",
     "City": "New Orleans",
     "Address": "4152 Canal St, New Orleans, LA 70119",
@@ -1356,7 +1243,6 @@
     "LocationId": 113
   },
   {
-    "ResourceId": 114,
     "Name": "Action of New Orleans",
     "City": "New Orleans",
     "Address": "400 Poydras St Suite 900, New Orleans, LA 70130",
@@ -1368,7 +1254,6 @@
     "LocationId": 114
   },
   {
-    "ResourceId": 115,
     "Name": "Bynum Telecom",
     "City": "New Orleans",
     "Address": "1002 Napoleon Ave, New Orleans, LA 70115",
@@ -1380,7 +1265,6 @@
     "LocationId": 115
   },
   {
-    "ResourceId": 116,
     "Name": "Concerned Citizens for a Better Algiers",
     "City": "New Orleans",
     "Address": "1409 Nunez St #1417, New Orleans, LA 70114",
@@ -1392,7 +1276,6 @@
     "LocationId": 116
   },
   {
-    "ResourceId": 117,
     "Name": "Volunteers of America",
     "City": "New Orleans",
     "Address": "2929 St Anthony Ave, New Orleans, LA 70122",
@@ -1404,7 +1287,6 @@
     "LocationId": 117
   },
   {
-    "ResourceId": 118,
     "Name": "826 New Orleans",
     "City": "New Orleans",
     "Address": "1750 St Bernard Ave, New Orleans, LA 70116",
@@ -1416,7 +1298,6 @@
     "LocationId": 118
   },
   {
-    "ResourceId": 119,
     "Name": "Rebuild Center",
     "City": "New Orleans",
     "Address": "1803 Gravier St, New Orleans, LA 70112",
@@ -1428,7 +1309,6 @@
     "LocationId": 119
   },
   {
-    "ResourceId": 120,
     "Name": "YWCA",
     "City": "New Orleans",
     "Address": "601 S Norman C Francis Parkway, New Orleans, LA 70119",
@@ -1440,7 +1320,6 @@
     "LocationId": 120
   },
   {
-    "ResourceId": 121,
     "Name": "North Rampart Community Center",
     "City": "New Orleans",
     "Address": "1130 N Rampart St, New Orleans, LA 70116",
@@ -1452,7 +1331,6 @@
     "LocationId": 121
   },
   {
-    "ResourceId": 122,
     "Name": "The Renewal Center",
     "City": "Monroe",
     "Address": "722 Adams St, Monroe, LA 71201",
@@ -1464,7 +1342,6 @@
     "LocationId": 122
   },
   {
-    "ResourceId": 123,
     "Name": "Family Promise Ouachita",
     "City": "Monroe",
     "Address": "1317 S 10th St, Monroe, LA 71202",
@@ -1476,7 +1353,6 @@
     "LocationId": 123
   },
   {
-    "ResourceId": 124,
     "Name": "Our House Help For Teenagers",
     "City": "Monroe",
     "Address": "205 Smith Ave, Monroe, LA 71203",
@@ -1488,7 +1364,6 @@
     "LocationId": 124
   },
   {
-    "ResourceId": 125,
     "Name": "Renewal",
     "City": "Monroe",
     "Address": "513 Sunnyside St Monroe, LA 71202",
@@ -1500,7 +1375,6 @@
     "LocationId": 125
   },
   {
-    "ResourceId": 126,
     "Name": "YWCA Crisis Line",
     "City": "Monroe",
     "Address": "1515 Jackson St, Monroe, LA 71202",
@@ -1512,7 +1386,6 @@
     "LocationId": 126
   },
   {
-    "ResourceId": 127,
     "Name": "A Touch of Heaven",
     "City": "Monroe",
     "Address": "415 Eason Pl, Monroe, LA 71201",
@@ -1524,7 +1397,6 @@
     "LocationId": 127
   },
   {
-    "ResourceId": 128,
     "Name": "Monroe Area Guidance Center",
     "City": "Monroe",
     "Address": "908 N 3rd St, Monroe, LA 71201",
@@ -1536,7 +1408,6 @@
     "LocationId": 128
   },
   {
-    "ResourceId": 129,
     "Name": "Habitat for Humanity of North Louisiana",
     "City": "Monroe",
     "Address": "2816 Deborah Dr, Monroe, LA 71201",
@@ -1548,7 +1419,6 @@
     "LocationId": 129
   },
   {
-    "ResourceId": 130,
     "Name": "Family Promise of Ouchita",
     "City": "West Monroe",
     "Address": "100 S 2nd St, West Monroe, LA 71291",
@@ -1560,7 +1430,6 @@
     "LocationId": 130
   },
   {
-    "ResourceId": 131,
     "Name": "Volunteers of America",
     "City": "West Monroe",
     "Address": "508 Austin Ave, West Monroe, LA 71292",
@@ -1572,7 +1441,6 @@
     "LocationId": 131
   },
   {
-    "ResourceId": 132,
     "Name": "Central Louisiana Homeless Coalition",
     "City": "Alexandria",
     "Address": "1515 Jackson St. Alexandria, LA 71301",
@@ -1584,7 +1452,6 @@
     "LocationId": 132
   },
   {
-    "ResourceId": 133,
     "Name": "The Salvation Army",
     "City": "Alexandria",
     "Address": "620 Beauregard St. Alexandria, LA 71301",
@@ -1596,7 +1463,6 @@
     "LocationId": 133
   },
   {
-    "ResourceId": 134,
     "Name": "Manna House",
     "City": "Alexandria",
     "Address": "2655 Lee St, Alexandria, LA 71301",
@@ -1608,7 +1474,6 @@
     "LocationId": 134
   },
   {
-    "ResourceId": 135,
     "Name": "Shepherd Center",
     "City": "Alexandria",
     "Address": "1400 Jackson St, Alexandria, LA 71301",
@@ -1620,7 +1485,6 @@
     "LocationId": 135
   },
   {
-    "ResourceId": 136,
     "Name": "Volunteers of America",
     "City": "Alexandria",
     "Address": "2503 Culpepper Rd, Alexandria, LA 71301",
@@ -1632,7 +1496,6 @@
     "LocationId": 136
   },
   {
-    "ResourceId": 137,
     "Name": "Volunteers of America",
     "City": "Alexandria",
     "Address": "3704 Coliseum Blvd, Alexandria, LA 71303",
@@ -1644,7 +1507,6 @@
     "LocationId": 137
   },
   {
-    "ResourceId": 138,
     "Name": "United Way - Central La INC",
     "City": "Alexandria",
     "Address": "1101 4th St #202, Alexandria, LA 71301",
@@ -1656,7 +1518,6 @@
     "LocationId": 138
   },
   {
-    "ResourceId": 139,
     "Name": "Habitat for Humanity",
     "City": "Alexandria",
     "Address": "1320 Monroe St, Alexandria, LA 71301",
@@ -1668,7 +1529,6 @@
     "LocationId": 139
   },
   {
-    "ResourceId": 140,
     "Name": "Rapides Station Community Ministries",
     "City": "Alexandria",
     "Address": "1429 3rd St, Alexandria, LA 71301",
@@ -1680,7 +1540,6 @@
     "LocationId": 140
   },
   {
-    "ResourceId": 141,
     "Name": "Olive House",
     "City": "Alexandria",
     "Address": "1902 Main St, Alexandria, LA 71302",
@@ -1692,7 +1551,6 @@
     "LocationId": 141
   },
   {
-    "ResourceId": 142,
     "Name": "American Red Cross",
     "City": "Alexandria",
     "Address": "425 Bolton Ave, Alexandria, LA 71301",
@@ -1704,7 +1562,6 @@
     "LocationId": 142
   },
   {
-    "ResourceId": 143,
     "Name": "Kingsley House",
     "City": "Laplace",
     "Address": "429 W Airline Hwy, Laplace, LA 70068",
@@ -1716,7 +1573,6 @@
     "LocationId": 143
   },
   {
-    "ResourceId": 144,
     "Name": "St. John United Way",
     "City": "Laplace",
     "Address": "408 Belle Terre Blvd, Laplace, LA 70068",
@@ -1728,7 +1584,6 @@
     "LocationId": 144
   },
   {
-    "ResourceId": 145,
     "Name": "Metropolitan Battered Women’s Program",
     "City": "Laplace",
     "Address": "532 W 5th St, Laplace, LA 70068",
@@ -1740,7 +1595,6 @@
     "LocationId": 145
   },
   {
-    "ResourceId": 146,
     "Name": "St. Landry Community Services Inc",
     "City": "Opelousas",
     "Address": "217 N Main St, Opelousas, LA 70570",
@@ -1752,7 +1606,6 @@
     "LocationId": 146
   },
   {
-    "ResourceId": 147,
     "Name": "St. Landry - Evangeline United Way",
     "City": "Opelousas",
     "Address": "5367 Interstate 49 South Service Rd #30, Opelousas, LA 70570",
@@ -1764,7 +1617,6 @@
     "LocationId": 147
   },
   {
-    "ResourceId": 148,
     "Name": "House for Opelousas",
     "City": "Opelousas",
     "Address": "433 S. Main St Opelousas, LA 70570",
@@ -1776,7 +1628,6 @@
     "LocationId": 148
   },
   {
-    "ResourceId": 149,
     "Name": "St. Landry Parish Community Action",
     "City": "Opelousas",
     "Address": "1065 LA-749, Opelousas, LA 70570",
@@ -1788,7 +1639,6 @@
     "LocationId": 149
   },
   {
-    "ResourceId": 150,
     "Name": "St. Mary Community Action Agency",
     "City": "Morgan City",
     "Address": "330 Cardinal St, Morgan City, LA 70380",
@@ -1800,7 +1650,6 @@
     "LocationId": 150
   },
   {
-    "ResourceId": 151,
     "Name": "St. Mary Outreach",
     "City": "Morgan City",
     "Address": "608 1st St #102, Morgan City, LA 70380",
@@ -1812,7 +1661,6 @@
     "LocationId": 151
   },
   {
-    "ResourceId": 152,
     "Name": "Smile Community Action Agency",
     "City": "St. Martinville",
     "Address": "2097 Terrace Rd, St Martinville, LA 70582",
@@ -1824,7 +1672,6 @@
     "LocationId": 152
   },
   {
-    "ResourceId": 153,
     "Name": "Chez Hope Inc",
     "City": "Franklin",
     "Address": "801 Main St, Franklin, LA 70538",
@@ -1836,7 +1683,6 @@
     "LocationId": 153
   },
   {
-    "ResourceId": 154,
     "Name": "St. Mary Community Action Agency, Inc",
     "City": "Franklin",
     "Address": "1407 Barrow St, Franklin, LA 70538",
@@ -1848,7 +1694,6 @@
     "LocationId": 154
   },
   {
-    "ResourceId": 155,
     "Name": "Community Action",
     "City": "Covington",
     "Address": "620 N Tyler St, Covington, LA 70433",
@@ -1860,7 +1705,6 @@
     "LocationId": 155
   },
   {
-    "ResourceId": 156,
     "Name": "United Way of Southeast Louisiana - St. Tammany",
     "City": "Covington",
     "Address": "834 N Columbia St, Covington, LA 70433",
@@ -1872,7 +1716,6 @@
     "LocationId": 156
   },
   {
-    "ResourceId": 157,
     "Name": "Northshore Community Foundation",
     "City": "Covington",
     "Address": "First Floor, 807 N Columbia St, Covington, LA 70433",
@@ -1884,7 +1727,6 @@
     "LocationId": 157
   },
   {
-    "ResourceId": 158,
     "Name": "Northshore Families Helping Families",
     "City": "Covington",
     "Address": "108 Highland Park Plaza, Covington, LA 70433",
@@ -1896,7 +1738,6 @@
     "LocationId": 158
   },
   {
-    "ResourceId": 159,
     "Name": "Easter Seals",
     "City": "Covington",
     "Address": "19405 Helenbirg Rd #1, Covington, LA 70433",
@@ -1908,7 +1749,6 @@
     "LocationId": 159
   },
   {
-    "ResourceId": 160,
     "Name": "Volunteers of America",
     "City": "Mandeville",
     "Address": "823 Carroll St suite b, Mandeville, LA 70448",
@@ -1920,7 +1760,6 @@
     "LocationId": 160
   },
   {
-    "ResourceId": 161,
     "Name": "Family Promise of St. Tammany",
     "City": "Mandeville",
     "Address": "23464 S Robin Rd, Mandeville, LA 70448",
@@ -1932,7 +1771,6 @@
     "LocationId": 161
   },
   {
-    "ResourceId": 162,
     "Name": "NAMI St. Tammany",
     "City": "Mandeville",
     "Address": "23577 Martin Way Mandeville, LA 70448",
@@ -1944,7 +1782,6 @@
     "LocationId": 162
   },
   {
-    "ResourceId": 163,
     "Name": "Slidell Ladies for Liberty",
     "City": "Slidell",
     "Address": "551 Cross Gates Blvd, Slidell, LA 70461",
@@ -1956,7 +1793,6 @@
     "LocationId": 163
   },
   {
-    "ResourceId": 164,
     "Name": "St. Tammany Parish Community Action - DCFS",
     "City": "Slidell",
     "Address": "Suite 3C, 520 Old Spanish Trail, Slidell, LA 70458",
@@ -1968,7 +1804,6 @@
     "LocationId": 164
   },
   {
-    "ResourceId": 165,
     "Name": "The Good Samaritan Ministry",
     "City": "Slidell",
     "Address": "910 Cross Gates Blvd, Slidell, LA 70461",
@@ -1980,7 +1815,6 @@
     "LocationId": 165
   },
   {
-    "ResourceId": 166,
     "Name": "YSB Casa",
     "City": "Slidell",
     "Address": "150 Cleveland Ave, Slidell, LA 70458",
@@ -1992,7 +1826,6 @@
     "LocationId": 166
   },
   {
-    "ResourceId": 167,
     "Name": "St. Vincent de Paul Society",
     "City": "Slidell",
     "Address": "325 Westchester Pl, Slidell, LA 70458",
@@ -2004,7 +1837,6 @@
     "LocationId": 167
   },
   {
-    "ResourceId": 168,
     "Name": "Community Christian Concern",
     "City": "Slidell",
     "Address": "2515 Carey St Old Town, Slidell, LA 70458",
@@ -2016,7 +1848,6 @@
     "LocationId": 168
   },
   {
-    "ResourceId": 169,
     "Name": "United Way of Southeast Louisiana - Tangipahoa",
     "City": "Hammond",
     "Address": "411 W Coleman Ave, Hammond, LA 70403",
@@ -2028,7 +1859,6 @@
     "LocationId": 169
   },
   {
-    "ResourceId": 170,
     "Name": "Southeast Spouse Abuse Program",
     "City": "Hammond",
     "Address": "1180 Roma Ave, Hammond, LA 70403",
@@ -2040,7 +1870,6 @@
     "LocationId": 170
   },
   {
-    "ResourceId": 171,
     "Name": "Northshore Families Helping Families",
     "City": "Hammond",
     "Address": "15481 W Club Deluxe Rd, Hammond, LA 70403",
@@ -2052,7 +1881,6 @@
     "LocationId": 171
   },
   {
-    "ResourceId": 172,
     "Name": "Volunteers of America",
     "City": "Hammond",
     "Address": "10273 Amelia Ln, Hammond, LA 70403",
@@ -2064,7 +1892,6 @@
     "LocationId": 172
   },
   {
-    "ResourceId": 173,
     "Name": "Quad Area Community Action",
     "City": "Hammond",
     "Address": "45300 N Baptist Rd, Hammond, LA 70401",
@@ -2076,7 +1903,6 @@
     "LocationId": 173
   },
   {
-    "ResourceId": 174,
     "Name": "House of Hope",
     "City": "Houma",
     "Address": "8551 E Main St, Houma, LA 70363",
@@ -2088,7 +1914,6 @@
     "LocationId": 174
   },
   {
-    "ResourceId": 175,
     "Name": "Start Inc",
     "City": "Houma",
     "Address": "235 Civic Center Blvd. Houma, LA 70360",
@@ -2100,7 +1925,6 @@
     "LocationId": 175
   },
   {
-    "ResourceId": 176,
     "Name": "Options for Independence",
     "City": "Houma",
     "Address": "147 New Orleans Blvd, Houma, LA 70364",
@@ -2112,7 +1936,6 @@
     "LocationId": 176
   },
   {
-    "ResourceId": 177,
     "Name": "Casa of Terrebonne Inc",
     "City": "Houma",
     "Address": "402 Canal St, Houma, LA 70360",
@@ -2124,7 +1947,6 @@
     "LocationId": 177
   },
   {
-    "ResourceId": 178,
     "Name": "Options for Independence",
     "City": "Houma",
     "Address": "8326 E Main St Building #3, Houma, LA 70363",
@@ -2136,7 +1958,6 @@
     "LocationId": 178
   },
   {
-    "ResourceId": 179,
     "Name": "United Way for South Louisiana",
     "City": "Houma",
     "Address": "600 Academy St, Houma, LA 70360",
@@ -2148,7 +1969,6 @@
     "LocationId": 179
   },
   {
-    "ResourceId": 180,
     "Name": "Hope Extreme",
     "City": "Houma",
     "Address": "437 Grand Caillou Rd, Houma, LA 70363",
@@ -2160,7 +1980,6 @@
     "LocationId": 180
   },
   {
-    "ResourceId": 181,
     "Name": "Start Corporation",
     "City": "Houma",
     "Address": "420 Magnolia St, Houma, LA 70360",
@@ -2172,7 +1991,6 @@
     "LocationId": 181
   },
   {
-    "ResourceId": 182,
     "Name": "Assist Agency",
     "City": "Abbeville",
     "Address": "407 Charity St, Abbeville, LA 70510",
@@ -2184,7 +2002,6 @@
     "LocationId": 182
   },
   {
-    "ResourceId": 183,
     "Name": "CASA of West Central Louisiana",
     "City": "Leesville",
     "Address": "113 S 3rd St, Leesville, LA 71446",
@@ -2196,7 +2013,6 @@
     "LocationId": 183
   },
   {
-    "ResourceId": 184,
     "Name": "Help",
     "City": "Leesville",
     "Address": "1307 S 5th St, Leesville, LA 71446",
@@ -2208,7 +2024,6 @@
     "LocationId": 184
   },
   {
-    "ResourceId": 185,
     "Name": "Vernon Community Action Council",
     "City": "Leesville",
     "Address": "12286 Lake Charles Hwy, Leesville, LA 71446",
@@ -2220,7 +2035,6 @@
     "LocationId": 185
   },
   {
-    "ResourceId": 186,
     "Name": "United Way",
     "City": "Bogalusa",
     "Address": "716 Ave F, Bogalusa, LA 70427",
@@ -2232,7 +2046,6 @@
     "LocationId": 186
   },
   {
-    "ResourceId": 187,
     "Name": "United Christian Assistance",
     "City": "Minden",
     "Address": "204 Miller St, Minden, LA 71055",
@@ -2244,7 +2057,6 @@
     "LocationId": 187
   },
   {
-    "ResourceId": 188,
     "Name": "Generation House",
     "City": "Minden",
     "Address": "104 Fuller St, Minden, LA 71055",
@@ -2256,7 +2068,6 @@
     "LocationId": 188
   },
   {
-    "ResourceId": 189,
     "Name": "Council of the Aged Inc",
     "City": "Winnfield",
     "Address": "211 E Main St, Winnfield, LA 71483",
@@ -2268,7 +2079,6 @@
     "LocationId": 189
   },
   {
-    "ResourceId": 190,
     "Name": "J & K Hope Center (ADDICTION HELP)",
     "City": "Rayne",
     "Address": "812 Holt Ave, Rayne, LA 70578",
@@ -2280,7 +2090,6 @@
     "LocationId": 190
   },
   {
-    "ResourceId": 191,
     "Name": "The Lifehouse for Women",
     "City": "Gonzales",
     "Address": "1349 N Tobey Ave, Gonzales, LA 70737",
@@ -2292,7 +2101,6 @@
     "LocationId": 191
   },
   {
-    "ResourceId": 192,
     "Name": "American Legion",
     "City": "Sulphur",
     "Address": "1403 W Napoleon St, Sulphur, LA 70663",
@@ -2304,7 +2112,6 @@
     "LocationId": 192
   },
   {
-    "ResourceId": 193,
     "Name": "VA CRRC",
     "City": "New Orleans",
     "Address": "1530 Gravier St, New Orleans, LA 70112",
@@ -2316,7 +2123,6 @@
     "LocationId": 193
   },
   {
-    "ResourceId": 194,
     "Name": "Disabled American Veterans",
     "City": "Eunice",
     "Address": "1910 Betty St, Eunice, LA 70535",
@@ -2328,7 +2134,6 @@
     "LocationId": 194
   },
   {
-    "ResourceId": 195,
     "Name": "Independence (Veterans Affairs Department)",
     "City": "Mandeville",
     "Address": "237 W Causeway Approach, Mandeville, LA 70448",

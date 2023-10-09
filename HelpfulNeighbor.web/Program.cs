@@ -2,19 +2,22 @@ using HelpfulNeighbor.web.Data;
 using HelpfulNeighbor.web.Features.Authorization;
 using HelpfulNeighbor.web.Features.Interfaces;
 using HelpfulNeighbor.web.Features.Repositories;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
 builder.Services.AddControllers();
+
 builder.Services.AddTransient<SeedHelper>();
 builder.Services.AddScoped<IResourceRepository, ResourceRepository>();
 builder.Services.AddScoped<IShelterRepository, ShelterRepository>();
@@ -23,7 +26,11 @@ builder.Services.AddScoped<ILocationRepository, LocationRepository>();
 builder.Services.AddScoped<ISavedResourceRepository, SavedResourceRepository>();
 builder.Services.AddScoped<ISavedShelterRepository, SavedShelterRepository>();
 builder.Services.AddScoped<IUserCurrentLocationRepository, UserCurrentLocationRepository>();
-builder.Services.AddIdentity<User, Role>().AddEntityFrameworkStores<DataContext>().AddDefaultTokenProviders();
+
+builder.Services.AddIdentity<User, Role>()
+    .AddEntityFrameworkStores<DataContext>()
+    .AddDefaultTokenProviders();
+
 builder.Services.ConfigureApplicationCookie(options =>
 {
     options.Events.OnRedirectToLogin = context =>
@@ -39,9 +46,7 @@ builder.Services.ConfigureApplicationCookie(options =>
     };
 });
 
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+// Add database context configuration
 builder.Services.AddDbContext<DataContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DataContext"));
@@ -49,23 +54,8 @@ builder.Services.AddDbContext<DataContext>(options =>
 
 var app = builder.Build();
 
-using (var scope = app.Services.CreateScope())
-{
-    await SeedHelper(scope.ServiceProvider);
-}
-
-
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
-
 app.UseHttpsRedirection();
-
 app.UseAuthentication();
-
 app.UseRouting();
 app.UseAuthorization();
 app.UseEndpoints(routeBuilder =>
@@ -80,30 +70,42 @@ app.UseSpa(spaBuilder =>
 
     if (app.Environment.IsDevelopment())
     {
-
         spaBuilder.UseProxyToSpaDevelopmentServer("https://localhost:3000/");
     }
 });
 
-app.Run();
-
-async Task SeedHelper(IServiceProvider app)
+using (var scope = app.Services.CreateScope())
 {
-    var scopedFactory = app.GetService<IServiceScopeFactory>();
-
-    using (var scope = scopedFactory.CreateScope())
-    {
-        var service = scope.ServiceProvider.GetService<SeedHelper>();
-
-        // Provide a list of JSON file paths here
-        var jsonFilePaths = new List<string>
-        {
-            "DataObjects/Resource.json",
-            "DataObjects/Shelter.json",
-            "DataObjects/Location.json",
-            "DataObjects/HoursOperation.json"
-        };
-        await service.SeedDataFromJson(jsonFilePaths);
-    }
+    await SeedData(scope.ServiceProvider, app.Environment.IsDevelopment());
 }
 
+app.Run();
+
+async Task SeedData(IServiceProvider serviceProvider, bool isDevelopment)
+{
+    using var scope = serviceProvider.CreateScope();
+    var service = scope.ServiceProvider.GetService<SeedHelper>();
+
+    var jsonFilePaths = new List<string>
+    {
+        "Data/DataObjects/Location.json",
+        "Data/DataObjects/Resource.json",
+        "Data/DataObjects/Shelter.json",
+        "Data/DataObjects/HoursOfOperation.json"
+    };
+
+    try
+    {
+        // Seed data only if in development environment
+        if (isDevelopment)
+        {
+            await service.SeedDataFromJsonIfEmpty(jsonFilePaths);
+        }
+    }
+    catch (Exception ex)
+    {
+        var logger = scope.ServiceProvider.GetService<ILogger<Program>>();
+        logger.LogError($"Error during data seeding: {ex.Message}");
+        throw;
+    }
+}
