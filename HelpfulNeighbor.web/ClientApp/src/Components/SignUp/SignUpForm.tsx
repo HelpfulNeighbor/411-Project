@@ -9,6 +9,7 @@ import {
   Flex,
 } from '@chakra-ui/react';
 import { useForm, SubmitHandler } from 'react-hook-form';
+import LoginModel from '../Login/LoginModel';
 
 type SignUpFormProps = {
   onClose: () => void;
@@ -97,7 +98,7 @@ const LoginForm: React.FC<SignUpFormProps> = ({ onClose }) => {
 
       <Flex justify="center" align="center">
           <Button type="submit" colorScheme="purple">
-            Login
+            Submit
           </Button>
         </Flex>
     </form>

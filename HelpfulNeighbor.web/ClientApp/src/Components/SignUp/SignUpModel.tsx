@@ -32,7 +32,7 @@ export default function LoginModel() {
       <Modal isCentered isOpen={isOpen} onClose={onClose}>
         {overlay}
         <ModalContent>
-          <ModalHeader>Sign Up</ModalHeader>
+          <ModalHeader>Create Your Account</ModalHeader>
           <ModalCloseButton />
           <SignUpForm onClose={onClose}/>
           <ModalFooter>
