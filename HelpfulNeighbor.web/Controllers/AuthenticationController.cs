@@ -70,6 +70,8 @@ namespace HelpfulNeighbor.web.Controllers
             return users.Select(x => new UserDto
             {
                 Id = x.Id,
+                FirstName = x.FirstName!,
+                LastName = x.LastName!,
                 UserName = x.UserName!,
                 EmailAddress = x.Email!,
                 Roles = x.Roles.Select(y => y.Role!.Name).ToArray()!
