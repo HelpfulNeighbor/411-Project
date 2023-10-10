@@ -1,5 +1,5 @@
-﻿using HelpfulNeighbor.web.Features.Models;
-using HelpfulNeighbor.web.Features.Repositories;
+﻿using HelpfulNeighbor.web.Features.Interfaces;
+using HelpfulNeighbor.web.Features.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HelpfulNeighbor.web.Controllers
@@ -8,8 +8,8 @@ namespace HelpfulNeighbor.web.Controllers
     [ApiController]
     public class HourOfOperationController : Controller
     {
-        private readonly HoursOfOperationRepository _hoursOfOperationRepository;
-        public HourOfOperationController(HoursOfOperationRepository hoursOfOperationRepository)
+        private readonly IHoursOfOperationRepository _hoursOfOperationRepository;
+        public HourOfOperationController(IHoursOfOperationRepository hoursOfOperationRepository)
         {
                 _hoursOfOperationRepository = hoursOfOperationRepository;
         }

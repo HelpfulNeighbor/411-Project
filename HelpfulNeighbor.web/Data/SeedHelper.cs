@@ -4,69 +4,121 @@ using HelpfulNeighbor.web.Features.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace HelpfulNeighbor.web.Data
 {
     public class SeedHelper
     {
         private readonly DataContext _context;
+        private readonly ILogger<SeedHelper> _logger;
 
-        public SeedHelper(DataContext context)
+        public SeedHelper(DataContext context, ILogger<SeedHelper> logger)
         {
             _context = context;
+            _logger = logger;
         }
 
-        public async Task SeedDataFromJson(List<string> jsonFilePaths)
+        public async Task SeedDataFromJsonIfEmpty(List<string> jsonFilePaths)
         {
             try
             {
-                foreach (var jsonFilePath in jsonFilePaths)
+                if (!_context.Locations.Any())
                 {
-                    var jsonData = File.ReadAllText(jsonFilePath);
-
-                    var items = JsonConvert.DeserializeObject<List<object>>(jsonData);
-
-                    if (items != null && items.Any())
-                    {
-                        // Determine the type of objects in the list
-                        // and add them to the appropriate DbSet
-                        if (items.First() is Location)
-                        {
-                            _context.Locations.AddRange(items.Cast<Location>());
-                        }
-                        else if (items.First() is Resource)
-                        {
-                            _context.Resources.AddRange(items.Cast<Resource>());
-                        }
-                        else if (items.First() is Shelter)
-                        {
-                            _context.Shelters.AddRange(items.Cast<Shelter>());
-                        }
-                        else if (items.First() is HoursOfOperation)
-                        {
-                            _context.HoursOfOperations.AddRange(items.Cast<HoursOfOperation>());
-                        }
-                        else
-                        {
-                            Console.WriteLine($"Unsupported JSON data type in {jsonFilePath}");
-                        }
-                    }
-                    else
-                    {
-                        Console.WriteLine($"No data found in {jsonFilePath}");
-                    }
+                    await SeedDataFromJsonFile<Location>("Location.json", "Locations");
                 }
 
-                await _context.SaveChangesAsync();
+                if (!_context.Resources.Any())
+                {
+                    await SeedDataFromJsonFile<Resource>("Resource.json", "Resources");
+                }
+
+                if (!_context.Shelters.Any())
+                {
+                    await SeedDataFromJsonFile<Shelter>("Shelter.json", "Shelters");
+                }
+
+                if (!_context.HoursOfOperations.Any())
+                {
+                    await SeedDataFromJsonFile<HoursOfOperation>("HoursOfOperation.json", "HoursOfOperations");
+                }
+
+                _logger.LogInformation("Data seeding completed successfully."); 
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Error: {ex.Message}");
+                _logger.LogError($"Error: {ex.Message}");
+                throw;
+            }
+        }
+
+        private async Task SeedDataFromJsonFile<TEntity>(string jsonFileName, string tableName, int? resourceId = null) where TEntity : class
+        {
+            try
+            {
+                var jsonFilePath = Path.Combine("Data", "DataObjects", jsonFileName);
+                var jsonData = File.ReadAllText(jsonFilePath);
+                _logger.LogInformation($"Reading data from {jsonFilePath}");
+
+                var items = JArray.Parse(jsonData).ToObject<List<TEntity>>();
+
+
+                if (items != null && items.Any())
+                {
+                    foreach (var item in items)
+                    {
+                        if (resourceId != null)
+                        {
+                            var property = item.GetType().GetProperty("ResourceId");
+                            if (property != null)
+                            {
+                                property.SetValue(item, resourceId.Value);
+                            }
+                        }
+                        SetDefaultValuesForStringProperties(item);
+                        await _context.Set<TEntity>().AddAsync(item);
+                    }
+
+                    await _context.SaveChangesAsync();
+                    foreach (var item in items)
+                    {
+                        _logger.LogInformation($"Entity after deserialization and saving: {JsonConvert.SerializeObject(item)}");
+                    }
+                }
+                else
+                {
+                    _logger.LogWarning($"No data found in {jsonFilePath}");
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"Error: {ex.Message}");
+                throw;
+            }
+        }
+
+        private void SetDefaultValuesForStringProperties<TEntity>(TEntity entity) where TEntity : class
+        {
+            var properties = typeof(TEntity).GetProperties();
+
+            foreach (var property in properties)
+            {
+                if (property.PropertyType == typeof(string))
+                {
+                    var propertyValue = property.GetValue(entity) as string;
+
+                    if (string.IsNullOrWhiteSpace(propertyValue))
+                    {
+                        property.SetValue(entity, "DefaultStringValue");
+                    }
+                }
             }
         }
 
