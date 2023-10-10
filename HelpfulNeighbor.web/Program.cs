@@ -2,19 +2,22 @@ using HelpfulNeighbor.web.Data;
 using HelpfulNeighbor.web.Features.Authorization;
 using HelpfulNeighbor.web.Features.Interfaces;
 using HelpfulNeighbor.web.Features.Repositories;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
 builder.Services.AddControllers();
+builder.Logging.AddConsole();
 builder.Services.AddTransient<SeedHelper>();
 builder.Services.AddScoped<IResourceRepository, ResourceRepository>();
 builder.Services.AddScoped<IShelterRepository, ShelterRepository>();
@@ -23,8 +26,9 @@ builder.Services.AddScoped<ILocationRepository, LocationRepository>();
 builder.Services.AddScoped<ISavedResourceRepository, SavedResourceRepository>();
 builder.Services.AddScoped<ISavedShelterRepository, SavedShelterRepository>();
 builder.Services.AddScoped<IUserCurrentLocationRepository, UserCurrentLocationRepository>();
-builder.Services.AddScoped<IUserRepository, UserRepository>();
-builder.Services.AddIdentity<User, Role>().AddEntityFrameworkStores<DataContext>().AddDefaultTokenProviders();
+builder.Services.AddIdentity<User, Role>()
+    .AddEntityFrameworkStores<DataContext>()
+    .AddDefaultTokenProviders();
 builder.Services.ConfigureApplicationCookie(options =>
 {
     options.Events.OnRedirectToLogin = context =>
@@ -48,13 +52,13 @@ builder.Services.AddDbContext<DataContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DataContext"));
 });
 
+
 var app = builder.Build();
 
 using (var scope = app.Services.CreateScope())
 {
-    await SeedHelper(scope.ServiceProvider);
+    await SeedData(scope.ServiceProvider, app.Environment.IsDevelopment());
 }
-
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -81,30 +85,37 @@ app.UseSpa(spaBuilder =>
 
     if (app.Environment.IsDevelopment())
     {
-
         spaBuilder.UseProxyToSpaDevelopmentServer("https://localhost:3000/");
     }
 });
 
 app.Run();
 
-async Task SeedHelper(IServiceProvider app)
+async Task SeedData(IServiceProvider serviceProvider, bool isDevelopment)
 {
-    var scopedFactory = app.GetService<IServiceScopeFactory>();
+    using var scope = serviceProvider.CreateScope();
+    var service = scope.ServiceProvider.GetService<SeedHelper>();
 
-    using (var scope = scopedFactory.CreateScope())
+    var jsonFilePaths = new List<string>
     {
-        var service = scope.ServiceProvider.GetService<SeedHelper>();
+        "Data/DataObjects/Location.json",
+        "Data/DataObjects/Resource.json",
+        "Data/DataObjects/Shelter.json",
+        "Data/DataObjects/HoursOfOperation.json"
+    };
 
-        // Provide a list of JSON file paths here
-        var jsonFilePaths = new List<string>
+    try
+    {
+        // Seed data only if in development environment
+        if (isDevelopment)
         {
-            "DataObjects/Resource.json",
-            "DataObjects/Shelter.json",
-            "DataObjects/Location.json",
-            "DataObjects/HoursOperation.json"
-        };
-        await service.SeedDataFromJson(jsonFilePaths);
+            await service.SeedDataFromJsonIfEmpty(jsonFilePaths);
+        }
+    }
+    catch (Exception ex)
+    {
+        var logger = scope.ServiceProvider.GetService<ILogger<Program>>();
+        logger.LogError($"Error during data seeding: {ex.Message}");
+        throw;
     }
 }
-
