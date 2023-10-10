@@ -20,6 +20,8 @@ namespace HelpfulNeighbor.web.Features.Repositories
                 .Select(x => new UserDto
                 {
                     Id = x.Id,
+                    FirstName = x.FirstName,
+                    LastName = x.LastName,
                     UserName = x.UserName,
                     EmailAddress = x.Email,
                     Roles = x.Roles.Select(x => x.Role.Name).ToArray(),
@@ -28,6 +30,59 @@ namespace HelpfulNeighbor.web.Features.Repositories
                 .ToList();
 
             return users;
+        }
+
+        public async Task<UserDto> GetUserById(int id)
+        {
+            var user = await _userManager.FindByIdAsync(id.ToString());
+
+            if (user != null)
+            {
+                var userDto = new UserDto
+                {
+                    Id = user.Id,
+                    FirstName = user.FirstName,
+                    LastName = user.LastName,
+                    UserName = user.UserName,
+                    EmailAddress = user.Email,
+                    Roles = user.Roles.Select(r => r.Role.Name).ToArray(),
+                };
+
+                return userDto;
+            }
+
+            return null;
+        }
+
+        public async Task<bool> UpdateUser(UserDto user)
+        {
+            var userToUpdate = await _userManager.FindByIdAsync(user.Id.ToString());
+
+            if (userToUpdate != null)
+            {
+                userToUpdate.FirstName = user.FirstName;
+                userToUpdate.LastName = user.LastName;
+                userToUpdate.Email = user.EmailAddress;
+                userToUpdate.UserName = user.UserName;
+
+                // Update other properties as needed
+
+                var updateResult = await _userManager.UpdateAsync(userToUpdate);
+                return updateResult.Succeeded;
+            }
+
+            return false;
+        }
+
+        public async Task<bool> DeleteUser(User user)
+        {
+            if (user == null)
+            {
+                return false; // User not found
+            }
+
+            var deleteResult = await _userManager.DeleteAsync(user);
+            return deleteResult.Succeeded;
         }
     }
 }

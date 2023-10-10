@@ -9,8 +9,10 @@ import {
   Divider,
 } from "@chakra-ui/react";
 
+import LoginModel from "../Login/LoginModel";
+import SignUpModel from "../SignUp/SignUpModel";
 import { Link as ReactRouterLink } from "react-router-dom";
-import {  MdLogin, MdAttachMoney } from "react-icons/md";
+import { MdAttachMoney } from "react-icons/md";
 
 export default function NavBar() {
   return (
@@ -49,15 +51,10 @@ export default function NavBar() {
         <Button rightIcon={<MdAttachMoney />} colorScheme="yellow" p="20px">
             Donate
           </Button>
-          <Button colorScheme="purple" p="20px">
-            Sign Up
-          </Button>
-          <Button rightIcon={<MdLogin />} colorScheme="purple" p="20px">
-            Log in
-          </Button>
+          <SignUpModel />
+          <LoginModel />
         </ButtonGroup>
       </Flex>
-
       <Divider />
     </div>
   );
