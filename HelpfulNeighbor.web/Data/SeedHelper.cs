@@ -87,10 +87,10 @@ namespace HelpfulNeighbor.web.Data
                     }
 
                     await _context.SaveChangesAsync();
-                    foreach (var item in items)
+                    /*foreach (var item in items)
                     {
                         _logger.LogInformation($"Entity after deserialization and saving: {JsonConvert.SerializeObject(item)}");
-                    }
+                    }*/
                 }
                 else
                 {

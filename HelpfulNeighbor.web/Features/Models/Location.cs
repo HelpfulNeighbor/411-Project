@@ -7,7 +7,6 @@ namespace HelpfulNeighbor.web.Features.Models
     public class Location
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int LocationId { get; set; }
         [JsonProperty("Latitude")]
         public decimal? Latitude { get; set; }

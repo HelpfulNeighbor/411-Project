@@ -7,7 +7,6 @@ namespace HelpfulNeighbor.web.Features.Models
     public class Shelter
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ResourceId { get; set; }
         [JsonProperty("Name")]
         public string? Name { get; set; }
