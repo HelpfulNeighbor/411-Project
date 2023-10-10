@@ -4,12 +4,14 @@ using HelpfulNeighbor.web.Features.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace HelpfulNeighbor.web.Data
 {
@@ -45,11 +47,10 @@ namespace HelpfulNeighbor.web.Data
 
                 if (!_context.HoursOfOperations.Any())
                 {
-                    // Pass null resourceId as there's no associated Resource yet
                     await SeedDataFromJsonFile<HoursOfOperation>("HoursOfOperation.json", "HoursOfOperations");
                 }
 
-                _logger.LogInformation("Data seeding completed successfully.");
+                _logger.LogInformation("Data seeding completed successfully."); 
             }
             catch (Exception ex)
             {
@@ -63,11 +64,11 @@ namespace HelpfulNeighbor.web.Data
             try
             {
                 var jsonFilePath = Path.Combine("Data", "DataObjects", jsonFileName);
-                _logger.LogInformation($"Reading data from {jsonFilePath}");
                 var jsonData = File.ReadAllText(jsonFilePath);
+                _logger.LogInformation($"Reading data from {jsonFilePath}");
 
-                // Modify this to match your data models
-                var items = JsonConvert.DeserializeObject<List<TEntity>>(jsonData);
+                var items = JArray.Parse(jsonData).ToObject<List<TEntity>>();
+
 
                 if (items != null && items.Any())
                 {
@@ -81,10 +82,14 @@ namespace HelpfulNeighbor.web.Data
                                 property.SetValue(item, resourceId.Value);
                             }
                         }
+                        SetDefaultValuesForStringProperties(item);
+                        await _context.Set<TEntity>().AddAsync(item);
+                    }
 
-                        // Use migrationBuilder.Sql() to insert data
-                        var insertSql = GenerateInsertSql(item, tableName); // Pass tableName
-                        _context.Database.ExecuteSqlRaw(insertSql);
+                    await _context.SaveChangesAsync();
+                    foreach (var item in items)
+                    {
+                        _logger.LogInformation($"Entity after deserialization and saving: {JsonConvert.SerializeObject(item)}");
                     }
                 }
                 else
@@ -99,54 +104,23 @@ namespace HelpfulNeighbor.web.Data
             }
         }
 
-
-        private string GenerateInsertSql<TEntity>(TEntity entity, string tableName) where TEntity : class
+        private void SetDefaultValuesForStringProperties<TEntity>(TEntity entity) where TEntity : class
         {
             var properties = typeof(TEntity).GetProperties();
-            var columns = new List<string>();
-            var values = new List<string>();
 
             foreach (var property in properties)
             {
-                // Check if the property is marked as an identity column
-                var isIdentity = property.GetCustomAttributes(typeof(DatabaseGeneratedAttribute), true)
-                    .Any(attr => ((DatabaseGeneratedAttribute)attr).DatabaseGeneratedOption == DatabaseGeneratedOption.Identity);
-
-                var propertyValue = property.GetValue(entity);
-
-                // If it's not an identity column, not a navigation property, and not null
-                if (!isIdentity && !property.PropertyType.IsClass)
+                if (property.PropertyType == typeof(string))
                 {
-                    var value = SqlEncodeValue(propertyValue);
-                    values.Add(value == null ? "NULL" : value);
-                    columns.Add(property.Name);
+                    var propertyValue = property.GetValue(entity) as string;
+
+                    if (string.IsNullOrWhiteSpace(propertyValue))
+                    {
+                        property.SetValue(entity, "DefaultStringValue");
+                    }
                 }
             }
-
-            var columnsSql = string.Join(", ", columns);
-            var valuesSql = string.Join(", ", values);
-
-            return $"INSERT INTO {tableName} ({columnsSql}) VALUES ({valuesSql});";
         }
-
-
-
-        private string SqlEncodeValue(object value)
-        {
-            if (value == null)
-            {
-                return "NULL";
-            }
-
-            if (value is string || value is DateTime)
-            {
-                return $"'{value}'";
-            }
-
-            return value.ToString();
-        }
-
-
 
         public static async Task Something(IServiceProvider provider)
         {

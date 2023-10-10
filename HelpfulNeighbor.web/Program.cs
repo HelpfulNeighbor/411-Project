@@ -17,6 +17,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllers();
+builder.Logging.AddConsole();
 builder.Services.AddTransient<SeedHelper>();
 builder.Services.AddScoped<IResourceRepository, ResourceRepository>();
 builder.Services.AddScoped<IShelterRepository, ShelterRepository>();
@@ -50,6 +51,7 @@ builder.Services.AddDbContext<DataContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DataContext"));
 });
+
 
 var app = builder.Build();
 
