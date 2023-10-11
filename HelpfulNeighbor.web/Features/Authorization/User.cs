@@ -10,8 +10,5 @@ namespace HelpfulNeighbor.web.Features.Authorization
 
         public virtual ICollection<UserRole> Roles { get; set; } = new List<UserRole>();
         public virtual ICollection<SavedResource> SavedResources { get; set; } = new List<SavedResource>();
-        public virtual ICollection<SavedShelter> SavedShelters { get; set; } = new List<SavedShelter>();
-        public int? UserCurrentLocationId { get; set; }
-        public UserCurrentLocation UserCurrentLocation { get; set; }
     }
 }

@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HelpfulNeighbor.web.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20231009151559_InitialCreate")]
+    [Migration("20231011032358_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -114,9 +114,6 @@ namespace HelpfulNeighbor.web.Migrations
                     b.Property<bool>("TwoFactorEnabled")
                         .HasColumnType("bit");
 
-                    b.Property<int?>("UserCurrentLocationId")
-                        .HasColumnType("int");
-
                     b.Property<string>("UserName")
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
@@ -176,25 +173,6 @@ namespace HelpfulNeighbor.web.Migrations
                     b.ToTable("HoursOfOperations");
                 });
 
-            modelBuilder.Entity("HelpfulNeighbor.web.Features.Models.Location", b =>
-                {
-                    b.Property<int>("LocationId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("LocationId"));
-
-                    b.Property<decimal?>("Latitude")
-                        .HasColumnType("decimal(8, 6)");
-
-                    b.Property<decimal?>("Longitude")
-                        .HasColumnType("decimal(9, 6)");
-
-                    b.HasKey("LocationId");
-
-                    b.ToTable("Locations");
-                });
-
             modelBuilder.Entity("HelpfulNeighbor.web.Features.Models.Resource", b =>
                 {
                     b.Property<int>("ResourceId")
@@ -212,8 +190,11 @@ namespace HelpfulNeighbor.web.Migrations
                     b.Property<string>("City")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("LocationId")
-                        .HasColumnType("int");
+                    b.Property<decimal?>("Latitude")
+                        .HasColumnType("decimal(8, 6)");
+
+                    b.Property<decimal?>("Longitude")
+                        .HasColumnType("decimal(9, 6)");
 
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
@@ -231,9 +212,6 @@ namespace HelpfulNeighbor.web.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ResourceId");
-
-                    b.HasIndex("LocationId")
-                        .IsUnique();
 
                     b.ToTable("Resources");
                 });
@@ -259,103 +237,6 @@ namespace HelpfulNeighbor.web.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("SavedResources");
-                });
-
-            modelBuilder.Entity("HelpfulNeighbor.web.Features.Models.SavedShelter", b =>
-                {
-                    b.Property<int>("SavedShelterId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("SavedShelterId"));
-
-                    b.Property<int>("ResourceId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
-
-                    b.HasKey("SavedShelterId");
-
-                    b.HasIndex("ResourceId");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("SavedShelters");
-                });
-
-            modelBuilder.Entity("HelpfulNeighbor.web.Features.Models.Shelter", b =>
-                {
-                    b.Property<int>("ResourceId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ResourceId"));
-
-                    b.Property<string>("AdditionalDetails")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Address")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("City")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("LocationId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Parish")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("PhoneNumber")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ResourceType")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ShelterType")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Website")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("ResourceId");
-
-                    b.HasIndex("LocationId")
-                        .IsUnique();
-
-                    b.ToTable("Shelters");
-                });
-
-            modelBuilder.Entity("HelpfulNeighbor.web.Features.Models.UserCurrentLocation", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("LocationId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("Timestamp")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("LocationId")
-                        .IsUnique();
-
-                    b.HasIndex("UserId")
-                        .IsUnique();
-
-                    b.ToTable("UserCurrentLocations");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>
@@ -468,23 +349,12 @@ namespace HelpfulNeighbor.web.Migrations
             modelBuilder.Entity("HelpfulNeighbor.web.Features.Models.HoursOfOperation", b =>
                 {
                     b.HasOne("HelpfulNeighbor.web.Features.Models.Resource", "Resource")
-                        .WithMany()
+                        .WithMany("HoursOfOperation")
                         .HasForeignKey("ResourceId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Resource");
-                });
-
-            modelBuilder.Entity("HelpfulNeighbor.web.Features.Models.Resource", b =>
-                {
-                    b.HasOne("HelpfulNeighbor.web.Features.Models.Location", "Location")
-                        .WithOne("Resource")
-                        .HasForeignKey("HelpfulNeighbor.web.Features.Models.Resource", "LocationId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Location");
                 });
 
             modelBuilder.Entity("HelpfulNeighbor.web.Features.Models.SavedResource", b =>
@@ -502,55 +372,6 @@ namespace HelpfulNeighbor.web.Migrations
                         .IsRequired();
 
                     b.Navigation("Resource");
-
-                    b.Navigation("User");
-                });
-
-            modelBuilder.Entity("HelpfulNeighbor.web.Features.Models.SavedShelter", b =>
-                {
-                    b.HasOne("HelpfulNeighbor.web.Features.Models.Shelter", "Shelter")
-                        .WithMany()
-                        .HasForeignKey("ResourceId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("HelpfulNeighbor.web.Features.Authorization.User", "User")
-                        .WithMany("SavedShelters")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Shelter");
-
-                    b.Navigation("User");
-                });
-
-            modelBuilder.Entity("HelpfulNeighbor.web.Features.Models.Shelter", b =>
-                {
-                    b.HasOne("HelpfulNeighbor.web.Features.Models.Location", "Location")
-                        .WithOne("Shelter")
-                        .HasForeignKey("HelpfulNeighbor.web.Features.Models.Shelter", "LocationId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Location");
-                });
-
-            modelBuilder.Entity("HelpfulNeighbor.web.Features.Models.UserCurrentLocation", b =>
-                {
-                    b.HasOne("HelpfulNeighbor.web.Features.Models.Location", "Location")
-                        .WithOne("UserCurrentLocation")
-                        .HasForeignKey("HelpfulNeighbor.web.Features.Models.UserCurrentLocation", "LocationId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("HelpfulNeighbor.web.Features.Authorization.User", "User")
-                        .WithOne("UserCurrentLocation")
-                        .HasForeignKey("HelpfulNeighbor.web.Features.Models.UserCurrentLocation", "UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Location");
 
                     b.Navigation("User");
                 });
@@ -601,23 +422,11 @@ namespace HelpfulNeighbor.web.Migrations
                     b.Navigation("Roles");
 
                     b.Navigation("SavedResources");
-
-                    b.Navigation("SavedShelters");
-
-                    b.Navigation("UserCurrentLocation")
-                        .IsRequired();
                 });
 
-            modelBuilder.Entity("HelpfulNeighbor.web.Features.Models.Location", b =>
+            modelBuilder.Entity("HelpfulNeighbor.web.Features.Models.Resource", b =>
                 {
-                    b.Navigation("Resource")
-                        .IsRequired();
-
-                    b.Navigation("Shelter")
-                        .IsRequired();
-
-                    b.Navigation("UserCurrentLocation")
-                        .IsRequired();
+                    b.Navigation("HoursOfOperation");
                 });
 #pragma warning restore 612, 618
         }
