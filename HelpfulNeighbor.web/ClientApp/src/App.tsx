@@ -13,6 +13,8 @@ import HomePage from './Pages/HomePage';
 import AboutUsPage from './Pages/AboutUsPage';
 import FeedbackPage from './Pages/FeedbackPage';
 import SearchPage from './Pages/SearchPage';
+import ProfilePage from './Pages/ProfilePage'; 
+//import AuthProfilePage from './Pages/Auth/ProfilePage'; //Render this page when logged into a user
 
 // importing themes
 import {extendTheme} from '@chakra-ui/react'
@@ -20,6 +22,8 @@ import '@fontsource/bigshot-one/400.css'
 import '@fontsource/aleo/700.css'
 import '@fontsource/urbanist/400.css';
 import '@fontsource/source-serif-4/400.css';
+
+
 
 // making temporary router and routes (Find the individual pages by doing /the name of the page .. in the url)
 // const router = createBrowserRouter(
@@ -48,6 +52,10 @@ const router = createBrowserRouter([
   {
     path: "/search",
     element: <SearchPage />,
+  },
+  {
+    path:"/profile",
+    element: <ProfilePage/>
   },
 ]);
 
