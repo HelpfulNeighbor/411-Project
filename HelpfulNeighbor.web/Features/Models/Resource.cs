@@ -7,7 +7,6 @@ namespace HelpfulNeighbor.web.Features.Models
     public class Resource
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ResourceId { get; set; }
         [JsonProperty("Name")]
         public string? Name { get; set; }
@@ -25,9 +24,17 @@ namespace HelpfulNeighbor.web.Features.Models
         public string? Website { get; set; }
         [JsonProperty("ResourceType")]
         public string? ResourceType { get; set; }
-        [JsonProperty("LocationId")]
-        public int LocationId { get; set; }
-        public Location Location { get; set; }// Navigation property to Location (one-to-one)
-     
+        [JsonProperty("Latitude")]
+        public decimal? Latitude { get; set; }
+        [JsonProperty("Longitude")]
+        public decimal? Longitude { get; set; }
+        public ICollection<HoursOfOperation> HoursOfOperation { get; set; }
+        /*           
+        *           If we decide to make ResourceType an int
+        *           
+       public int ResourceTypeId { get; set; }// Foreign key to ResourceType (many-to-one)
+       public ResourceType ResourceType { get; set; }// Navigation property to ResourceType (many-to-one)
+       */
+
     }
 }

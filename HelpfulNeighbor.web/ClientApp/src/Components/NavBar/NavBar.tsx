@@ -34,6 +34,13 @@ export default function NavBar() {
         </Box>
         <Box p="2">
           <Heading size="md">
+            <ChakraLink as={ReactRouterLink} to="/profile">
+              Profile
+            </ChakraLink>
+          </Heading>
+        </Box>
+        <Box p="2">
+          <Heading size="md">
             <ChakraLink as={ReactRouterLink} to="/about">
               About Us
             </ChakraLink>

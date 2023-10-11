@@ -34,7 +34,6 @@ namespace HelpfulNeighbor.web.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     FirstName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     LastName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    UserCurrentLocationId = table.Column<int>(type: "int", nullable: true),
                     UserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     NormalizedUserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     Email = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
@@ -56,17 +55,25 @@ namespace HelpfulNeighbor.web.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Locations",
+                name: "Resources",
                 columns: table => new
                 {
-                    LocationId = table.Column<int>(type: "int", nullable: false)
+                    ResourceId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    City = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Address = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    AdditionalDetails = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Parish = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Website = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    ResourceType = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Latitude = table.Column<decimal>(type: "decimal(8,6)", nullable: true),
                     Longitude = table.Column<decimal>(type: "decimal(9,6)", nullable: true)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Locations", x => x.LocationId);
+                    table.PrimaryKey("PK_Resources", x => x.ResourceId);
                 });
 
             migrationBuilder.CreateTable(
@@ -176,88 +183,6 @@ namespace HelpfulNeighbor.web.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Resources",
-                columns: table => new
-                {
-                    ResourceId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    City = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Address = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    AdditionalDetails = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Parish = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Website = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    ResourceType = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    LocationId = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Resources", x => x.ResourceId);
-                    table.ForeignKey(
-                        name: "FK_Resources_Locations_LocationId",
-                        column: x => x.LocationId,
-                        principalTable: "Locations",
-                        principalColumn: "LocationId",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Shelters",
-                columns: table => new
-                {
-                    ResourceId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    City = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Address = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    ShelterType = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    AdditionalDetails = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Parish = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    PhoneNumber = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Website = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    ResourceType = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    LocationId = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Shelters", x => x.ResourceId);
-                    table.ForeignKey(
-                        name: "FK_Shelters_Locations_LocationId",
-                        column: x => x.LocationId,
-                        principalTable: "Locations",
-                        principalColumn: "LocationId",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "UserCurrentLocations",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    UserId = table.Column<int>(type: "int", nullable: false),
-                    LocationId = table.Column<int>(type: "int", nullable: false),
-                    Timestamp = table.Column<DateTime>(type: "datetime2", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_UserCurrentLocations", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_UserCurrentLocations_AspNetUsers_UserId",
-                        column: x => x.UserId,
-                        principalTable: "AspNetUsers",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_UserCurrentLocations_Locations_LocationId",
-                        column: x => x.LocationId,
-                        principalTable: "Locations",
-                        principalColumn: "LocationId",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "HoursOfOperations",
                 columns: table => new
                 {
@@ -301,32 +226,6 @@ namespace HelpfulNeighbor.web.Migrations
                         name: "FK_SavedResources_Resources_ResourceId",
                         column: x => x.ResourceId,
                         principalTable: "Resources",
-                        principalColumn: "ResourceId",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "SavedShelters",
-                columns: table => new
-                {
-                    SavedShelterId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    UserId = table.Column<int>(type: "int", nullable: false),
-                    ResourceId = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_SavedShelters", x => x.SavedShelterId);
-                    table.ForeignKey(
-                        name: "FK_SavedShelters_AspNetUsers_UserId",
-                        column: x => x.UserId,
-                        principalTable: "AspNetUsers",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_SavedShelters_Shelters_ResourceId",
-                        column: x => x.ResourceId,
-                        principalTable: "Shelters",
                         principalColumn: "ResourceId",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -376,12 +275,6 @@ namespace HelpfulNeighbor.web.Migrations
                 column: "ResourceId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Resources_LocationId",
-                table: "Resources",
-                column: "LocationId",
-                unique: true);
-
-            migrationBuilder.CreateIndex(
                 name: "IX_SavedResources_ResourceId",
                 table: "SavedResources",
                 column: "ResourceId");
@@ -390,34 +283,6 @@ namespace HelpfulNeighbor.web.Migrations
                 name: "IX_SavedResources_UserId",
                 table: "SavedResources",
                 column: "UserId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_SavedShelters_ResourceId",
-                table: "SavedShelters",
-                column: "ResourceId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_SavedShelters_UserId",
-                table: "SavedShelters",
-                column: "UserId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Shelters_LocationId",
-                table: "Shelters",
-                column: "LocationId",
-                unique: true);
-
-            migrationBuilder.CreateIndex(
-                name: "IX_UserCurrentLocations_LocationId",
-                table: "UserCurrentLocations",
-                column: "LocationId",
-                unique: true);
-
-            migrationBuilder.CreateIndex(
-                name: "IX_UserCurrentLocations_UserId",
-                table: "UserCurrentLocations",
-                column: "UserId",
-                unique: true);
         }
 
         /// <inheritdoc />
@@ -445,25 +310,13 @@ namespace HelpfulNeighbor.web.Migrations
                 name: "SavedResources");
 
             migrationBuilder.DropTable(
-                name: "SavedShelters");
-
-            migrationBuilder.DropTable(
-                name: "UserCurrentLocations");
-
-            migrationBuilder.DropTable(
                 name: "AspNetRoles");
-
-            migrationBuilder.DropTable(
-                name: "Resources");
-
-            migrationBuilder.DropTable(
-                name: "Shelters");
 
             migrationBuilder.DropTable(
                 name: "AspNetUsers");
 
             migrationBuilder.DropTable(
-                name: "Locations");
+                name: "Resources");
         }
     }
 }
