@@ -1,4 +1,4 @@
-import NavBar from "../Components/NavBar/NavBar";
+import NavBar from "../../Components/NavBar/NavBar";
 import { Flex, Box, Heading, Avatar, Wrap, Text, WrapItem, Divider, Grid, GridItem, VStack } from "@chakra-ui/react";
 
 export default function ProfilePage () {

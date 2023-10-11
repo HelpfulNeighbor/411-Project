@@ -31,7 +31,7 @@ namespace HelpfulNeighbor.web.Controllers
         }
 
         [HttpGet]
-        [Authorize(Roles = RoleNames.Admin)]
+        [Authorize]
         [ProducesResponseType(200, Type = typeof(IEnumerable<User>))]
         public IActionResult GetUsers()
         {
@@ -44,8 +44,8 @@ namespace HelpfulNeighbor.web.Controllers
         }
 
         [HttpPost]
-        [Authorize(Roles = RoleNames.Admin)]
-        public async Task<ActionResult<UserDto>> CreateUser(CreateUserDto dto)
+        [Authorize]
+        public async Task<ActionResult<UserDto>> CreateUser(UserRegistrationDto dto)
         {
             using var transaction = new TransactionScope(TransactionScopeAsyncFlowOption.Enabled);
 
@@ -90,7 +90,7 @@ namespace HelpfulNeighbor.web.Controllers
 
         [HttpPost]
         [Route("signup")]
-        public async Task<ActionResult<UserDto>> Signup(CreateUserDto dto)
+        public async Task<ActionResult<UserDto>> Signup(UserRegistrationDto dto)
         {
             using var transaction = new TransactionScope(TransactionScopeAsyncFlowOption.Enabled);
 
@@ -140,7 +140,7 @@ namespace HelpfulNeighbor.web.Controllers
 
 
         [HttpPut("{id}")]
-        [Authorize(Roles = RoleNames.Admin)]
+        [Authorize]
         public async Task<IActionResult> UpdateUser(int id, UpdateUserDto dto)
         {
             var userToUpdate = await userManager.FindByIdAsync(id.ToString());
@@ -168,7 +168,7 @@ namespace HelpfulNeighbor.web.Controllers
         }
 
         [HttpDelete("{id}")]
-        [Authorize(Roles = RoleNames.Admin)]
+        [Authorize]
         public async Task<IActionResult> DeleteUser(int id)
         {
             var userToDelete = await userManager.FindByIdAsync(id.ToString());
