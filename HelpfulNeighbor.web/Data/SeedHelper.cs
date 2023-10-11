@@ -30,19 +30,10 @@ namespace HelpfulNeighbor.web.Data
         {
             try
             {
-                if (!_context.Locations.Any())
-                {
-                    await SeedDataFromJsonFile<Location>("Location.json", "Locations");
-                }
 
                 if (!_context.Resources.Any())
                 {
                     await SeedDataFromJsonFile<Resource>("Resource.json", "Resources");
-                }
-
-                if (!_context.Shelters.Any())
-                {
-                    await SeedDataFromJsonFile<Shelter>("Shelter.json", "Shelters");
                 }
 
                 if (!_context.HoursOfOperations.Any())
@@ -116,7 +107,7 @@ namespace HelpfulNeighbor.web.Data
 
                     if (string.IsNullOrWhiteSpace(propertyValue))
                     {
-                        property.SetValue(entity, "DefaultStringValue");
+                        property.SetValue(entity, "N/A");
                     }
                 }
             }

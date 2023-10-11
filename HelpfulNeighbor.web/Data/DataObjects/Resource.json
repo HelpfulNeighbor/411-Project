@@ -9,7 +9,8 @@
     "PhoneNumber": "(985-384-5118)",
     "Website": "https://morgancityhousingauthority.com/",
     "ResourceType": "Affordable Housing",
-    "LocationId": 1
+    "Latitude": 29.71376729,
+    "Longitude": -91.1972466
   },
   {
     "ResourceId": 2,
@@ -21,7 +22,8 @@
     "PhoneNumber": "(985-726-9000)",
     "Website": "http://www.slidellhousingauthority.org/",
     "ResourceType": "Affordable Housing",
-    "LocationId": 2
+    "Latitude": 30.26616881,
+    "Longitude": -89.77434616
   },
   {
     "ResourceId": 3,
@@ -33,7 +35,8 @@
     "PhoneNumber": "(337-893-4643)",
     "Website": "",
     "ResourceType": "Affordable Housing",
-    "LocationId": 3
+    "Latitude": 29.97877,
+    "Longitude": -92.12464
   },
   {
     "ResourceId": 4,
@@ -45,7 +48,8 @@
     "PhoneNumber": "(337-238-1912)",
     "Website": "",
     "ResourceType": "Affordable Housing",
-    "LocationId": 4
+    "Latitude": 29.97900457,
+    "Longitude": -92.12437146
   },
   {
     "ResourceId": 5,
@@ -57,7 +61,8 @@
     "PhoneNumber": "(985-732-0064)",
     "Website": "",
     "ResourceType": "Affordable Housing",
-    "LocationId": 5
+    "Latitude": 30.75227525,
+    "Longitude": -89.84950307
   },
   {
     "ResourceId": 6,
@@ -69,7 +74,8 @@
     "PhoneNumber": "(318-628-1014)",
     "Website": "",
     "ResourceType": "Affordable Housing",
-    "LocationId": 6
+    "Latitude": 31.92619386,
+    "Longitude": -92.63911313
   },
   {
     "ResourceId": 7,
@@ -81,7 +87,8 @@
     "PhoneNumber": "(318-628-4960)",
     "Website": "",
     "ResourceType": "Affordable Housing",
-    "LocationId": 7
+    "Latitude": 31.90884237,
+    "Longitude": -92.62959313
   },
   {
     "ResourceId": 8,
@@ -93,7 +100,8 @@
     "PhoneNumber": "(318-253-9256)",
     "Website": "",
     "ResourceType": "Affordable Housing",
-    "LocationId": 8
+    "Latitude": 31.12361261,
+    "Longitude": -92.05746465
   },
   {
     "ResourceId": 9,
@@ -105,7 +113,8 @@
     "PhoneNumber": "(337-786-2381)",
     "Website": "",
     "ResourceType": "Affordable Housing",
-    "LocationId": 9
+    "Latitude": 30.44751977,
+    "Longitude": -93.42683736
   },
   {
     "ResourceId": 10,
@@ -117,7 +126,8 @@
     "PhoneNumber": "(337-824-5642)",
     "Website": "https://www.jenningshousingauthority.com/",
     "ResourceType": "Affordable Housing",
-    "LocationId": 10
+    "Latitude": 30.20770289,
+    "Longitude": -92.66096605
   },
   {
     "ResourceId": 11,
@@ -129,7 +139,8 @@
     "PhoneNumber": "(337-824-7800)",
     "Website": "http://www.assistagency.org/index.html",
     "ResourceType": "Affordable Housing",
-    "LocationId": 11
+    "Latitude": 30.22354307,
+    "Longitude": -92.65773502
   },
   {
     "ResourceId": 12,
@@ -141,7 +152,8 @@
     "PhoneNumber": "(504-467-9166)",
     "Website": "http://www.kennerha.com/",
     "ResourceType": "Affordable Housing",
-    "LocationId": 12
+    "Latitude": 30.01027304,
+    "Longitude": -90.25482519
   },
   {
     "ResourceId": 13,
@@ -153,7 +165,8 @@
     "PhoneNumber": "(504-899-4589)",
     "Website": "",
     "ResourceType": "Affordable Housing",
-    "LocationId": 13
+    "Latitude": 29.93475773,
+    "Longitude": -90.08425384
   },
   {
     "ResourceId": 14,
@@ -165,7 +178,8 @@
     "PhoneNumber": "(504-895-6600)",
     "Website": "",
     "ResourceType": "Affordable Housing",
-    "LocationId": 14
+    "Latitude": 29.92653514,
+    "Longitude": -90.09578133
   },
   {
     "ResourceId": 15,
@@ -177,7 +191,8 @@
     "PhoneNumber": "(504-596-2100)",
     "Website": "https://lafairhousing.org/",
     "ResourceType": "Affordable Housing",
-    "LocationId": 15
+    "Latitude": 29.95124349,
+    "Longitude": -90.07729829
   },
   {
     "ResourceId": 16,
@@ -189,7 +204,8 @@
     "PhoneNumber": "(985-215-3870)",
     "Website": "https://helping-families-in-need-aafinii.business.site/?utm_source=gmb&utm_medium=referral",
     "ResourceType": "Charity",
-    "LocationId": 16
+    "Latitude": 30.5168133,
+    "Longitude": -90.45007396
   },
   {
     "ResourceId": 17,
@@ -201,7 +217,8 @@
     "PhoneNumber": "(337-564-6729)",
     "Website": "https://oxfordhouse.org/",
     "ResourceType": "Clothing Donation Center",
-    "LocationId": 17
+    "Latitude": 30.17802297,
+    "Longitude": -93.20946513
   },
   {
     "ResourceId": 18,
@@ -213,7 +230,8 @@
     "PhoneNumber": "(337-528-2273)",
     "Website": "http://www.care-help.org/",
     "ResourceType": "Clothing Donation Center",
-    "LocationId": 18
+    "Latitude": 30.23883367,
+    "Longitude": -93.37716845
   },
   {
     "ResourceId": 19,
@@ -225,7 +243,8 @@
     "PhoneNumber": "(337-305-5641)",
     "Website": "",
     "ResourceType": "Clothing Donation Center",
-    "LocationId": 19
+    "Latitude": 30.49542401,
+    "Longitude": -92.40651872
   },
   {
     "ResourceId": 20,
@@ -237,7 +256,8 @@
     "PhoneNumber": "(985-646-0357)",
     "Website": "https://www.cccslidell.org/",
     "ResourceType": "Clothing Donation Center",
-    "LocationId": 20
+    "Latitude": 30.2705881,
+    "Longitude": -89.78401836
   },
   {
     "ResourceId": 21,
@@ -249,7 +269,8 @@
     "PhoneNumber": "(985-542-8900)",
     "Website": "https://svdpbr.org/",
     "ResourceType": "Clothing Donation Center",
-    "LocationId": 21
+    "Latitude": 30.50895357,
+    "Longitude": -90.48206949
   },
   {
     "ResourceId": 22,
@@ -261,7 +282,8 @@
     "PhoneNumber": "(337) 238-3832",
     "Website": "https://helping-hands-storefront-ministries.hub.biz/",
     "ResourceType": "Clothing Donation Center",
-    "LocationId": 22
+    "Latitude": 31.13949984,
+    "Longitude": -93.26081635
   },
   {
     "ResourceId": 23,
@@ -273,7 +295,8 @@
     "PhoneNumber": "(337-616-8418)",
     "Website": "https://jeffdaviscada.com/",
     "ResourceType": "Domestic Violence Help",
-    "LocationId": 23
+    "Latitude": 30.22837977,
+    "Longitude": -92.6560989
   },
   {
     "ResourceId": 24,
@@ -285,7 +308,8 @@
     "PhoneNumber": "337-235-2407",
     "Website": "https://salvationarmyalm.org/lafayette/",
     "ResourceType": "Food Bank / Distribution Center",
-    "LocationId": 24
+    "Latitude": 30.2265354,
+    "Longitude": -92.01218535
   },
   {
     "ResourceId": 25,
@@ -297,7 +321,8 @@
     "PhoneNumber": "318-282-2230",
     "Website": "",
     "ResourceType": "Food Bank / Distribution Center",
-    "LocationId": 25
+    "Latitude": 32.7709118,
+    "Longitude": -91.89597831
   },
   {
     "ResourceId": 26,
@@ -309,7 +334,8 @@
     "PhoneNumber": "504-523-2116",
     "Website": "https://neworleansmission.org/",
     "ResourceType": "Food Bank / Distribution Center",
-    "LocationId": 26
+    "Latitude": 29.94350932,
+    "Longitude": -90.07682982
   },
   {
     "ResourceId": 27,
@@ -321,7 +347,8 @@
     "PhoneNumber": "504-523-1184",
     "Website": "https://www.ozanaminn.org/",
     "ResourceType": "Food Bank / Distribution Center",
-    "LocationId": 27
+    "Latitude": 29.9578748,
+    "Longitude": -90.09004783
   },
   {
     "ResourceId": 28,
@@ -333,7 +360,8 @@
     "PhoneNumber": "318-325-1755",
     "Website": "https://salvationarmyalm.org/monroe/",
     "ResourceType": "Food Bank / Distribution Center",
-    "LocationId": 28
+    "Latitude": 32.50322374,
+    "Longitude": -92.11297356
   },
   {
     "ResourceId": 29,
@@ -345,7 +373,8 @@
     "PhoneNumber": "337-457-7541",
     "Website": "",
     "ResourceType": "Food Bank / Distribution Center",
-    "LocationId": 29
+    "Latitude": 30.50010845,
+    "Longitude": -92.43417662
   },
   {
     "ResourceId": 30,
@@ -357,7 +386,8 @@
     "PhoneNumber": "337-594-8845",
     "Website": "",
     "ResourceType": "Food Bank / Distribution Center",
-    "LocationId": 30
+    "Latitude": 30.54743523,
+    "Longitude": -92.0818735
   },
   {
     "ResourceId": 31,
@@ -369,7 +399,8 @@
     "PhoneNumber": "337-314-9494",
     "Website": "https://www.sbsffoodpantry.org/",
     "ResourceType": "Food Bank / Distribution Center",
-    "LocationId": 31
+    "Latitude": 30.26841583,
+    "Longitude": -91.90471716
   },
   {
     "ResourceId": 32,
@@ -381,7 +412,8 @@
     "PhoneNumber": "985-759-1689",
     "Website": "",
     "ResourceType": "Food Bank / Distribution Center",
-    "LocationId": 32
+    "Latitude": 29.68662878,
+    "Longitude": -91.1542151
   },
   {
     "ResourceId": 33,
@@ -393,7 +425,8 @@
     "PhoneNumber": "985-893-3003",
     "Website": "https://northshorefoodbank.org/",
     "ResourceType": "Food Bank / Distribution Center",
-    "LocationId": 33
+    "Latitude": 30.4842264,
+    "Longitude": -90.09479922
   },
   {
     "ResourceId": 34,
@@ -405,7 +438,8 @@
     "PhoneNumber": "985-626-4457",
     "Website": "https://www.samcen.org/",
     "ResourceType": "Food Bank / Distribution Center",
-    "LocationId": 34
+    "Latitude": 30.35723857,
+    "Longitude": -90.06606197
   },
   {
     "ResourceId": 35,
@@ -417,7 +451,8 @@
     "PhoneNumber": "985-898-0642",
     "Website": "https://www.habitatstw.org/",
     "ResourceType": "Food Bank / Distribution Center",
-    "LocationId": 35
+    "Latitude": 30.4284703,
+    "Longitude": -90.03954872
   },
   {
     "ResourceId": 36,
@@ -429,7 +464,8 @@
     "PhoneNumber": "(337) 786-4486",
     "Website": "",
     "ResourceType": "Food Bank / Distribution Center",
-    "LocationId": 36
+    "Latitude": 30.45149806,
+    "Longitude": -93.42433125
   },
   {
     "ResourceId": 37,
@@ -441,7 +477,8 @@
     "PhoneNumber": "985-735-6404",
     "Website": "",
     "ResourceType": "Food Bank / Distribution Center",
-    "LocationId": 37
+    "Latitude": 30.77759807,
+    "Longitude": -89.85393103
   },
   {
     "ResourceId": 38,
@@ -453,7 +490,8 @@
     "PhoneNumber": "(337-462-4667",
     "Website": "https://www.casawestcenla.org/",
     "ResourceType": "Government Help Organizations",
-    "LocationId": 38
+    "Latitude": 30.85135915,
+    "Longitude": -93.28951408
   },
   {
     "ResourceId": 39,
@@ -465,7 +503,8 @@
     "PhoneNumber": "(318-872-0880)",
     "Website": "https://www.desotoppj.com/office-of-community-services",
     "ResourceType": "Government Help Organizations",
-    "LocationId": 39
+    "Latitude": 32.03747785,
+    "Longitude": -93.70833302
   },
   {
     "ResourceId": 40,
@@ -477,7 +516,8 @@
     "PhoneNumber": "(318-251-5136)",
     "Website": "https://www.lincolnparish.org/help",
     "ResourceType": "Government Help Organizations",
-    "LocationId": 40
+    "Latitude": 32.5315709,
+    "Longitude": -92.64415316
   },
   {
     "ResourceId": 41,
@@ -489,7 +529,8 @@
     "PhoneNumber": "(318-283-0820)",
     "Website": "",
     "ResourceType": "Government Help Organizations",
-    "LocationId": 41
+    "Latitude": 32.78163336,
+    "Longitude": -91.90124782
   },
   {
     "ResourceId": 42,
@@ -501,7 +542,8 @@
     "PhoneNumber": "(985-359-0902)",
     "Website": "",
     "ResourceType": "Government Help Organizations",
-    "LocationId": 42
+    "Latitude": 30.08703539,
+    "Longitude": -90.50265109
   },
   {
     "ResourceId": 43,
@@ -513,7 +555,8 @@
     "PhoneNumber": "(985-542-5022)",
     "Website": "",
     "ResourceType": "Group Housing",
-    "LocationId": 43
+    "Latitude": 30.50333727,
+    "Longitude": -90.4472413
   },
   {
     "ResourceId": 44,
@@ -525,7 +568,8 @@
     "PhoneNumber": "(337-898-3373)",
     "Website": "",
     "ResourceType": "Group Housing",
-    "LocationId": 44
+    "Latitude": 29.96626105,
+    "Longitude": -92.12020475
   },
   {
     "ResourceId": 45,
@@ -537,7 +581,8 @@
     "PhoneNumber": "(318-377-7460)",
     "Website": "",
     "ResourceType": "Group Housing",
-    "LocationId": 45
+    "Latitude": 32.63214849,
+    "Longitude": -93.2846288
   },
   {
     "ResourceId": 46,
@@ -549,7 +594,8 @@
     "PhoneNumber": "(318) 377-6367",
     "Website": "https://www.voa.org/",
     "ResourceType": "Mental Health Treatment Center",
-    "LocationId": 46
+    "Latitude": 32.61626093,
+    "Longitude": -93.2869947
   },
   {
     "ResourceId": 47,
@@ -561,7 +607,8 @@
     "PhoneNumber": "(318) 251-1233",
     "Website": "https://www.elishaministriesnela.org/",
     "ResourceType": "Mental Health Treatment Center",
-    "LocationId": 47
+    "Latitude": 32.52306311,
+    "Longitude": -92.63994952
   },
   {
     "ResourceId": 48,
@@ -573,7 +620,8 @@
     "PhoneNumber": "225-644-4916",
     "Website": "https://www.familyroadgbr.org/indivservices/detail/13",
     "ResourceType": "Social Service Organization",
-    "LocationId": 48
+    "Latitude": 30.22712005,
+    "Longitude": -90.91047626
   },
   {
     "ResourceId": 49,
@@ -585,7 +633,8 @@
     "PhoneNumber": "225-644-7655",
     "Website": "https://www.volunteerascension.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 49
+    "Latitude": 30.23977222,
+    "Longitude": -90.91378626
   },
   {
     "ResourceId": 50,
@@ -597,7 +646,8 @@
     "PhoneNumber": "225-567-2350",
     "Website": "http://www.quadarea.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 50
+    "Latitude": 30.23611611,
+    "Longitude": -90.91391103
   },
   {
     "ResourceId": 51,
@@ -609,7 +659,8 @@
     "PhoneNumber": "225-644-0484",
     "Website": "https://www.lsndc.org/?option=com_cpx&task=resource&id=479484",
     "ResourceType": "Social Service Organization",
-    "LocationId": 51
+    "Latitude": 30.22600239,
+    "Longitude": -90.93201062
   },
   {
     "ResourceId": 52,
@@ -621,7 +672,8 @@
     "PhoneNumber": "318-221-7887",
     "Website": "https://theprovidencehouse.com/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 52
+    "Latitude": 32.50838598,
+    "Longitude": -93.75074947
   },
   {
     "ResourceId": 53,
@@ -633,7 +685,8 @@
     "PhoneNumber": "318-226-1110",
     "Website": "https://salvationarmyalm.org/shreveport/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 53
+    "Latitude": 32.49976161,
+    "Longitude": -93.72944859
   },
   {
     "ResourceId": 54,
@@ -645,7 +698,8 @@
     "PhoneNumber": "318-429-6987",
     "Website": "",
     "ResourceType": "Social Service Organization",
-    "LocationId": 54
+    "Latitude": 32.51192212,
+    "Longitude": -93.75375477
   },
   {
     "ResourceId": 55,
@@ -657,7 +711,8 @@
     "PhoneNumber": "318-631-1011",
     "Website": "https://www.voa.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 55
+    "Latitude": 32.46355403,
+    "Longitude": -93.7650361
   },
   {
     "ResourceId": 56,
@@ -669,7 +724,8 @@
     "PhoneNumber": "318-212-0660",
     "Website": "",
     "ResourceType": "Social Service Organization",
-    "LocationId": 56
+    "Latitude": 32.49785772,
+    "Longitude": -93.73926783
   },
   {
     "ResourceId": 57,
@@ -681,7 +737,8 @@
     "PhoneNumber": "318-865-0157",
     "Website": "",
     "ResourceType": "Social Service Organization",
-    "LocationId": 57
+    "Latitude": 32.44172188,
+    "Longitude": -93.7510708
   },
   {
     "ResourceId": 58,
@@ -693,7 +750,8 @@
     "PhoneNumber": "318-674-9036",
     "Website": "",
     "ResourceType": "Social Service Organization",
-    "LocationId": 58
+    "Latitude": 32.50330977,
+    "Longitude": -93.7388873
   },
   {
     "ResourceId": 59,
@@ -705,7 +763,8 @@
     "PhoneNumber": "318-221-1025",
     "Website": "",
     "ResourceType": "Social Service Organization",
-    "LocationId": 59
+    "Latitude": 32.50101197,
+    "Longitude": -93.7382376
   },
   {
     "ResourceId": 60,
@@ -717,7 +776,8 @@
     "PhoneNumber": "318-629-2561",
     "Website": "https://voanorthla.org/safe-haven/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 60
+    "Latitude": 32.49791277,
+    "Longitude": -93.74556206
   },
   {
     "ResourceId": 61,
@@ -729,7 +789,8 @@
     "PhoneNumber": "318-221-2669",
     "Website": "https://voanorthla.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 61
+    "Latitude": 32.49839657,
+    "Longitude": -93.73723193
   },
   {
     "ResourceId": 62,
@@ -741,7 +802,8 @@
     "PhoneNumber": "318-865-1422",
     "Website": "https://cspla.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 62
+    "Latitude": 32.48208077,
+    "Longitude": -93.7064481
   },
   {
     "ResourceId": 63,
@@ -753,7 +815,8 @@
     "PhoneNumber": "337-433-1062",
     "Website": "https://etcyouth.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 63
+    "Latitude": 30.21511337,
+    "Longitude": -93.16409133
   },
   {
     "ResourceId": 64,
@@ -765,7 +828,8 @@
     "PhoneNumber": "337-433-1088",
     "Website": "https://www.unitedwayswla.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 64
+    "Latitude": 30.22860617,
+    "Longitude": -93.21693967
   },
   {
     "ResourceId": 65,
@@ -777,7 +841,8 @@
     "PhoneNumber": "337-990-5318",
     "Website": "",
     "ResourceType": "Social Service Organization",
-    "LocationId": 65
+    "Latitude": 30.1827191,
+    "Longitude": -93.2137216
   },
   {
     "ResourceId": 66,
@@ -789,7 +854,8 @@
     "PhoneNumber": "225-388-5800",
     "Website": "https://www.homelessinbr.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 66
+    "Latitude": 30.44859717,
+    "Longitude": -91.1719574
   },
   {
     "ResourceId": 67,
@@ -801,7 +867,8 @@
     "PhoneNumber": "225-343-3286",
     "Website": "",
     "ResourceType": "Social Service Organization",
-    "LocationId": 67
+    "Latitude": 30.45054457,
+    "Longitude": -91.1761632
   },
   {
     "ResourceId": 68,
@@ -813,7 +880,8 @@
     "PhoneNumber": "225-355-4483",
     "Website": "https://www.salvationarmybatonrouge.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 68
+    "Latitude": 30.48015112,
+    "Longitude": -91.11462086
   },
   {
     "ResourceId": 69,
@@ -825,7 +893,8 @@
     "PhoneNumber": "225-223-6470",
     "Website": "https://www.leanonmebr.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 69
+    "Latitude": 30.38586332,
+    "Longitude": -91.10813206
   },
   {
     "ResourceId": 70,
@@ -837,7 +906,8 @@
     "PhoneNumber": "225-343-6300",
     "Website": "https://www.youthoasis.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 70
+    "Latitude": 30.44646723,
+    "Longitude": -91.15528383
   },
   {
     "ResourceId": 71,
@@ -849,7 +919,8 @@
     "PhoneNumber": "225-343-7951",
     "Website": "https://www.voa.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 71
+    "Latitude": 30.44783627,
+    "Longitude": -91.1535695
   },
   {
     "ResourceId": 72,
@@ -861,7 +932,8 @@
     "PhoneNumber": "225-444-5004",
     "Website": "",
     "ResourceType": "Social Service Organization",
-    "LocationId": 72
+    "Latitude": 30.48572946,
+    "Longitude": -91.147471
   },
   {
     "ResourceId": 73,
@@ -873,7 +945,8 @@
     "PhoneNumber": "225-387-0061",
     "Website": "https://www.voascla.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 73
+    "Latitude": 30.45380977,
+    "Longitude": -91.1141218
   },
   {
     "ResourceId": 74,
@@ -885,7 +958,8 @@
     "PhoneNumber": "225-929-8969",
     "Website": "https://www.voa.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 74
+    "Latitude": 30.42746407,
+    "Longitude": -91.08359456
   },
   {
     "ResourceId": 75,
@@ -897,7 +971,8 @@
     "PhoneNumber": "225-381-7954",
     "Website": "https://www.voa.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 75
+    "Latitude": 30.44875452,
+    "Longitude": -91.16027406
   },
   {
     "ResourceId": 76,
@@ -909,7 +984,8 @@
     "PhoneNumber": "225-383-4318",
     "Website": "https://www.voa.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 76
+    "Latitude": 30.44311772,
+    "Longitude": -91.1577681
   },
   {
     "ResourceId": 77,
@@ -921,7 +997,8 @@
     "PhoneNumber": "225-928-7612",
     "Website": "https://svdpbr.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 77
+    "Latitude": 30.44916941,
+    "Longitude": -91.17241214
   },
   {
     "ResourceId": 78,
@@ -933,7 +1010,8 @@
     "PhoneNumber": "337-205-9029",
     "Website": "https://faithhouseacadiana.com/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 78
+    "Latitude": "",
+    "Longitude": ""
   },
   {
     "ResourceId": 79,
@@ -945,7 +1023,8 @@
     "PhoneNumber": "318-435-3979",
     "Website": "",
     "ResourceType": "Social Service Organization",
-    "LocationId": 79
+    "Latitude": 32.15636987,
+    "Longitude": -91.71610853
   },
   {
     "ResourceId": 80,
@@ -957,7 +1036,8 @@
     "PhoneNumber": "318-412-0226",
     "Website": "https://wellspringofnela.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 80
+    "Latitude": 32.16417057,
+    "Longitude": -91.71468373
   },
   {
     "ResourceId": 81,
@@ -969,7 +1049,8 @@
     "PhoneNumber": "337-824-7800",
     "Website": "http://www.assistagency.org/index.html",
     "ResourceType": "Social Service Organization",
-    "LocationId": 81
+    "Latitude": 30.22338547,
+    "Longitude": -92.65777793
   },
   {
     "ResourceId": 82,
@@ -981,7 +1062,8 @@
     "PhoneNumber": "504-363-4034",
     "Website": "https://www.hopecenterla.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 82
+    "Latitude": 29.90421477,
+    "Longitude": -90.0532526
   },
   {
     "ResourceId": 83,
@@ -993,7 +1075,8 @@
     "PhoneNumber": "504-736-6900",
     "Website": "",
     "ResourceType": "Social Service Organization",
-    "LocationId": 83
+    "Latitude": 29.96537849,
+    "Longitude": -90.18948303
   },
   {
     "ResourceId": 84,
@@ -1005,7 +1088,8 @@
     "PhoneNumber": "337-235-4972",
     "Website": "https://catholiccharitiesacadiana.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 84
+    "Latitude": 30.23030207,
+    "Longitude": -92.02265577
   },
   {
     "ResourceId": 85,
@@ -1017,7 +1101,8 @@
     "PhoneNumber": "337-266-9956",
     "Website": "",
     "ResourceType": "Social Service Organization",
-    "LocationId": 85
+    "Latitude": 30.21883427,
+    "Longitude": -91.9923938
   },
   {
     "ResourceId": 86,
@@ -1029,7 +1114,8 @@
     "PhoneNumber": "337-234-0162",
     "Website": "",
     "ResourceType": "Social Service Organization",
-    "LocationId": 86
+    "Latitude": 30.23369004,
+    "Longitude": -91.99812713
   },
   {
     "ResourceId": 87,
@@ -1041,7 +1127,8 @@
     "PhoneNumber": "337-234-5715",
     "Website": "https://www.voascla.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 87
+    "Latitude": 30.20097597,
+    "Longitude": -92.01324206
   },
   {
     "ResourceId": 88,
@@ -1053,7 +1140,8 @@
     "PhoneNumber": "337-234-7371",
     "Website": "https://www.redcross.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 88
+    "Latitude": 30.21520995,
+    "Longitude": -92.00696956
   },
   {
     "ResourceId": 89,
@@ -1065,7 +1153,8 @@
     "PhoneNumber": "337-235-4972",
     "Website": "http://catholiccharitiesacadian.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 89
+    "Latitude": 30.23040217,
+    "Longitude": -92.02278613
   },
   {
     "ResourceId": 90,
@@ -1077,7 +1166,8 @@
     "PhoneNumber": "337-261-2351",
     "Website": "",
     "ResourceType": "Social Service Organization",
-    "LocationId": 90
+    "Latitude": 30.25040504,
+    "Longitude": -92.02266163
   },
   {
     "ResourceId": 91,
@@ -1089,7 +1179,8 @@
     "PhoneNumber": "337-269-1557",
     "Website": "https://theheartsofhope.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 91
+    "Latitude": 30.21363922,
+    "Longitude": -92.0098353
   },
   {
     "ResourceId": 92,
@@ -1101,7 +1192,8 @@
     "PhoneNumber": "985-449-1301",
     "Website": "http://chezhope.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 92
+    "Latitude": 29.78874269,
+    "Longitude": -90.8147823
   },
   {
     "ResourceId": 93,
@@ -1113,7 +1205,8 @@
     "PhoneNumber": "985-446-1525",
     "Website": "",
     "ResourceType": "Social Service Organization",
-    "LocationId": 93
+    "Latitude": 29.79195217,
+    "Longitude": -90.817181
   },
   {
     "ResourceId": 94,
@@ -1125,7 +1218,8 @@
     "PhoneNumber": "225-644-4603",
     "Website": "",
     "ResourceType": "Social Service Organization",
-    "LocationId": 94
+    "Latitude": 29.76993776,
+    "Longitude": -90.8437556
   },
   {
     "ResourceId": 95,
@@ -1137,7 +1231,8 @@
     "PhoneNumber": "985-449-1266",
     "Website": "",
     "ResourceType": "Social Service Organization",
-    "LocationId": 95
+    "Latitude": 29.79595057,
+    "Longitude": -90.8271918
   },
   {
     "ResourceId": 96,
@@ -1149,7 +1244,8 @@
     "PhoneNumber": "985-446-2936",
     "Website": "https://www.merakey.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 96
+    "Latitude": 29.79478009,
+    "Longitude": -90.83303046
   },
   {
     "ResourceId": 97,
@@ -1161,7 +1257,8 @@
     "PhoneNumber": "318-232-1113",
     "Website": "",
     "ResourceType": "Social Service Organization",
-    "LocationId": 97
+    "Latitude": 32.52951098,
+    "Longitude": -92.6394249
   },
   {
     "ResourceId": 98,
@@ -1173,7 +1270,8 @@
     "PhoneNumber": "318-251-3282",
     "Website": "https://www.christiancommunityactionlp.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 98
+    "Latitude": 32.52749372,
+    "Longitude": -92.63725833
   },
   {
     "ResourceId": 99,
@@ -1185,7 +1283,8 @@
     "PhoneNumber": "318-251-2255",
     "Website": "https://www.dartla.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 99
+    "Latitude": 32.53063467,
+    "Longitude": -92.6386825
   },
   {
     "ResourceId": 100,
@@ -1197,7 +1296,8 @@
     "PhoneNumber": "225-665-0473",
     "Website": "https://fphsa.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 100
+    "Latitude": 30.46653518,
+    "Longitude": -90.9684025
   },
   {
     "ResourceId": 101,
@@ -1209,7 +1309,8 @@
     "PhoneNumber": "318-680-0033",
     "Website": "",
     "ResourceType": "Social Service Organization",
-    "LocationId": 101
+    "Latitude": 32.40787557,
+    "Longitude": -91.1898592
   },
   {
     "ResourceId": 102,
@@ -1221,7 +1322,8 @@
     "PhoneNumber": "318-281-3655",
     "Website": "https://wellspringofnela.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 102
+    "Latitude": 32.77613407,
+    "Longitude": -91.91511686
   },
   {
     "ResourceId": 103,
@@ -1233,7 +1335,8 @@
     "PhoneNumber": "318-238-2446",
     "Website": "https://casanat.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 103
+    "Latitude": 31.7525245,
+    "Longitude": -93.05696553
   },
   {
     "ResourceId": 104,
@@ -1245,7 +1348,8 @@
     "PhoneNumber": "504-899-4569",
     "Website": "https://southernusa.salvationarmy.org/new-orleans",
     "ResourceType": "Social Service Organization",
-    "LocationId": 104
+    "Latitude": 29.93958788,
+    "Longitude": -90.10543943
   },
   {
     "ResourceId": 105,
@@ -1257,7 +1361,8 @@
     "PhoneNumber": "504-507-1617",
     "Website": "https://www.esthershavenhouse.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 105
+    "Latitude": 29.96258894,
+    "Longitude": -90.08091956
   },
   {
     "ResourceId": 106,
@@ -1269,7 +1374,8 @@
     "PhoneNumber": "504-239-4544",
     "Website": "https://graceatthegreenlight.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 106
+    "Latitude": 29.94047908,
+    "Longitude": -90.0793636
   },
   {
     "ResourceId": 107,
@@ -1281,7 +1387,8 @@
     "PhoneNumber": "504-821-4496",
     "Website": "https://unitygno.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 107
+    "Latitude": 29.96399348,
+    "Longitude": -90.08438787
   },
   {
     "ResourceId": 108,
@@ -1293,7 +1400,8 @@
     "PhoneNumber": "504-525-2561",
     "Website": "https://hope-house-non-profit-organization.business.site/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 108
+    "Latitude": 29.92982338,
+    "Longitude": -90.0738536
   },
   {
     "ResourceId": 109,
@@ -1305,7 +1413,8 @@
     "PhoneNumber": "504-483-9300",
     "Website": "https://unitygno.org/get-involved/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 109
+    "Latitude": 29.98200707,
+    "Longitude": -90.10371493
   },
   {
     "ResourceId": 110,
@@ -1317,7 +1426,8 @@
     "PhoneNumber": "504-658-2944",
     "Website": "https://travelersaidsocietyneworleans.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 110
+    "Latitude": 29.95445068,
+    "Longitude": -90.07874503
   },
   {
     "ResourceId": 111,
@@ -1329,7 +1439,8 @@
     "PhoneNumber": "504-299-1260",
     "Website": "https://www.voasela.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 111
+    "Latitude": 29.96006317,
+    "Longitude": -90.07872513
   },
   {
     "ResourceId": 112,
@@ -1341,7 +1452,8 @@
     "PhoneNumber": "504-821-6023",
     "Website": "",
     "ResourceType": "Social Service Organization",
-    "LocationId": 112
+    "Latitude": 29.97355487,
+    "Longitude": -90.08016579
   },
   {
     "ResourceId": 113,
@@ -1353,7 +1465,8 @@
     "PhoneNumber": "504-482-2130",
     "Website": "https://www.voasela.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 113
+    "Latitude": 29.97506277,
+    "Longitude": -90.10210029
   },
   {
     "ResourceId": 114,
@@ -1365,7 +1478,8 @@
     "PhoneNumber": "504-475-8102",
     "Website": "",
     "ResourceType": "Social Service Organization",
-    "LocationId": 114
+    "Latitude": 29.94854688,
+    "Longitude": -90.06792193
   },
   {
     "ResourceId": 115,
@@ -1377,7 +1491,8 @@
     "PhoneNumber": "504-899-1116",
     "Website": "https://www.voasela.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 115
+    "Latitude": 29.92192617,
+    "Longitude": -90.10219369
   },
   {
     "ResourceId": 116,
@@ -1389,7 +1504,8 @@
     "PhoneNumber": "504-366-3726",
     "Website": "https://ccfbanola.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 116
+    "Latitude": 29.94096647,
+    "Longitude": -90.05100326
   },
   {
     "ResourceId": 117,
@@ -1401,7 +1517,8 @@
     "PhoneNumber": "504-944-5678",
     "Website": "https://www.voa.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 117
+    "Latitude": 29.98811777,
+    "Longitude": -90.0628776
   },
   {
     "ResourceId": 118,
@@ -1413,7 +1530,8 @@
     "PhoneNumber": "504-930-4412",
     "Website": "https://826neworleans.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 118
+    "Latitude": 29.97436037,
+    "Longitude": -90.0668123
   },
   {
     "ResourceId": 119,
@@ -1425,7 +1543,8 @@
     "PhoneNumber": "504-273-5577",
     "Website": "https://www.harrytompsoncenter.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 119
+    "Latitude": 29.95641217,
+    "Longitude": -90.0817582
   },
   {
     "ResourceId": 120,
@@ -1437,7 +1556,8 @@
     "PhoneNumber": "504-482-9922",
     "Website": "https://ywcanola.com/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 120
+    "Latitude": 29.96643657,
+    "Longitude": -90.09935103
   },
   {
     "ResourceId": 121,
@@ -1449,7 +1569,8 @@
     "PhoneNumber": "504-529-1681",
     "Website": "http://www.northrampartcommunity.com/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 121
+    "Latitude": 29.96412719,
+    "Longitude": -90.06458936
   },
   {
     "ResourceId": 122,
@@ -1461,7 +1582,8 @@
     "PhoneNumber": "318-605-2974",
     "Website": "https://renewalcenternela.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 122
+    "Latitude": 32.50888973,
+    "Longitude": -92.10737093
   },
   {
     "ResourceId": 123,
@@ -1473,7 +1595,8 @@
     "PhoneNumber": "318-654-4101",
     "Website": "",
     "ResourceType": "Social Service Organization",
-    "LocationId": 123
+    "Latitude": 32.49131677,
+    "Longitude": -92.09421776
   },
   {
     "ResourceId": 124,
@@ -1485,7 +1608,8 @@
     "PhoneNumber": "318-345-5556",
     "Website": "",
     "ResourceType": "Social Service Organization",
-    "LocationId": 124
+    "Latitude": 32.52129397,
+    "Longitude": -92.07784092
   },
   {
     "ResourceId": 125,
@@ -1497,7 +1621,8 @@
     "PhoneNumber": "318-387-2999",
     "Website": "",
     "ResourceType": "Social Service Organization",
-    "LocationId": 125
+    "Latitude": 32.48050687,
+    "Longitude": -92.1214555
   },
   {
     "ResourceId": 126,
@@ -1509,7 +1634,8 @@
     "PhoneNumber": "318-323-4112",
     "Website": "",
     "ResourceType": "Social Service Organization",
-    "LocationId": 126
+    "Latitude": 32.49038742,
+    "Longitude": -92.10995486
   },
   {
     "ResourceId": 127,
@@ -1521,7 +1647,8 @@
     "PhoneNumber": "318-737-9431",
     "Website": "https://atouchofheaven.godaddysites.com/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 127
+    "Latitude": 32.54073516,
+    "Longitude": -92.1093775
   },
   {
     "ResourceId": 128,
@@ -1533,7 +1660,8 @@
     "PhoneNumber": "318-654-7125",
     "Website": "",
     "ResourceType": "Social Service Organization",
-    "LocationId": 128
+    "Latitude": 32.51002443,
+    "Longitude": -92.12132286
   },
   {
     "ResourceId": 129,
@@ -1545,7 +1673,8 @@
     "PhoneNumber": "318-323-8003",
     "Website": "https://hfhnl.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 129
+    "Latitude": 32.55686476,
+    "Longitude": -92.11318406
   },
   {
     "ResourceId": 130,
@@ -1557,7 +1686,8 @@
     "PhoneNumber": "318-654-4101",
     "Website": "https://familypromise.org/latest/affiliate/family-promise-of-ouachita-parish/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 130
+    "Latitude": 32.49890752,
+    "Longitude": -92.12391973
   },
   {
     "ResourceId": 131,
@@ -1569,7 +1699,8 @@
     "PhoneNumber": "318-322-5109",
     "Website": "https://www.voa.org/affiliates/volunteers-of-america-north-louisiana/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 131
+    "Latitude": 32.49297867,
+    "Longitude": -92.12378327
   },
   {
     "ResourceId": 132,
@@ -1581,7 +1712,8 @@
     "PhoneNumber": "318-443-0500",
     "Website": "",
     "ResourceType": "Social Service Organization",
-    "LocationId": 132
+    "Latitude": 31.30555204,
+    "Longitude": -92.45321997
   },
   {
     "ResourceId": 133,
@@ -1593,7 +1725,8 @@
     "PhoneNumber": "318-442-0445",
     "Website": "https://salvationarmyalm.org/alexandria/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 133
+    "Latitude": 31.31105251,
+    "Longitude": -92.4490212
   },
   {
     "ResourceId": 134,
@@ -1605,7 +1738,8 @@
     "PhoneNumber": "318-445-9053",
     "Website": "https://givetomannahouse.com/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 134
+    "Latitude": 31.28918127,
+    "Longitude": -92.45168939
   },
   {
     "ResourceId": 135,
@@ -1617,7 +1751,8 @@
     "PhoneNumber": "",
     "Website": "",
     "ResourceType": "Social Service Organization",
-    "LocationId": 135
+    "Latitude": 31.30620131,
+    "Longitude": -92.4531987
   },
   {
     "ResourceId": 136,
@@ -1629,7 +1764,8 @@
     "PhoneNumber": "318-487-9806",
     "Website": "https://voanorthla.org/services/central-louisiana/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 136
+    "Latitude": 31.26560867,
+    "Longitude": -92.46756065
   },
   {
     "ResourceId": 137,
@@ -1641,7 +1777,8 @@
     "PhoneNumber": "318-442-8026",
     "Website": "https://voanorthla.org/services/central-louisiana/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 137
+    "Latitude": 31.29947694,
+    "Longitude": -92.4839453
   },
   {
     "ResourceId": 138,
@@ -1653,7 +1790,8 @@
     "PhoneNumber": "318-443-7203",
     "Website": "https://www.uwcl.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 138
+    "Latitude": 31.31045511,
+    "Longitude": -92.44434983
   },
   {
     "ResourceId": 139,
@@ -1665,7 +1803,8 @@
     "PhoneNumber": "318-449-9804",
     "Website": "https://www.habitat.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 139
+    "Latitude": 31.31061694,
+    "Longitude": -92.45711237
   },
   {
     "ResourceId": 140,
@@ -1677,7 +1816,8 @@
     "PhoneNumber": "318-487-9254",
     "Website": "https://www.rscm1429.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 140
+    "Latitude": 31.30897901,
+    "Longitude": -92.44163413
   },
   {
     "ResourceId": 141,
@@ -1689,7 +1829,8 @@
     "PhoneNumber": "318-442-1502",
     "Website": "",
     "ResourceType": "Social Service Organization",
-    "LocationId": 141
+    "Latitude": 31.30667064,
+    "Longitude": -92.438267
   },
   {
     "ResourceId": 142,
@@ -1701,7 +1842,8 @@
     "PhoneNumber": "318-442-6621",
     "Website": "https://www.redcross.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 142
+    "Latitude": 31.30669497,
+    "Longitude": -92.4562419
   },
   {
     "ResourceId": 143,
@@ -1713,7 +1855,8 @@
     "PhoneNumber": "985-651-7367",
     "Website": "https://clovernola.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 143
+    "Latitude": 30.06829867,
+    "Longitude": -90.4844136
   },
   {
     "ResourceId": 144,
@@ -1725,7 +1868,8 @@
     "PhoneNumber": "985-651-9118",
     "Website": "https://stjohnunitedway.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 144
+    "Latitude": 30.08414987,
+    "Longitude": -90.50202586
   },
   {
     "ResourceId": 145,
@@ -1737,7 +1881,8 @@
     "PhoneNumber": "985-651-7397",
     "Website": "",
     "ResourceType": "Social Service Organization",
-    "LocationId": 145
+    "Latitude": 30.069209,
+    "Longitude": -90.49965353
   },
   {
     "ResourceId": 146,
@@ -1749,7 +1894,8 @@
     "PhoneNumber": "337-942-1040",
     "Website": "",
     "ResourceType": "Social Service Organization",
-    "LocationId": 146
+    "Latitude": 30.53550184,
+    "Longitude": -92.0815125
   },
   {
     "ResourceId": 147,
@@ -1761,7 +1907,8 @@
     "PhoneNumber": "337-942-7815",
     "Website": "https://www.uwsle.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 147
+    "Latitude": 30.50352433,
+    "Longitude": -92.07210103
   },
   {
     "ResourceId": 148,
@@ -1773,7 +1920,8 @@
     "PhoneNumber": "337-942-7270",
     "Website": "",
     "ResourceType": "Social Service Organization",
-    "LocationId": 148
+    "Latitude": 30.52991356,
+    "Longitude": -92.0820259
   },
   {
     "ResourceId": 149,
@@ -1785,7 +1933,8 @@
     "PhoneNumber": "337-948-3651",
     "Website": "https://ldh.la.gov/index.cfm/directory/detail/8542/catid/348",
     "ResourceType": "Social Service Organization",
-    "LocationId": 149
+    "Latitude": 30.55656884,
+    "Longitude": -92.0906928
   },
   {
     "ResourceId": 150,
@@ -1797,7 +1946,8 @@
     "PhoneNumber": "985-384-7446",
     "Website": "https://www.stmarycaa.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 150
+    "Latitude": 29.71475759,
+    "Longitude": -91.19782033
   },
   {
     "ResourceId": 151,
@@ -1809,7 +1959,8 @@
     "PhoneNumber": "985-385-0525",
     "Website": "https://stmaryoutreach.org/about-us/programs/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 151
+    "Latitude": 29.69535174,
+    "Longitude": -91.20901406
   },
   {
     "ResourceId": 152,
@@ -1821,7 +1972,8 @@
     "PhoneNumber": "337-394-6013",
     "Website": "https://smilecaa.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 152
+    "Latitude": 30.12729158,
+    "Longitude": -91.84163785
   },
   {
     "ResourceId": 153,
@@ -1833,7 +1985,8 @@
     "PhoneNumber": "337-828-4200",
     "Website": "",
     "ResourceType": "Social Service Organization",
-    "LocationId": 153
+    "Latitude": 29.79367277,
+    "Longitude": -91.50122673
   },
   {
     "ResourceId": 154,
@@ -1845,7 +1998,8 @@
     "PhoneNumber": "337-828-5703",
     "Website": "https://www.stmarycaa.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 154
+    "Latitude": 29.80468147,
+    "Longitude": -91.51313066
   },
   {
     "ResourceId": 155,
@@ -1857,7 +2011,8 @@
     "PhoneNumber": "985-893-3923",
     "Website": "",
     "ResourceType": "Social Service Organization",
-    "LocationId": 155
+    "Latitude": 30.48287662,
+    "Longitude": -90.10184573
   },
   {
     "ResourceId": 156,
@@ -1869,7 +2024,8 @@
     "PhoneNumber": "985-244-6580",
     "Website": "https://www.unitedwaysela.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 156
+    "Latitude": 30.48296047,
+    "Longitude": -90.09598356
   },
   {
     "ResourceId": 157,
@@ -1881,7 +2037,8 @@
     "PhoneNumber": "985-893-8757",
     "Website": "https://www.northshorefoundation.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 157
+    "Latitude": 30.48185943,
+    "Longitude": -90.09617018
   },
   {
     "ResourceId": 158,
@@ -1893,7 +2050,8 @@
     "PhoneNumber": "985-875-0511",
     "Website": "https://www.fhfnorthshore.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 158
+    "Latitude": 30.45757422,
+    "Longitude": -90.13381973
   },
   {
     "ResourceId": 159,
@@ -1905,7 +2063,8 @@
     "PhoneNumber": "985-892-7604",
     "Website": "https://www.easterseals.com/louisiana/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 159
+    "Latitude": 30.43200532,
+    "Longitude": -90.0778298
   },
   {
     "ResourceId": 160,
@@ -1917,7 +2076,8 @@
     "PhoneNumber": "985-674-0488",
     "Website": "https://www.voa.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 160
+    "Latitude": 30.36386522,
+    "Longitude": -90.0646747
   },
   {
     "ResourceId": 161,
@@ -1929,7 +2089,8 @@
     "PhoneNumber": "985-201-7221",
     "Website": "https://www.fpstp.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 161
+    "Latitude": 30.34564796,
+    "Longitude": -90.01715057
   },
   {
     "ResourceId": 162,
@@ -1941,7 +2102,8 @@
     "PhoneNumber": "985-626-6538",
     "Website": "https://namisttammany.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 162
+    "Latitude": 30.34728922,
+    "Longitude": -90.0217626
   },
   {
     "ResourceId": 163,
@@ -1953,7 +2115,8 @@
     "PhoneNumber": "",
     "Website": "",
     "ResourceType": "Social Service Organization",
-    "LocationId": 163
+    "Latitude": 30.29785908,
+    "Longitude": -89.71958632
   },
   {
     "ResourceId": 164,
@@ -1965,7 +2128,8 @@
     "PhoneNumber": "985-646-2090",
     "Website": "",
     "ResourceType": "Social Service Organization",
-    "LocationId": 164
+    "Latitude": 30.26526452,
+    "Longitude": -89.78396232
   },
   {
     "ResourceId": 165,
@@ -1977,7 +2141,8 @@
     "PhoneNumber": "985-641-6421",
     "Website": "https://saintlukeslidell.org/goodsams",
     "ResourceType": "Social Service Organization",
-    "LocationId": 165
+    "Latitude": 30.29109841,
+    "Longitude": -89.73135239
   },
   {
     "ResourceId": 166,
@@ -1989,7 +2154,8 @@
     "PhoneNumber": "985-649-4092",
     "Website": "https://www.ysbworks.com/programs/casa",
     "ResourceType": "Social Service Organization",
-    "LocationId": 166
+    "Latitude": 30.27021407,
+    "Longitude": -89.7861764
   },
   {
     "ResourceId": 167,
@@ -2001,7 +2167,8 @@
     "PhoneNumber": "985-643-1813",
     "Website": "",
     "ResourceType": "Social Service Organization",
-    "LocationId": 167
+    "Latitude": 30.25021467,
+    "Longitude": -89.78911826
   },
   {
     "ResourceId": 168,
@@ -2013,7 +2180,8 @@
     "PhoneNumber": "985-646-0357",
     "Website": "https://www.cccslidell.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 168
+    "Latitude": 30.2729582,
+    "Longitude": -89.78390874
   },
   {
     "ResourceId": 169,
@@ -2025,7 +2193,8 @@
     "PhoneNumber": "985-542-8680",
     "Website": "https://www.unitedwaysela.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 169
+    "Latitude": 30.49988107,
+    "Longitude": -90.4648707
   },
   {
     "ResourceId": 170,
@@ -2037,7 +2206,8 @@
     "PhoneNumber": "985-542-8384",
     "Website": "https://www.safelouisiana.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 170
+    "Latitude": 30.48853727,
+    "Longitude": -90.48347673
   },
   {
     "ResourceId": 171,
@@ -2049,7 +2219,8 @@
     "PhoneNumber": "985-345-8300",
     "Website": "",
     "ResourceType": "Social Service Organization",
-    "LocationId": 171
+    "Latitude": 30.47635813,
+    "Longitude": -90.46686749
   },
   {
     "ResourceId": 172,
@@ -2061,7 +2232,8 @@
     "PhoneNumber": "225-294-4070",
     "Website": "",
     "ResourceType": "Social Service Organization",
-    "LocationId": 172
+    "Latitude": 30.46417257,
+    "Longitude": -90.54254256
   },
   {
     "ResourceId": 173,
@@ -2073,7 +2245,8 @@
     "PhoneNumber": "225-567-2350",
     "Website": "http://www.quadarea.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 173
+    "Latitude": 30.51255967,
+    "Longitude": -90.53298286
   },
   {
     "ResourceId": 174,
@@ -2085,7 +2258,8 @@
     "PhoneNumber": "",
     "Website": "",
     "ResourceType": "Social Service Organization",
-    "LocationId": 174
+    "Latitude": 29.59797176,
+    "Longitude": -90.70198046
   },
   {
     "ResourceId": 175,
@@ -2097,7 +2271,8 @@
     "PhoneNumber": "985-333-2020",
     "Website": "https://www.startcorp.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 175
+    "Latitude": 29.58045034,
+    "Longitude": -90.72737883
   },
   {
     "ResourceId": 176,
@@ -2109,7 +2284,8 @@
     "PhoneNumber": "985-360-3760",
     "Website": "https://optionsforindependence.com/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 176
+    "Latitude": 29.60083565,
+    "Longitude": -90.71631217
   },
   {
     "ResourceId": 177,
@@ -2121,7 +2297,8 @@
     "PhoneNumber": "985-876-0250",
     "Website": "https://casaofterrebonne.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 177
+    "Latitude": 29.59515558,
+    "Longitude": -90.7254876
   },
   {
     "ResourceId": 178,
@@ -2133,7 +2310,8 @@
     "PhoneNumber": "985-868-2620",
     "Website": "https://optionsforindependence.com/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 178
+    "Latitude": 29.59641048,
+    "Longitude": -90.70934079
   },
   {
     "ResourceId": 179,
@@ -2145,7 +2323,8 @@
     "PhoneNumber": "985-879-2461",
     "Website": "https://uwsla.com/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 179
+    "Latitude": 29.59186975,
+    "Longitude": -90.72145685
   },
   {
     "ResourceId": 180,
@@ -2157,7 +2336,8 @@
     "PhoneNumber": "985-873-3145",
     "Website": "https://www.hopeextreme.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 180
+    "Latitude": 29.59246706,
+    "Longitude": -90.703207
   },
   {
     "ResourceId": 181,
@@ -2169,7 +2349,8 @@
     "PhoneNumber": "985-879-3966",
     "Website": "https://www.startcorp.org/contact",
     "ResourceType": "Social Service Organization",
-    "LocationId": 181
+    "Latitude": 29.58599296,
+    "Longitude": -90.72365203
   },
   {
     "ResourceId": 182,
@@ -2181,7 +2362,8 @@
     "PhoneNumber": "337-898-9554",
     "Website": "https://www.assistagency.org/index.html",
     "ResourceType": "Social Service Organization",
-    "LocationId": 182
+    "Latitude": 29.97390998,
+    "Longitude": -92.13179031
   },
   {
     "ResourceId": 183,
@@ -2193,7 +2375,8 @@
     "PhoneNumber": "337-239-1970",
     "Website": "https://www.casawestcenla.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 183
+    "Latitude": 31.14278767,
+    "Longitude": -93.26099686
   },
   {
     "ResourceId": 184,
@@ -2205,7 +2388,8 @@
     "PhoneNumber": "337-239-4357",
     "Website": "",
     "ResourceType": "Social Service Organization",
-    "LocationId": 184
+    "Latitude": 31.13146537,
+    "Longitude": -93.2658673
   },
   {
     "ResourceId": 185,
@@ -2217,7 +2401,8 @@
     "PhoneNumber": "337-404-7710",
     "Website": "",
     "ResourceType": "Social Service Organization",
-    "LocationId": 185
+    "Latitude": 31.07996495,
+    "Longitude": -93.27310873
   },
   {
     "ResourceId": 186,
@@ -2229,7 +2414,8 @@
     "PhoneNumber": "985-732-2305",
     "Website": "https://www.unitedwaysela.org/",
     "ResourceType": "Social Service Organization",
-    "LocationId": 186
+    "Latitude": 30.77381802,
+    "Longitude": -89.8716418
   },
   {
     "ResourceId": 187,
@@ -2241,7 +2427,8 @@
     "PhoneNumber": "318-377-6804",
     "Website": "",
     "ResourceType": "Social Service Organization",
-    "LocationId": 187
+    "Latitude": 32.61486807,
+    "Longitude": -93.2914047
   },
   {
     "ResourceId": 188,
@@ -2253,7 +2440,8 @@
     "PhoneNumber": "318-377-1540",
     "Website": "",
     "ResourceType": "Social Service Organization",
-    "LocationId": 188
+    "Latitude": 32.61607231,
+    "Longitude": -93.2806169
   },
   {
     "ResourceId": 189,
@@ -2265,7 +2453,8 @@
     "PhoneNumber": "318-628-2186",
     "Website": "",
     "ResourceType": "Social Service Organization",
-    "LocationId": 189
+    "Latitude": 31.92657946,
+    "Longitude": -92.63747953
   },
   {
     "ResourceId": 190,
@@ -2277,7 +2466,8 @@
     "PhoneNumber": "337-334-4799",
     "Website": "",
     "ResourceType": "Social Service Organization",
-    "LocationId": 190
+    "Latitude": 30.24374877,
+    "Longitude": -92.27553403
   },
   {
     "ResourceId": 191,
@@ -2289,7 +2479,8 @@
     "PhoneNumber": "(225) 647-8489",
     "Website": "",
     "ResourceType": "Substance Abuse Treatment Center",
-    "LocationId": 191
+    "Latitude": 30.24392527,
+    "Longitude": -90.92193029
   },
   {
     "ResourceId": 192,
@@ -2297,11 +2488,12 @@
     "City": "Sulphur",
     "Address": "1403 W Napoleon St, Sulphur, LA 70663",
     "AdditionalDetails": "",
-    "Parish": "",
-    "PhoneNumber": "Calcasieu",
-    "Website": "(337-527-9513)",
-    "ResourceType": "https://www.legion.org/",
-    "LocationId": 192
+    "Parish": "Calcasieu",
+    "PhoneNumber": "(337-527-9513)",
+    "Website": "https://www.legion.org/",
+    "ResourceType": "Veteran Organization",
+    "Latitude": 30.23480937,
+    "Longitude": -93.3921652
   },
   {
     "ResourceId": 193,
@@ -2309,11 +2501,12 @@
     "City": "New Orleans",
     "Address": "1530 Gravier St, New Orleans, LA 70112",
     "AdditionalDetails": "",
-    "Parish": "",
-    "PhoneNumber": "Orleans",
-    "Website": "(504-412-3700)",
-    "ResourceType": "https://www.va.gov/homeless/crrc.asp",
-    "LocationId": 193
+    "Parish": "Orleans",
+    "PhoneNumber": "(504-412-3700)",
+    "Website": "https://www.va.gov/homeless/crrc.asp",
+    "ResourceType": "Veteran Organization",
+    "Latitude": 29.95445997,
+    "Longitude": -90.07872357
   },
   {
     "ResourceId": 194,
@@ -2321,11 +2514,12 @@
     "City": "Eunice",
     "Address": "1910 Betty St, Eunice, LA 70535",
     "AdditionalDetails": "",
-    "Parish": "",
-    "PhoneNumber": "Saint Landry & Acadia",
-    "Website": "(337-457-3327)",
-    "ResourceType": "",
-    "LocationId": 194
+    "Parish": "Saint Landry & Acadia",
+    "PhoneNumber": "(337-457-3327)",
+    "Website": "",
+    "ResourceType": "Veteran Organization",
+    "Latitude": 30.49411568,
+    "Longitude": -92.43574645
   },
   {
     "ResourceId": 195,
@@ -2333,10 +2527,479 @@
     "City": "Mandeville",
     "Address": "237 W Causeway Approach, Mandeville, LA 70448",
     "AdditionalDetails": "",
-    "Parish": "",
-    "PhoneNumber": "Saint Tammany",
-    "Website": "(985-231-0470)",
-    "ResourceType": "",
-    "LocationId": 195
+    "Parish": "Saint Tammany",
+    "PhoneNumber": "(985-231-0470)",
+    "Website": "",
+    "ResourceType": "Veteran Organization",
+    "Latitude": 30.37793433,
+    "Longitude": -90.0926609
+  },
+  {
+    "ResourceId": 196,
+    "Name": "Assist Agency Homeless Shelter",
+    "City": "Crowley",
+    "Address": "11 North Parkerson Avenue, Crowley, LA 70526",
+    "AdditionalDetails": "",
+    "Parish": "Acadia",
+    "PhoneNumber": "(337) 788-7551 ext. 138",
+    "Website": "http://www.assistagency.org/index.html",
+    "ResourceType": "Emergency Shelter",
+    "Latitude": 30.20928145,
+    "Longitude": -92.3717215
+  },
+  {
+    "ResourceId": 197,
+    "Name": "Mercy Center",
+    "City": "Shreveport",
+    "Address": "740 Austen Pl, Shreveport, LA 71101",
+    "AdditionalDetails": "",
+    "Parish": "Caddo",
+    "PhoneNumber": "(318) 221-8219",
+    "Website": "",
+    "ResourceType": "Homeless shelter",
+    "Latitude": 32.50606467,
+    "Longitude": -93.75404806
+  },
+  {
+    "ResourceId": 198,
+    "Name": "Center of Hope",
+    "City": "Shreveport",
+    "Address": "2130 N Hearne Ave, Shreveport, LA 71101",
+    "AdditionalDetails": "",
+    "Parish": "Caddo",
+    "PhoneNumber": "",
+    "Website": "",
+    "ResourceType": "Homeless shelter",
+    "Latitude": 32.53046787,
+    "Longitude": -93.77937683
+  },
+  {
+    "ResourceId": 199,
+    "Name": "Christian Services",
+    "City": "Shreveport",
+    "Address": "2346 Levy St, Shreveport, LA 71103",
+    "AdditionalDetails": "",
+    "Parish": "Caddo",
+    "PhoneNumber": "(318) 222-0809",
+    "Website": "https://www.christianservicela.org/",
+    "ResourceType": "Homeless shelter",
+    "Latitude": 32.49010217,
+    "Longitude": -93.76504636
+  },
+  {
+    "ResourceId": 200,
+    "Name": "The Salvation Army of NWLA",
+    "City": "Shreveport",
+    "Address": "200 E Stoner Ave, Shreveport, LA 71101",
+    "AdditionalDetails": "",
+    "Parish": "Caddo",
+    "PhoneNumber": "(318) 424-3200",
+    "Website": "https://salvationarmyalm.org/shreveport/",
+    "ResourceType": "Homeless shelter",
+    "Latitude": 32.50033538,
+    "Longitude": -93.7283533
+  },
+  {
+    "ResourceId": 201,
+    "Name": "Potter's House",
+    "City": "Lake Charles",
+    "Address": "3233 Krikman St, Lake Charles, LA 70601",
+    "AdditionalDetails": "",
+    "Parish": "Calcasieu",
+    "PhoneNumber": "(337) 477-1116",
+    "Website": "",
+    "ResourceType": "Homeless shelter",
+    "Latitude": 30.19891213,
+    "Longitude": -93.20954086
+  },
+  {
+    "ResourceId": 202,
+    "Name": "St. Vincent de Paul Bishop Ott Sweet Dreams Shelter",
+    "City": "Baton Rouge",
+    "Address": "1623 Convention St, Baton Rouge, LA 70802",
+    "AdditionalDetails": "",
+    "Parish": "East Baton Rouge",
+    "PhoneNumber": "(225) 383-7341",
+    "Website": "https://svdpbr.org/shelter-housing/",
+    "ResourceType": "Homeless shelter",
+    "Latitude": 30.44903372,
+    "Longitude": -91.1724003
+  },
+  {
+    "ResourceId": 203,
+    "Name": "Living Waters Drop in Center",
+    "City": "Baton Rouge",
+    "Address": "3255 Hollywood St, Baton Rouge, LA 70805",
+    "AdditionalDetails": "",
+    "Parish": "East Baton Rouge",
+    "PhoneNumber": "(225) 248-1054",
+    "Website": "https://www.livingwatersomb.org/dropin/",
+    "ResourceType": "Homeless shelter",
+    "Latitude": 30.49981369,
+    "Longitude": -91.15759
+  },
+  {
+    "ResourceId": 204,
+    "Name": "Open Arms Shelter, Inc",
+    "City": "Winnsboro",
+    "Address": "1436 Ellis Ln, Winnsboro, LA 71295",
+    "AdditionalDetails": "",
+    "Parish": "Caldwell",
+    "PhoneNumber": "(318) 535-3793",
+    "Website": "https://open-arms-shelter-inc.business.site/?utm_source=gmb&utm_medium=referral",
+    "ResourceType": "Homeless shelter",
+    "Latitude": 32.11174735,
+    "Longitude": -91.6597364
+  },
+  {
+    "ResourceId": 205,
+    "Name": "Iberia Homeless Shelter",
+    "City": "New Iberia",
+    "Address": "307 Robertson Street New Iberia, LA 70560",
+    "AdditionalDetails": "Emergency Program:\nShelter for homeless men during an emergency. Qualifying men can stay up to 14 days.\n\nTransitional Program\nQualifying men can stay up to 24 months.\n\nRe Entry Program\nProgram for past clients who have come upon hard times. Can reside at the program for 1 - 6 months. Case management provided.",
+    "Parish": "Iberia",
+    "PhoneNumber": "(337) 369-9900",
+    "Website": "",
+    "ResourceType": "Emergency Shelter",
+    "Latitude": 30.00520937,
+    "Longitude": -91.8266145
+  },
+  {
+    "ResourceId": 206,
+    "Name": "St. Joseph Shelter for Men",
+    "City": "Lafayette",
+    "Address": "425 St John St, Lafayette, LA 70501",
+    "AdditionalDetails": "",
+    "Parish": "Lafayette",
+    "PhoneNumber": "(337) 233-6816",
+    "Website": "",
+    "ResourceType": "Homeless shelter",
+    "Latitude": 30.22956977,
+    "Longitude": -92.02269783
+  },
+  {
+    "ResourceId": 207,
+    "Name": "Family Promise of Acadiana",
+    "City": "Lafayette",
+    "Address": "1604 W University Ave, Lafayette, LA 70506",
+    "AdditionalDetails": "",
+    "Parish": "Lafayette",
+    "PhoneNumber": "(337) 233-3447",
+    "Website": "https://familypromiseacadiana.org/",
+    "ResourceType": "Homeless shelter",
+    "Latitude": 30.22796647,
+    "Longitude": -92.02925673
+  },
+  {
+    "ResourceId": 208,
+    "Name": "My Refuge, My Fortress, Sheltered by the Most High (Faith House - Catholic Charities - Emily House) House of the Lord",
+    "City": "Lafayette",
+    "Address": "1000 E Willow St, Lafayette, LA 70501",
+    "AdditionalDetails": "",
+    "Parish": "Lafayette",
+    "PhoneNumber": "",
+    "Website": "",
+    "ResourceType": "Homeless shelter",
+    "Latitude": 30.24428427,
+    "Longitude": -91.9954166
+  },
+  {
+    "ResourceId": 209,
+    "Name": "Smile Family Shelter",
+    "City": "Lafayette",
+    "Address": "456 St John St, Lafayette, LA 70501",
+    "AdditionalDetails": "",
+    "Parish": "Lafayette",
+    "PhoneNumber": "",
+    "Website": "",
+    "ResourceType": "Homeless shelter",
+    "Latitude": 30.22958657,
+    "Longitude": -92.02310746
+  },
+  {
+    "ResourceId": 210,
+    "Name": "Covenant House New Orleans",
+    "City": "New Orleans",
+    "Address": "611 N Rampart St, New Orleans, LA 70112",
+    "AdditionalDetails": "",
+    "Parish": "Orleans",
+    "PhoneNumber": "(504) 584-1111",
+    "Website": "https://www.covenanthousenola.org/",
+    "ResourceType": "Homeless shelter",
+    "Latitude": 29.95998367,
+    "Longitude": -90.06931496
+  },
+  {
+    "ResourceId": 211,
+    "Name": "New Orleans Mission",
+    "City": "New Orleans",
+    "Address": "1130 Oretha Castle Haley Blvd, New Orleans, LA 70113",
+    "AdditionalDetails": "",
+    "Parish": "Orleans",
+    "PhoneNumber": "(504) 523-2116",
+    "Website": "https://neworleansmission.org/",
+    "ResourceType": "Homeless shelter",
+    "Latitude": 29.94335127,
+    "Longitude": -90.07687273
+  },
+  {
+    "ResourceId": 212,
+    "Name": "Ozanam Inn",
+    "City": "New Orleans",
+    "Address": "2239 Poydras St, New Orleans, LA 70119",
+    "AdditionalDetails": "",
+    "Parish": "Orleans",
+    "PhoneNumber": "(504) 523-1184",
+    "Website": "https://www.ozanaminn.org/",
+    "ResourceType": "Homeless shelter",
+    "Latitude": 29.95772607,
+    "Longitude": -90.09004783
+  },
+  {
+    "ResourceId": 213,
+    "Name": "City of New Orleans Shelter and Engagement Center",
+    "City": "New Orleans",
+    "Address": "1530 Gravier St, New Orleans, LA 70112",
+    "AdditionalDetails": "",
+    "Parish": "Orleans",
+    "PhoneNumber": "(504) 517-1815",
+    "Website": "https://www.startcorp.org/new-orleans",
+    "ResourceType": "Homeless shelter",
+    "Latitude": 29.95445997,
+    "Longitude": -90.07875576
+  },
+  {
+    "ResourceId": 214,
+    "Name": "Hagar's House",
+    "City": "New Orleans",
+    "Address": "3401 Canal St, New Orleans, LA 70119",
+    "AdditionalDetails": "",
+    "Parish": "Orleans",
+    "PhoneNumber": "(504) 210-5064",
+    "Website": "",
+    "ResourceType": "Homeless shelter",
+    "Latitude": 29.97098876,
+    "Longitude": -90.09464447
+  },
+  {
+    "ResourceId": 215,
+    "Name": "Harry Tompson Center",
+    "City": "New Orleans",
+    "Address": "1803 Gravier St, New Orleans, LA 70112",
+    "AdditionalDetails": "",
+    "Parish": "Orleans",
+    "PhoneNumber": "(504) 273-5547",
+    "Website": "https://www.harrytompsoncenter.org/contact-us/",
+    "ResourceType": "Homeless shelter",
+    "Latitude": 29.95639358,
+    "Longitude": -90.0817582
+  },
+  {
+    "ResourceId": 216,
+    "Name": "Magnolia Villa",
+    "City": "New Orleans",
+    "Address": "1801 Magnolia St, New Orleans, LA 70113",
+    "AdditionalDetails": "",
+    "Parish": "Orleans",
+    "PhoneNumber": "",
+    "Website": "",
+    "ResourceType": "Homeless shelter",
+    "Latitude": 29.94417617,
+    "Longitude": -90.0866867
+  },
+  {
+    "ResourceId": 217,
+    "Name": "New Orleans Catholic Worker",
+    "City": "New Orleans",
+    "Address": "1910 Constance St, New Orleans, LA 70130",
+    "AdditionalDetails": "",
+    "Parish": "Orleans",
+    "PhoneNumber": "(504) 457-8062",
+    "Website": "http://neworleanscatholicworker.weebly.com/",
+    "ResourceType": "Homeless shelter",
+    "Latitude": 29.93055127,
+    "Longitude": -90.07325186
+  },
+  {
+    "ResourceId": 218,
+    "Name": "New Orleans Women and Children's Shelter",
+    "City": "New Orleans",
+    "Address": "2020 S Liberty St, New Orleans, LA 70113",
+    "AdditionalDetails": "By appointment",
+    "Parish": "Orleans",
+    "PhoneNumber": "(504) 522-9340",
+    "Website": "https://nowcs.org/contact/",
+    "ResourceType": "Homeless shelter",
+    "Latitude": 29.94075317,
+    "Longitude": -90.08410955
+  },
+  {
+    "ResourceId": 219,
+    "Name": "Underground Railroad Homeless Shelter",
+    "City": "West Monroe",
+    "Address": "2348 Red Cut Rd, West Monroe, LA 71292",
+    "AdditionalDetails": "",
+    "Parish": "Ouachita",
+    "PhoneNumber": "(662) 528-0085",
+    "Website": "https://underground-railroad-homeless-shelter.ueniweb.com/?utm_campaign=gmb",
+    "ResourceType": "Homeless shelter",
+    "Latitude": 32.35875169,
+    "Longitude": -92.1803543
+  },
+  {
+    "ResourceId": 220,
+    "Name": "Hope House",
+    "City": "Alexandria",
+    "Address": "5115 S MacArthur Dr, Alexandria, LA 71302",
+    "AdditionalDetails": "",
+    "Parish": "Rapides",
+    "PhoneNumber": "(318) 487-2061",
+    "Website": "https://cenlahopehouse.org/",
+    "ResourceType": "Homeless shelter",
+    "Latitude": 31.25501347,
+    "Longitude": -92.439127
+  },
+  {
+    "ResourceId": 221,
+    "Name": "Grace House",
+    "City": "Alexandria",
+    "Address": "2807 Levin St, Alexandria, LA 71301",
+    "AdditionalDetails": "",
+    "Parish": "Rapides",
+    "PhoneNumber": "",
+    "Website": "",
+    "ResourceType": "Homeless shelter",
+    "Latitude": 31.30335561,
+    "Longitude": -92.4726043
+  },
+  {
+    "ResourceId": 222,
+    "Name": "Family Violence Program of Saint Bernard",
+    "City": "Chalmette",
+    "Address": "3010 Jean Lafitte Pkwy, Chalmette, LA 70043",
+    "AdditionalDetails": "",
+    "Parish": "St. Bernard",
+    "PhoneNumber": "(504) 277-3177",
+    "Website": "https://fvpsb.org/",
+    "ResourceType": "Women's Shelter",
+    "Latitude": 29.95371237,
+    "Longitude": -89.98268543
+  },
+  {
+    "ResourceId": 223,
+    "Name": "The Refinery Mission",
+    "City": "Opelousas",
+    "Address": "704 W South St, Opelousas, LA 70570",
+    "AdditionalDetails": "",
+    "Parish": "St. Landry",
+    "PhoneNumber": "(337) 948-8865",
+    "Website": "https://refinerymission.org/",
+    "ResourceType": "All Male Shelter",
+    "Latitude": 30.53221303,
+    "Longitude": -92.0914125
+  },
+  {
+    "ResourceId": 224,
+    "Name": "Veterans Point Louisiana",
+    "City": "Opelousas",
+    "Address": "308 W Martin Luther King Jr Dr Suite A, Opelousas, LA 70570",
+    "AdditionalDetails": "",
+    "Parish": "St. Landry",
+    "PhoneNumber": "(337) 255-2655",
+    "Website": "https://www.veteranspointla.com/",
+    "ResourceType": "Veteran's Shelter",
+    "Latitude": 30.54968681,
+    "Longitude": -92.08323312
+  },
+  {
+    "ResourceId": 225,
+    "Name": "Normal Life Inc",
+    "City": "Opelousas",
+    "Address": "1315 Garland Ave, Opelousas, LA 70570",
+    "AdditionalDetails": "",
+    "Parish": "St. Landry",
+    "PhoneNumber": "(337) 948-4003",
+    "Website": "",
+    "ResourceType": "Group Home",
+    "Latitude": 30.54864323,
+    "Longitude": -92.09194336
+  },
+  {
+    "ResourceId": 226,
+    "Name": "Metropolitan Center for Women",
+    "City": "Slidell",
+    "Address": "340 Brakefield St, Slidell, LA 70458",
+    "AdditionalDetails": "",
+    "Parish": "St. Tammany",
+    "PhoneNumber": "",
+    "Website": "",
+    "ResourceType": "Domestic Violence/Women's Shelter",
+    "Latitude": 30.27192941,
+    "Longitude": -89.78297867
+  },
+  {
+    "ResourceId": 227,
+    "Name": "Giving Hope Retreat",
+    "City": "Lacombe",
+    "Address": "31294 U.S. Hwy 190 2nd Building, Lacombe, LA 70445",
+    "AdditionalDetails": "",
+    "Parish": "St. Tammany",
+    "PhoneNumber": "(985) 218-9485",
+    "Website": "https://neworleansmission.org/giving-hope-retreat",
+    "ResourceType": "Homeless shelter",
+    "Latitude": 30.30252737,
+    "Longitude": -89.879332
+  },
+  {
+    "ResourceId": 228,
+    "Name": "Quad Area Winnie Sibley",
+    "City": "Hammond",
+    "Address": "12057 Sallie Kinchen Rd, Hammond, LA 70401",
+    "AdditionalDetails": "",
+    "Parish": "Tangipahoa",
+    "PhoneNumber": "(225) 567-1961",
+    "Website": "",
+    "ResourceType": "Veteran's Shelter",
+    "Latitude": 30.51221457,
+    "Longitude": -90.53174066
+  },
+  {
+    "ResourceId": 229,
+    "Name": "House of Serenity",
+    "City": "Ponchatoula",
+    "Address": "247 N 12th St, Ponchatoula, LA 70454",
+    "AdditionalDetails": "",
+    "Parish": "Tangipahoa",
+    "PhoneNumber": "(985) 351-1879",
+    "Website": "",
+    "ResourceType": "Homeless shelter",
+    "Latitude": 30.44883222,
+    "Longitude": -90.45069963
+  },
+  {
+    "ResourceId": 230,
+    "Name": "Beautiful Beginnings Center",
+    "City": "Houma",
+    "Address": "300 Bond St, Houma, LA 70360",
+    "AdditionalDetails": "",
+    "Parish": "Terrebonne",
+    "PhoneNumber": "",
+    "Website": "",
+    "ResourceType": "Homeless shelter",
+    "Latitude": 29.59139318,
+    "Longitude": -90.724088
+  },
+  {
+    "ResourceId": 231,
+    "Name": "Bunk House Inn Inc",
+    "City": "Houma",
+    "Address": "8424 E Main St, Houma, LA 70363",
+    "AdditionalDetails": "",
+    "Parish": "Terrebonne",
+    "PhoneNumber": "(985) 876-9976",
+    "Website": "",
+    "ResourceType": "Homeless shelter",
+    "Latitude": 29.5977816,
+    "Longitude": -90.70503296
   }
 ]
