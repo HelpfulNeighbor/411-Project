@@ -17,11 +17,29 @@ namespace HelpfulNeighbor.web.Controllers
 
         [HttpGet]
         [ProducesResponseType(200, Type = typeof(IEnumerable<Resource>))]
-        public IActionResult GetResources()
+        public IActionResult GetAllResources()
         {
-            var resource = _resourceRepository.GetResources();
+            var resource = _resourceRepository.GetAllResources();
 
             if(!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            return Ok(resource);
+        }
+
+        [HttpGet("{ResourceId}")]
+        [ProducesResponseType(200, Type = typeof(IEnumerable<Resource>))]
+        [ProducesResponseType(400)]
+        public IActionResult GetResourceById(int id) 
+        {
+            if (!_resourceRepository.ResourceExist(id))
+                   return NotFound();
+
+            var resource = _resourceRepository.GetResourceById(id);
+
+            if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
