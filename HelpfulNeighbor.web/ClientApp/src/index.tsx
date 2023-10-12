@@ -2,15 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import { RouterProvider } from 'react-router-dom';
-import { router } from './Routes/Routes';
+import { Routes} from './Routes/Routes';
+import AuthProvider from './Authentication/AuthProvider';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router}/>
+    <AuthProvider>
+    <Routes />
+    </AuthProvider>
   </React.StrictMode>
 );
 
