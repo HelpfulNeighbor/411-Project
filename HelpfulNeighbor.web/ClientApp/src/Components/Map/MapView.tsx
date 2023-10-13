@@ -6,16 +6,21 @@ export default function MapView(){
     const TOKEN = process.env.REACT_APP_TOKEN;
     const StreetStyle = "mapbox://styles/itsakennedy/clnow2sah009a01p32cby8otx";
 
+    const mapContainerStyle = {
+        width: '100%', 
+        height: '100%', 
+    };
+
     return(
-        <div>
+        <div style={{ width: '100%', height: '100%' }}>
             <Map
                 mapboxAccessToken={TOKEN}
                 initialViewState={{
                     longitude: -90.47158,
                     latitude: 30.51675,
-                    zoom: 6
+                    zoom: 14
                 }}
-                style={{width: 600, height: 400}}
+                style={mapContainerStyle}
                 mapStyle={StreetStyle}
                 />
         </div>

@@ -18,7 +18,7 @@ export default function SearchPage() {
   };
 
   return (
-    <div>
+    <div style={{ height: '100%' }}>
       <NavBar />
       <Flex
         minWidth="max-content"
@@ -34,7 +34,7 @@ export default function SearchPage() {
         templateAreas={`"nav main"`}
         gridTemplateRows={'720px 1fr 30px'}
         gridTemplateColumns={'75px 1fr'}
-        h='720px'
+        h='100%'
         gap='0'
         color='blackAlpha.700'
         fontWeight='bold'
@@ -47,12 +47,12 @@ export default function SearchPage() {
             <IconButton icon={<GoBookmark/>} variant='ghost' size='lg' colorScheme="purple"  aria-label={"Bookmark Resource"}/>
           </VStack>
         </GridItem>
-        <GridItem pl='0' area={'main'}>
+        <GridItem pl='0' area={'main'} style={{ height: '100%' }}>
           <Flex
           minWidth="max-content"
-          p="400px"
+          p="0px"
           justifyContent="center"
-          //backgroundImage="url('https://st4.depositphotos.com/12201730/21347/i/950/depositphotos_213472932-stock-photo-illustration-map-city-atlanta-usa.jpg')"
+          style={{ height: '100%' }}
         > 
           <MapView/>
         </Flex>
