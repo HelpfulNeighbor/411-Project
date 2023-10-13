@@ -21,6 +21,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 var jwtConfig = builder.Configuration.GetSection("jwtConfig");
 var secretKey = jwtConfig["secret"];
+
 // Add services to the container.
 builder.Services.AddControllers();
 builder.Logging.AddConsole();
@@ -28,9 +29,7 @@ builder.Services.AddTransient<SeedHelper>();
 builder.Services.AddScoped<IResourceRepository, ResourceRepository>();
 builder.Services.AddScoped<IHoursOfOperationRepository, HoursOfOperationRepository>();
 builder.Services.AddScoped<ISavedResourceRepository, SavedResourceRepository>();
-builder.Services.AddIdentity<User, Role>()
-    .AddEntityFrameworkStores<DataContext>()
-    .AddDefaultTokenProviders();
+
 builder.Services.ConfigureApplicationCookie(options =>
 {
     options.Events.OnRedirectToLogin = context =>
@@ -60,6 +59,7 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
 builder.Services.AddDbContext<DataContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DataContext"));
