@@ -1,68 +1,34 @@
+import React from 'react';
 import {
-    Flex,
-    Heading,
-    Box,
-    useDisclosure,
-    Button,
     Drawer,
-    DrawerOverlay,
-    DrawerHeader,
-    DrawerCloseButton,
     DrawerBody,
+    DrawerHeader,
+    DrawerOverlay,
     DrawerContent,
-    DrawerFooter,
-    IconButton,
-    VStack,
+    DrawerCloseButton,
     Accordion,
     AccordionItem,
     AccordionButton,
-    AccordionPanel,
+    Box,
     AccordionIcon,
-  
-  } from "@chakra-ui/react";
-  import NavBar from "../../Components/NavBar/NavBar";
-  import React from "react";
-  import { HamburgerIcon } from "@chakra-ui/icons";
-  // import { Link as ReactRouterLink } from "react-router-dom";
-  // import Map from 'react-map-gl';
-  
-  export default function SearchPage() {
-    const { isOpen, onOpen, onClose } = useDisclosure();
-    // const btnRef = React.useRef();
-  
-    return (
-      <div>
-        <NavBar />
-  
-        <Flex
-          minWidth="max-content"
-          p="30px"
-          justifyContent="center"
-          bgColor="#E9D8FD"
-  
-        >
-            <VStack
-            spacing="20px"
-            >
-            
-          <Box
-          display="flex"
-          >
-          <Heading as="b" fontSize="20px">
-            Search for Community Resources
-          </Heading>
-          </Box>
+    AccordionPanel,
+    Heading,
+  } from '@chakra-ui/react'
 
-          <Box
-            alignContent="left"
-          >
-        <IconButton colorScheme="purple" icon={<HamburgerIcon />} onClick={onOpen} aria-label={"Bookmarked Locations"}>
-          </IconButton>
-          <Drawer isOpen={isOpen} placement="left" onClose={onClose}>
+  interface MapDrawerProps {
+    isOpen: boolean;
+    onClose: () => void;
+}
+
+export default function MapDrawer({ isOpen, onClose } : MapDrawerProps){
+    //const { isOpen, onOpen, onClose } = useDisclosure()
+    return(
+        <>
+            <Drawer isOpen={isOpen} placement="left" onClose={onClose}>
             <DrawerOverlay />
             <DrawerContent>
               <DrawerCloseButton />
-              <DrawerHeader textAlign="center">Your Bookmarked Resources</DrawerHeader>
+              <DrawerHeader textAlign="center">Search Results</DrawerHeader>
               <DrawerBody>
                   <Accordion allowToggle>
                       <AccordionItem>
@@ -105,38 +71,8 @@ import {
                       </AccordionItem>
                   </Accordion>
               </DrawerBody>
-              <DrawerFooter>
-                <Button variant="outline" mr={3} onClick={onClose}>
-                  Close
-                </Button>
-              </DrawerFooter>
             </DrawerContent>
           </Drawer>
-  
-          </Box>
-          </VStack>
-        </Flex>
-  
-        <Flex
-          minWidth="max-content"
-          p="235px"
-          justifyContent="center"
-          
-          backgroundImage="url('https://st4.depositphotos.com/12201730/21347/i/950/depositphotos_213472932-stock-photo-illustration-map-city-atlanta-usa.jpg')"
-        > 
-            {/* <Map
-                mapboxAccessToken="<Mapbox access token>"
-                initialViewState={{
-                    longitude: -122.4,
-                    latitude: 37.8,
-                    zoom: 14
-                }}
-                style={{width: 600, height: 400}}
-                mapStyle="mapbox://styles/mapbox/streets-v9"
-            /> */}
-        </Flex>
-  
-      </div>
-    );
-  }
-  
+        </>
+    )
+}

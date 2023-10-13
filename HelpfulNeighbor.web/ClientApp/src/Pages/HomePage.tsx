@@ -1,8 +1,8 @@
 import { Box, Button, Flex, Text, Image, Heading } from "@chakra-ui/react";
 
-import { Link } from "react-router-dom";
+import { Link as ReactRouterLink } from "react-router-dom";
 import { MdSearch } from "react-icons/md";
-import NavBar from "../../Components/NavBar/NavBar";
+import NavBar from "../Components/NavBar/NavBar";
 
 export default function HomePage() {
   return (
@@ -26,17 +26,15 @@ export default function HomePage() {
             <br />
             Search for a nearby community resource.
           </Text>
-          <Link to="/search/">
-            <Button
-              leftIcon={<MdSearch />}
-              colorScheme="purple"
-              mt="35px"
-              ml="125px"
-              width="50%"
-            >
-              Search Now
-            </Button>
-          </Link>
+          <Button
+            leftIcon={<MdSearch />}
+            colorScheme="purple"
+            mt="35px"
+            ml="125px"
+            width="50%"
+          >
+            Search Now
+          </Button>
         </Box>
 
         <Box display="flex" flexDirection="column" ml="100px">
@@ -106,11 +104,9 @@ export default function HomePage() {
         <Text fontSize="30px" p="50px">
           Learn more about the creators of Helpful Neighbor!
         </Text>
-        <Link to="/about">
-          <Button size="lg" colorScheme="purple">
-            About Us
-          </Button>
-        </Link>
+        <Button as={ReactRouterLink} to="/about" size="lg" colorScheme="purple">
+          About Us
+        </Button>
       </Flex>
     </div>
   );

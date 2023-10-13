@@ -85,7 +85,7 @@ namespace HelpfulNeighbor.web.Controllers
 
         [HttpPost]
         [Route("signup")]
-        public async Task<ActionResult<UserDto>> Signup(UserRegistrationDto dto)
+        public async Task<ActionResult<UserDto>> Signup(CreateUserDto dto)
         {
             using var transaction = new TransactionScope(TransactionScopeAsyncFlowOption.Enabled);
 

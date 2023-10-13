@@ -8,7 +8,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { MdAttachMoney, MdPhone } from "react-icons/md";
-import NavBar from "../../Components/NavBar/NavBar";
+import NavBar from "../Components/NavBar/NavBar";
 
 export default function AboutUsPage() {
   return (
