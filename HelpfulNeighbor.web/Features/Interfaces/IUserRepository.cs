@@ -7,6 +7,7 @@ namespace HelpfulNeighbor.web.Features.Interfaces
         ICollection<UserDto> GetUsers();
         Task<UserDto> GetUserById(int id); 
         Task<bool> UpdateUser(UserDto user);
+
         Task<bool> DeleteUser(User user);
 
     }

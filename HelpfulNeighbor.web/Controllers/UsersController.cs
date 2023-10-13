@@ -5,13 +5,8 @@ using HelpfulNeighbor.web.Features.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using System.Buffers.Text;
-using System.Data;
-using System.Reflection.Metadata;
-using System.Security.Principal;
 using System.Transactions;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
-using static System.Runtime.InteropServices.JavaScript.JSType;
+
 
 namespace HelpfulNeighbor.web.Controllers
 {
@@ -31,7 +26,7 @@ namespace HelpfulNeighbor.web.Controllers
         }
 
         [HttpGet]
-        [Authorize]
+        [Authorize(Roles = RoleNames.Admin)]
         [ProducesResponseType(200, Type = typeof(IEnumerable<User>))]
         public IActionResult GetUsers()
         {
@@ -44,7 +39,7 @@ namespace HelpfulNeighbor.web.Controllers
         }
 
         [HttpPost]
-        [Authorize]
+        [Authorize(Roles = RoleNames.Admin)]
         public async Task<ActionResult<UserDto>> CreateUser(UserRegistrationDto dto)
         {
             using var transaction = new TransactionScope(TransactionScopeAsyncFlowOption.Enabled);
@@ -140,7 +135,7 @@ namespace HelpfulNeighbor.web.Controllers
 
 
         [HttpPut("{id}")]
-        [Authorize]
+        [Authorize(Roles = RoleNames.Admin)]
         public async Task<IActionResult> UpdateUser(int id, UpdateUserDto dto)
         {
             var userToUpdate = await userManager.FindByIdAsync(id.ToString());
@@ -168,7 +163,7 @@ namespace HelpfulNeighbor.web.Controllers
         }
 
         [HttpDelete("{id}")]
-        [Authorize]
+        [Authorize(Roles = RoleNames.Admin)]
         public async Task<IActionResult> DeleteUser(int id)
         {
             var userToDelete = await userManager.FindByIdAsync(id.ToString());
