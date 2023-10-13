@@ -61,17 +61,3 @@ const Routes = () => {
 };
 
 export { Routes };
-
-// export const router = createBrowserRouter([
-//     {
-//       path: "/",
-//       element: <App />,
-//       children: [
-//         {path: "", element: <HomePage />},
-//         {path: "about", element: <AboutUsPage />},
-//         {path: "feedback", element: <FeedbackPage />},
-//         {path: "search", element: <SearchPage />},
-//         {path: "profile", element: <ProfilePage />},
-//       ]
-//     },
-//   ]);
