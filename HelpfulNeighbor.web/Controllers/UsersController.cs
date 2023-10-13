@@ -5,13 +5,8 @@ using HelpfulNeighbor.web.Features.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using System.Buffers.Text;
-using System.Data;
-using System.Reflection.Metadata;
-using System.Security.Principal;
 using System.Transactions;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
-using static System.Runtime.InteropServices.JavaScript.JSType;
+
 
 namespace HelpfulNeighbor.web.Controllers
 {
@@ -45,7 +40,7 @@ namespace HelpfulNeighbor.web.Controllers
 
         [HttpPost]
         [Authorize(Roles = RoleNames.Admin)]
-        public async Task<ActionResult<UserDto>> CreateUser(CreateUserDto dto)
+        public async Task<ActionResult<UserDto>> CreateUser(UserRegistrationDto dto)
         {
             using var transaction = new TransactionScope(TransactionScopeAsyncFlowOption.Enabled);
 
