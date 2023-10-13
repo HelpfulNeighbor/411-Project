@@ -2,12 +2,10 @@ import React from 'react';
 import {
     Drawer,
     DrawerBody,
-    DrawerFooter,
     DrawerHeader,
     DrawerOverlay,
     DrawerContent,
     DrawerCloseButton,
-    useDisclosure,
     Accordion,
     AccordionItem,
     AccordionButton,
@@ -15,7 +13,6 @@ import {
     AccordionIcon,
     AccordionPanel,
     Heading,
-    Button,
   } from '@chakra-ui/react'
 
   interface MapDrawerProps {
