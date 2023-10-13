@@ -4,8 +4,8 @@ import React, { useState } from "react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import { GoBookmark } from 'react-icons/go'
 import MapDrawer from "../Components/Drawer/MapDrawer";
+import MapView from "../Components/Map/MapView";
 // import { Link as ReactRouterLink } from "react-router-dom";
-// import Map from 'react-map-gl';
   
 export default function SearchPage() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -50,10 +50,11 @@ export default function SearchPage() {
         <GridItem pl='0' area={'main'}>
           <Flex
           minWidth="max-content"
-          p="235px"
+          p="400px"
           justifyContent="center"
-          backgroundImage="url('https://st4.depositphotos.com/12201730/21347/i/950/depositphotos_213472932-stock-photo-illustration-map-city-atlanta-usa.jpg')"
+          //backgroundImage="url('https://st4.depositphotos.com/12201730/21347/i/950/depositphotos_213472932-stock-photo-illustration-map-city-atlanta-usa.jpg')"
         > 
+          <MapView/>
         </Flex>
         </GridItem>
       </Grid>
