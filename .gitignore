@@ -6,3 +6,5 @@ feat/create-more-endpoints
 HelpfulNeighbor.web/bin/Debug/net7.0/HelpfulNeighbor.web.pdb
 =======
 
+HelpfulNeighbor.web/bin/Debug/net7.0/HelpfulNeighbor.web.dll
+HelpfulNeighbor.web/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
