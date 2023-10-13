@@ -1,13 +1,21 @@
 import {Flex, Heading, Grid, GridItem, VStack, IconButton} from "@chakra-ui/react";
 import NavBar from "../Components/NavBar/NavBar";
-import React from "react";
+import React, { useState } from "react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import { GoBookmark } from 'react-icons/go'
+import MapDrawer from "../Components/Drawer/MapDrawer";
 // import { Link as ReactRouterLink } from "react-router-dom";
 // import Map from 'react-map-gl';
   
 export default function SearchPage() {
-  // const btnRef = React.useRef();
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+  const openDrawer = () =>{
+    setIsDrawerOpen(true);
+  };
+  const closeDrawer = () => {
+    setIsDrawerOpen(false);
+  };
 
   return (
     <div>
@@ -34,7 +42,7 @@ export default function SearchPage() {
         <GridItem pl='0' area={'nav'}>
           <VStack spacing='6px'>
             <br/>
-            <IconButton variant='ghost'size='lg' colorScheme="purple" icon={<HamburgerIcon />} aria-label={"Search Results"}/>
+            <IconButton variant='ghost'size='lg' colorScheme="purple" icon={<HamburgerIcon />} aria-label={"Search Results"} onClick={openDrawer}/>
             <br/>
             <IconButton icon={<GoBookmark/>} variant='ghost' size='lg' colorScheme="purple"  aria-label={"Bookmark Resource"}/>
           </VStack>
@@ -46,10 +54,10 @@ export default function SearchPage() {
           justifyContent="center"
           backgroundImage="url('https://st4.depositphotos.com/12201730/21347/i/950/depositphotos_213472932-stock-photo-illustration-map-city-atlanta-usa.jpg')"
         > 
-
         </Flex>
         </GridItem>
       </Grid>
+      <MapDrawer isOpen={isDrawerOpen} onClose={closeDrawer} />
 
     </div>
   );
