@@ -1,10 +1,10 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import App from "../App";
-import FeedbackPage from "../Pages/FeedbackPage/FeedbackPage";
-import AboutUsPage from "../Pages/AboutUsPage/AboutUsPage";
-import SearchPage from "../Pages/SearchPage/SearchPage";
-import HomePage from "../Pages/HomePage/HomePage";
-import ProfilePage from "../Pages/ProfilePage/ProfilePage";
+import FeedbackPage from "../Pages/FeedbackPage";
+import AboutUsPage from "../Pages/AboutUsPage";
+import SearchPage from "../Pages/SearchPage";
+import HomePage from "../Pages//HomePage";
+import ProfilePage from "../Pages/ProfilePage";
 import { ProtectedRoute } from "./ProtectedRoute";
 import AuthProfilePage from "../Pages/Auth/ProfilePage"; //Render this page when logged into a user
 
