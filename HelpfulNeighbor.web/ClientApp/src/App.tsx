@@ -4,6 +4,9 @@ import {Outlet} from 'react-router-dom';
 
 import { ChakraProvider } from '@chakra-ui/react';
 
+import 'mapbox-gl/dist/mapbox-gl.css';
+
+
 // importing themes
 import {extendTheme} from '@chakra-ui/react'
 import '@fontsource/bigshot-one/400.css'

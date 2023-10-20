@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import { GoBookmark } from 'react-icons/go'
 import MapDrawer from "../Components/Drawer/MapDrawer";
-import MapView from "../Components/Map/MapView";
+import MapWithSearch from "../Components/Map/MapWithSearch";
 // import { Link as ReactRouterLink } from "react-router-dom";
   
 export default function SearchPage() {
@@ -54,7 +54,7 @@ export default function SearchPage() {
           justifyContent="center"
           style={{ height: '100%' }}
         > 
-          <MapView/>
+          <MapWithSearch />
         </Flex>
         </GridItem>
       </Grid>
