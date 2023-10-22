@@ -9,9 +9,11 @@ import { Accordion,
     CardHeader, 
     Heading, 
     IconButton, 
+    Stack, 
     StackDivider, 
     Text, 
-    VStack 
+    VStack, 
+
 } from "@chakra-ui/react";
 import React from "react";
 import { GoBookmark } from "react-icons/go";
@@ -21,7 +23,9 @@ export default function InfoCard(){
     let distance;
     let resourceType;
     let address;
-    let hoursOfOp;
+    let dayOfWeek;
+    let openTime;
+    let closeTime;
     let website;
     let phoneNumber;
 
@@ -61,7 +65,22 @@ export default function InfoCard(){
                                 <br/>
                                 Address: {address}
                                 <br/>
-                                Hours of Operation: {hoursOfOp}
+                                Hours of Operation:
+                                <br/>
+                                <Stack direction={['column', 'row']} spacing='12px'>
+                                    <Box>
+                                        <Text>
+                                            {dayOfWeek}
+                                        </Text>
+                                    </Box>
+                                    <Box>
+                                        <Text>
+                                            {openTime} - {closeTime}
+                                        </Text>
+                                    </Box>
+                                    
+                                </Stack>
+
                                 <br/>
                                 Website: {website}
                                 <br/>
