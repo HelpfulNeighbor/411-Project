@@ -15,7 +15,7 @@ import InfoCard from './InfoCard';
 }
 
 export default function MapDrawer({ isOpen, onClose } : MapDrawerProps){
-    //const { isOpen, onOpen, onClose } = useDisclosure()
+    
     return(
         <>
             <Drawer isOpen={isOpen} placement="left" onClose={onClose}>

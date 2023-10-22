@@ -45,7 +45,7 @@ export default function InfoCard(){
                         <Text>Distance: </Text>
                         <Text>{distance}</Text>
                         <br/>
-                        <Accordion defaultIndex={[0]} allowMultiple>
+                        <Accordion allowMultiple>
                             <AccordionItem>
                                 <h2>
                                 <AccordionButton>
