@@ -1,7 +1,6 @@
 import {
     Button,
     Checkbox, 
-    IconButton, 
     Popover,
     PopoverArrow, 
     PopoverBody, 

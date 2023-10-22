@@ -1,8 +1,6 @@
 import { SearchIcon } from "@chakra-ui/icons";
 import {
     Button,
-    Checkbox, 
-    Divider, 
     IconButton, 
     Input, 
     InputGroup, 
@@ -11,11 +9,8 @@ import {
     PopoverArrow, 
     PopoverBody, 
     PopoverContent, 
-    PopoverFooter, 
     PopoverHeader,  
     PopoverTrigger, 
-    Wrap, 
-    WrapItem, 
 } from "@chakra-ui/react";
 import React from "react";
 import { IoIosArrowDown } from 'react-icons/io';
