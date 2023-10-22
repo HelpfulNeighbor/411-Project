@@ -1,5 +1,5 @@
 import React from 'react';
-import SearchBar from './SearchBar';
+import SearchBar from './Search/SearchBar';
 import MapView from './MapView';
 
 const MapWithSearch = () => {
