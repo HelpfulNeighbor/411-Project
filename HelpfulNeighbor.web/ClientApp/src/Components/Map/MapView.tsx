@@ -8,7 +8,7 @@ export default function MapView() {
     const mapContainerStyle: React.CSSProperties = {
         width: '100%',
         height: '100%',
-        position: 'relative', // Add relative positioning
+        position: 'relative', 
     };
 
     return (
@@ -21,7 +21,7 @@ export default function MapView() {
                         latitude: 30.51675,
                         zoom: 14
                     }}
-                    style={{ width: '100%', height: '100%' }} // Set map style directly
+                    style={{ width: '100%', height: '100%' }}
                     mapStyle={StreetStyle}
                 />
             </div>
