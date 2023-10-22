@@ -1,10 +1,29 @@
-import { Card, CardBody, CardHeader, Heading, IconButton, Link, StackDivider, Text, VStack } from "@chakra-ui/react";
+import { Accordion, 
+    AccordionButton, 
+    AccordionIcon, 
+    AccordionItem, 
+    AccordionPanel, 
+    Box, 
+    Card, 
+    CardBody, 
+    CardHeader, 
+    Heading, 
+    IconButton, 
+    StackDivider, 
+    Text, 
+    VStack 
+} from "@chakra-ui/react";
 import React from "react";
 import { GoBookmark } from "react-icons/go";
 
 export default function InfoCard(){
     let name;
     let distance;
+    let resourceType;
+    let address;
+    let hoursOfOp;
+    let website;
+    let phoneNumber;
 
     const infoCardStyle: React.CSSProperties = {
         width: '100%',
@@ -26,8 +45,31 @@ export default function InfoCard(){
                         <Text>Distance: </Text>
                         <Text>{distance}</Text>
                         <br/>
-                        <Link>View More</Link>
-                        <IconButton icon={<GoBookmark/>} variant='ghost' size='lg' colorScheme="purple"  aria-label={"Bookmark Resource"}/>
+                        <Accordion defaultIndex={[0]} allowMultiple>
+                            <AccordionItem>
+                                <h2>
+                                <AccordionButton>
+                                    <Box as="span" flex='1' textAlign='left'>
+                                    View More
+                                    </Box>
+                                    <AccordionIcon />
+                                    <IconButton icon={<GoBookmark/>} variant='ghost' size='lg' colorScheme="purple"  aria-label={"Bookmark Resource"}/>
+                                </AccordionButton>
+                                </h2>
+                                <AccordionPanel pb={4}>
+                                Resource Type: {resourceType}
+                                <br/>
+                                Address: {address}
+                                <br/>
+                                Hours of Operation: {hoursOfOp}
+                                <br/>
+                                Website: {website}
+                                <br/>
+                                Phone Number: {phoneNumber}
+                                </AccordionPanel>
+                            </AccordionItem>
+                        </Accordion>    
+                        
                     </CardBody>
                 </Card>
             </VStack>
