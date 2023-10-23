@@ -10,6 +10,8 @@ import {
 } from "@chakra-ui/react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import api from "../../Api/config";
+import { useAuth } from "../../Authentication/AuthProvider";
+import { useNavigate } from "react-router-dom";
 
 type LoginFormProps = {
   onClose: () => void;
@@ -27,6 +29,8 @@ const LoginForm: React.FC<LoginFormProps> = ({ onClose }) => {
     formState: { errors },
   } = useForm<FormValues>();
 
+  const { setToken } = useAuth();
+  const navigate = useNavigate();
 
   const onSubmit: SubmitHandler<FormValues> = (data) => {
       // Send a POST request to your server for user authentication
@@ -34,7 +38,8 @@ const LoginForm: React.FC<LoginFormProps> = ({ onClose }) => {
   .post('/api/authentication/login', data)
   .then((response) => {
     if (response.status === 200) {
-      console.log("Login successful");
+      setToken?.(response.data);
+      navigate('/app/profile');
     } else {
       console.log("Login failed");
     }

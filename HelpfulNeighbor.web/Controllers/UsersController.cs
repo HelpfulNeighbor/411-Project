@@ -83,7 +83,7 @@ namespace HelpfulNeighbor.web.Controllers
             });
         }
 
-        [HttpPost]
+        /*[HttpPost]
         [Route("signup")]
         public async Task<ActionResult<UserDto>> Signup(UserRegistrationDto dto)
         {
@@ -131,7 +131,7 @@ namespace HelpfulNeighbor.web.Controllers
                 LastName = newUser.LastName,
                 EmailAddress = newUser.Email,
             });
-        }
+        }*/
 
 
         [HttpPut("{id}")]
@@ -163,7 +163,7 @@ namespace HelpfulNeighbor.web.Controllers
         }
 
         [HttpDelete("{id}")]
-        [Authorize(Roles = RoleNames.Admin)]
+        [Authorize]
         public async Task<IActionResult> DeleteUser(int id)
         {
             var userToDelete = await userManager.FindByIdAsync(id.ToString());

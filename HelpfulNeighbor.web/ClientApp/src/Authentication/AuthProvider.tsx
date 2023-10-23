@@ -1,12 +1,14 @@
-import axios from "axios";
-import { createContext, useContext, useEffect, useMemo, useState } from "react";
+import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
+import api from "../Api/config";
 
 interface defaultAuthContextProp {
     token?: string | null;
     setToken?: (newToken: string) => void;
+    isLoggedIn?:() => boolean;
 }
 
 const AuthContext = createContext<defaultAuthContextProp>({});
+
 
 interface AuthProviderProps {
     children: React.ReactNode;
@@ -18,12 +20,20 @@ const AuthProvider = ({ children }: AuthProviderProps) => {
         setToken_(newToken);
     };
 
+    const isLoggedIn = useCallback(() => {
+        if (token){
+            return true;
+        } 
+        return false;
+    },[token])
+
+
     useEffect(() => {
         if (token) {
-            axios.defaults.headers.common["Authorization"] = "Bearer " + token;
+            api.defaults.headers.common["Authorization"] = "Bearer " + token;
             localStorage.setItem("token", token);
         } else {
-            delete axios.defaults.headers.common["Authorization"];
+            delete api.defaults.headers.common["Authorization"];
            localStorage.removeItem("token");
         }
     }, [token]);
@@ -31,9 +41,10 @@ const AuthProvider = ({ children }: AuthProviderProps) => {
     const contextValue = useMemo(
         () => ({
             token,
-            setToken
+            setToken,
+            isLoggedIn
         }),
-        [token]
+        [token, isLoggedIn]
     );
 
     return (
