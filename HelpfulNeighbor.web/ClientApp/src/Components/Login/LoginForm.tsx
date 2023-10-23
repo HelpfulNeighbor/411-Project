@@ -33,20 +33,19 @@ const LoginForm: React.FC<LoginFormProps> = ({ onClose }) => {
   const navigate = useNavigate();
 
   const onSubmit: SubmitHandler<FormValues> = (data) => {
-      // Send a POST request to your server for user authentication
-  api
-  .post('/api/authentication/login', data)
-  .then((response) => {
-    if (response.status === 200) {
-      setToken?.(response.data);
-      navigate('/app/profile');
-    } else {
-      console.log("Login failed");
-    }
-  })
-  .catch((error) => {
-    console.error("An error occurred:", error);
-  });
+    api
+      .post("/api/authentication/login", data)
+      .then((response) => {
+        if (response.status === 200) {
+          setToken?.(response.data);
+          navigate("/app/profile");
+        } else {
+          console.log("Login failed");
+        }
+      })
+      .catch((error) => {
+        console.error("An error occurred:", error);
+      });
     onClose();
   };
 
