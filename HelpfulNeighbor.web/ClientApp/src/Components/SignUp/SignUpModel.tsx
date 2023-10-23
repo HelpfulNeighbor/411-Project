@@ -10,7 +10,7 @@ import {
   Button,
 } from "@chakra-ui/react";
 
-import SignUpForm from './SignUpForm';
+import SignUpForm from "./SignUpForm";
 import { useAuth } from "../../Authentication/AuthProvider";
 
 export default function LoginModel() {
@@ -21,27 +21,29 @@ export default function LoginModel() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [overlay, setoverlay] = React.useState(<BlurredOverlay />);
 
-  const {isLoggedIn} = useAuth();
-  
+  const { isLoggedIn } = useAuth();
+
   return (
     <>
-     {!isLoggedIn?.() && (
-      <Button onClick={() => {
-        setoverlay(<BlurredOverlay />)
-        onOpen()
-      }}
-        colorScheme="purple" p="20px">
-        Sign Up
-      </Button>
-            )}
+      {!isLoggedIn?.() && (
+        <Button
+          onClick={() => {
+            setoverlay(<BlurredOverlay />);
+            onOpen();
+          }}
+          colorScheme="purple"
+          p="20px"
+        >
+          Sign Up
+        </Button>
+      )}
       <Modal isCentered isOpen={isOpen} onClose={onClose}>
         {overlay}
         <ModalContent>
           <ModalHeader>Create Your Account</ModalHeader>
           <ModalCloseButton />
-          <SignUpForm onClose={onClose}/>
-          <ModalFooter>
-          </ModalFooter>
+          <SignUpForm onClose={onClose} />
+          <ModalFooter></ModalFooter>
         </ModalContent>
       </Modal>
     </>
