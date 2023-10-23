@@ -18,7 +18,7 @@ export default function ResourceTypeFilter(){
     const searchFilterStyle: React.CSSProperties = {
         position: 'absolute',
         top: '3%',
-        left: '19%',
+        left: '20%',
     };
 
     return(

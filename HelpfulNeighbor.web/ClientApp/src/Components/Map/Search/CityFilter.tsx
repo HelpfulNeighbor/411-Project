@@ -20,7 +20,7 @@ export default function CityFilter(){
     const searchFilterStyle: React.CSSProperties = {
         position: 'absolute',
         top: '3%',
-        left: '27%',
+        left: '28%',
     };
 
     return(
