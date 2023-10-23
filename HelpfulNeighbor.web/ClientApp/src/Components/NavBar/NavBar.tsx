@@ -15,6 +15,8 @@ import { Link as ReactRouterLink } from "react-router-dom";
 import { MdAttachMoney } from "react-icons/md";
 
 export default function NavBar() {
+  
+
   return (
     <div>
       <Flex minWidth="max-content" align-items="center" gap="3" p="20px">

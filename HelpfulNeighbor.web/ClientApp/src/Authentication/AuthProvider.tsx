@@ -8,6 +8,7 @@ interface defaultAuthContextProp {
 
 const AuthContext = createContext<defaultAuthContextProp>({});
 
+
 interface AuthProviderProps {
     children: React.ReactNode;
 }
@@ -17,6 +18,7 @@ const AuthProvider = ({ children }: AuthProviderProps) => {
     const setToken = (newToken: string) => {
         setToken_(newToken);
     };
+
 
     useEffect(() => {
         if (token) {

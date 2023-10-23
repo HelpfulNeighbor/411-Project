@@ -28,8 +28,8 @@ namespace HelpfulNeighbor.web.Controllers
 
         }
 
-        [HttpGet("me")]
         [Authorize]
+        [HttpGet("me")]
         public async Task<ActionResult<UserDto>> Me()
         {
             var username = User.GetCurrentUserName();
@@ -75,6 +75,7 @@ namespace HelpfulNeighbor.web.Controllers
             return BadRequest(result.Errors);
         }
 
+        [AllowAnonymous]
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] AccountLoginRequestDto loginRequest)
         {
