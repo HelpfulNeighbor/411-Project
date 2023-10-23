@@ -4,11 +4,11 @@ import FeedbackPage from "../Pages/FeedbackPage";
 import AboutUsPage from "../Pages/AboutUsPage";
 import SearchPage from "../Pages/SearchPage";
 import HomePage from "../Pages//HomePage";
-import ProfilePage from "../Pages/ProfilePage";
 import { ProtectedRoute } from "./ProtectedRoute";
 import AuthProfilePage from "../Pages/Auth/ProfilePage"; //Render this page when logged into a user
 
 const Routes = () => {
+
   const publicRoutes = [
     {
       path: "/",
@@ -18,7 +18,6 @@ const Routes = () => {
         { path: "about", element: <AboutUsPage /> },
         { path: "feedback", element: <FeedbackPage /> },
         { path: "search", element: <SearchPage /> },
-        { path: "profile", element: <ProfilePage /> },
       ]
     },
   ];
