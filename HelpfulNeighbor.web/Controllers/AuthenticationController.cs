@@ -56,7 +56,8 @@ namespace HelpfulNeighbor.web.Controllers
             });
         }
 
-        [HttpPost]
+        [AllowAnonymous]
+        [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] UserRegistrationDto userRegistration)
         {
             var user = new User

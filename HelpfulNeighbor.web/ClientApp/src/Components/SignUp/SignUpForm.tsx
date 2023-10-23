@@ -9,6 +9,9 @@ import {
   Flex,
 } from '@chakra-ui/react';
 import { useForm, SubmitHandler } from 'react-hook-form';
+import api from '../../Api/config';
+// import { useAuth } from '../../Authentication/AuthProvider';
+import { useNavigate } from 'react-router-dom';
 
 type SignUpFormProps = {
   onClose: () => void;
@@ -22,16 +25,28 @@ type FormValues = {
   password: string;
 };
 
-const LoginForm: React.FC<SignUpFormProps> = ({ onClose }) => {
+const SignUpForm: React.FC<SignUpFormProps> = ({ onClose }) => {
   const {
     handleSubmit,
     register,
     formState: { errors },
   } = useForm<FormValues>();
 
+  const navigate = useNavigate();
+
   const onSubmit: SubmitHandler<FormValues> = (data) => {
-    // Handle form submission here (e.g., send data to the server)
-    console.log(data);
+    api
+  .post('/api/authentication/register', data)
+  .then((response) => {
+    if (response.status === 200) {
+      navigate('/app/profile');
+    } else {
+      console.log("Sign up failed");
+    }
+  })
+  .catch((error) => {
+    console.error("An error occurred:", error);
+  });
     onClose();
   };
 
@@ -104,4 +119,4 @@ const LoginForm: React.FC<SignUpFormProps> = ({ onClose }) => {
   );
 };
 
-export default LoginForm;
+export default SignUpForm;

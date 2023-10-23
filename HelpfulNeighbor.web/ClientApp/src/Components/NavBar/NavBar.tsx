@@ -13,9 +13,11 @@ import LoginModel from "../Login/LoginModel";
 import SignUpModel from "../SignUp/SignUpModel";
 import { Link as ReactRouterLink } from "react-router-dom";
 import { MdAttachMoney } from "react-icons/md";
+import { useAuth } from "../../Authentication/AuthProvider";
 
 export default function NavBar() {
   
+  const {isLoggedIn} = useAuth();
 
   return (
     <div>
@@ -34,13 +36,15 @@ export default function NavBar() {
             </ChakraLink>
           </Heading>
         </Box>
+        {isLoggedIn?.() && (
         <Box p="2">
           <Heading size="md">
-            <ChakraLink as={ReactRouterLink} to="/profile">
+            <ChakraLink as={ReactRouterLink} to="/app/profile">
               Profile
             </ChakraLink>
           </Heading>
         </Box>
+        )}
         <Box p="2">
           <Heading size="md">
             <ChakraLink as={ReactRouterLink} to="/about">

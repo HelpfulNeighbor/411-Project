@@ -11,6 +11,7 @@ import {
 } from "@chakra-ui/react";
 import { MdLogin } from "react-icons/md";
 import LoginForm from './LoginForm';
+import { useAuth } from "../../Authentication/AuthProvider";
 
 export default function LoginModel() {
   const BlurredOverlay = () => (
@@ -20,8 +21,11 @@ export default function LoginModel() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [overlay, setoverlay] = React.useState(<BlurredOverlay />);
 
+  const {isLoggedIn} = useAuth();
+
   return (
     <>
+    {!isLoggedIn?.() && (
       <Button onClick={() => {
         setoverlay(<BlurredOverlay />)
         onOpen()
@@ -30,6 +34,7 @@ export default function LoginModel() {
         colorScheme="purple" p="20px">
         Login
       </Button>
+      )}
       <Modal isCentered isOpen={isOpen} onClose={onClose}>
         {overlay}
         <ModalContent>
