@@ -9,9 +9,6 @@ import { Box,
     WrapItem, 
 } from "@chakra-ui/react";
 import React from "react";
-import ResourceTypeFilter from "./ResourceTypeFilter";
-import CityFilter from "./CityFilter";
-import ParishFilter from "./ParishFilter";
 
 export default function SearchBar() {
     const searchBarStyle: React.CSSProperties = {
@@ -35,15 +32,6 @@ export default function SearchBar() {
                         </Box>
                     </Stack>
                 </div>
-            </WrapItem>
-            <WrapItem>
-                <ResourceTypeFilter/>
-            </WrapItem>
-            <WrapItem>
-                <CityFilter/>
-            </WrapItem>
-            <WrapItem>
-                <ParishFilter/>
             </WrapItem>
         </Wrap>
     );

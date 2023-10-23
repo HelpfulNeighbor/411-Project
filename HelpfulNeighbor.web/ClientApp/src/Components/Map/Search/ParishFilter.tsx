@@ -24,7 +24,7 @@ export default function ParishFilter(){
     const searchFilterStyle: React.CSSProperties = {
         position: 'absolute',
         top: '3%',
-        left: '33%',
+        left: '34%',
     };
 
     return(
