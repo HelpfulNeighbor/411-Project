@@ -38,7 +38,7 @@ namespace HelpfulNeighbor.web.Controllers
             return Ok(user);
         }
 
-        [HttpPost]
+       /* [HttpPost]
         [Authorize(Roles = RoleNames.Admin)]
         public async Task<ActionResult<UserDto>> CreateUser(UserRegistrationDto dto)
         {
@@ -81,7 +81,7 @@ namespace HelpfulNeighbor.web.Controllers
                 LastName = newUser.LastName,
                 EmailAddress = newUser.Email,
             });
-        }
+        }*/
 
         /*[HttpPost]
         [Route("signup")]
