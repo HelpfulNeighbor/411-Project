@@ -1,6 +1,6 @@
 import {
+    Button,
     Checkbox, 
-    IconButton, 
     Popover,
     PopoverArrow, 
     PopoverBody, 
@@ -11,14 +11,14 @@ import {
     WrapItem, 
 } from "@chakra-ui/react";
 import React from "react";
-import { MdFilterAlt } from 'react-icons/md';
+import { IoIosArrowDown } from 'react-icons/io';
 
 
-export default function SearchFilter(){
+export default function ResourceTypeFilter(){
     const searchFilterStyle: React.CSSProperties = {
         position: 'absolute',
         top: '3%',
-        left: '18%',
+        left: '19%',
     };
 
     return(
@@ -26,17 +26,17 @@ export default function SearchFilter(){
             <div style={searchFilterStyle}>
                 <Popover>
                     <PopoverTrigger>
-                        <IconButton
-                        variant='ghost'
+                        <Button
+                        rightIcon={<IoIosArrowDown/>}
                         colorScheme='purple'
-                        aria-label={"Filter"} 
-                        fontSize='25px'
-                        icon={<MdFilterAlt />}                
-                        />
+                        borderRadius='xl'
+                        >
+                            Resource
+                        </Button>
                     </PopoverTrigger>
                     <PopoverContent>
                         <PopoverArrow />
-                        <PopoverHeader>Filter Search Criteria</PopoverHeader>
+                        <PopoverHeader>Search by Resource</PopoverHeader>
                         <PopoverBody>
                             <Wrap>
                                 <WrapItem>
