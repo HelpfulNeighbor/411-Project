@@ -14,6 +14,7 @@ import SignUpModel from "../SignUp/SignUpModel";
 import { Link as ReactRouterLink } from "react-router-dom";
 import { MdAttachMoney } from "react-icons/md";
 import { useAuth } from "../../Authentication/AuthProvider";
+import LogoutModel from "../Logout/LogoutModel";
 
 export default function NavBar() {
   
@@ -66,6 +67,7 @@ export default function NavBar() {
           </Button>
           <SignUpModel />
           <LoginModel />
+          <LogoutModel />
         </ButtonGroup>
       </Flex>
       <Divider />

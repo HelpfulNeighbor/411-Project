@@ -5,6 +5,7 @@ interface defaultAuthContextProp {
     token?: string | null;
     setToken?: (newToken: string) => void;
     isLoggedIn?:() => boolean;
+    clearToken?: () => void;
 }
 
 const AuthContext = createContext<defaultAuthContextProp>({});
@@ -27,6 +28,10 @@ const AuthProvider = ({ children }: AuthProviderProps) => {
         return false;
     },[token])
 
+    const clearToken = () => {
+        setToken_(null);
+    };
+
 
     useEffect(() => {
         if (token) {
@@ -42,7 +47,8 @@ const AuthProvider = ({ children }: AuthProviderProps) => {
         () => ({
             token,
             setToken,
-            isLoggedIn
+            isLoggedIn,
+            clearToken,
         }),
         [token, isLoggedIn]
     );
