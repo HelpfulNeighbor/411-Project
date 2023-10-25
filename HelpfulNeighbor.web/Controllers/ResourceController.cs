@@ -1,4 +1,6 @@
-﻿using HelpfulNeighbor.web.Features.Interfaces;
+﻿using AutoMapper;
+using HelpfulNeighbor.web.Features.Dto;
+using HelpfulNeighbor.web.Features.Interfaces;
 using HelpfulNeighbor.web.Features.Models;
 using HelpfulNeighbor.web.Features.Repositories;
 using Microsoft.AspNetCore.Mvc;
@@ -11,16 +13,18 @@ namespace HelpfulNeighbor.web.Controllers
     public class ResourceController : Controller
     {
         private readonly IResourceRepository _resourceRepository;
-        public ResourceController(IResourceRepository resourceRepository)
+        private readonly IMapper _mapper;
+        public ResourceController(IResourceRepository resourceRepository, IMapper mapper)
         {
             _resourceRepository = resourceRepository;
+            _mapper = mapper;
         }
 
         [HttpGet]
         [ProducesResponseType(200, Type = typeof(IEnumerable<Resource>))]
         public IActionResult GetAllResources()
         {
-            var resource = _resourceRepository.GetAllResources();
+            var resource = _mapper.Map<List<ResourceDto>>(_resourceRepository.GetAllResources());
 
             if(!ModelState.IsValid)
             {
@@ -30,15 +34,15 @@ namespace HelpfulNeighbor.web.Controllers
             return Ok(resource);
         }
 
-        [HttpGet("{ResourceId}")]
-        [ProducesResponseType(200, Type = typeof(IEnumerable<Resource>))]
+        [HttpGet("{resourceId}")]
+        [ProducesResponseType(200, Type = typeof(Resource))]
         [ProducesResponseType(400)]
-        public IActionResult GetResourceById(int id) 
+        public IActionResult GetResourceById(int resourceId) 
         {
-            if (!_resourceRepository.ResourceExist(id))
+            if (!_resourceRepository.ResourceExist(resourceId))
                    return NotFound();
 
-            var resource = _resourceRepository.GetResourceById(id);
+            var resource = _mapper.Map<ResourceDto>(_resourceRepository.GetResourceById(resourceId));
 
             if (!ModelState.IsValid)
             {
@@ -54,7 +58,7 @@ namespace HelpfulNeighbor.web.Controllers
         public IActionResult GetResourceByName(string name)
         {
 
-            var resources = _resourceRepository.GetResourceByName(name);
+            var resources = _mapper.Map<List<ResourceDto>>(_resourceRepository.GetResourceByName(name));
 
             if (resources == null || !resources.Any())
             {
@@ -74,7 +78,7 @@ namespace HelpfulNeighbor.web.Controllers
         [ProducesResponseType(400)]
         public IActionResult GetResourceByCity(string city)
         {
-            var resources = _resourceRepository.GetResourceByCity(city);
+            var resources = _mapper.Map<List<ResourceDto>>(_resourceRepository.GetResourceByCity(city));
 
             if (resources == null || !resources.Any())
             {
@@ -94,7 +98,7 @@ namespace HelpfulNeighbor.web.Controllers
         [ProducesResponseType(400)]
         public IActionResult GetResourceByParish(string parish)
         {
-            var resources = _resourceRepository.GetResourceByParish(parish);
+            var resources = _mapper.Map<List<ResourceDto>>(_resourceRepository.GetResourceByParish(parish));
 
             if (resources == null || !resources.Any())
             {
@@ -114,7 +118,7 @@ namespace HelpfulNeighbor.web.Controllers
         [ProducesResponseType(400)]
         public IActionResult GetResourceByResourceType(string type)
         {
-            var resources = _resourceRepository.GetResourceByResourceType(type);
+            var resources = _mapper.Map<List<ResourceDto>>(_resourceRepository.GetResourceByResourceType(type));
 
             if (resources == null || !resources.Any())
             {
