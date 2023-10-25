@@ -45,5 +45,17 @@ namespace HelpfulNeighbor.web.Features.Repositories
         {
             return _context.Resources.Any(r => r.ResourceId == id);
         }
+
+        public ICollection<Resource> SearchResources(string searchQuery)
+        {
+            var keywords = searchQuery.Split(' ');
+
+            var query = _context.Resources.AsEnumerable()
+                .Where(r =>
+                keywords.Any(k => r.Name.Contains(k) || r.ResourceType.Contains(k) || r.City.Contains(k) || r.Parish.Contains(k))
+            ).ToList();
+
+            return query;
+        }
     }
 }

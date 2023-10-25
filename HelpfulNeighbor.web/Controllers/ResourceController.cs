@@ -133,5 +133,25 @@ namespace HelpfulNeighbor.web.Controllers
             return Ok(resources);
         }
 
+        [HttpGet("Search")]
+        [ProducesResponseType(200, Type = typeof(IEnumerable<Resource>))]
+        [ProducesResponseType(400)]
+        public IActionResult SearchResources(string searchQuery)
+        {
+            var resources = _mapper.Map<List<ResourceDto>>(_resourceRepository.SearchResources(searchQuery));
+
+            if (resources == null || !resources.Any())
+            {
+                return NotFound();
+            }
+
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            return Ok(resources);
+        }
+
     }
 }

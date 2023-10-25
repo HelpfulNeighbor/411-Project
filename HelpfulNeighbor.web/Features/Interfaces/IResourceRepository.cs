@@ -11,5 +11,6 @@ namespace HelpfulNeighbor.web.Features.Interfaces
         public ICollection<Resource> GetResourceByParish(string parish);
         public ICollection<Resource> GetResourceByResourceType(string type);
         bool ResourceExist(int id);
+        public ICollection<Resource> SearchResources(string searchQuery);
     }
 }
