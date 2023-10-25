@@ -18,7 +18,6 @@ export default function SearchPage() {
     setIsDrawerOpen(false);
   };
 
-
   return (
     <div style={{ height: '100%' }}>
       <NavBar />
