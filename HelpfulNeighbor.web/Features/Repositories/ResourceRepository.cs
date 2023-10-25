@@ -24,18 +24,24 @@ namespace HelpfulNeighbor.web.Features.Repositories
 
         public ICollection<Resource> SearchResources(string searchQuery)
         {
+            if (string.IsNullOrEmpty(searchQuery))
+            {
+                return _context.Resources.ToList();
+            }
+
+            var lowercaseSearchQuery = searchQuery.ToLower(); 
+
             var query = _context.Resources.AsEnumerable();
 
-            if (!string.IsNullOrEmpty(searchQuery))
-            {
-                var keywords = searchQuery.Split(' ');
-                query = query.Where(r =>
-                    keywords.Any(k => r.Name.Contains(k) || r.ResourceType.Contains(k) || r.City.Contains(k) || r.Parish.Contains(k))
-                );
-            }
+            var keywords = lowercaseSearchQuery.Split(' ');
+
+            query = query.Where(r =>
+                keywords.Any(k => r.Name.ToLower().Contains(k) || r.ResourceType.ToLower().Contains(k) || r.City.ToLower().Contains(k) || r.Parish.ToLower().Contains(k))
+            );
 
             return query.ToList();
         }
+
 
         public ICollection<Resource> FilterResourcesByResourceType(ICollection<Resource> resources, string resourceType)
         {

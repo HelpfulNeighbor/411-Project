@@ -52,7 +52,7 @@ namespace HelpfulNeighbor.web.Controllers
             return Ok(resource);
         }
 
-        [HttpGet("Search")]
+        [HttpGet("search")]
         [ProducesResponseType(200, Type = typeof(IEnumerable<Resource>))]
         [ProducesResponseType(400)]
         public IActionResult SearchResources(string searchQuery = null, bool filterByResourceType = false, string resourceType = null, bool filterByParish = false, string parish = null)
