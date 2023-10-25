@@ -9,6 +9,7 @@ namespace HelpfulNeighbor.web.Helper
         public MappingProfiles()
         {
                 CreateMap<Resource,ResourceDto>();
+                CreateMap<HoursOfOperation,HoursOfOperationDto>();
         }
     }
 }

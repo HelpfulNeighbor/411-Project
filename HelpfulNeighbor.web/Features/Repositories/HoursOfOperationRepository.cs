@@ -15,5 +15,20 @@ namespace HelpfulNeighbor.web.Features.Repositories
         {
             return _context.HoursOfOperations.OrderBy(h => h.HoursId).ToList();
         }
+
+        public HoursOfOperation GetHoursOfOperationById(int id)
+        {
+            return _context.HoursOfOperations.Where(h => h.HoursId == id).FirstOrDefault();
+        }
+
+        public ICollection<HoursOfOperation> GetHoursOfOperationsById(int id)
+        {
+            return _context.HoursOfOperations.Where(h => h.ResourceId == id).ToList();
+        }
+
+        public bool HoursOfOperationExist(int id)
+        {
+            return _context.HoursOfOperations.Any(h => h.HoursId == id);
+        }
     }
 }
