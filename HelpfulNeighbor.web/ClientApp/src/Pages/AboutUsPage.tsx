@@ -7,7 +7,7 @@ import {
   Heading,
   Text,
 } from "@chakra-ui/react";
-import { MdAttachMoney, MdPhone } from "react-icons/md";
+import { MdPhone } from "react-icons/md";
 import NavBar from "../Components/NavBar/NavBar";
 
 export default function AboutUsPage() {
@@ -104,10 +104,10 @@ export default function AboutUsPage() {
           mission, Helpful Neighbor was born. 
         </Text>
 
-        <ButtonGroup spacing="3" ml="30%">
-          <Button rightIcon={<MdAttachMoney />} colorScheme="yellow" p="20px">
+        <ButtonGroup spacing="3" ml="40%">
+          {/* <Button rightIcon={<MdAttachMoney />} colorScheme="yellow" p="20px">
             Donate
-          </Button>
+          </Button> */}
           <Button rightIcon={<MdPhone />} colorScheme="purple" p="20px">
             Contact Us
           </Button>

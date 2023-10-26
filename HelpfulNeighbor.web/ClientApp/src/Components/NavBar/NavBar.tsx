@@ -1,6 +1,5 @@
 import {
   Box,
-  Button,
   ButtonGroup,
   Flex,
   Heading,
@@ -12,7 +11,6 @@ import {
 import LoginModel from "../Login/LoginModel";
 import SignUpModel from "../SignUp/SignUpModel";
 import { Link as ReactRouterLink } from "react-router-dom";
-import { MdAttachMoney } from "react-icons/md";
 import { useAuth } from "../../Authentication/AuthProvider";
 import LogoutModel from "../Logout/LogoutModel";
 
@@ -62,9 +60,9 @@ export default function NavBar() {
         </Box>
         <Spacer />
         <ButtonGroup spacing="3" pr="10px">
-        <Button rightIcon={<MdAttachMoney />} colorScheme="yellow" p="20px">
+        {/* <Button rightIcon={<MdAttachMoney />} colorScheme="yellow" p="20px">
             Donate
-          </Button>
+          </Button> */}
           <SignUpModel />
           <LoginModel />
           <LogoutModel />
