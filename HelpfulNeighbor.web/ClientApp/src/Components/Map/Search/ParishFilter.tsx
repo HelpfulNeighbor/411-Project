@@ -19,8 +19,11 @@ import {
 import React from "react";
 import { IoIosArrowDown } from 'react-icons/io';
 
+interface ParishFilterProps {
+    onFilterChange: (filterName: string, filterValue: boolean) => void;
+  }
 
-export default function ParishFilter(){
+export default function ParishFilter({ onFilterChange }: ParishFilterProps){
     const searchFilterStyle: React.CSSProperties = {
         position: 'absolute',
         top: '3%',
@@ -54,100 +57,228 @@ export default function ParishFilter(){
                         <PopoverFooter>
                         <Wrap>
                             <WrapItem>
-                                <Checkbox> Acadia</Checkbox>
+                                <Checkbox 
+                                onChange={(e) => onFilterChange("parish", e.target.checked)}
+                                > 
+                                Acadia
+                                </Checkbox>
                             </WrapItem>
                             <WrapItem>
-                                <Checkbox> Ascension</Checkbox>
+                                <Checkbox
+                                onChange={(e) => onFilterChange("parish", e.target.checked)}
+                                > 
+                                    Ascension
+                                </Checkbox>
                             </WrapItem>
                             <WrapItem>
-                                <Checkbox> Caldwell</Checkbox>
+                                <Checkbox
+                                onChange={(e) => onFilterChange("parish", e.target.checked)}
+                                > 
+                                    Caldwell
+                                </Checkbox>
                             </WrapItem>
                             <WrapItem>
-                                <Checkbox> Caddo</Checkbox>
+                                <Checkbox
+                                onChange={(e) => onFilterChange("parish", e.target.checked)}
+                                > 
+                                    Caddo
+                                </Checkbox>
                             </WrapItem>
                             <WrapItem>
-                                <Checkbox> Calcasieu</Checkbox>
+                                <Checkbox
+                                onChange={(e) => onFilterChange("parish", e.target.checked)}
+                                > 
+                                    Calcasieu
+                                </Checkbox>
                             </WrapItem>
                             <WrapItem>
-                                <Checkbox> East Baton Rouge</Checkbox>
+                                <Checkbox
+                                onChange={(e) => onFilterChange("parish", e.target.checked)}
+                                > 
+                                    East Baton Rouge
+                                </Checkbox>
                             </WrapItem>
                             <WrapItem>
-                                <Checkbox> Iberia</Checkbox>
+                                <Checkbox
+                                onChange={(e) => onFilterChange("parish", e.target.checked)}
+                                > 
+                                    Iberia
+                                </Checkbox>
                             </WrapItem>
                             <WrapItem>
-                                <Checkbox> Jefferson Davis</Checkbox>
+                                <Checkbox
+                                onChange={(e) => onFilterChange("parish", e.target.checked)}
+                                > 
+                                    Jefferson Davis
+                                </Checkbox>
                             </WrapItem>
                             <WrapItem>
-                                <Checkbox> Lafayette</Checkbox>
+                                <Checkbox
+                                onChange={(e) => onFilterChange("parish", e.target.checked)}
+                                > 
+                                    Lafayette
+                                </Checkbox>
                             </WrapItem>
                             <WrapItem>
-                                <Checkbox> Lafourche</Checkbox>
+                                <Checkbox
+                                onChange={(e) => onFilterChange("parish", e.target.checked)}
+                                > 
+                                    Lafourche
+                                </Checkbox>
                             </WrapItem>
                             <WrapItem>
-                                <Checkbox> Lincoln</Checkbox>
+                                <Checkbox
+                                onChange={(e) => onFilterChange("parish", e.target.checked)}
+                                > 
+                                    Lincoln
+                                </Checkbox>
                             </WrapItem>
                             <WrapItem>
-                                <Checkbox> Livingston</Checkbox>
+                                <Checkbox
+                                onChange={(e) => onFilterChange("parish", e.target.checked)}
+                                > 
+                                    Livingston
+                                </Checkbox>
                             </WrapItem>
                             <WrapItem>
-                                <Checkbox> Madison</Checkbox>
+                                <Checkbox
+                                onChange={(e) => onFilterChange("parish", e.target.checked)}
+                                > 
+                                    Madison
+                                </Checkbox>
                             </WrapItem>
                             <WrapItem>
-                                <Checkbox> Morehouse</Checkbox>
+                                <Checkbox
+                                onChange={(e) => onFilterChange("parish", e.target.checked)}
+                                > 
+                                    Morehouse
+                                </Checkbox>
                             </WrapItem>
                             <WrapItem>
-                                <Checkbox> Natchitoches</Checkbox>
+                                <Checkbox
+                                onChange={(e) => onFilterChange("parish", e.target.checked)}
+                                > 
+                                    Natchitoches
+                                </Checkbox>
                             </WrapItem>
                             <WrapItem>
-                                <Checkbox> Orleans</Checkbox>
+                                <Checkbox
+                                onChange={(e) => onFilterChange("parish", e.target.checked)}
+                                > 
+                                    Orleans
+                                </Checkbox>
                             </WrapItem>
                             <WrapItem>
-                                <Checkbox> Ouachita</Checkbox>
+                                <Checkbox
+                                onChange={(e) => onFilterChange("parish", e.target.checked)}
+                                > 
+                                    Ouachita
+                                </Checkbox>
                             </WrapItem>
                             <WrapItem>
-                                <Checkbox> Rapides</Checkbox>
+                                <Checkbox
+                                onChange={(e) => onFilterChange("parish", e.target.checked)}
+                                > 
+                                    Rapides
+                                </Checkbox>
                             </WrapItem>
                             <WrapItem>
-                                <Checkbox> St. Bernard</Checkbox>
+                                <Checkbox
+                                onChange={(e) => onFilterChange("parish", e.target.checked)}
+                                > 
+                                    St. Bernard
+                                </Checkbox>
                             </WrapItem>
                             <WrapItem>
-                                <Checkbox> St. Landry</Checkbox>
+                                <Checkbox
+                                onChange={(e) => onFilterChange("parish", e.target.checked)}
+                                > 
+                                    St. Landry
+                                </Checkbox>
                             </WrapItem>
                             <WrapItem>
-                                <Checkbox> St. John the Baptist</Checkbox>
+                                <Checkbox
+                                onChange={(e) => onFilterChange("parish", e.target.checked)}
+                                > 
+                                    St. John the Baptist
+                                </Checkbox>
                             </WrapItem>
                             <WrapItem>
-                                <Checkbox> St. Landry & Acadia</Checkbox>
+                                <Checkbox
+                                onChange={(e) => onFilterChange("parish", e.target.checked)}
+                                > 
+                                    St. Landry & Acadia
+                                </Checkbox>
                             </WrapItem>
                             <WrapItem>
-                                <Checkbox> St. Mary</Checkbox>
+                                <Checkbox
+                                onChange={(e) => onFilterChange("parish", e.target.checked)}
+                                > 
+                                    St. Mary
+                                </Checkbox>
                             </WrapItem>
                             <WrapItem>
-                                <Checkbox> St. Martin</Checkbox>
+                                <Checkbox
+                                onChange={(e) => onFilterChange("parish", e.target.checked)}
+                                > 
+                                    St. Martin
+                                </Checkbox>
                             </WrapItem>
                             <WrapItem>
-                                <Checkbox> St. Tammany</Checkbox>
+                                <Checkbox
+                                onChange={(e) => onFilterChange("parish", e.target.checked)}
+                                > 
+                                    St. Tammany
+                                </Checkbox>
                             </WrapItem>
                             <WrapItem>
-                                <Checkbox> Tangipahoa</Checkbox>
+                                <Checkbox
+                                onChange={(e) => onFilterChange("parish", e.target.checked)}
+                                > 
+                                    Tangipahoa
+                                </Checkbox>
                             </WrapItem>
                             <WrapItem>
-                                <Checkbox> Terrebonne</Checkbox>
+                                <Checkbox
+                                onChange={(e) => onFilterChange("parish", e.target.checked)}
+                                > 
+                                    Terrebonne
+                                </Checkbox>
                             </WrapItem>
                             <WrapItem>
-                                <Checkbox> Vermilion</Checkbox>
+                                <Checkbox
+                                onChange={(e) => onFilterChange("parish", e.target.checked)}
+                                > 
+                                    Vermilion
+                                </Checkbox>
                             </WrapItem>
                             <WrapItem>
-                                <Checkbox> Vernon</Checkbox>
+                                <Checkbox
+                                onChange={(e) => onFilterChange("parish", e.target.checked)}
+                                > 
+                                    Vernon
+                                </Checkbox>
                             </WrapItem>
                             <WrapItem>
-                                <Checkbox> Washington</Checkbox>
+                                <Checkbox
+                                onChange={(e) => onFilterChange("parish", e.target.checked)}
+                                > 
+                                    Washington
+                                </Checkbox>
                             </WrapItem>
                             <WrapItem>
-                                <Checkbox> Webster</Checkbox>
+                                <Checkbox
+                                onChange={(e) => onFilterChange("parish", e.target.checked)}
+                                > 
+                                    Webster
+                                </Checkbox>
                             </WrapItem>
                             <WrapItem>
-                                <Checkbox> Winn</Checkbox>
+                                <Checkbox
+                                onChange={(e) => onFilterChange("parish", e.target.checked)}
+                                > 
+                                    Winn
+                                </Checkbox>
                             </WrapItem>
                         </Wrap>
                         </PopoverFooter>

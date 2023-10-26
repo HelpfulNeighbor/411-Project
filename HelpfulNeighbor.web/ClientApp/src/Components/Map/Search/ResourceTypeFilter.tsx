@@ -13,8 +13,12 @@ import {
 import React from "react";
 import { IoIosArrowDown } from 'react-icons/io';
 
+interface ResourceTypeFilterProps {
+    onFilterChange: (filterName: string, filterValue: boolean) => void;
+}
 
-export default function ResourceTypeFilter(){
+export default function ResourceTypeFilter({ onFilterChange }: ResourceTypeFilterProps){
+
     const searchFilterStyle: React.CSSProperties = {
         position: 'absolute',
         top: '3%',
@@ -40,37 +44,80 @@ export default function ResourceTypeFilter(){
                         <PopoverBody>
                             <Wrap>
                                 <WrapItem>
-                                    <Checkbox> Affordable Housing</Checkbox>
+                                    <Checkbox
+                                    onChange={(e) => onFilterChange("resourceType", e.target.checked)}
+                                    > 
+                                    Affordable Housing
+                                    </Checkbox>
                                 </WrapItem>
                                 <WrapItem>
-                                    <Checkbox> Charity</Checkbox>
+                                    <Checkbox
+                                    onChange={(e) => onFilterChange("resourceType", e.target.checked)}
+                                    > Charity
+                                    </Checkbox>
                                 </WrapItem>
                                 <WrapItem>
-                                    <Checkbox> Clothing Donation Center</Checkbox>
+                                    <Checkbox
+                                    onChange={(e) => onFilterChange("resourceType", e.target.checked)}
+                                    > 
+                                        Clothing Donation Center
+                                    </Checkbox>
                                 </WrapItem>
                                 <WrapItem>
-                                    <Checkbox> Domestic Violence Help</Checkbox>
+                                    <Checkbox
+                                    onChange={(e) => onFilterChange("resourceType", e.target.checked)}
+                                    > 
+                                        Domestic Violence Help
+                                    </Checkbox>
                                 </WrapItem>
                                 <WrapItem>
-                                    <Checkbox> Food Bank / Distribution Center</Checkbox>
+                                    <Checkbox
+                                    onChange={(e) => onFilterChange("resourceType", e.target.checked)}
+                                    > 
+                                        Food Bank / Distribution Center
+                                    </Checkbox>
                                 </WrapItem>
                                 <WrapItem>
-                                    <Checkbox> Government Help Organizations</Checkbox>
+                                    <Checkbox
+                                    onChange={(e) => onFilterChange("resourceType", e.target.checked)}
+                                    > 
+                                        Government Help Organizations
+                                    </Checkbox>
                                 </WrapItem>
                                 <WrapItem>
-                                    <Checkbox> Group Housing</Checkbox>
+                                    <Checkbox
+                                    onChange={(e) => onFilterChange("resourceType", e.target.checked)}
+                                    > 
+                                        Group Housing
+                                    </Checkbox>
                                 </WrapItem>
                                 <WrapItem>
-                                    <Checkbox> Mental Health Treatment Center</Checkbox>
+                                    <Checkbox
+                                    onChange={(e) => onFilterChange("resourceType", e.target.checked)}
+                                    > 
+                                        Mental Health Treatment Center
+                                    </Checkbox>
                                 </WrapItem>
                                 <WrapItem>
-                                    <Checkbox> Social Service Organization</Checkbox>
+                                    <Checkbox
+                                    onChange={(e) => onFilterChange("resourceType", e.target.checked)}
+                                    > 
+                                        Social Service Organization
+                                    </Checkbox>
                                 </WrapItem>
                                 <WrapItem>
-                                    <Checkbox> Veteran Organization</Checkbox>
+                                    <Checkbox
+                                    onChange={(e) => onFilterChange("resourceType", e.target.checked)}
+                                    > 
+                                        Veteran Organization
+                                    </Checkbox>
                                 </WrapItem>
                                 <WrapItem>
-                                <Checkbox> Homeless shelter</Checkbox>
+                                <Checkbox
+                                onChange={(e) => onFilterChange("resourceType", e.target.checked)}
+                                > 
+                                    Homeless shelter
+                                </Checkbox>
                                 </WrapItem>
                             </Wrap>
                         </PopoverBody>

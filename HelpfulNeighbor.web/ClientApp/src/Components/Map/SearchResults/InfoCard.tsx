@@ -9,21 +9,28 @@ import { Accordion,
     CardHeader, 
     Heading, 
     IconButton, 
+    Stack, 
     StackDivider, 
     Text, 
-    VStack 
+    VStack, 
+
 } from "@chakra-ui/react";
 import React from "react";
 import { GoBookmark } from "react-icons/go";
 
-export default function InfoCard(){
-    let name;
+interface InfoCardProps {
+    Name: string;
+    ResourceType: string;
+    Address: string;
+    DayOfWeek: string;
+    OpenTime: string;
+    CloseTime: string;
+    Website: string;
+    PhoneNumber: string;
+  }
+
+export default function InfoCard(props: InfoCardProps){
     let distance;
-    let resourceType;
-    let address;
-    let hoursOfOp;
-    let website;
-    let phoneNumber;
 
     const infoCardStyle: React.CSSProperties = {
         width: '100%',
@@ -39,7 +46,7 @@ export default function InfoCard(){
                 <Card>
                 <CardHeader>
                     <Heading size='sm'>Name: </Heading>
-                    <Heading size='sm'>{name}</Heading>
+                    <Heading size='sm'>{props.Name}</Heading>
                 </CardHeader>
                     <CardBody>
                         <Text>Distance: </Text>
@@ -57,15 +64,30 @@ export default function InfoCard(){
                                 </AccordionButton>
                                 </h2>
                                 <AccordionPanel pb={4}>
-                                Resource Type: {resourceType}
+                                Resource Type: {props.ResourceType}
                                 <br/>
-                                Address: {address}
+                                Address: {props.Address}
                                 <br/>
-                                Hours of Operation: {hoursOfOp}
+                                Hours of Operation:
                                 <br/>
-                                Website: {website}
+                                <Stack direction={['column', 'row']} spacing='12px'>
+                                    <Box>
+                                        <Text>
+                                            {props.DayOfWeek}
+                                        </Text>
+                                    </Box>
+                                    <Box>
+                                        <Text>
+                                            {props.OpenTime} - {props.CloseTime}
+                                        </Text>
+                                    </Box>
+                                    
+                                </Stack>
+
                                 <br/>
-                                Phone Number: {phoneNumber}
+                                Website: {props.Website}
+                                <br/>
+                                Phone Number: {props.PhoneNumber}
                                 </AccordionPanel>
                             </AccordionItem>
                         </Accordion>    
