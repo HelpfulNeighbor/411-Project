@@ -8,13 +8,15 @@ const Style = StyleSheet.create({
         backgroundColor: "#d8e6f5",
     },
     title:{
-        marginTop: 16,
+        marginTop: 20,
+        marginBottom: 20,
         paddingVertical: 8,
-        color: '#20232a',
+        color: '#7a5cce',
         textAlign: 'center',
-        fontSize: 28,
+        fontSize: 40,
         fontWeight: 'bold',
-    }
+    },
+    
 })
 
 export default Style;

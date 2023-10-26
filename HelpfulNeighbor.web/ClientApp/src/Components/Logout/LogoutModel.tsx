@@ -8,10 +8,13 @@ import {
   ModalCloseButton,
   useDisclosure,
   Button,
+  useToast,
+  ButtonGroup,
 } from "@chakra-ui/react";
 import { MdLogout } from "react-icons/md";
 import { useAuth } from "../../Authentication/AuthProvider";
 import api from "../../Api/config";
+import { useNavigate } from "react-router-dom";
 
 export default function LogoutModel() {
   const BlurredOverlay = () => (
@@ -23,12 +26,24 @@ export default function LogoutModel() {
 
   const { isLoggedIn } = useAuth();
   const { clearToken } = useAuth();
+  const navigate = useNavigate();
+  const toast = useToast();
 
   const logout = async () => {
     await api
     .post<{token: string}>('/api/authentication/logout');
     clearToken?.()
     onClose();
+    toast({
+      title: 'See you later!',
+      description: 'You have been logged out.',
+      status: 'success',
+      position: 'bottom-right',
+      variant: 'subtle',
+      duration: 5000,
+      isClosable: true,
+    })
+    navigate("/");
   }
 
   return (
@@ -52,12 +67,14 @@ export default function LogoutModel() {
           <ModalHeader>Are you sure you want to logout?</ModalHeader>
           <ModalCloseButton />
           <ModalFooter>
+            <ButtonGroup>
             <Button onClick={logout} colorScheme="gray">
               Yes
             </Button>
             <Button onClick={onClose} colorScheme="red">
               No
             </Button>
+            </ButtonGroup>
           </ModalFooter>
         </ModalContent>
       </Modal>

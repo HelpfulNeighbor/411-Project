@@ -7,6 +7,7 @@ import {
   Input,
   Button,
   Flex,
+  useToast,
 } from "@chakra-ui/react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import api from "../../Api/config";
@@ -32,6 +33,7 @@ const SignUpForm: React.FC<SignUpFormProps> = ({ onClose }) => {
   } = useForm<FormValues>();
 
   const navigate = useNavigate();
+  const toast = useToast();
 
   const onSubmit: SubmitHandler<FormValues> = (data) => {
     api
@@ -39,8 +41,24 @@ const SignUpForm: React.FC<SignUpFormProps> = ({ onClose }) => {
       .then((response) => {
         if (response.status === 200) {
           navigate("/");
-          console.log("Success!");
+          toast({
+            title: 'Account created.',
+            description: 'Your account has successfully been registered!',
+            status: 'success',
+            position: 'bottom-right',
+            variant: 'subtle',
+            duration: 5000,
+            isClosable: true,
+          })
         } else {
+          toast({
+            title: 'Something went wrong',
+            description: 'There was an error creating your account. Please try again.',
+            status: 'error',
+            position: 'bottom-right',
+            duration: 5000,
+            isClosable: true,
+          })
           console.log("Registration failed. Server response:", response.data);
         }
       })

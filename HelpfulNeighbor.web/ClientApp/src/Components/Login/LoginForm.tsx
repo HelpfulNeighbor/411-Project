@@ -12,6 +12,7 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import api from "../../Api/config";
 import { useAuth } from "../../Authentication/AuthProvider";
 import { useNavigate } from "react-router-dom";
+import { useToast } from "@chakra-ui/react"
 
 type LoginFormProps = {
   onClose: () => void;
@@ -31,6 +32,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ onClose }) => {
 
   const { setToken } = useAuth();
   const navigate = useNavigate();
+  const toast = useToast();
 
   const onSubmit: SubmitHandler<FormValues> = (data) => {
     api
@@ -38,7 +40,17 @@ const LoginForm: React.FC<LoginFormProps> = ({ onClose }) => {
       .then((response) => {
         if (response.status === 200) {
           setToken?.(response.data);
+          toast({
+            title: 'Login succcessful.',
+            description: 'Welcome back!',
+            status: 'success',
+            position: 'bottom-right',
+            variant: 'subtle',
+            duration: 5000,
+            isClosable: true,
+          })
           navigate("/app/profile");
+          
         } else {
           console.log("Login failed");
         }
