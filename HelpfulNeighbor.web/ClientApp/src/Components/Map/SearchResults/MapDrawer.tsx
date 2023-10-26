@@ -23,6 +23,7 @@ interface MapDrawerProps {
 }
 
 export default function MapDrawer({ isOpen, onClose, searchResults } : MapDrawerProps){
+  console.log('searchResults in MapWithSearch:', searchResults);
     
     return(
         <>

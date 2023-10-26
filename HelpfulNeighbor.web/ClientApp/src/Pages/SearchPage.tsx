@@ -59,8 +59,9 @@ export default function SearchPage() {
         </Flex>
         </GridItem>
       </Grid>
-      <MapDrawer isOpen={isDrawerOpen} onClose={closeDrawer} searchResults={searchResults} />
-
+      {searchResults.length > 0 && (
+        <MapDrawer isOpen={isDrawerOpen} onClose={closeDrawer} searchResults={searchResults} />
+      )}
     </div>
   );
 }

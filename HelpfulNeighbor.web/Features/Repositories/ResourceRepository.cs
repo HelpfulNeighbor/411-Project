@@ -42,7 +42,6 @@ namespace HelpfulNeighbor.web.Features.Repositories
             return query.ToList();
         }
 
-
         public ICollection<Resource> FilterResourcesByResourceType(ICollection<Resource> resources, string resourceType)
         {
             return resources.Where(r => r.ResourceType == resourceType).ToList();
