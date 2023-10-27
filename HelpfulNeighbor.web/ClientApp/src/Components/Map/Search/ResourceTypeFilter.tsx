@@ -1,129 +1,81 @@
-import {
-    Button,
-    Checkbox, 
-    Popover,
-    PopoverArrow, 
-    PopoverBody, 
-    PopoverContent, 
-    PopoverHeader,  
-    PopoverTrigger, 
-    Wrap, 
-    WrapItem, 
-} from "@chakra-ui/react";
 import React from "react";
-import { IoIosArrowDown } from 'react-icons/io';
+import {
+  Button,
+  Checkbox,
+  Popover,
+  PopoverArrow,
+  PopoverBody,
+  PopoverContent,
+  PopoverHeader,
+  PopoverTrigger,
+  Wrap,
+  WrapItem,
+} from "@chakra-ui/react";
+import { IoIosArrowDown } from "react-icons/io";
 
 interface ResourceTypeFilterProps {
-    onFilterChange: (filterName: string, filterValue: boolean) => void;
+  onFilterChange: (filterName: string, filterValue: boolean) => void;
 }
 
-export default function ResourceTypeFilter({ onFilterChange }: ResourceTypeFilterProps){
+const ResourceTypeFilter: React.FC<ResourceTypeFilterProps> = ({ onFilterChange }) => {
+  const resourceTypes = [
+    "Affordable Housing",
+    "Charity",
+    "Clothing Donation Center",
+    "Domestic Violence Help",
+    "Food Bank / Distribution Center",
+    "Government Help Organizations",
+    "Group Housing",
+    "Mental Health Treatment Center",
+    "Social Service Organization",
+    "Veteran Organization",
+    "Homeless shelter",
+  ];
 
-    const searchFilterStyle: React.CSSProperties = {
-        position: 'absolute',
-        top: '3%',
-        left: '20%',
+  const handleCheckboxChange = (filterName: string, filterValue: boolean) => {
+    onFilterChange(filterName, filterValue);
+  };
+
+  const searchFilterStyle: React.CSSProperties = {
+    position: 'absolute',
+    top: '3%',
+    left: '20%',
     };
 
-    return(
-        <div>
-            <div style={searchFilterStyle}>
-                <Popover>
-                    <PopoverTrigger>
-                        <Button
-                        rightIcon={<IoIosArrowDown/>}
-                        colorScheme='purple'
-                        borderRadius='xl'
-                        >
-                            Resource
-                        </Button>
-                    </PopoverTrigger>
-                    <PopoverContent>
-                        <PopoverArrow />
-                        <PopoverHeader>Search by Resource</PopoverHeader>
-                        <PopoverBody>
-                            <Wrap>
-                                <WrapItem>
-                                    <Checkbox
-                                    onChange={(e) => onFilterChange("resourceType", e.target.checked)}
-                                    > 
-                                    Affordable Housing
-                                    </Checkbox>
-                                </WrapItem>
-                                <WrapItem>
-                                    <Checkbox
-                                    onChange={(e) => onFilterChange("resourceType", e.target.checked)}
-                                    > Charity
-                                    </Checkbox>
-                                </WrapItem>
-                                <WrapItem>
-                                    <Checkbox
-                                    onChange={(e) => onFilterChange("resourceType", e.target.checked)}
-                                    > 
-                                        Clothing Donation Center
-                                    </Checkbox>
-                                </WrapItem>
-                                <WrapItem>
-                                    <Checkbox
-                                    onChange={(e) => onFilterChange("resourceType", e.target.checked)}
-                                    > 
-                                        Domestic Violence Help
-                                    </Checkbox>
-                                </WrapItem>
-                                <WrapItem>
-                                    <Checkbox
-                                    onChange={(e) => onFilterChange("resourceType", e.target.checked)}
-                                    > 
-                                        Food Bank / Distribution Center
-                                    </Checkbox>
-                                </WrapItem>
-                                <WrapItem>
-                                    <Checkbox
-                                    onChange={(e) => onFilterChange("resourceType", e.target.checked)}
-                                    > 
-                                        Government Help Organizations
-                                    </Checkbox>
-                                </WrapItem>
-                                <WrapItem>
-                                    <Checkbox
-                                    onChange={(e) => onFilterChange("resourceType", e.target.checked)}
-                                    > 
-                                        Group Housing
-                                    </Checkbox>
-                                </WrapItem>
-                                <WrapItem>
-                                    <Checkbox
-                                    onChange={(e) => onFilterChange("resourceType", e.target.checked)}
-                                    > 
-                                        Mental Health Treatment Center
-                                    </Checkbox>
-                                </WrapItem>
-                                <WrapItem>
-                                    <Checkbox
-                                    onChange={(e) => onFilterChange("resourceType", e.target.checked)}
-                                    > 
-                                        Social Service Organization
-                                    </Checkbox>
-                                </WrapItem>
-                                <WrapItem>
-                                    <Checkbox
-                                    onChange={(e) => onFilterChange("resourceType", e.target.checked)}
-                                    > 
-                                        Veteran Organization
-                                    </Checkbox>
-                                </WrapItem>
-                                <WrapItem>
-                                <Checkbox
-                                onChange={(e) => onFilterChange("resourceType", e.target.checked)}
-                                > 
-                                    Homeless shelter
-                                </Checkbox>
-                                </WrapItem>
-                            </Wrap>
-                        </PopoverBody>
-                    </PopoverContent>
-                </Popover>
-                </div>
-        </div>
-    )
-}
+  return (
+    <div>
+      <div style={searchFilterStyle}>
+        <Popover>
+          <PopoverTrigger>
+            <Button
+              rightIcon={<IoIosArrowDown />}
+              colorScheme="purple"
+              borderRadius="xl"
+            >
+              Resource
+            </Button>
+          </PopoverTrigger>
+          <PopoverContent>
+            <PopoverArrow />
+            <PopoverHeader>Search by Resource</PopoverHeader>
+            <PopoverBody>
+              <Wrap spacing="4">
+                {resourceTypes.map((type) => (
+                  <WrapItem key={type}>
+                      <Checkbox
+                        onChange={(e) => handleCheckboxChange(type, e.target.checked)}
+                      >
+                        {type}
+                      </Checkbox>
+                  </WrapItem>
+                ))}
+              </Wrap>
+            </PopoverBody>
+          </PopoverContent>
+        </Popover>
+      </div>
+    </div>
+  );
+};
+
+export default ResourceTypeFilter;
