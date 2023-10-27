@@ -57,7 +57,7 @@ const ResourceTypeFilter: React.FC<ResourceTypeFilterProps> = ({ onFilterChange 
           </PopoverTrigger>
           <PopoverContent>
             <PopoverArrow />
-            <PopoverHeader>Search by Resource</PopoverHeader>
+            <PopoverHeader>Filter by Resource</PopoverHeader>
             <PopoverBody>
               <Wrap spacing="4">
                 {resourceTypes.map((type) => (

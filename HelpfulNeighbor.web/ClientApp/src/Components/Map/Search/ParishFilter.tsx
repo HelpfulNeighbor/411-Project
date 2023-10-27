@@ -78,7 +78,7 @@ const ParishFilter: React.FC<ParishFilterProps> = ({ onFilterChange }) => {
           </PopoverTrigger>
           <PopoverContent>
             <PopoverArrow />
-            <PopoverHeader>Search by Parish</PopoverHeader>
+            <PopoverHeader>Filter by Parish</PopoverHeader>
             <PopoverBody>
             <Wrap>
                 {parishList.map((type) => (

@@ -7,8 +7,11 @@ import ParishFilter from './Search/ParishFilter';
 import { fetchSearchResults } from '../../Data/Queries/ResourceQueries';
 import { Resource } from '../../Data/Types/ResourceTypes';
 
-const MapWithSearch = () => {
-  const [searchResults, setSearchResults] = useState<Resource[]>([]);
+interface MapWithSearchProps {
+  setSearchResults: (results: Resource[]) => void; // This is a function to set searchResults
+}
+
+const MapWithSearch: React.FC<MapWithSearchProps> = ({ setSearchResults }) => {
   const [filterCriteria, setFilterCriteria] = useState({
     filterByResourceType: false,
     resourceType: [] as string[],
@@ -34,13 +37,13 @@ const MapWithSearch = () => {
           filterByParish,
           parish.join(',')
         );
-        setSearchResults(results);
+        setSearchResults(results); // Use the prop function to set searchResults
         console.log('searchResults in MapWithSearch:', results);
       }
     };
 
     fetchData();
-  }, [filterCriteria, searchQuery]);
+  }, [filterCriteria, searchQuery, setSearchResults]);
 
   const handleSearch = (query: string) => {
     setSearchQuery(query);
@@ -53,7 +56,7 @@ const MapWithSearch = () => {
         const updatedResourceType = filterValue
           ? [...prevCriteria.resourceType, filterName]
           : prevCriteria.resourceType.filter((type) => type !== filterName);
-  
+
         return {
           ...prevCriteria,
           filterByResourceType: updatedResourceType.length > 0,
@@ -64,7 +67,7 @@ const MapWithSearch = () => {
         const updatedParish = filterValue
           ? [...prevCriteria.parish, filterName]
           : prevCriteria.parish.filter((p) => p !== filterName);
-  
+
         return {
           ...prevCriteria,
           filterByParish: updatedParish.length > 0,
@@ -79,17 +82,14 @@ const MapWithSearch = () => {
       }
     });
   }, [setFilterCriteria]);
-  
-  
-  
 
   return (
     <div style={{ position: 'relative', width: '100%', height: '100%' }}>
       <MapView />
       <SearchBar onSearch={handleSearch} />
-      <ResourceTypeFilter onFilterChange={(filterName, filterValue) => handleFilterChange("resourceType", filterName, filterValue)} />
+      <ResourceTypeFilter onFilterChange={(filterName, filterValue) => handleFilterChange('resourceType', filterName, filterValue)} />
       <CityFilter />
-      <ParishFilter onFilterChange={(filterName, filterValue) => handleFilterChange("parish", filterName, filterValue)} />
+      <ParishFilter onFilterChange={(filterName, filterValue) => handleFilterChange('parish', filterName, filterValue)} />
     </div>
   );
 };
