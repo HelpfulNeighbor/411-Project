@@ -55,7 +55,7 @@ namespace HelpfulNeighbor.web.Controllers
             if (!_hoursOfOperationRepository.HoursOfOperationExist(resourceId))
                 return NotFound();
 
-            var hourOfOperations = _mapper.Map<List<HoursOfOperation>>(_hoursOfOperationRepository.GetHoursOfOperationsById(resourceId));
+            var hourOfOperations = _mapper.Map<List<HoursOfOperation>>(_hoursOfOperationRepository.GetHoursOfOperationsByResource(resourceId));
 
             if (!ModelState.IsValid)
             {
