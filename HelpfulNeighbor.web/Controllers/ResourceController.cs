@@ -13,10 +13,12 @@ namespace HelpfulNeighbor.web.Controllers
     public class ResourceController : Controller
     {
         private readonly IResourceRepository _resourceRepository;
+        private readonly IHoursOfOperationRepository _hoursOfOperationRepository;
         private readonly IMapper _mapper;
-        public ResourceController(IResourceRepository resourceRepository, IMapper mapper)
+        public ResourceController(IResourceRepository resourceRepository, IHoursOfOperationRepository hoursOfOperationRepository,IMapper mapper)
         {
             _resourceRepository = resourceRepository;
+            _hoursOfOperationRepository = hoursOfOperationRepository;
             _mapper = mapper;
         }
 
@@ -69,7 +71,17 @@ namespace HelpfulNeighbor.web.Controllers
                 resources = _resourceRepository.FilterResourcesByParish(resources, parish);
             }
 
-            var resourceDtos = _mapper.Map<List<ResourceDto>>(resources);
+            var resourceDtos = _mapper.Map<List<ResourceWithHoursDto>>(resources);
+
+            foreach (var resource in resources)
+            {
+                var resourceDto = _mapper.Map<ResourceWithHoursDto>(resource);
+
+                var hoursOfOperationDto = _mapper.Map<List<HoursOfOperationDto>>(_hoursOfOperationRepository.GetHoursOfOperationsByResource(resource.ResourceId));
+                resourceDto.HoursOfOperation = hoursOfOperationDto;
+
+                resourceDtos.Add(resourceDto);
+            }
 
             if (resourceDtos == null || !resourceDtos.Any())
             {
