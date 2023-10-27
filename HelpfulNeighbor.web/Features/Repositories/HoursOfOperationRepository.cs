@@ -21,7 +21,7 @@ namespace HelpfulNeighbor.web.Features.Repositories
             return _context.HoursOfOperations.Where(h => h.HoursId == id).FirstOrDefault();
         }
 
-        public ICollection<HoursOfOperation> GetHoursOfOperationsById(int id)
+        public ICollection<HoursOfOperation> GetHoursOfOperationsByResource(int id)
         {
             return _context.HoursOfOperations.Where(h => h.ResourceId == id).ToList();
         }

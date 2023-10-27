@@ -14,7 +14,7 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import api from "../../Api/config";
-import { UserGetDto } from "../../Constants/Types";
+import { UserGetDto } from "../../Data/Types/UserTypes";
 
 export default function AuthProfilePage() {
   const [data, setData] = useState<UserGetDto | null>(null);

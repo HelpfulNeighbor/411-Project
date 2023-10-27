@@ -10,11 +10,17 @@ const Style = StyleSheet.create({
     title:{
         marginTop: 16,
         paddingVertical: 8,
-        color: '#20232a',
+        color: '#7a5cce',
         textAlign: 'center',
-        fontSize: 28,
+        fontSize: 40,
         fontWeight: 'bold',
-    }
+    },
+    infoCard:{
+        marginTop: 16,
+    },
+    searchBar:{
+        marginTop: 16,
+    },
 })
 
 export default Style;

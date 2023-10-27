@@ -1,14 +1,16 @@
 import React from "react";
 import { SafeAreaView, ScrollView,Text } from "react-native";
 import Style from "./Style";
-
+import InfoCard from "../../components/HomeScreen/InfoCard";
 const HomeScreen = () => {
 
 
     return (
         <SafeAreaView style={Style.container}>
             <ScrollView>
-                <Text style ={Style.title}>Home Screen</Text>
+                
+                <Text style ={Style.title}>Helpful Neighbor</Text>
+                < InfoCard />
             </ScrollView>
         </SafeAreaView>
     )

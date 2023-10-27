@@ -22,23 +22,34 @@ namespace HelpfulNeighbor.web.Features.Repositories
             return _context.Resources.Where(r => r.ResourceId == id).FirstOrDefault();
         }
 
-        public ICollection<Resource> GetResourceByName(string name)
+        public ICollection<Resource> SearchResources(string searchQuery)
         {
-            return _context.Resources.Where(r => r.Name == name).ToList();
-        }
-        public ICollection<Resource> GetResourceByCity(string city)
-        {
-            return _context.Resources.Where(r => r.City == city).ToList();
+            if (string.IsNullOrEmpty(searchQuery))
+            {
+                return _context.Resources.ToList();
+            }
+
+            var lowercaseSearchQuery = searchQuery.ToLower(); 
+
+            var query = _context.Resources.AsEnumerable();
+
+            var keywords = lowercaseSearchQuery.Split(' ');
+
+            query = query.Where(r =>
+                keywords.Any(k => r.Name.ToLower().Contains(k) || r.ResourceType.ToLower().Contains(k) || r.City.ToLower().Contains(k) || r.Parish.ToLower().Contains(k))
+            );
+
+            return query.ToList();
         }
 
-        public ICollection<Resource> GetResourceByParish(string parish)
+        public ICollection<Resource> FilterResourcesByResourceType(ICollection<Resource> resources, string resourceType)
         {
-            return _context.Resources.Where(r => r.Parish == parish).ToList();
+            return resources.Where(r => r.ResourceType == resourceType).ToList();
         }
 
-        public ICollection<Resource> GetResourceByResourceType(string type)
+        public ICollection<Resource> FilterResourcesByParish(ICollection<Resource> resources, string parish)
         {
-            return _context.Resources.Where(r => r.ResourceType == type).ToList();
+            return resources.Where(r => r.Parish == parish).ToList();
         }
 
         public bool ResourceExist(int id)

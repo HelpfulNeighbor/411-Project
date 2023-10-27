@@ -9,6 +9,7 @@ import MapWithSearch from "../Components/Map/MapWithSearch";
   
 export default function SearchPage() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const [searchResults, setSearchResults] = useState([]);
 
   const openDrawer = () =>{
     setIsDrawerOpen(true);
@@ -58,8 +59,9 @@ export default function SearchPage() {
         </Flex>
         </GridItem>
       </Grid>
-      <MapDrawer isOpen={isDrawerOpen} onClose={closeDrawer} />
-
+      {searchResults.length > 0 && (
+        <MapDrawer isOpen={isDrawerOpen} onClose={closeDrawer} searchResults={searchResults} />
+      )}
     </div>
   );
 }

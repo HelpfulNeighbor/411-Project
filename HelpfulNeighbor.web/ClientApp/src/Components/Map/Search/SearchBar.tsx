@@ -8,9 +8,18 @@ import { Box,
     Wrap, 
     WrapItem, 
 } from "@chakra-ui/react";
-import React from "react";
+import React, { useState } from "react";
 
-export default function SearchBar() {
+interface SearchBarProps {
+    onSearch: (query: string) => void;
+  }
+
+export default function SearchBar({ onSearch }: SearchBarProps) {
+    const [searchQuery, setSearchQuery] = useState('');
+    const handleSearch = () => {
+        onSearch(searchQuery);
+      };
+
     const searchBarStyle: React.CSSProperties = {
         position: 'absolute',
         top: '3%',
@@ -24,9 +33,18 @@ export default function SearchBar() {
                     <Stack spacing={4}>
                         <Box bgColor="#FFFFFF" borderRadius='lg'>
                             <InputGroup>
-                                <Input placeholder='Search' variant='filled'/>
+                                <Input 
+                                value={searchQuery}
+                                onChange={(e) => setSearchQuery(e.target.value)}
+                                placeholder='Search' 
+                                variant='filled'
+                                />
                                 <InputRightElement>
-                                    <IconButton aria-label='Search database' variant='ghost' icon={<SearchIcon />} />
+                                    <IconButton 
+                                    onClick={handleSearch}
+                                    aria-label='Search database' 
+                                    variant='ghost' 
+                                    icon={<SearchIcon />} />
                                 </InputRightElement>
                             </InputGroup>
                         </Box>

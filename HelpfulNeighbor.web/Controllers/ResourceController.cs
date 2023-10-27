@@ -13,10 +13,12 @@ namespace HelpfulNeighbor.web.Controllers
     public class ResourceController : Controller
     {
         private readonly IResourceRepository _resourceRepository;
+        private readonly IHoursOfOperationRepository _hoursOfOperationRepository;
         private readonly IMapper _mapper;
-        public ResourceController(IResourceRepository resourceRepository, IMapper mapper)
+        public ResourceController(IResourceRepository resourceRepository, IHoursOfOperationRepository hoursOfOperationRepository,IMapper mapper)
         {
             _resourceRepository = resourceRepository;
+            _hoursOfOperationRepository = hoursOfOperationRepository;
             _mapper = mapper;
         }
 
@@ -52,15 +54,36 @@ namespace HelpfulNeighbor.web.Controllers
             return Ok(resource);
         }
 
-        [HttpGet("Name")]
+        [HttpGet("search")]
         [ProducesResponseType(200, Type = typeof(IEnumerable<Resource>))]
         [ProducesResponseType(400)]
-        public IActionResult GetResourceByName(string name)
+        public IActionResult SearchResources(string searchQuery = null, bool filterByResourceType = false, string resourceType = null, bool filterByParish = false, string parish = null)
         {
+            var resources = _resourceRepository.SearchResources(searchQuery);
 
-            var resources = _mapper.Map<List<ResourceDto>>(_resourceRepository.GetResourceByName(name));
+            if (filterByResourceType && !string.IsNullOrEmpty(resourceType))
+            {
+                resources = _resourceRepository.FilterResourcesByResourceType(resources, resourceType);
+            }
 
-            if (resources == null || !resources.Any())
+            if (filterByParish && !string.IsNullOrEmpty(parish))
+            {
+                resources = _resourceRepository.FilterResourcesByParish(resources, parish);
+            }
+
+            var resourceDtos = _mapper.Map<List<ResourceWithHoursDto>>(resources);
+
+            foreach (var resource in resources)
+            {
+                var resourceDto = _mapper.Map<ResourceWithHoursDto>(resource);
+
+                var hoursOfOperationDto = _mapper.Map<List<HoursOfOperationDto>>(_hoursOfOperationRepository.GetHoursOfOperationsByResource(resource.ResourceId));
+                resourceDto.HoursOfOperation = hoursOfOperationDto;
+
+                resourceDtos.Add(resourceDto);
+            }
+
+            if (resourceDtos == null || !resourceDtos.Any())
             {
                 return NotFound();
             }
@@ -70,67 +93,7 @@ namespace HelpfulNeighbor.web.Controllers
                 return BadRequest(ModelState);
             }
 
-            return Ok(resources);
-        }
-
-        [HttpGet("City")]
-        [ProducesResponseType(200, Type = typeof(IEnumerable<Resource>))]
-        [ProducesResponseType(400)]
-        public IActionResult GetResourceByCity(string city)
-        {
-            var resources = _mapper.Map<List<ResourceDto>>(_resourceRepository.GetResourceByCity(city));
-
-            if (resources == null || !resources.Any())
-            {
-                return NotFound();
-            }
-
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
-            return Ok(resources);
-        }
-
-        [HttpGet("Parish")]
-        [ProducesResponseType(200, Type = typeof(IEnumerable<Resource>))]
-        [ProducesResponseType(400)]
-        public IActionResult GetResourceByParish(string parish)
-        {
-            var resources = _mapper.Map<List<ResourceDto>>(_resourceRepository.GetResourceByParish(parish));
-
-            if (resources == null || !resources.Any())
-            {
-                return NotFound();
-            }
-
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
-            return Ok(resources);
-        }
-
-        [HttpGet("ResourceType")]
-        [ProducesResponseType(200, Type = typeof(IEnumerable<Resource>))]
-        [ProducesResponseType(400)]
-        public IActionResult GetResourceByResourceType(string type)
-        {
-            var resources = _mapper.Map<List<ResourceDto>>(_resourceRepository.GetResourceByResourceType(type));
-
-            if (resources == null || !resources.Any())
-            {
-                return NotFound();
-            }
-
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
-            return Ok(resources);
+            return Ok(resourceDtos);
         }
 
     }

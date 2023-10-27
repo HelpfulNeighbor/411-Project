@@ -10,6 +10,8 @@ namespace HelpfulNeighbor.web.Helper
         {
                 CreateMap<Resource,ResourceDto>();
                 CreateMap<HoursOfOperation,HoursOfOperationDto>();
+                CreateMap<Resource, ResourceWithHoursDto>()
+                .ForMember(dest => dest.HoursOfOperation, opt => opt.MapFrom(src => src.HoursOfOperation));
         }
     }
 }
