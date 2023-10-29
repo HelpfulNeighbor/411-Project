@@ -1,19 +1,22 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import SearchBar from './Search/SearchBar';
 import MapView from './MapView';
 import ResourceTypeFilter from './Search/ResourceTypeFilter';
 import CityFilter from './Search/CityFilter';
 import ParishFilter from './Search/ParishFilter';
 import { fetchSearchResults } from '../../Data/Queries/ResourceQueries';
-import { Resource } from '../../Data/Types/ResourceTypes';
+import { SearchResults } from '../../Data/Queries/ResourceQueries';
 
-const MapWithSearch = () => {
-  const [searchResults, setSearchResults] = useState<Resource[]>([]);
+interface MapWithSearchProps {
+  setSearchResults: (results: SearchResults) => void;
+}
+
+const MapWithSearch: React.FC<MapWithSearchProps> = ({ setSearchResults }) => {
   const [filterCriteria, setFilterCriteria] = useState({
     filterByResourceType: false,
-    resourceType: '',
+    resourceType: [] as string[],
     filterByParish: false,
-    parish: '',
+    parish: [] as string[],
   });
   const [searchQuery, setSearchQuery] = useState('');
 
@@ -30,33 +33,63 @@ const MapWithSearch = () => {
         const results = await fetchSearchResults(
           searchQuery,
           filterByResourceType,
-          resourceType,
+          resourceType.join(','),
           filterByParish,
-          parish
+          parish.join(',')
         );
-        setSearchResults(results);
+        setSearchResults(results); 
         console.log('searchResults in MapWithSearch:', results);
       }
     };
 
     fetchData();
-  }, [filterCriteria, searchQuery]);
+  }, [filterCriteria, searchQuery, setSearchResults]);
 
   const handleSearch = (query: string) => {
     setSearchQuery(query);
   };
 
-  const handleFilterChange = (filterName: string, filterValue: boolean) => {
-    setFilterCriteria({ ...filterCriteria, [filterName]: filterValue });
-  };
+  const handleFilterChange = useCallback((filterCategory: string, filterName: string, filterValue: boolean) => {
+    setFilterCriteria((prevCriteria) => {
+      if (filterCategory === 'resourceType') {
+        // Update the resourceType based on the selected checkboxes
+        const updatedResourceType = filterValue
+          ? [...prevCriteria.resourceType, filterName]
+          : prevCriteria.resourceType.filter((type) => type !== filterName);
+
+        return {
+          ...prevCriteria,
+          filterByResourceType: updatedResourceType.length > 0,
+          resourceType: updatedResourceType,
+        };
+      } else if (filterCategory === 'parish') {
+        // Update the parish filter similarly to resourceType
+        const updatedParish = filterValue
+          ? [...prevCriteria.parish, filterName]
+          : prevCriteria.parish.filter((p) => p !== filterName);
+
+        return {
+          ...prevCriteria,
+          filterByParish: updatedParish.length > 0,
+          parish: updatedParish,
+        };
+      } else {
+        // Handle other filter types if needed
+        return {
+          ...prevCriteria,
+          [filterCategory]: filterValue,
+        };
+      }
+    });
+  }, [setFilterCriteria]);
 
   return (
     <div style={{ position: 'relative', width: '100%', height: '100%' }}>
       <MapView />
       <SearchBar onSearch={handleSearch} />
-      <ResourceTypeFilter onFilterChange={handleFilterChange} />
+      <ResourceTypeFilter onFilterChange={(filterName, filterValue) => handleFilterChange('resourceType', filterName, filterValue)} />
       <CityFilter />
-      <ParishFilter onFilterChange={handleFilterChange} />
+      <ParishFilter onFilterChange={(filterName, filterValue) => handleFilterChange('parish', filterName, filterValue)} />
     </div>
   );
 };

@@ -38,7 +38,7 @@ export default function CityFilter(){
                     </PopoverTrigger>
                     <PopoverContent>
                         <PopoverArrow />
-                        <PopoverHeader>Search by City</PopoverHeader>
+                        <PopoverHeader>Filter by City</PopoverHeader>
                         <PopoverBody>
                             <InputGroup>
                                 <Input placeholder='Search' variant='filled'/>
