@@ -2,9 +2,13 @@ import api from "../../Api/config";
 import { HoursOfOperation } from "../Types/HoursOfOpTypes";
 import { Resource } from "../Types/ResourceTypes";
 
+export interface SearchResult {
+  resource: Resource;
+  hoursOfOperation: HoursOfOperation;
+}
+
 export interface SearchResults {
-  resources: Resource[];
-  hoursOfOperation: HoursOfOperation[];
+  resources: SearchResult[];
 }
 
 export async function getAllResources(){
@@ -62,7 +66,7 @@ export async function fetchSearchResults(
       }
     } catch (error) {
       console.error('Error while fetching search results:', error);
-      return { resources: [], hoursOfOperation: [] };
+      return { resources: []};
     }
   }
   

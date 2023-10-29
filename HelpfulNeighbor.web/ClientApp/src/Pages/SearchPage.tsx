@@ -5,19 +5,20 @@ import { HamburgerIcon } from "@chakra-ui/icons";
 import { GoBookmark } from 'react-icons/go'
 import MapDrawer from "../Components/Map/SearchResults/MapDrawer";
 import MapWithSearch from "../Components/Map/MapWithSearch";
-import 
+import { SearchResults } from "../Data/Queries/ResourceQueries";
 // import { Link as ReactRouterLink } from "react-router-dom";
   
 export default function SearchPage() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-  const [searchResults, setSearchResults] = useState<SearchResults>({ resources: [], hoursOfOperation: [] });
-
-
+  const [searchResults, setSearchResults] = useState<SearchResults>({ resources: [] });
 
   const openDrawer = () =>{
+    console.log('Before Opening drawer, isDrawerOpen:', isDrawerOpen);
     setIsDrawerOpen(true);
+    console.log('After Opening drawer, isDrawerOpen:', isDrawerOpen);
   };
   const closeDrawer = () => {
+    console.log('Closing drawer');
     setIsDrawerOpen(false);
   };
 
@@ -62,7 +63,7 @@ export default function SearchPage() {
         </Flex>
         </GridItem>
       </Grid>
-      {searchResults.length > 0 && (
+      {searchResults && searchResults.resources && searchResults.resources.length > 0 && (
         <MapDrawer isOpen={isDrawerOpen} onClose={closeDrawer} searchResults={searchResults} />
       )}
     </div>
