@@ -1,8 +1,6 @@
 import { SearchIcon } from "@chakra-ui/icons";
 import {
     Button,
-    Checkbox, 
-    Divider, 
     IconButton, 
     Input, 
     InputGroup, 
@@ -11,11 +9,8 @@ import {
     PopoverArrow, 
     PopoverBody, 
     PopoverContent, 
-    PopoverFooter, 
     PopoverHeader,  
     PopoverTrigger, 
-    Wrap, 
-    WrapItem, 
 } from "@chakra-ui/react";
 import React from "react";
 import { IoIosArrowDown } from 'react-icons/io';
@@ -25,7 +20,7 @@ export default function CityFilter(){
     const searchFilterStyle: React.CSSProperties = {
         position: 'absolute',
         top: '3%',
-        left: '27%',
+        left: '28%',
     };
 
     return(
@@ -43,7 +38,7 @@ export default function CityFilter(){
                     </PopoverTrigger>
                     <PopoverContent>
                         <PopoverArrow />
-                        <PopoverHeader>Search by City</PopoverHeader>
+                        <PopoverHeader>Filter by City</PopoverHeader>
                         <PopoverBody>
                             <InputGroup>
                                 <Input placeholder='Search' variant='filled'/>

@@ -26,6 +26,8 @@ var secretKey = jwtConfig["secret"];
 builder.Services.AddControllers();
 builder.Logging.AddConsole();
 builder.Services.AddTransient<SeedHelper>();
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IResourceRepository, ResourceRepository>();
 builder.Services.AddScoped<IHoursOfOperationRepository, HoursOfOperationRepository>();
 builder.Services.AddScoped<ISavedResourceRepository, SavedResourceRepository>();

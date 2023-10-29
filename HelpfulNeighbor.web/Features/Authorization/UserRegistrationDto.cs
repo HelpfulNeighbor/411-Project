@@ -18,7 +18,7 @@ namespace HelpfulNeighbor.web.Features.Authorization
         [EmailAddress]
         public string? Email { get; set; } 
 
-        [Required, MinLength(1)]
-        public string[] Roles { get; set; } = Array.Empty<string>();
+/*        [Required, MinLength(1)]
+        public string[] Roles { get; set; } = Array.Empty<string>();*/
     }
 }

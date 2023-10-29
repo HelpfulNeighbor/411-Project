@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   ModalBody,
   Text,
@@ -7,76 +7,118 @@ import {
   Input,
   Button,
   Flex,
-} from '@chakra-ui/react';
-import { useForm, SubmitHandler } from 'react-hook-form';
+  useToast,
+} from "@chakra-ui/react";
+import { useForm, SubmitHandler } from "react-hook-form";
+import api from "../../Api/config";
+import { useNavigate } from "react-router-dom";
 
 type SignUpFormProps = {
   onClose: () => void;
 };
 
 type FormValues = {
-  firstname: string;
-  lastname: string;
-  username: string;
+  firstName: string;
+  lastName: string;
+  userName: string;
   email: string;
   password: string;
 };
 
-const LoginForm: React.FC<SignUpFormProps> = ({ onClose }) => {
+const SignUpForm: React.FC<SignUpFormProps> = ({ onClose }) => {
   const {
     handleSubmit,
     register,
     formState: { errors },
   } = useForm<FormValues>();
 
+  const navigate = useNavigate();
+  const toast = useToast();
+
   const onSubmit: SubmitHandler<FormValues> = (data) => {
-    // Handle form submission here (e.g., send data to the server)
-    console.log(data);
+    api
+      .post("/api/authentication/register", data)
+      .then((response) => {
+        if (response.status === 200) {
+          navigate("/");
+          toast({
+            title: 'Account created.',
+            description: 'Your account has successfully been registered!',
+            status: 'success',
+            position: 'bottom-right',
+            variant: 'subtle',
+            duration: 5000,
+            isClosable: true,
+          })
+        } else {
+          toast({
+            title: 'Something went wrong',
+            description: 'There was an error creating your account. Please try again.',
+            status: 'error',
+            position: 'bottom-right',
+            duration: 5000,
+            isClosable: true,
+          })
+          console.log("Registration failed. Server response:", response.data);
+        }
+      })
+      .catch((error) => {
+        console.error("An error occurred:", error);
+      });
     onClose();
   };
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <ModalBody>
-
-      <FormControl isInvalid={!!errors.firstname} mb={4}>
+        <FormControl isInvalid={!!errors.firstName} mb={4}>
           <FormLabel>First Name</FormLabel>
           <Input
-            {...register('firstname', {
-              required: 'First name is required',
+            id="firstName"
+            {...register("firstName", {
+              required: "First name is required",
             })}
             type="text"
           />
-          {errors.firstname && <Text color="red.500">{errors.firstname.message}</Text>}
+          {errors.firstName && (
+            <Text color="red.500">{errors.firstName.message}</Text>
+          )}
         </FormControl>
 
-        <FormControl isInvalid={!!errors.lastname} mb={4}>
+        <FormControl isInvalid={!!errors.lastName} mb={4}>
           <FormLabel>Last Name</FormLabel>
           <Input
-            {...register('lastname', {
-              required: 'Last name is required',
+            id="lastName"
+            {...register("lastName", {
+              required: "Last name is required",
             })}
             type="text"
           />
-          {errors.lastname && <Text color="red.500">{errors.lastname.message}</Text>}
+          {errors.lastName && (
+            <Text color="red.500">{errors.lastName.message}</Text>
+          )}
         </FormControl>
 
-        <FormControl isInvalid={!!errors.username} mb={4}>
+        <FormControl isInvalid={!!errors.userName} mb={4}>
           <FormLabel>Username</FormLabel>
           <Input
-            {...register('username', {
-              required: 'Username is required',
+            id="userName"
+            {...register("userName", {
+              required: "Username is required",
             })}
             type="text"
           />
-          {errors.username && <Text color="red.500">{errors.username.message}</Text>}
+          {errors.userName && (
+            <Text color="red.500">{errors.userName.message}</Text>
+          )}
         </FormControl>
 
         <FormControl isInvalid={!!errors.email} mb={4}>
           <FormLabel>Email Address</FormLabel>
           <Input
-            {...register('email', {
-              required: 'Email is required',
+            id="email"
+            {...register("email", {
+              required: "Email is required",
             })}
             type="text"
           />
@@ -86,22 +128,25 @@ const LoginForm: React.FC<SignUpFormProps> = ({ onClose }) => {
         <FormControl isInvalid={!!errors.password} mb={4}>
           <FormLabel>Password</FormLabel>
           <Input
-            {...register('password', {
-              required: 'Password is required',
+            id="password"
+            {...register("password", {
+              required: "Password is required",
             })}
             type="password"
           />
-          {errors.password && <Text color="red.500">{errors.password.message}</Text>}
+          {errors.password && (
+            <Text color="red.500">{errors.password.message}</Text>
+          )}
         </FormControl>
       </ModalBody>
 
       <Flex justify="center" align="center">
-          <Button type="submit" colorScheme="purple">
-            Submit
-          </Button>
-        </Flex>
+        <Button type="submit" colorScheme="purple">
+          Submit
+        </Button>
+      </Flex>
     </form>
   );
 };
 
-export default LoginForm;
+export default SignUpForm;

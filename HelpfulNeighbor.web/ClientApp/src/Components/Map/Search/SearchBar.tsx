@@ -1,5 +1,6 @@
 import { SearchIcon } from "@chakra-ui/icons";
 import { Box, 
+    FormControl, 
     IconButton, 
     Input, 
     InputGroup, 
@@ -8,12 +9,23 @@ import { Box,
     Wrap, 
     WrapItem, 
 } from "@chakra-ui/react";
-import React from "react";
-import ResourceTypeFilter from "./ResourceTypeFilter";
-import CityFilter from "./CityFilter";
-import ParishFilter from "./ParishFilter";
+import React, { useState } from "react";
 
-export default function SearchBar() {
+interface SearchBarProps {
+    onSearch: (query: string) => void;
+  }
+
+export default function SearchBar({ onSearch }: SearchBarProps) {
+    const [searchQuery, setSearchQuery] = useState('');
+    const handleSearch = () => {
+        onSearch(searchQuery);
+    };
+
+    const handleKeyPress = (event: React.KeyboardEvent<HTMLInputElement>) => {
+    if (event.key === 'Enter') {
+        handleSearch();
+    }
+    };
     const searchBarStyle: React.CSSProperties = {
         position: 'absolute',
         top: '3%',
@@ -26,24 +38,29 @@ export default function SearchBar() {
                 <div style={searchBarStyle}>
                     <Stack spacing={4}>
                         <Box bgColor="#FFFFFF" borderRadius='lg'>
+                            <FormControl>
                             <InputGroup>
-                                <Input placeholder='Search' variant='filled'/>
+                                <Input 
+                                value={searchQuery}
+                                onChange={(e) => setSearchQuery(e.target.value)}
+                                placeholder='Search' 
+                                variant='filled'
+                                onKeyPress={handleKeyPress}
+                                />
                                 <InputRightElement>
-                                    <IconButton aria-label='Search database' variant='ghost' icon={<SearchIcon />} />
+                                    <IconButton 
+                                    onClick={handleSearch}
+                                    aria-label='Search database' 
+                                    variant='ghost' 
+                                    icon={<SearchIcon />} 
+                                    type="submit"
+                                    />
                                 </InputRightElement>
                             </InputGroup>
+                            </FormControl>
                         </Box>
                     </Stack>
                 </div>
-            </WrapItem>
-            <WrapItem>
-                <ResourceTypeFilter/>
-            </WrapItem>
-            <WrapItem>
-                <CityFilter/>
-            </WrapItem>
-            <WrapItem>
-                <ParishFilter/>
             </WrapItem>
         </Wrap>
     );

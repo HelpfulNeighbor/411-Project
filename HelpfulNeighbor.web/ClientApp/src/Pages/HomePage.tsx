@@ -27,6 +27,7 @@ export default function HomePage() {
             Search for a nearby community resource.
           </Text>
           <Button
+          as={ReactRouterLink} to="/search"
             leftIcon={<MdSearch />}
             colorScheme="purple"
             mt="35px"
