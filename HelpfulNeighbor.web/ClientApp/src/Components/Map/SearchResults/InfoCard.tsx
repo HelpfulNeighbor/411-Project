@@ -66,28 +66,28 @@ export default function InfoCard(props: InfoCardProps){
                                 <AccordionPanel pb={4}>
                                 Resource Type: {props.ResourceType}
                                 <br/>
-                                Address: {props.Address}
+                                Address: {props?.Address || ''}
                                 <br/>
                                 Hours of Operation:
                                 <br/>
                                 <Stack direction={['column', 'row']} spacing='12px'>
                                     <Box>
                                         <Text>
-                                            {props.DayOfWeek}
+                                            {props?.DayOfWeek || ''}
                                         </Text>
                                     </Box>
                                     <Box>
                                         <Text>
-                                            {props.OpenTime} - {props.CloseTime}
+                                            {props?.OpenTime || ''} - {props?.CloseTime || ''}
                                         </Text>
                                     </Box>
                                     
                                 </Stack>
 
                                 <br/>
-                                Website: {props.Website}
+                                Website: {props?.Website || ''}
                                 <br/>
-                                Phone Number: {props.PhoneNumber}
+                                Phone Number: {props?.PhoneNumber || ''}
                                 </AccordionPanel>
                             </AccordionItem>
                         </Accordion>    
