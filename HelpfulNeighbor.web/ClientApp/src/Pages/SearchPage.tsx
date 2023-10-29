@@ -5,11 +5,14 @@ import { HamburgerIcon } from "@chakra-ui/icons";
 import { GoBookmark } from 'react-icons/go'
 import MapDrawer from "../Components/Map/SearchResults/MapDrawer";
 import MapWithSearch from "../Components/Map/MapWithSearch";
+import 
 // import { Link as ReactRouterLink } from "react-router-dom";
   
 export default function SearchPage() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-  const [searchResults, setSearchResults] = useState([]);
+  const [searchResults, setSearchResults] = useState<SearchResults>({ resources: [], hoursOfOperation: [] });
+
+
 
   const openDrawer = () =>{
     setIsDrawerOpen(true);
@@ -55,7 +58,7 @@ export default function SearchPage() {
           justifyContent="center"
           style={{ height: '100%' }}
         > 
-          <MapWithSearch />
+          <MapWithSearch setSearchResults={setSearchResults}/>
         </Flex>
         </GridItem>
       </Grid>

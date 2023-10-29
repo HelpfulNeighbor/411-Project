@@ -5,10 +5,10 @@ import ResourceTypeFilter from './Search/ResourceTypeFilter';
 import CityFilter from './Search/CityFilter';
 import ParishFilter from './Search/ParishFilter';
 import { fetchSearchResults } from '../../Data/Queries/ResourceQueries';
-import { Resource } from '../../Data/Types/ResourceTypes';
+import { SearchResults } from '../../Data/Queries/ResourceQueries';
 
 interface MapWithSearchProps {
-  setSearchResults: (results: Resource[]) => void; // This is a function to set searchResults
+  setSearchResults: (results: SearchResults) => void;
 }
 
 const MapWithSearch: React.FC<MapWithSearchProps> = ({ setSearchResults }) => {
@@ -37,7 +37,7 @@ const MapWithSearch: React.FC<MapWithSearchProps> = ({ setSearchResults }) => {
           filterByParish,
           parish.join(',')
         );
-        setSearchResults(results); // Use the prop function to set searchResults
+        setSearchResults(results); 
         console.log('searchResults in MapWithSearch:', results);
       }
     };
