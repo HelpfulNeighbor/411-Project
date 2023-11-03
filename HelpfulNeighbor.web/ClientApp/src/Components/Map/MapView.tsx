@@ -23,7 +23,7 @@ export default function MapView() {
     const [viewport, setViewport] = React.useState<Viewport>({
         latitude: 30.51675,
         longitude: -90.47158,
-        zoom: 7,
+        zoom: 12,
         
     });
 
