@@ -6,7 +6,6 @@ import CityFilter from './Search/CityFilter';
 import ParishFilter from './Search/ParishFilter';
 import { fetchSearchResults } from '../../Data/Queries/ResourceQueries';
 import { SearchResults } from '../../Data/Queries/ResourceQueries';
-import ShowLocation from './Controls/ShowLocation';
 
 interface MapWithSearchProps {
   setSearchResults: (results: SearchResults) => void;

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { IconButton } from '@chakra-ui/react';
 import {BiCurrentLocation} from 'react-icons/bi';
 

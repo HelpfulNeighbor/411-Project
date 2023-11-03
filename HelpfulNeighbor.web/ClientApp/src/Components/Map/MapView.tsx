@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useEffect, useState } from 'react';
-import Map, { GeolocateControl, Marker } from 'react-map-gl';
+import Map from 'react-map-gl';
 import ShowLocation from './Controls/ShowLocation';
 
 interface Viewport {
