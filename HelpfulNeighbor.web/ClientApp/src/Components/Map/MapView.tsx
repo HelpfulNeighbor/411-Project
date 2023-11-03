@@ -28,17 +28,19 @@ export default function MapView() {
     });
 
     useEffect(() => {
-        navigator.geolocation.getCurrentPosition((pos) => {
-          setViewport({
-            ...viewport,
-            latitude: pos.coords.latitude,
-            longitude: pos.coords.longitude,
-            zoom: 16,
-          });
-        });
-      }, []);
+      navigator.geolocation.getCurrentPosition((pos) => {
+        setViewport((prevViewport) => ({
+          ...prevViewport,
+          latitude: pos.coords.latitude,
+          longitude: pos.coords.longitude,
+          zoom: 16,
+        }));
+      });
+    }, []);
+    
 
     const [centerOnUserLocation, setCenterOnUserLocation] = useState(true);
+
     const triggerGeolocation = () => {
         navigator.geolocation.getCurrentPosition((pos) => {
         setViewport({
