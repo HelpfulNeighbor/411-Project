@@ -1,5 +1,15 @@
 import api from "../../Api/config";
+import { HoursOfOperation } from "../Types/HoursOfOpTypes";
 import { Resource } from "../Types/ResourceTypes";
+
+export interface SearchResult {
+  resource: Resource;
+  hoursOfOperation: HoursOfOperation;
+}
+
+export interface SearchResults {
+  resources: SearchResult[];
+}
 
 export async function getAllResources(){
     try{
@@ -37,7 +47,7 @@ export async function fetchSearchResults(
     resourceType: string,
     filterByParish: boolean,
     parish: string
-  ): Promise<Resource[]> {
+  ): Promise<SearchResults> {
     try {
       const { data, status } = await api.get('/api/Resource/search', {
         params: {
@@ -56,7 +66,7 @@ export async function fetchSearchResults(
       }
     } catch (error) {
       console.error('Error while fetching search results:', error);
-      return [];
+      return { resources: []};
     }
   }
   
