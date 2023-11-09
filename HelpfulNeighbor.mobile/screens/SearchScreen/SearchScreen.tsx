@@ -11,6 +11,7 @@ import {
   Divider,
   PaperProvider,
 } from "react-native-paper";
+import NativeMap from "../../components/Search/MapView";
 
 const SearchScreen = () => {
   const [searchQuery, setSearchQuery] = React.useState("");
@@ -51,7 +52,7 @@ const SearchScreen = () => {
                 </PaperProvider> */}
             <Card mode={"outlined"}>
               <Card.Content>
-                <Card.Cover source={{ uri: " " }} />
+                  {/* <NativeMap/> */}
               </Card.Content>
               
             </Card>
