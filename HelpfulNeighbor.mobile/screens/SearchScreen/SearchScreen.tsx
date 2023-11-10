@@ -12,11 +12,9 @@ import {
   PaperProvider,
 } from "react-native-paper";
 import NativeMap from "../../components/Search/NativeMap";
+import SearchBar from "../../components/Search/SearchBar";
 
 const SearchScreen = () => {
-  const [searchQuery, setSearchQuery] = React.useState("");
-  const onChangeSearch = (query: React.SetStateAction<string>) =>
-    setSearchQuery(query);
   const [expanded, setExpanded] = React.useState(true);
   const handlePress = () => setExpanded(!expanded);
   const [visible, setVisible] = React.useState(false);
@@ -26,6 +24,7 @@ const SearchScreen = () => {
   return (
     <SafeAreaView style={Style.container}>
             <NativeMap/>
+            <SearchBar/>
     </SafeAreaView>
   );
 };

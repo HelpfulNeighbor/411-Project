@@ -19,7 +19,9 @@ const Style = StyleSheet.create({
         marginTop: 16,
     },
     searchBar:{
-        marginTop: 16,
+        position: 'absolute',
+        top: 50,
+        
     },
 })
 
