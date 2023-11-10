@@ -4,7 +4,7 @@ const Style = StyleSheet.create({
     container:{
         flex: 1,
         justifyContent: 'center',
-        padding: 24,
+        padding: 0,
         backgroundColor: "#e0e6ec",
     },
     title:{
