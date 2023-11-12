@@ -1,32 +1,20 @@
 import * as React from "react";
-import { SafeAreaView, ScrollView, View } from "react-native";
+import { SafeAreaView, View } from "react-native";
 import Style from "./Style";
-import {
-  Searchbar,
-  List,
-  Button,
-  Card,
-  Text,
-  Menu,
-  Divider,
-  PaperProvider,
-} from "react-native-paper";
 import NativeMap from "../../components/Search/NativeMap";
 import SearchBar from "../../components/Search/SearchBar";
-import TopAppBar from "../../components/TopAppBar";
+import SearchBarWithResultsPanel from "../../components/Search/SearchResultsPanel";
 
 const SearchScreen = () => {
-  const [expanded, setExpanded] = React.useState(true);
-  const handlePress = () => setExpanded(!expanded);
-  const [visible, setVisible] = React.useState(false);
-  const openMenu = () => setVisible(true);
-  const closeMenu = () => setVisible(false);
-
   return (
     <SafeAreaView style={Style.container}>
-        {/* <TopAppBar/> */}
-        <NativeMap/>
-        <SearchBar/>
+      <View style={Style.mapContainer}>
+        <NativeMap />
+        <View style={Style.overlay}>
+          <SearchBar />
+          <SearchBarWithResultsPanel />
+        </View>
+      </View>
     </SafeAreaView>
   );
 };
