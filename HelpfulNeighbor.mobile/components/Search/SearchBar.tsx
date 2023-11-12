@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Searchbar } from 'react-native-paper';
+import { IconButton, MD3Colors, Searchbar } from 'react-native-paper';
 import Style from '../../screens/SearchScreen/Style';
 
 const SearchBar = () => {
@@ -8,13 +8,25 @@ const SearchBar = () => {
     setSearchQuery(query);
 
   return (
-    <Searchbar
-        style={Style.searchBar}
-        placeholder="Search"
-        onChangeText={onChangeSearch}
-        value={searchQuery}
-        theme={{ colors: { primary: 'white' } }}
-    />
+    <>
+      <Searchbar
+          style={Style.searchBar}
+          placeholder="Search"
+          onChangeText={onChangeSearch}
+          value={searchQuery}
+      />
+      <IconButton
+                style={Style.filter}
+                mode='contained'
+                icon="filter"
+                iconColor={MD3Colors.primary40}
+                size={20}
+                onPress={() => console.log('Pressed')}
+            />
+    </>
+
+    
+    
   );
 };
 

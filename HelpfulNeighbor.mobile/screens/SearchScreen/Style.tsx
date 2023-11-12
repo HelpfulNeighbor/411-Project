@@ -21,8 +21,18 @@ const Style = StyleSheet.create({
     searchBar:{
         position: 'absolute',
         top: 50,
-        
+        marginRight: '20%',
+        marginLeft: '3%',
+        backgroundColor: 'white'
     },
+    filter:{
+        position: 'absolute',
+        top: 55,
+        marginLeft: '84%',
+        marginRight:'5%',
+        backgroundColor: 'white',
+        borderRadius: 40,
+    }
 })
 
 export default Style;

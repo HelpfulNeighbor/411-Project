@@ -13,6 +13,7 @@ import {
 } from "react-native-paper";
 import NativeMap from "../../components/Search/NativeMap";
 import SearchBar from "../../components/Search/SearchBar";
+import TopAppBar from "../../components/TopAppBar";
 
 const SearchScreen = () => {
   const [expanded, setExpanded] = React.useState(true);
@@ -23,8 +24,9 @@ const SearchScreen = () => {
 
   return (
     <SafeAreaView style={Style.container}>
-            <NativeMap/>
-            <SearchBar/>
+        {/* <TopAppBar/> */}
+        <NativeMap/>
+        <SearchBar/>
     </SafeAreaView>
   );
 };

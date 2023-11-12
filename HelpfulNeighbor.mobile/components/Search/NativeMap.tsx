@@ -7,7 +7,15 @@ export default function NativeMap(){
 
     return (
       <View style={styles.container}>
-      <MapView style={styles.map} />
+      <MapView 
+      style={styles.map}
+      initialRegion={{
+        latitude: 30.51675,
+        longitude: -90.47158,
+        latitudeDelta: 0.0922,
+        longitudeDelta: 0.0421,
+      }}
+       />
     </View>
     );
 }
