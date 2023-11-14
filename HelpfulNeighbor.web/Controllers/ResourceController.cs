@@ -73,14 +73,12 @@ namespace HelpfulNeighbor.web.Controllers
 
             var resourceDtos = _mapper.Map<List<ResourceWithHoursDto>>(resources);
 
-            foreach (var resource in resources)
+            foreach (var resourceDto in resourceDtos)
             {
-                var resourceDto = _mapper.Map<ResourceWithHoursDto>(resource);
 
-                var hoursOfOperationDto = _mapper.Map<List<HoursOfOperationDto>>(_hoursOfOperationRepository.GetHoursOfOperationsByResource(resource.ResourceId));
+                var hoursOfOperationDto = _mapper.Map<List<HoursOfOperationDto>>(_hoursOfOperationRepository.GetHoursOfOperationsByResource(resourceDto.ResourceId));
                 resourceDto.HoursOfOperation = hoursOfOperationDto;
 
-                resourceDtos.Add(resourceDto);
             }
 
             if (resourceDtos == null || !resourceDtos.Any())
