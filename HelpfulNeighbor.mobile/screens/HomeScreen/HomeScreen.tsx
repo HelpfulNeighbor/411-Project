@@ -1,7 +1,7 @@
 import React from "react";
 import { SafeAreaView, ScrollView,Text } from "react-native";
 import Style from "./Style";
-import InfoCard from "../../components/HomeScreen/InfoCard";
+import InfoCard from "../../components/Home/InfoCard";
 const HomeScreen = () => {
 
 
