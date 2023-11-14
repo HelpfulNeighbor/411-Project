@@ -5,12 +5,12 @@ import 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
 import BottomTabNavigator from './navigation/BottomTabNav';
 
+
 const App = () => {
   return (
     <NavigationContainer>
       <BottomTabNavigator/>
     </NavigationContainer>
-    
   );
 }
 

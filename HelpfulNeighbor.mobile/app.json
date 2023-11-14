@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "HelpfulNeighbor.mobile",
-    "slug": "HelpfulNeighbor.mobile",
+    "slug": "helpful-neighbor-mobile",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -21,10 +21,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "helpfulneighbor.mobile"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "3ab522dc-4949-4b95-98e0-01dc06fccbe8"
+      }
     }
   }
 }
