@@ -25,8 +25,7 @@ export default function AuthProfilePage() {
       .then((response) => {
         setData(response.data);
       })
-      .catch((error) => {
-      });
+      .catch((error) => {});
   }, []);
 
   return (
