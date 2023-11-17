@@ -60,9 +60,6 @@ export default function NavBar() {
         </Box>
         <Spacer />
         <ButtonGroup spacing="3" pr="10px">
-        {/* <Button rightIcon={<MdAttachMoney />} colorScheme="yellow" p="20px">
-            Donate
-          </Button> */}
           <SignUpModel />
           <LoginModel />
           <LogoutModel />
