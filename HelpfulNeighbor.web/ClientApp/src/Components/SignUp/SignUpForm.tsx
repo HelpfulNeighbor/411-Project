@@ -37,77 +37,59 @@ const SignUpForm: React.FC<SignUpFormProps> = ({ onClose }) => {
   const { setToken } = useAuth();
   const toast = useToast();
 
-  // const onSubmit: SubmitHandler<FormValues> = (data) => {
-  //   api
-  //     .post("/api/authentication/register", data)
-  //     .then((response) => {
-  //       if (response.status === 200) {
-  //         setToken?.(response.data);
-  //         console.log("Token Set:", response.data);
-  //         toast({
-  //           title: 'Account created.',
-  //           description: 'Your account has successfully been registered!',
-  //           status: 'success',
-  //           position: 'bottom-right',
-  //           variant: 'subtle',
-  //           duration: 5000,
-  //           isClosable: true,
-  //         })
-  //         navigate("/app/profile");
-  //       } else {
-  //         toast({
-  //           title: 'Something went wrong',
-  //           description: 'There was an error creating your account. Please try again.',
-  //           status: 'error',
-  //           position: 'bottom-right',
-  //           duration: 5000,
-  //           isClosable: true,
-  //         })
-  //         console.log("Registration failed. Server response:", response.data);
-  //       }
-  //     })
-  //     .catch((error) => {
-  //       console.error("An error occurred:", error);
-  //     });
-  //   onClose();
-  // };
-
   const onSubmit: SubmitHandler<FormValues> = async (data) => {
     try {
       const response = await api.post("/api/authentication/register", data);
       console.log("Registration Response:", response);
-
+  
       if (response.status === 200) {
-        setToken?.(response.data);
-        console.log("Token Set:", response.data);
-        toast({
-          title: "Account created.",
-          description: "Your account has successfully been registered!",
-          status: "success",
-          position: "bottom-right",
-          variant: "subtle",
-          duration: 5000,
-          isClosable: true,
+        const loginResponse = await api.post("/api/authentication/login", {
+          userName: data.userName,
+          password: data.password,
         });
-        navigate("/app/profile");
+  
+        if (loginResponse.status === 200) {
+          setToken?.(loginResponse.data);
+          console.log("Token Set:", loginResponse.data);
+
+          toast({
+            title: "Account created and logged in.",
+            description: "Your account has been registered and you are now logged in!",
+            status: "success",
+            position: "bottom-right",
+            variant: "subtle",
+            duration: 5000,
+            isClosable: true,
+          });
+  
+          navigate("/app/profile");
+        } else {
+          toast({
+            title: "Login failed after registration.",
+            description: "There was an error logging in. Please try again.",
+            status: "error",
+            position: "bottom-right",
+            duration: 5000,
+            isClosable: true,
+          });
+        }
       } else {
         toast({
-          title: "Something went wrong",
-          description:
-            "There was an error creating your account. Please try again.",
+          title: "Something went wrong during registration.",
+          description: "There was an error creating your account. Please try again.",
           status: "error",
           position: "bottom-right",
           duration: 5000,
           isClosable: true,
         });
-        console.log("Registration failed. Server response:", response.data);
       }
     } catch (error) {
       console.error("An error occurred:", error);
+    } finally {
+      onClose();
     }
-
-    onClose();
   };
+  
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
