@@ -40,6 +40,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ onClose }) => {
       .then((response) => {
         if (response.status === 200) {
           setToken?.(response.data);
+          console.log("Token Set:", response.data);
           toast({
             title: 'Login succcessful.',
             description: 'Welcome back!',
