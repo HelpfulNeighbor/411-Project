@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   ModalBody,
   Text,
@@ -13,6 +13,7 @@ import api from "../../Api/config";
 import { useAuth } from "../../Authentication/AuthProvider";
 import { useNavigate } from "react-router-dom";
 import { useToast } from "@chakra-ui/react"
+import FullPageLoadingSpinner from "../FullPageLoadingSpinner/FullPageLoadingSpinner";
 
 type LoginFormProps = {
   onClose: () => void;
@@ -33,13 +34,14 @@ const LoginForm: React.FC<LoginFormProps> = ({ onClose }) => {
   const { setToken } = useAuth();
   const navigate = useNavigate();
   const toast = useToast();
+  const [isLoading, setIsLoading] = useState(false);
 
-  const onSubmit: SubmitHandler<FormValues> = (data) => {
-    api
-      .post("/api/authentication/login", data)
-      .then((response) => {
-        if (response.status === 200) {
-          setToken?.(response.data);
+  const onSubmit: SubmitHandler<FormValues> = async (data) => {
+    try {
+      setIsLoading(true);
+      const response = await api.post("/api/authentication/login", data)
+      setToken?.(response.data);
+          console.log("Token Set:", response.data);
           toast({
             title: 'Login succcessful.',
             description: 'Welcome back!',
@@ -50,18 +52,17 @@ const LoginForm: React.FC<LoginFormProps> = ({ onClose }) => {
             isClosable: true,
           })
           navigate("/app/profile");
-          
-        } else {
-          console.log("Login failed");
-        }
-      })
-      .catch((error) => {
-        console.error("An error occurred:", error);
-      });
-    onClose();
+
+    } catch (error) {
+      console.error("An error occurred:", error);
+    } finally {
+      setIsLoading(false);
+      onClose();
+    }
   };
 
   return (
+    <>
     <form onSubmit={handleSubmit(onSubmit)}>
       <ModalBody>
         <FormControl isInvalid={!!errors.userName} mb={4}>
@@ -97,6 +98,8 @@ const LoginForm: React.FC<LoginFormProps> = ({ onClose }) => {
         </Button>
       </Flex>
     </form>
+    {isLoading && <FullPageLoadingSpinner />}
+    </>
   );
 };
 
