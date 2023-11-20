@@ -1,40 +1,26 @@
+import { Box, Flex, VStack } from '@chakra-ui/react';
 import React from 'react';
-import {
-  Drawer,
-  DrawerBody,
-  DrawerHeader,
-  DrawerOverlay,
-  DrawerContent,
-  DrawerCloseButton,
-  Box,
-  Heading,
-} from '@chakra-ui/react';
 import InfoCard from './InfoCard';
 import { SearchResults } from '../../../Data/Queries/ResourceQueries';
 import { SearchResult } from '../../../Data/Queries/ResourceQueries';
 
-interface MapDrawerProps {
-  isOpen: boolean;
-  onClose: () => void;
-  searchResults: SearchResults;
+interface ResultContainerProps{
+    searchResults: SearchResults;
 }
 
-export default function MapDrawer({ isOpen, onClose, searchResults }: MapDrawerProps) {
-  console.log("Search Results in MapDrawer:", searchResults);
-
-  return (
-    <Box>
-      <Drawer isOpen={isOpen} placement="left" onClose={onClose}>
-        <DrawerOverlay />
-        <DrawerContent>
-          <DrawerCloseButton />
-          <DrawerHeader textAlign="center">Search Results</DrawerHeader>
-          <DrawerBody>
-            <div>
+export default function ResultContainer({searchResults} : ResultContainerProps) {
+    return(
+        <div>
+          <Flex
+            minWidth="max-content"
+            justifyContent="center"
+          >
+            <Box>
+                <VStack spacing='6px'>
+                <div>
               {searchResults.resources && searchResults.resources.length > 0 ? (
                 <>
-                  <b><Heading size='md' textAlign="center">{searchResults.resources.length} Search Results Found</Heading></b>
-                  <br/>
+                  <p>{searchResults.resources.length} Search Results Found.</p>
                   {searchResults.resources.map((result: SearchResult, index: number) => (
                     <div key={index}>
                       <InfoCard
@@ -52,11 +38,10 @@ export default function MapDrawer({ isOpen, onClose, searchResults }: MapDrawerP
                 <p>No search results found.</p>
               )}
             </div>
-          </DrawerBody>
-        </DrawerContent>
-      </Drawer>
-    </Box>
-  );
+                </VStack>
+            </Box>
+            </Flex>
+            
+        </div>
+    )
 }
-
-
