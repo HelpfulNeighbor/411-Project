@@ -26,7 +26,6 @@ namespace HelpfulNeighbor.web.Controllers
         }
 
         [HttpGet]
-        [Authorize(Roles = RoleNames.Admin)]
         [ProducesResponseType(200, Type = typeof(IEnumerable<User>))]
         public IActionResult GetUsers()
         {
@@ -135,7 +134,6 @@ namespace HelpfulNeighbor.web.Controllers
 
 
         [HttpPut("{id}")]
-        [Authorize(Roles = RoleNames.Admin)]
         public async Task<IActionResult> UpdateUser(int id, UpdateUserDto dto)
         {
             var userToUpdate = await userManager.FindByIdAsync(id.ToString());
