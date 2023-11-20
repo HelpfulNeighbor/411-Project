@@ -11,6 +11,7 @@ interface MapWithSearchProps {
   setSearchResults: (results: SearchResults) => void;
 }
 
+
 const MapWithSearch: React.FC<MapWithSearchProps> = ({ setSearchResults }) => {
   const [filterCriteria, setFilterCriteria] = useState({
     filterByResourceType: false,
@@ -37,6 +38,7 @@ const MapWithSearch: React.FC<MapWithSearchProps> = ({ setSearchResults }) => {
           filterByParish,
           parish.join(',')
         );
+
         setSearchResults(results); 
         console.log('searchResults in MapWithSearch:', results);
       }
