@@ -45,6 +45,7 @@ export default function SearchBar({ onSearch }: SearchBarProps) {
                                 onChange={(e) => setSearchQuery(e.target.value)}
                                 placeholder='Search' 
                                 variant='filled'
+                                backgroundColor="white"
                                 onKeyPress={handleKeyPress}
                                 />
                                 <InputRightElement>
