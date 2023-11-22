@@ -14,6 +14,14 @@ const Style = StyleSheet.create({
         textAlign: 'center',
         fontSize: 28,
         fontWeight: 'bold',
+    },
+    subtitle:{
+        marginTop: 16,
+        paddingVertical: 8,
+        color: '#20232a',
+        textAlign: 'center',
+        fontSize: 15,
+        fontWeight: 'bold',
     }
 })
 

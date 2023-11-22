@@ -10,8 +10,8 @@ const ProfileScreen = () => {
     return (
         <SafeAreaView style={Style.container}>
             <ScrollView>
-                
-                <Text style ={Style.title}>Profile Screen</Text>
+                <Text style ={Style.title}>Welcome to Helpful Neighbor!</Text>
+                <Text style ={Style.subtitle}>Please sign in below.</Text>
                 <Avatar.Icon size={24} icon="contacts" />
             </ScrollView>
         </SafeAreaView>
