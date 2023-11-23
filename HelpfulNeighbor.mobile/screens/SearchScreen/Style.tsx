@@ -7,6 +7,15 @@ const Style = StyleSheet.create({
     padding: 0,
     backgroundColor: "#e0e6ec",
   },
+  title:{
+    marginTop: 20,
+    marginBottom: 20,
+    paddingVertical: 8,
+    color: '#7a5cce',
+    textAlign: 'center',
+    fontSize: 20,
+    fontWeight: 'bold',
+},
   mapContainer: {
     flex: 1,
     position: 'relative',
