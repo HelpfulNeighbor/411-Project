@@ -1,5 +1,5 @@
 import React, { useState, useEffect, createContext, useContext } from "react";
-import { User } from "../data/types/user-types";
+import { User } from "../data/types/UserTypes";
 import { getCurrentUser } from "../data/queries/user-queries";
 import { BaseUrl } from "../Config";
 

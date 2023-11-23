@@ -28,6 +28,13 @@ const Style = StyleSheet.create({
     backgroundColor: 'white',
     borderRadius: 40,
   },
+  modal: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'white',
+    padding: 20,
+  }  
 });
 
 export default Style;

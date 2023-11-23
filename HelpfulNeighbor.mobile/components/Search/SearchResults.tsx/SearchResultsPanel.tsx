@@ -1,7 +1,14 @@
 import React, { useRef } from 'react';
 import { View, Text, Animated, PanResponder } from 'react-native';
+import InfoCard from './InfoCard';
+import { SearchResults } from '../../../data/queries/ResourceQueries';
+import { SearchResult } from '../../../data/queries/ResourceQueries';
 
-const SearchResultsPanel = () => {
+interface SearchProps{
+  searchResults: SearchResults;
+}
+
+const SearchResultsPanel = ({searchResults}: SearchProps) => {
   const panY = useRef(new Animated.Value(650)).current;
 
   const panResponder = useRef(
@@ -48,19 +55,31 @@ const SearchResultsPanel = () => {
         />
       </View>
       <View style={{ padding: 16 }}>
-        <Text>Search Result 1</Text>
-        <Text>Search Result 2</Text>
+        <>
+          {searchResults.resources && searchResults.resources.length > 0 ? (
+            <>
+              <b><Text>{searchResults.resources.length} Search Results Found</Text></b>
+              <br/>
+              {searchResults.resources.map((result: SearchResult, index: number) => (
+                <div key={index}>
+                  <InfoCard
+                    Name={result.resource.Name}
+                    ResourceType={result.resource.ResourceType}
+                    Address={result.resource.Address}
+                    hoursOfOperation={result.hoursOfOperation || []}
+                    Website={result.resource.Website}
+                    PhoneNumber={result.resource.PhoneNumber}
+                  />
+                </div>
+              ))}
+            </>
+          ) : (
+            <Text>No search results found.</Text>
+          )}
+        </>
       </View>
     </Animated.View>
   );
 };
 
-const SearchBarWithResultsPanel = () => {
-  return (
-    <View style={{ flex: 1 }}>
-      <SearchResultsPanel />
-    </View>
-  );
-};
-
-export default SearchBarWithResultsPanel;
+export default SearchResultsPanel;
