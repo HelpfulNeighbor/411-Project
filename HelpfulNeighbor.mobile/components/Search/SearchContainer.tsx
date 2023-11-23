@@ -1,11 +1,12 @@
 import * as React from 'react';
 import SearchBar from './Map/SearchBar';
-import { SearchResults } from '../../data/queries/ResourceQueries';
-import { useState } from 'react';
+import { SearchResults, fetchSearchResults } from '../../data/queries/ResourceQueries';
+import { useEffect, useState } from 'react';
 
 interface SearchContainerProps {
     setSearchResults: (results: SearchResults) => void;
 }
+
 const SearchContainer = () => {
     const [searchQuery, setSearchQuery] = useState('');
 

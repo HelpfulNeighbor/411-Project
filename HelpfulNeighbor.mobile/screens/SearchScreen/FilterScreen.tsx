@@ -8,11 +8,11 @@ type FilterScreenProps = RootStackNavProps<'Filter'>;
 const FilterScreen: React.FC<FilterScreenProps> = ({ navigation }) => {
   
     return (
-      <div>
+      <>
         <Text>
             Filter Screen
         </Text>
-      </div>
+      </>
     );
   };
   
