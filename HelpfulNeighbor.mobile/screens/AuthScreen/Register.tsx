@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { View, Text, StyleSheet, TextInput, Button } from "react-native";
-import { useAuth } from "../authentication/AuthContext";
+import { View, StyleSheet, TextInput, Button } from "react-native";
+import { useAuth } from "../../authentication/AuthContext";
 import { useNavigation } from "@react-navigation/native";
 
 const Register = () => {
@@ -25,13 +25,11 @@ const Register = () => {
     if (result && result.error) {
       alert(result.msg);
     } else {
-      // If registration is successful, log in the user automatically
       const loginResult = await onLogin!(username, password);
 
       if (loginResult && loginResult.error) {
         alert(loginResult.msg);
       } else {
-        // Navigate to the home screen or any other screen you desire
          navigation.navigate('Home' as never);
       }
     }

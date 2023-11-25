@@ -1,13 +1,11 @@
 import React from "react";
 import "react-native-gesture-handler";
-//import AppNav from './navigation/app.nav';
 import { NavigationContainer } from "@react-navigation/native";
 import BottomTabNavigator from "./navigation/BottomTabNav";
 import { AuthProvider, useAuth } from "./authentication/AuthContext";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import Login from "./screens/Login";
-import { Button } from "react-native";
-import Register from "./screens/Register";
+import Login from "./screens/AuthScreen/Login";
+import Register from "./screens/AuthScreen/Register";
 
 const Stack = createNativeStackNavigator();
 
@@ -20,7 +18,7 @@ export default function App() {
 }
 
 export const Layout = () => {
-  const { authState, onLogout } = useAuth();
+  const { authState } = useAuth();
 
   return (
     <NavigationContainer>

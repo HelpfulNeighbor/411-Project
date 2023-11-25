@@ -1,16 +1,12 @@
-import { View, Text, StyleSheet, TextInput, Button } from "react-native";
-import React, { useEffect, useState } from "react";
-import { API_URL, useAuth } from "../authentication/AuthContext";
-import axios from "axios";
+import { View, StyleSheet, TextInput, Button } from "react-native";
+import React, { useState } from "react";
+import { useAuth } from "../../authentication/AuthContext";
 import { useNavigation } from "@react-navigation/native";
 
 const Login = () => {
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [email, setEmail] = useState("");
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const { onLogin, onRegister } = useAuth();
+  const { onLogin } = useAuth();
   const navigation = useNavigation();
 
   const login = async () => {
@@ -21,24 +17,8 @@ const Login = () => {
   };
 
   const navigateToCreateAccount = () => {
-    // Use the navigation object to navigate to the create account screen
     navigation.navigate('Register' as never);
   };
-
-  // const register = async () => {
-  //   const result = await onRegister!(
-  //     firstName,
-  //     lastName,
-  //     email,
-  //     username,
-  //     password
-  //   );
-  //   if (result && result.error) {
-  //     alert(result.msg);
-  //   } else {
-  //     login();
-  //   }
-  // };
 
   return (
     <View style={styles.container}>
