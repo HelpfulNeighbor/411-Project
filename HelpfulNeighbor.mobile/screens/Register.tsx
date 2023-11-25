@@ -1,17 +1,17 @@
-import React, { useState } from 'react';
-import { View, Text, StyleSheet, TextInput, Button } from 'react-native';
-import { useAuth } from '../authentication/AuthContext';
-import { useNavigation } from '@react-navigation/native';
+import React, { useState } from "react";
+import { View, Text, StyleSheet, TextInput, Button } from "react-native";
+import { useAuth } from "../authentication/AuthContext";
+import { useNavigation } from "@react-navigation/native";
 
 const Register = () => {
-  const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
-  const [email, setEmail] = useState('');
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
   const navigation = useNavigation();
 
-  const { onRegister } = useAuth();
+  const { onLogin, onRegister } = useAuth();
 
   const handleCreateAccount = async () => {
     const result = await onRegister!(
@@ -21,17 +21,24 @@ const Register = () => {
       username,
       password
     );
-    
+
     if (result && result.error) {
       alert(result.msg);
     } else {
-     // navigation.navigate('Home');
+      // If registration is successful, log in the user automatically
+      const loginResult = await onLogin!(username, password);
+
+      if (loginResult && loginResult.error) {
+        alert(loginResult.msg);
+      } else {
+        // Navigate to the home screen or any other screen you desire
+         navigation.navigate('Home' as never);
+      }
     }
   };
 
   const navigateToLoginScreen = () => {
-    // Use the navigation object to navigate to the create account screen
-    navigation.navigate('Login' as never);
+    navigation.navigate("Login" as never);
   };
 
   return (
@@ -78,19 +85,19 @@ const Register = () => {
 const styles = StyleSheet.create({
   form: {
     gap: 10,
-    width: '60%',
+    width: "60%",
   },
   input: {
     height: 44,
     borderWidth: 1,
     borderRadius: 4,
     padding: 10,
-    backgroundColor: '#fff',
+    backgroundColor: "#fff",
   },
   container: {
     paddingTop: 225,
-    alignItems: 'center',
-    width: '100%',
+    alignItems: "center",
+    width: "100%",
   },
 });
 

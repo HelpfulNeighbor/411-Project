@@ -25,20 +25,20 @@ const Login = () => {
     navigation.navigate('Register' as never);
   };
 
-  const register = async () => {
-    const result = await onRegister!(
-      firstName,
-      lastName,
-      email,
-      username,
-      password
-    );
-    if (result && result.error) {
-      alert(result.msg);
-    } else {
-      login();
-    }
-  };
+  // const register = async () => {
+  //   const result = await onRegister!(
+  //     firstName,
+  //     lastName,
+  //     email,
+  //     username,
+  //     password
+  //   );
+  //   if (result && result.error) {
+  //     alert(result.msg);
+  //   } else {
+  //     login();
+  //   }
+  // };
 
   return (
     <View style={styles.container}>
@@ -46,7 +46,7 @@ const Login = () => {
         <TextInput style={styles.input} placeholder="Username" onChangeText={(text:string) => setUsername(text)} value={username} />
         <TextInput style={styles.input} placeholder="Password" secureTextEntry={true} onChangeText={(text: string) => setPassword(text)} value={password} />
         <Button onPress={login} title="Sign In" />
-        <Button onPress={navigateToCreateAccount} title="Create Account" />
+        <Button onPress={navigateToCreateAccount} title="Register" />
       </View>
     </View>
   );
