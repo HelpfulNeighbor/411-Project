@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, StyleSheet, TextInput, Button } from 'react-native';
 import { useAuth } from '../authentication/AuthContext';
+import { useNavigation } from '@react-navigation/native';
 
 const Register = () => {
   const [firstName, setFirstName] = useState('');
@@ -8,6 +9,7 @@ const Register = () => {
   const [email, setEmail] = useState('');
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const navigation = useNavigation();
 
   const { onRegister } = useAuth();
 
@@ -25,6 +27,11 @@ const Register = () => {
     } else {
      // navigation.navigate('Home');
     }
+  };
+
+  const navigateToLoginScreen = () => {
+    // Use the navigation object to navigate to the create account screen
+    navigation.navigate('Login' as never);
   };
 
   return (
@@ -62,6 +69,7 @@ const Register = () => {
           value={password}
         />
         <Button onPress={handleCreateAccount} title="Create Account" />
+        <Button onPress={navigateToLoginScreen} title="Back to Sign In" />
       </View>
     </View>
   );
