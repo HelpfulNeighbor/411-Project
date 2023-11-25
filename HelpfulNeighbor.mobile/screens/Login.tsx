@@ -2,6 +2,7 @@ import { View, Text, StyleSheet, TextInput, Button } from "react-native";
 import React, { useEffect, useState } from "react";
 import { API_URL, useAuth } from "../authentication/AuthContext";
 import axios from "axios";
+import { useNavigation } from "@react-navigation/native";
 
 const Login = () => {
   const [firstName, setFirstName] = useState("");
@@ -10,12 +11,18 @@ const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const { onLogin, onRegister } = useAuth();
+  const navigation = useNavigation();
 
   const login = async () => {
     const result = await onLogin!(username, password);
     if (result && result.error) {
       alert(result.msg);
     }
+  };
+
+  const navigateToCreateAccount = () => {
+    // Use the navigation object to navigate to the create account screen
+    navigation.navigate('Register' as never);
   };
 
   const register = async () => {
@@ -39,7 +46,7 @@ const Login = () => {
         <TextInput style={styles.input} placeholder="Username" onChangeText={(text:string) => setUsername(text)} value={username} />
         <TextInput style={styles.input} placeholder="Password" secureTextEntry={true} onChangeText={(text: string) => setPassword(text)} value={password} />
         <Button onPress={login} title="Sign In" />
-        <Button onPress={register} title="Create Account" />
+        <Button onPress={navigateToCreateAccount} title="Create Account" />
       </View>
     </View>
   );

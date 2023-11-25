@@ -7,6 +7,7 @@ import { AuthProvider, useAuth } from "./authentication/AuthContext";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Login from "./screens/Login";
 import { Button } from "react-native";
+import Register from "./screens/Register";
 
 const Stack = createNativeStackNavigator();
 
@@ -33,7 +34,10 @@ export const Layout = () => {
             }}
            ></Stack.Screen>
         ) : (
+          <>
           <Stack.Screen name="Login" component={Login}></Stack.Screen>
+          <Stack.Screen name="Register" component={Register}></Stack.Screen>
+          </>
         )}
       </Stack.Navigator>
   </NavigationContainer>
