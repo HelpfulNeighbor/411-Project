@@ -23,7 +23,7 @@ export const Layout = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{headerShown: false}}>
-        {authState?.authenticated ? (
+        {/* {authState?.authenticated ? (
           <Stack.Screen
             name="Home"
             component={BottomTabNavigator}
@@ -31,12 +31,19 @@ export const Layout = () => {
               headerTitle:"" 
             }}
            ></Stack.Screen>
-        ) : (
+        ) : ( */}
           <>
+          <Stack.Screen
+            name="Home"
+            component={BottomTabNavigator}
+            options={{
+              headerTitle:"" 
+            }}
+           ></Stack.Screen>
           <Stack.Screen name="Login" component={Login}></Stack.Screen>
           <Stack.Screen name="Register" component={Register}></Stack.Screen>
           </>
-        )}
+        {/* )} */}
       </Stack.Navigator>
   </NavigationContainer>
   )

@@ -6,8 +6,8 @@ export default{
     HOME: 'Home',
     HOME_TAB: 'Home',
 
-    Profile: 'Profile',
-    Profile_TAB: 'Profile',
+    PROFILE: 'Profile',
+    PROFILE_TAB: 'Profile',
 
     SEARCH: 'Search',
     SEARCH_TAB: 'Search',
