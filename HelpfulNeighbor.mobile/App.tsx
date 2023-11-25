@@ -7,7 +7,6 @@ import { AuthProvider, useAuth } from "./authentication/AuthContext";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Login from "./screens/Login";
 import { Button } from "react-native";
-import HomeScreen from "./screens/HomeScreen/HomeScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -24,13 +23,13 @@ export const Layout = () => {
 
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator screenOptions={{headerShown: false}}>
         {authState?.authenticated ? (
           <Stack.Screen
             name="Home"
             component={BottomTabNavigator}
             options={{
-              headerRight: () => <Button onPress={onLogout} title="Sign Out"/>
+              headerTitle:"" 
             }}
            ></Stack.Screen>
         ) : (

@@ -1,10 +1,12 @@
 import * as React from 'react';
-import { SafeAreaView, ScrollView, Text } from "react-native";
+import { Button, SafeAreaView, ScrollView, Text } from "react-native";
 import { Avatar } from 'react-native-paper';
 import Style from "./Style";
+import { useAuth } from '../../authentication/AuthContext';
 
 
 const ProfileScreen = () => {
+    const { onLogout } = useAuth();
 
 
     return (
@@ -12,7 +14,7 @@ const ProfileScreen = () => {
             <ScrollView>
                 <Text style ={Style.title}>Welcome to Helpful Neighbor!</Text>
                 <Text style ={Style.subtitle}>Please sign in below.</Text>
-                <Avatar.Icon size={24} icon="contacts" />
+                <Button title="Sign Out" onPress={onLogout} />
             </ScrollView>
         </SafeAreaView>
     )
