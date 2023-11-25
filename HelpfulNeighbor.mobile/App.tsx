@@ -28,7 +28,7 @@ export const Layout = () => {
         {authState?.authenticated ? (
           <Stack.Screen
             name="Home"
-            component={HomeScreen}
+            component={BottomTabNavigator}
             options={{
               headerRight: () => <Button onPress={onLogout} title="Sign Out"/>
             }}

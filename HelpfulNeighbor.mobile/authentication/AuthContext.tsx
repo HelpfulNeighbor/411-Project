@@ -133,7 +133,7 @@ export const AuthProvider = ({children}: any) => {
 
 	const register = async (firstName: string, lastName: string, email: string, username: string, password: string) => {
 		try {
-			return await axios.post(`$API_URL/api/authentication/register`, {firstName, lastName, email, username, password});
+			return await axios.post(`${API_URL}/api/authentication/register`, {firstName, lastName, email, username, password});
 		} catch (e) {
 			return {error: true, msg: (e as any).reponse.data.msg};
 		}
@@ -141,7 +141,7 @@ export const AuthProvider = ({children}: any) => {
 
 	const login = async (username: string, password: string) => {
 		try {
-			const result = await axios.post(`$API_URL/api/authentication/login`, {username, password});
+			const result = await axios.post(`${API_URL}/api/authentication/login`, {username, password});
 
 			console.log(" file: AuthContext.tsx: 128 ~ login ~ result: ", result)
 
