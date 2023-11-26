@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { View, StyleSheet, TextInput, Button } from "react-native";
 import { useAuth } from "../../authentication/AuthContext";
 import { useNavigation } from "@react-navigation/native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 const Register = () => {
   const [firstName, setFirstName] = useState("");
@@ -40,7 +41,7 @@ const Register = () => {
   };
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <View style={styles.form}>
         <TextInput
           style={styles.input}
@@ -76,7 +77,7 @@ const Register = () => {
         <Button onPress={handleCreateAccount} title="Create Account" />
         <Button onPress={navigateToLoginScreen} title="Back to Sign In" />
       </View>
-    </View>
+    </SafeAreaView>
   );
 };
 

@@ -12,7 +12,9 @@ const Stack = createNativeStackNavigator();
 export default function App() {
   return (
     <AuthProvider>
-      <Layout></Layout>
+      <NavigationContainer>
+        <Layout></Layout>
+      </NavigationContainer>
     </AuthProvider>
   );
 }
@@ -21,31 +23,19 @@ export const Layout = () => {
   const { authState } = useAuth();
 
   return (
-    <NavigationContainer>
-      <Stack.Navigator screenOptions={{headerShown: false}}>
-        {/* {authState?.authenticated ? (
-          <Stack.Screen
-            name="Home"
-            component={BottomTabNavigator}
-            options={{
-              headerTitle:"" 
-            }}
-           ></Stack.Screen>
-        ) : ( */}
-          <>
-          <Stack.Screen
-            name="Home"
-            component={BottomTabNavigator}
-            options={{
-              headerTitle:"" 
-            }}
-           ></Stack.Screen>
-          <Stack.Screen name="Login" component={Login}></Stack.Screen>
-          <Stack.Screen name="Register" component={Register}></Stack.Screen>
-          </>
-        {/* )} */}
-      </Stack.Navigator>
-  </NavigationContainer>
-  )
-
+    <Stack.Navigator screenOptions={{ headerShown: false }}>
+      <>
+        <Stack.Screen
+          name="Home"
+          component={BottomTabNavigator}
+          options={{
+            headerTitle: "",
+          }}
+        ></Stack.Screen>
+        <Stack.Screen name="Login" component={Login}></Stack.Screen>
+        <Stack.Screen name="Register" component={Register}></Stack.Screen>
+      </>
+      {/* )} */}
+    </Stack.Navigator>
+  );
 };
