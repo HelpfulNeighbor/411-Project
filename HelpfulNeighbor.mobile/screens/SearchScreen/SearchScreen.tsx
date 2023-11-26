@@ -20,7 +20,9 @@ const SearchScreen: React.FC<SearchScreenProps> = ({ navigation }) => {
       <View style={Style.mapContainer}>
         <NativeMap />
         <View style={Style.overlay}>
-          <SearchContainer/>
+          <SearchContainer
+          setSearchResults={setSearchResults}
+          />
           <SearchResultsPanel searchResults={searchResults} />
           <IconButton
             style={Style.filter}
