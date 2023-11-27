@@ -37,6 +37,12 @@ export default function AuthProfilePage() {
     setActiveSection(section);
   };
 
+  const getInitials = (firstName: string, lastName: string) => {
+    const firstInitial = firstName ? firstName.charAt(0) : "";
+    const lastInitial = lastName ? lastName.charAt(0) : "";
+    return `${firstInitial}${lastInitial}`;
+  };
+
   return (
     <div>
       <NavBar />
@@ -60,6 +66,7 @@ export default function AuthProfilePage() {
             gridTemplateColumns={"250px 1fr"}
             h="720px"
             gap="1"
+            pr="5"
             color="blackAlpha.700"
             fontWeight="bold"
           >
@@ -67,7 +74,7 @@ export default function AuthProfilePage() {
               <VStack spacing="6px">
                 <Wrap>
                   <WrapItem>
-                    <Avatar size="xl" name={data.username} />
+                    <Avatar size="xl" name={getInitials(data.firstName, data.lastName)} bg='purple.800' />
                   </WrapItem>
                 </Wrap>
                 <br />
@@ -78,7 +85,14 @@ export default function AuthProfilePage() {
                 <Divider />
                 <br />
                 <Box>
-                  <Button fontSize="18px" textAlign="center" onClick={() => handleButtonClick("savedLocations")}>
+                  <Button
+                    fontSize="18px"
+                    textAlign="center"
+                    backgroundColor="purple.400"
+                    color="white"
+                    _hover={{ backgroundColor: "purple.800" }}
+                    onClick={() => handleButtonClick("savedLocations")}
+                  >
                     Saved Locations
                   </Button>
                 </Box>
@@ -86,7 +100,14 @@ export default function AuthProfilePage() {
                 <Divider />
                 <br />
                 <Box>
-                  <Button fontSize="18px" textAlign="center" onClick={() => handleButtonClick("editAccountInfo")}>
+                  <Button
+                    fontSize="18px"
+                    textAlign="center"
+                    backgroundColor="purple.400"
+                    color="white"
+                    _hover={{ backgroundColor: "purple.800" }}
+                    onClick={() => handleButtonClick("editAccountInfo")}
+                  >
                     Edit Account Info
                   </Button>
                 </Box>
@@ -94,7 +115,14 @@ export default function AuthProfilePage() {
                 <Divider />
                 <br />
                 <Box>
-                  <Button fontSize="18px" textAlign="center" onClick={() => handleButtonClick("settings")}>
+                  <Button
+                    fontSize="18px"
+                    textAlign="center"
+                    backgroundColor="purple.400"
+                    color="white"
+                    _hover={{ backgroundColor: "purple.800" }}
+                    onClick={() => handleButtonClick("settings")}
+                  >
                     Settings
                   </Button>
                 </Box>
@@ -102,12 +130,12 @@ export default function AuthProfilePage() {
                 <Divider />
               </VStack>
             </GridItem>
-            <GridItem pl="5" bg="#f3f5f7" area={"main"}>
+            <GridItem pl="10" pr="5" bg="white" area={"main"}>
               {activeSection === "savedLocations" && <SavedLocations />}
               {activeSection === "editAccountInfo" && <EditAccountInfo />}
               {activeSection === "settings" && <ProfileSettings />}
             </GridItem>
-            <GridItem pl="5" area={"footer"}></GridItem>
+            <GridItem pl="5" pr="5" area={"footer"}></GridItem>
           </Grid>
         </>
       )}

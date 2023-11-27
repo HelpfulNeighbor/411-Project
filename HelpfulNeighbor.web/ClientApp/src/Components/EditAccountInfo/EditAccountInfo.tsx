@@ -1,9 +1,11 @@
-import { Text } from "@chakra-ui/react";
+import { Heading } from "@chakra-ui/react";
 
 export default function EditAccountInfo() {
   return (
     <>
-      <Text>Edit Account Info</Text>
+    <div>
+        <Heading mt={5} textAlign="center">Account Info.</Heading>
+    </div>
     </>
   );
 }

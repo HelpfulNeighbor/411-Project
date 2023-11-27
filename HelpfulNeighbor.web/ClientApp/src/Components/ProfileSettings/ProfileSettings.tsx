@@ -1,9 +1,11 @@
-import { Text } from "@chakra-ui/react";
+import { Heading } from "@chakra-ui/react";
 
 export default function ProfileSettings() {
   return (
     <>
-      <Text>Profile Settings</Text>
+    <div>
+        <Heading mt={5} textAlign="center">Settings</Heading>
+    </div>
     </>
   );
 }
