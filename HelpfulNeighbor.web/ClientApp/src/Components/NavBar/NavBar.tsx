@@ -50,19 +50,9 @@ export default function NavBar() {
               About Us
             </ChakraLink>
           </Heading>
-        </Box>
-        <Box p="2">
-          <Heading size="md">
-            <ChakraLink as={ReactRouterLink} to="/feedback">
-              Feedback
-            </ChakraLink>
-          </Heading>
-        </Box>
+        </Box> 
         <Spacer />
         <ButtonGroup spacing="3" pr="10px">
-        {/* <Button rightIcon={<MdAttachMoney />} colorScheme="yellow" p="20px">
-            Donate
-          </Button> */}
           <SignUpModel />
           <LoginModel />
           <LogoutModel />
