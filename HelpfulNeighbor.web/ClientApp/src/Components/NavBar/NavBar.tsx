@@ -35,6 +35,13 @@ export default function NavBar() {
             </ChakraLink>
           </Heading>
         </Box>
+        <Box p="2">
+          <Heading size="md">
+            <ChakraLink as={ReactRouterLink} to="/about">
+              About Us
+            </ChakraLink>
+          </Heading>
+        </Box> 
         {isLoggedIn?.() && (
         <Box p="2">
           <Heading size="md">
@@ -44,13 +51,6 @@ export default function NavBar() {
           </Heading>
         </Box>
         )}
-        <Box p="2">
-          <Heading size="md">
-            <ChakraLink as={ReactRouterLink} to="/about">
-              About Us
-            </ChakraLink>
-          </Heading>
-        </Box> 
         <Spacer />
         <ButtonGroup spacing="3" pr="10px">
           <SignUpModel />

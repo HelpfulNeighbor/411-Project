@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { SetStateAction, useEffect, useState } from "react";
 import NavBar from "../../Components/NavBar/NavBar";
 import {
   Flex,
@@ -12,12 +12,17 @@ import {
   Grid,
   GridItem,
   VStack,
+  Button,
 } from "@chakra-ui/react";
 import api from "../../Api/config";
 import { UserGetDto } from "../../Data/Types/UserTypes";
+import SavedLocations from "../../Components/SavedLocations/SavedLocations";
+import EditAccountInfo from "../../Components/EditAccountInfo/EditAccountInfo";
+import ProfileSettings from "../../Components/ProfileSettings/ProfileSettings";
 
 export default function AuthProfilePage() {
   const [data, setData] = useState<UserGetDto | null>(null);
+  const [activeSection, setActiveSection] = useState("savedLocations");
 
   useEffect(() => {
     api
@@ -25,9 +30,12 @@ export default function AuthProfilePage() {
       .then((response) => {
         setData(response.data);
       })
-      .catch((error) => {
-      });
+      .catch((error) => {});
   }, []);
+
+  const handleButtonClick = (section: SetStateAction<string>) => {
+    setActiveSection(section);
+  };
 
   return (
     <div>
@@ -45,10 +53,9 @@ export default function AuthProfilePage() {
             </Heading>
           </Flex>
           <br />
-          <br />
           <Grid
             templateAreas={`"nav main"
-                                    "nav footer"`}
+                          "nav footer"`}
             gridTemplateRows={"698px 1fr 30px"}
             gridTemplateColumns={"250px 1fr"}
             h="720px"
@@ -71,47 +78,35 @@ export default function AuthProfilePage() {
                 <Divider />
                 <br />
                 <Box>
-                  <Text fontSize="18px" textAlign="center">
+                  <Button fontSize="18px" textAlign="center" onClick={() => handleButtonClick("savedLocations")}>
                     Saved Locations
-                  </Text>
+                  </Button>
                 </Box>
                 <br />
                 <Divider />
                 <br />
                 <Box>
-                  <Text fontSize="18px" textAlign="center">
-                    Donations
-                  </Text>
-                </Box>
-                <br />
-                <Divider />
-                <br />
-                <Box>
-                  <Text fontSize="18px" textAlign="center">
-                    Notifications
-                  </Text>
-                </Box>
-                <br />
-                <Divider />
-                <br />
-                <Box>
-                  <Text fontSize="18px" textAlign="center">
+                  <Button fontSize="18px" textAlign="center" onClick={() => handleButtonClick("editAccountInfo")}>
                     Edit Account Info
-                  </Text>
+                  </Button>
                 </Box>
                 <br />
                 <Divider />
                 <br />
                 <Box>
-                  <Text fontSize="18px" textAlign="center">
+                  <Button fontSize="18px" textAlign="center" onClick={() => handleButtonClick("settings")}>
                     Settings
-                  </Text>
+                  </Button>
                 </Box>
                 <br />
                 <Divider />
               </VStack>
             </GridItem>
-            <GridItem pl="5" bg="#f3f5f7" area={"main"}></GridItem>
+            <GridItem pl="5" bg="#f3f5f7" area={"main"}>
+              {activeSection === "savedLocations" && <SavedLocations />}
+              {activeSection === "editAccountInfo" && <EditAccountInfo />}
+              {activeSection === "settings" && <ProfileSettings />}
+            </GridItem>
             <GridItem pl="5" area={"footer"}></GridItem>
           </Grid>
         </>
