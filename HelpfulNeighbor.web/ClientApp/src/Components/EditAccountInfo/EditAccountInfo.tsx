@@ -4,7 +4,7 @@ export default function EditAccountInfo() {
   return (
     <>
     <div>
-        <Heading mt={5} textAlign="center">Account Info.</Heading>
+        <Heading mt={5} textAlign="center">Account Information</Heading>
     </div>
     </>
   );

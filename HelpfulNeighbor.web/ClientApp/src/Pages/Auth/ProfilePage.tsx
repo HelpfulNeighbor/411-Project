@@ -1,9 +1,7 @@
 import { SetStateAction, useEffect, useState } from "react";
 import NavBar from "../../Components/NavBar/NavBar";
 import {
-  Flex,
   Box,
-  Heading,
   Avatar,
   Wrap,
   Text,
@@ -48,16 +46,7 @@ export default function AuthProfilePage() {
       <NavBar />
       {data && (
         <>
-          <Flex
-            minWidth="max-content"
-            p="30px"
-            justifyContent="center"
-            bgColor="#E9D8FD"
-          >
-            <Heading as="b" fontSize="30px">
-              Hi, {data.firstName}!
-            </Heading>
-          </Flex>
+          <Box pb={10}></Box>
           <br />
           <Grid
             templateAreas={`"nav main"
@@ -108,7 +97,7 @@ export default function AuthProfilePage() {
                     _hover={{ backgroundColor: "purple.800" }}
                     onClick={() => handleButtonClick("editAccountInfo")}
                   >
-                    Edit Account Info
+                    Account Info
                   </Button>
                 </Box>
                 <br />
@@ -130,7 +119,7 @@ export default function AuthProfilePage() {
                 <Divider />
               </VStack>
             </GridItem>
-            <GridItem pl="10" pr="5" bg="white" area={"main"}>
+            <GridItem pl="10" pr="10" bg="white" area={"main"}>
               {activeSection === "savedLocations" && <SavedLocations />}
               {activeSection === "editAccountInfo" && <EditAccountInfo />}
               {activeSection === "settings" && <ProfileSettings />}
