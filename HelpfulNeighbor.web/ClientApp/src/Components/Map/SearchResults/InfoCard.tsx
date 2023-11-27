@@ -20,6 +20,7 @@ import {
   import { FaGlobeAmericas } from "react-icons/fa";
   import { FaPhoneAlt } from "react-icons/fa";
   import { FaLocationDot } from "react-icons/fa6";
+  import { FaRunning } from "react-icons/fa";
   
   interface HoursOfOperation {
     DayOfWeek: string;
@@ -34,6 +35,9 @@ import {
     hoursOfOperation?: HoursOfOperation[]; 
     Website: string;
     PhoneNumber: string;
+    Latitude: number;
+    Longitude: number;
+    Distance: number;
   }
   
   export default function InfoCard(props: InfoCardProps) {
@@ -62,6 +66,8 @@ import {
                         />
               </Heading>
               <p>{props.ResourceType || ''}</p>
+              <br/>              
+              <p><Icon color="purple.500" as={FaRunning} />{props.Distance.toFixed(2)} mi. </p>
               <br/>
               <p><Icon color="purple.500" as={FaLocationDot}/>{props.Address || ''}</p>
               <p><Icon color="purple.500" as={FaGlobeAmericas} /> {props.Website || ''}</p> 
@@ -88,6 +94,7 @@ import {
                           <br />
                           Close: {hours.CloseTime || "N/A"}
                           <br />
+                    
                         </div>
                       ))}
                     </AccordionPanel>

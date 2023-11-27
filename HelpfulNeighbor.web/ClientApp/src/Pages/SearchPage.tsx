@@ -1,12 +1,11 @@
 import {Flex, Heading, Grid, GridItem, VStack, IconButton} from "@chakra-ui/react";
 import NavBar from "../Components/NavBar/NavBar";
-import React, { useState } from "react";
+import { useState } from "react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import { GoBookmark } from 'react-icons/go'
 import MapDrawer from "../Components/Map/SearchResults/MapDrawer";
 import MapWithSearch from "../Components/Map/MapWithSearch";
 import { SearchResults } from "../Data/Queries/ResourceQueries";
-// import { Link as ReactRouterLink } from "react-router-dom";
   
 export default function SearchPage() {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
