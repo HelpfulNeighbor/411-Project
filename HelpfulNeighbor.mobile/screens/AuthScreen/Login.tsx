@@ -1,8 +1,9 @@
-import { View, StyleSheet, TextInput, Button } from "react-native";
+import { View, StyleSheet } from "react-native";
 import React, { useState } from "react";
 import { useAuth } from "../../authentication/AuthContext";
 import { useNavigation } from "@react-navigation/native";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { Button, TextInput } from "react-native-paper";
 
 const Login = () => {
   const [username, setUsername] = useState("");
@@ -26,8 +27,10 @@ const Login = () => {
       <View style={styles.form}>
         <TextInput style={styles.input} placeholder="Username" onChangeText={(text:string) => setUsername(text)} value={username} />
         <TextInput style={styles.input} placeholder="Password" secureTextEntry={true} onChangeText={(text: string) => setPassword(text)} value={password} />
-        <Button onPress={login} title="Log In" />
-        <Button onPress={navigateToCreateAccount} title="Register" />
+        {/* <Button onPress={login} title="Log In" /> */}
+        <Button icon="login" mode='contained' onPress={login}>Login</Button>
+        <Button mode='contained' onPress={navigateToCreateAccount}>Register</Button>
+        {/* <Button onPress={navigateToCreateAccount} title="Register" /> */}
       </View>
     </SafeAreaView>
   );

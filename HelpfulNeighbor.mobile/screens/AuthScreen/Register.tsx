@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { View, StyleSheet, TextInput, Button } from "react-native";
+import { View, StyleSheet,  } from "react-native";
 import { useAuth } from "../../authentication/AuthContext";
 import { useNavigation } from "@react-navigation/native";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { Button, TextInput } from "react-native-paper";
 
 const Register = () => {
   const [firstName, setFirstName] = useState("");
@@ -74,8 +75,10 @@ const Register = () => {
           onChangeText={(text) => setPassword(text)}
           value={password}
         />
-        <Button onPress={handleCreateAccount} title="Create Account" />
-        <Button onPress={navigateToLoginScreen} title="Back to Sign In" />
+        <Button mode='contained' onPress={handleCreateAccount}>Create Account</Button>
+        <Button mode='contained' onPress={navigateToLoginScreen}>Back to Sign In</Button>
+        {/* <Button onPress={handleCreateAccount} title="Create Account" />
+        <Button onPress={navigateToLoginScreen} title="Back to Sign In" /> */}
       </View>
     </SafeAreaView>
   );
