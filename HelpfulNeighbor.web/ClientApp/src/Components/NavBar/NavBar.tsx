@@ -10,59 +10,49 @@ import {
 
 import LoginModel from "../Login/LoginModel";
 import SignUpModel from "../SignUp/SignUpModel";
-import { Link as ReactRouterLink } from "react-router-dom";
+import { Link as ReactRouterLink, useLocation } from "react-router-dom";
 import { useAuth } from "../../Authentication/AuthProvider";
 import LogoutModel from "../Logout/LogoutModel";
 
 export default function NavBar() {
-  
-  const {isLoggedIn} = useAuth();
+  const { isLoggedIn } = useAuth();
+  const location = useLocation();
+
+  const isActiveLink = (path: string) => location.pathname === path;
 
   return (
     <div>
-      <Flex minWidth="max-content" align-items="center" gap="3" p="20px">
-        <Box p="2">
-          <Heading size="md">
-            <ChakraLink as={ReactRouterLink} to="/">
-              Home
-            </ChakraLink>
-          </Heading>
-        </Box>
-        <Box p="2">
-          <Heading size="md">
-            <ChakraLink as={ReactRouterLink} to="/search">
-              Search
-            </ChakraLink>
-          </Heading>
-        </Box>
+      <Flex minWidth="max-content" alignItems="center" gap="3" p="20px">
+        {[
+          { path: "/", label: "Home" },
+          { path: "/search", label: "Search" },
+          { path: "/about", label: "About Us" },
+        ].map(({ path, label }) => (
+          <Box p="2" key={path}>
+            <Heading
+              size="md"
+              color={isActiveLink(path) ? "purple.600" : "gray.500"}
+            >
+              <ChakraLink as={ReactRouterLink} to={path}>
+                {label}
+              </ChakraLink>
+            </Heading>
+          </Box>
+        ))}
         {isLoggedIn?.() && (
-        <Box p="2">
-          <Heading size="md">
-            <ChakraLink as={ReactRouterLink} to="/app/profile">
-              Profile
-            </ChakraLink>
-          </Heading>
-        </Box>
+          <Box p="2">
+            <Heading
+              size="md"
+              color={isActiveLink("/app/profile") ? "purple.600" : "gray.500"}
+            >
+              <ChakraLink as={ReactRouterLink} to="/app/profile">
+                Profile
+              </ChakraLink>
+            </Heading>
+          </Box>
         )}
-        <Box p="2">
-          <Heading size="md">
-            <ChakraLink as={ReactRouterLink} to="/about">
-              About Us
-            </ChakraLink>
-          </Heading>
-        </Box>
-        <Box p="2">
-          <Heading size="md">
-            <ChakraLink as={ReactRouterLink} to="/feedback">
-              Feedback
-            </ChakraLink>
-          </Heading>
-        </Box>
         <Spacer />
         <ButtonGroup spacing="3" pr="10px">
-        {/* <Button rightIcon={<MdAttachMoney />} colorScheme="yellow" p="20px">
-            Donate
-          </Button> */}
           <SignUpModel />
           <LoginModel />
           <LogoutModel />
@@ -72,3 +62,4 @@ export default function NavBar() {
     </div>
   );
 }
+
