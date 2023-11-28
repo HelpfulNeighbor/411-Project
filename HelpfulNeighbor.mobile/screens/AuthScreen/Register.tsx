@@ -4,6 +4,7 @@ import { useAuth } from "../../authentication/AuthContext";
 import { useNavigation } from "@react-navigation/native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Button, TextInput } from "react-native-paper";
+import ActivityIndicatorComp from "../../components/ActivityIndicator/ActivityIndicator";
 
 const Register = () => {
   const [firstName, setFirstName] = useState("");
@@ -12,10 +13,12 @@ const Register = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const navigation = useNavigation();
+  const [isLoading, setIsLoading] = useState(false);
 
   const { onLogin, onRegister } = useAuth();
 
   const handleCreateAccount = async () => {
+    setIsLoading(true);
     const result = await onRegister!(
       firstName,
       lastName,
@@ -28,12 +31,8 @@ const Register = () => {
       alert(result.msg);
     } else {
       const loginResult = await onLogin!(username, password);
-
-      if (loginResult && loginResult.error) {
-        alert(loginResult.msg);
-      } else {
-         navigation.navigate('Home' as never);
-      }
+      setIsLoading(false);
+      navigation.navigate("Home" as never);
     }
   };
 
@@ -77,8 +76,7 @@ const Register = () => {
         />
         <Button mode='contained' onPress={handleCreateAccount}>Create Account</Button>
         <Button mode='contained' onPress={navigateToLoginScreen}>Back to Sign In</Button>
-        {/* <Button onPress={handleCreateAccount} title="Create Account" />
-        <Button onPress={navigateToLoginScreen} title="Back to Sign In" /> */}
+        {isLoading && <ActivityIndicatorComp />}
       </View>
     </SafeAreaView>
   );
@@ -97,9 +95,11 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
   },
   container: {
-    paddingTop: 225,
-    alignItems: "center",
-    width: "100%",
+    flex: 1,
+      justifyContent: 'center',
+      padding: 24,
+      backgroundColor: "#d8e6f5",
+      alignItems: 'center',
   },
 });
 

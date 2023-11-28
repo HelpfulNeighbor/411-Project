@@ -4,22 +4,28 @@ import { useAuth } from "../../authentication/AuthContext";
 import { useNavigation } from "@react-navigation/native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Button, TextInput } from "react-native-paper";
+import ActivityIndicatorComp from "../../components/ActivityIndicator/ActivityIndicator";
 
 const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const { onLogin } = useAuth();
   const navigation = useNavigation();
+  const [isLoading, setIsLoading] = useState(false);
 
   const login = async () => {
+    setIsLoading(true);
     const result = await onLogin!(username, password);
     if (result && result.error) {
       alert(result.msg);
+      setIsLoading(false);
+    } else {
+      setIsLoading(false);
     }
   };
 
   const navigateToCreateAccount = () => {
-    navigation.navigate('Register' as never);
+    navigation.navigate("Register" as never);
   };
 
   return (
@@ -30,6 +36,7 @@ const Login = () => {
         {/* <Button onPress={login} title="Log In" /> */}
         <Button icon="login" mode='contained' onPress={login}>Login</Button>
         <Button mode='contained' onPress={navigateToCreateAccount}>Register</Button>
+        {isLoading && <ActivityIndicatorComp />}
         {/* <Button onPress={navigateToCreateAccount} title="Register" /> */}
       </View>
     </SafeAreaView>
@@ -49,9 +56,11 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
     },
     container: {
-        paddingTop: 225,
-        alignItems: 'center',
-        width: '100%',
+      flex: 1,
+      justifyContent: 'center',
+      padding: 24,
+      backgroundColor: "#d8e6f5",
+      alignItems: 'center',
     },
 });
 

@@ -46,9 +46,10 @@ export const AuthProvider = ({children}: any) => {
 
 	const register = async (firstName: string, lastName: string, email: string, username: string, password: string) => {
 		try {
-			return await axios.post(`${API_URL}/api/authentication/register`, {firstName, lastName, email, username, password});
+			const result =  await axios.post(`${API_URL}/api/authentication/register`, {firstName, lastName, email, username, password});
+			console.log(" file: AuthContext.tsx: 128 ~ register ~ result: ", result)
 		} catch (e) {
-			return {error: true, msg: (e as any).reponse.data.msg};
+			return {error: true, msg: (e as any).result.data.msg};
 		}
 	};
 

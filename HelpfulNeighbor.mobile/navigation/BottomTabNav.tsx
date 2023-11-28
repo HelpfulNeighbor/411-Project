@@ -37,7 +37,7 @@ const BottomTabNavigator = () => {
           }
 
           if (!iconName) {
-            iconName = "square-sharp"; // Replace with default icon name
+            iconName = "square-sharp"; 
           }
 
           return <Icon name={iconName} size={22} color={color} />;
@@ -46,16 +46,14 @@ const BottomTabNavigator = () => {
     >
       <Tab.Screen name={ROUTES.HOME} component={HomeScreen} />
       <Tab.Screen name={ROUTES.SEARCH} component={SearchScreen} />
-      {/* <Tab.Screen name={ROUTES.Profile} component={ProfileScreen}/> */}
-      {/** Conditionally include the ProfileScreen or LoginScreen based on authentication state */}
       {authState?.authenticated && (
         <Tab.Screen
           name={ROUTES.PROFILE}
-          component={ProfileScreen} // Use ProfileScreen when logged in
+          component={ProfileScreen} 
         />
       )}
       {!authState?.authenticated && (
-        <Tab.Screen name="Login" component={LoginScreen} />
+        <Tab.Screen name={ROUTES.LOGIN} component={LoginScreen} />
       )}
     </Tab.Navigator>
   );

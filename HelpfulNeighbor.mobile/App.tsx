@@ -6,6 +6,8 @@ import { AuthProvider, useAuth } from "./authentication/AuthContext";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Login from "./screens/AuthScreen/Login";
 import Register from "./screens/AuthScreen/Register";
+import LoginScreen from "./screens/AuthScreen/LoginScreen";
+import RegisterScreen from "./screens/AuthScreen/RegisterScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -20,7 +22,6 @@ export default function App() {
 }
 
 export const Layout = () => {
-  const { authState } = useAuth();
 
   return (
     <Stack.Navigator screenOptions={{ headerShown: false }}>
@@ -32,10 +33,9 @@ export const Layout = () => {
             headerTitle: "",
           }}
         ></Stack.Screen>
-        <Stack.Screen name="Login" component={Login}></Stack.Screen>
-        <Stack.Screen name="Register" component={Register}></Stack.Screen>
+        <Stack.Screen name="Login" component={LoginScreen}></Stack.Screen>
+        <Stack.Screen name="Register" component={RegisterScreen}></Stack.Screen>
       </>
-      {/* )} */}
     </Stack.Navigator>
   );
 };
