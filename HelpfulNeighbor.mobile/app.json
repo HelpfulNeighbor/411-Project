@@ -15,8 +15,7 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "helpfulneighbor.mobile"
+      "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
@@ -30,7 +29,7 @@
     },
     "extra": {
       "eas": {
-        "projectId": "5f083ca1-fb63-4886-bc07-c67e1b7ab8df"
+        "projectId": "3ab522dc-4949-4b95-98e0-01dc06fccbe8"
       }
     }
   }

@@ -7,13 +7,13 @@ export default function InfoCard() {
 
   return (
     <SafeAreaView>
-      {/* <Card mode={"outlined"}>
+      <Card mode={"outlined"}>
         <Card.Content>
           <Card.Cover source={{ uri: "" }} />
         </Card.Content>
-      </Card>  */}
+      </Card> 
         
-      <Card mode={"outlined"} style={cardStyle.card}>
+      <Card mode={"outlined"}>
         <Card.Content>
           <Text 
             variant="titleLarge"
@@ -38,7 +38,4 @@ const cardStyle = StyleSheet.create({
         color: '#444',
         fontWeight: 'bold',
     },
-    card:{
-      marginTop: '25%'
-    }
 });

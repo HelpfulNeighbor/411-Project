@@ -1,4 +1,4 @@
-import {useEffect} from 'react'
+import React, {useEffect, useState } from 'react'
 
 function useGeolocation(){
   var options = {
@@ -37,7 +37,7 @@ function useGeolocation(){
     } else {
       console.log("Geolocation is not supported by this browser.");
     }
-  });
+  }, []);
 
   return (
   <div>

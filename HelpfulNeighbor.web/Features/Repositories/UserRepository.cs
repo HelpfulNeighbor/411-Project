@@ -9,10 +9,13 @@ namespace HelpfulNeighbor.web.Features.Repositories
     public class UserRepository : IUserRepository
     {
         private readonly UserManager<User> _userManager;
-        public UserRepository(UserManager<User> userManager)
+        private readonly DataContext _context;
+        public UserRepository(UserManager<User> userManager, DataContext context)
         {
             _userManager = userManager;
+            _context = context;
         }
+
         public ICollection<UserDto> GetUsers()
         {
 
@@ -83,6 +86,11 @@ namespace HelpfulNeighbor.web.Features.Repositories
 
             var deleteResult = await _userManager.DeleteAsync(user);
             return deleteResult.Succeeded;
+        }
+
+        public bool UserExist(int id)
+        {
+            return _context.Users.Any(u => u.Id == id);
         }
     }
 }
