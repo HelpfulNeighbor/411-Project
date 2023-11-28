@@ -24,19 +24,23 @@ const SearchContainer: React.FC<SearchContainerProps> = ({ setSearchResults }) =
 
   useEffect(() => {
     const fetchData = async () => {
-      const { filterByResourceType, resourceType, filterByParish, parish } = filterCriteria;
+      try{
+        const { filterByResourceType, resourceType, filterByParish, parish } = filterCriteria;
 
-      if (searchQuery) {
-        const results = await fetchSearchResults(
-          searchQuery,
-          filterByResourceType,
-          resourceType.join(','),
-          filterByParish,
-          parish.join(',')
-        );
+        if (searchQuery) {
+          const results = await fetchSearchResults(
+            searchQuery,
+            filterByResourceType,
+            resourceType.join(','),
+            filterByParish,
+            parish.join(',')
+          );
 
-        setSearchResults(results);
-        console.log('searchResults in SearchContainer:', results);
+          setSearchResults(results);
+          console.log('searchResults in SearchContainer:', results);
+        } 
+      } catch (error){
+        console.error('Error while fetching search results:', error);
       }
     };
 

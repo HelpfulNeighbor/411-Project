@@ -58,10 +58,9 @@ const SearchResultsPanel = ({searchResults}: SearchProps) => {
         <>
           {searchResults.resources && searchResults.resources.length > 0 ? (
             <>
-              <b><Text>{searchResults.resources.length} Search Results Found</Text></b>
-              <br/>
+              <Text>{searchResults.resources.length} Search Results Found</Text>
               {searchResults.resources.map((result: SearchResult, index: number) => (
-                <div key={index}>
+                <View key={index}>
                   <InfoCard
                     Name={result.resource.Name}
                     ResourceType={result.resource.ResourceType}
@@ -70,7 +69,7 @@ const SearchResultsPanel = ({searchResults}: SearchProps) => {
                     Website={result.resource.Website}
                     PhoneNumber={result.resource.PhoneNumber}
                   />
-                </div>
+                </View>
               ))}
             </>
           ) : (

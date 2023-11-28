@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { View } from 'react-native';
 import { Card, List, Text } from 'react-native-paper';
 
 interface HoursOfOperation {
@@ -27,13 +28,12 @@ const InfoCard = (props: InfoCardProps) =>{
                 <Card.Content>
                 <Text variant="titleLarge">{props.Name}</Text>
                 <Text variant="bodyMedium">{props.ResourceType}</Text>
-                <br/>
                 <Text>{props.Address}</Text>
                 <Text>{props.PhoneNumber}</Text>
                 <Text>{props.Website}</Text>
                 </Card.Content>
                 <Card.Actions>
-                    <List.Section title="Accordions">
+                    <List.Section title="Hours Of Operation">
                     {props.hoursOfOperation && props.hoursOfOperation.length > 0 ? (
                     <List.Accordion
                         title="Hours Of Operation"
@@ -41,11 +41,11 @@ const InfoCard = (props: InfoCardProps) =>{
                         expanded={expanded}
                         onPress={handlePress}>
                         {props.hoursOfOperation.map((hours, index) => (
-                            <div key={index}>
+                            <View key={index}>
                                 <List.Item title={hours.DayOfWeek || "N/A"} />
                                 <List.Item title={hours.OpenTime || "N/A"} />
                                 <List.Item title={hours.CloseTime || "N/A"} />
-                            </div>
+                            </View>
                         ))}
                     </List.Accordion>
                 
