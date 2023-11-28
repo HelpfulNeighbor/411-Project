@@ -5,8 +5,8 @@ import { StyleSheet } from "react-native";
 import { COLORS, ROUTES } from "../constants";
 import Icon from "react-native-vector-icons/Ionicons";
 import HomeScreen from "../screens/HomeScreen/HomeScreen";
-import SearchScreen from "../screens/SearchScreen/SearchScreen";
 import ProfileScreen from "../screens/ProfileScreen/ProfileScreen";
+import StackNav from "./StackNav";
 import { useAuth } from "../authentication/AuthContext";
 import LoginScreen from "../screens/AuthScreen/LoginScreen";
 
@@ -36,9 +36,9 @@ const BottomTabNavigator = () => {
             iconName = focused ? "log-in" : "log-in-outline";
           }
 
-          if (!iconName) {
-            iconName = "square-sharp"; 
-          }
+                <Tab.Screen name={ROUTES.Profile} component={ProfileScreen}/>
+                <Tab.Screen name={ROUTES.SEARCH} component={StackNav}/>
+                <Tab.Screen name={ROUTES.HOME} component={HomeScreen}/>
 
           return <Icon name={iconName} size={22} color={color} />;
         },
