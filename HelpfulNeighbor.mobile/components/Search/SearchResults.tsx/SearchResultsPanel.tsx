@@ -1,8 +1,10 @@
 import React, { useRef } from 'react';
-import { View, Text, Animated, PanResponder } from 'react-native';
+import { View, Animated, PanResponder } from 'react-native';
+import {Text} from 'react-native-paper';
 import InfoCard from './InfoCard';
 import { SearchResults } from '../../../data/queries/ResourceQueries';
 import { SearchResult } from '../../../data/queries/ResourceQueries';
+import Style from '../../../screens/SearchScreen/Style';
 
 interface SearchProps{
   searchResults: SearchResults;
@@ -58,7 +60,9 @@ const SearchResultsPanel = ({searchResults}: SearchProps) => {
         <>
           {searchResults.resources && searchResults.resources.length > 0 ? (
             <>
-              <Text>{searchResults.resources.length} Search Results Found</Text>
+              <View style={Style.searchResultsFound}>
+                <Text variant="titleMedium">{searchResults.resources.length} Search Results Found</Text>
+              </View>
               {searchResults.resources.map((result: SearchResult, index: number) => (
                 <View key={index}>
                   <InfoCard
@@ -73,7 +77,7 @@ const SearchResultsPanel = ({searchResults}: SearchProps) => {
               ))}
             </>
           ) : (
-            <Text>No search results found.</Text>
+            <Text >No search results found.</Text>
           )}
         </>
       </View>
@@ -82,3 +86,5 @@ const SearchResultsPanel = ({searchResults}: SearchProps) => {
 };
 
 export default SearchResultsPanel;
+
+

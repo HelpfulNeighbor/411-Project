@@ -43,7 +43,38 @@ const Style = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: 'white',
     padding: 20,
-  }  
+  },  
+  searchResultsFound: {
+    marginTop: 20,
+    marginBottom: 20,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  searchResultsName: {
+    marginTop: 20,
+    marginBottom: 20,
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontWeight: 'bold',
+    color: '#7a5cce',
+  },
+  searchResultsDetailsBolded: {
+    marginTop: 3,
+    marginBottom: 3,
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontWeight: 'bold',
+    
+    
+  },
+  searchResultsDetails: {
+    marginTop: 3,
+    marginBottom: 3,
+    alignItems: 'center',
+    justifyContent: 'center',
+    
+  }
+  
 });
 
 export default Style;

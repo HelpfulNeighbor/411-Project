@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { View } from 'react-native';
-import { Card, List, Text } from 'react-native-paper';
+import { Card, List, MD3Colors, Text } from 'react-native-paper';
+import Style from '../../../screens/SearchScreen/Style';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 interface HoursOfOperation {
     DayOfWeek: string;
@@ -26,18 +28,21 @@ const InfoCard = (props: InfoCardProps) =>{
         <>
             <Card>
                 <Card.Content>
-                <Text variant="titleLarge">{props.Name}</Text>
-                <Text variant="bodyMedium">{props.ResourceType}</Text>
-                <Text>{props.Address}</Text>
-                <Text>{props.PhoneNumber}</Text>
-                <Text>{props.Website}</Text>
+                <Text style= {Style.searchResultsName}variant="titleMedium">{props.Name}</Text>
+                <Text style={Style.searchResultsDetailsBolded} variant="bodyMedium">{props.ResourceType}</Text>
+                <Text style={Style.searchResultsDetails}>{props.Address}</Text>
+                <Text style={Style.searchResultsDetails}>{props.PhoneNumber}</Text>
+                <Text style={Style.searchResultsDetails}>{props.Website}</Text>
                 </Card.Content>
                 <Card.Actions>
-                    <List.Section title="Hours Of Operation">
+                    <List.Section 
+                    style={Style.searchResultsDetailsBolded}
+                    title="Hours Of Operation"
+                    >
                     {props.hoursOfOperation && props.hoursOfOperation.length > 0 ? (
                     <List.Accordion
-                        title="Hours Of Operation"
-                        left={props => <List.Icon {...props} icon="folder" />}
+                        title=""
+                        left={props => <List.Icon {...props} icon="clock" color={MD3Colors.primary50} />}
                         expanded={expanded}
                         onPress={handlePress}>
                         {props.hoursOfOperation.map((hours, index) => (
