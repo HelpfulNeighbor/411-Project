@@ -36,16 +36,16 @@ const BottomTabNavigator = () => {
             iconName = focused ? "log-in" : "log-in-outline";
           }
 
-                <Tab.Screen name={ROUTES.Profile} component={ProfileScreen}/>
-                <Tab.Screen name={ROUTES.SEARCH} component={StackNav}/>
-                <Tab.Screen name={ROUTES.HOME} component={HomeScreen}/>
-
+          if (!iconName) {
+            iconName = 'square-sharp'; // Replace with default icon name
+          }
+          
           return <Icon name={iconName} size={22} color={color} />;
         },
       })}
     >
       <Tab.Screen name={ROUTES.HOME} component={HomeScreen} />
-      <Tab.Screen name={ROUTES.SEARCH} component={SearchScreen} />
+      <Tab.Screen name={ROUTES.SEARCH} component={StackNav} />
       {authState?.authenticated && (
         <Tab.Screen
           name={ROUTES.PROFILE}

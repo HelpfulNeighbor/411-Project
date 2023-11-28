@@ -29,6 +29,7 @@ const Register = () => {
 
     if (result && result.error) {
       alert(result.msg);
+      setIsLoading(false);
     } else {
       const loginResult = await onLogin!(username, password);
       setIsLoading(false);
