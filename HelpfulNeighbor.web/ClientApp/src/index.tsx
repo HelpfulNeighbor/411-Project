@@ -18,6 +18,21 @@ const theme = extendTheme({
     heading: `'Aleo', sans-serif`,
     body: `'Source Serif 4', sans-serif`,
   },
+  colors: {
+    light:{
+      primary: "#6B46C1", // Adjust as needed
+      secondary: "#90edb3", // Adjust as needed
+      tertiary: "#FEFCBF", // Adjust as needed
+      background: "#E9D8FD", // Adjust as needed
+      text: "#1A202C", // Adjust as needed
+    },
+    dark: {
+      background: "#1A202C",
+      text: "#FFFFFF",
+      primary: "#6B46C1",
+      // Add more colors as needed
+    },
+  }
 })
 
 const root = ReactDOM.createRoot(

@@ -1,15 +1,22 @@
 export default{
+
     LOGIN: 'Login',
+    LOGIN_TAB: 'Login',
+
     REGISTER: 'Register',
-    FORGOT_PASSWORD: 'Forgot Password',
+    REGISTER_TAB: 'Register',
 
     HOME: 'Home',
     HOME_TAB: 'Home',
 
-    Profile: 'Profile',
-    Profile_TAB: 'Profile',
+    PROFILE: 'Profile',
+    PROFILE_TAB: 'Profile',
 
     SEARCH: 'Search',
     SEARCH_TAB: 'Search',
+
+    FILTER: 'Filter',
+
+    
    
 };

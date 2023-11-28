@@ -1,8 +1,7 @@
-// ResourceQueries.ts
+import api from "../../api/config";
+import { HoursOfOperation } from "../types/HoursOfOpTypes";
+import { Resource } from "../types/ResourceTypes";
 
-import api from "../../Api/config";
-import { HoursOfOperation } from "../Types/HoursOfOpTypes";
-import { Resource } from "../Types/ResourceTypes";
 
 export interface SearchResult {
   resource: Resource;
