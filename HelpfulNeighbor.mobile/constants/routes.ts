@@ -11,5 +11,9 @@ export default{
 
     SEARCH: 'Search',
     SEARCH_TAB: 'Search',
+
+    FILTER: 'Filter',
+
+    
    
 };

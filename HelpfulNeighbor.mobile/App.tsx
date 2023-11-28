@@ -6,7 +6,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import BottomTabNavigator from './navigation/BottomTabNav';
 
 
-const App = () => {
+const App: React.FC = () => {
   return (
     <NavigationContainer>
       <BottomTabNavigator/>

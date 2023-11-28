@@ -1,12 +1,11 @@
 import React from "react";
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import {StyleSheet} from 'react-native';
-//import { NavigationContainer } from "@react-navigation/native";
 import { COLORS, ROUTES } from "../constants";
 import Icon from 'react-native-vector-icons/Ionicons';
 import HomeScreen from "../screens/HomeScreen/HomeScreen";
-import SearchScreen from "../screens/SearchScreen/SearchScreen";
 import ProfileScreen from "../screens/ProfileScreen/ProfileScreen";
+import StackNav from "./StackNav";
 
 const Tab = createBottomTabNavigator();
 
@@ -37,7 +36,7 @@ const BottomTabNavigator = () =>{
                     },
                 })}>
                 <Tab.Screen name={ROUTES.HOME} component={HomeScreen}/>
-                <Tab.Screen name={ROUTES.SEARCH} component={SearchScreen}/>
+                <Tab.Screen name={ROUTES.SEARCH} component={StackNav}/>
                 <Tab.Screen name={ROUTES.Profile} component={ProfileScreen}/>
 
             </Tab.Navigator>
