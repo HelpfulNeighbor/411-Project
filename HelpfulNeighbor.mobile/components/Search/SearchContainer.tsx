@@ -5,6 +5,7 @@ import FilterScreen from '../../screens/SearchScreen/FilterScreen';
 import { SearchResults, fetchSearchResults } from '../../data/queries/ResourceQueries';
 import { useEffect, useState } from 'react';
 import { RootStackNavProps } from '../../data/types/NavigationTypes';
+import { ROUTES } from '../../constants';
 
 
 interface SearchContainerProps {
@@ -12,6 +13,7 @@ interface SearchContainerProps {
 }
 
 const SearchContainer: React.FC<SearchContainerProps> = ({ setSearchResults }) => {
+
   const [searchQuery, setSearchQuery] = useState('');
   const [filterCriteria, setFilterCriteria] = useState({
     filterByResourceType: false,
@@ -79,12 +81,11 @@ const SearchContainer: React.FC<SearchContainerProps> = ({ setSearchResults }) =
   return (
     <>
       <SearchBar onSearch={handleSearch} />
-      <FilterScreen 
-        onFilterChange={handleFilterChange} 
-        checkedResourceTypes={filterCriteria.resourceType} 
-        checkedParishList={filterCriteria.parish} 
-        navigation={navigation}
-      />
+      {/* <FilterScreen 
+        onFilterChange={handleFilterChange}
+        checkedResourceTypes={filterCriteria.resourceType}
+        checkedParishList={filterCriteria.parish}
+      /> */}
     </>
   );
 };

@@ -8,7 +8,7 @@ interface ResourcetypeFilterProps {
 }
 
 
-const ResourceTypeFilter = ({onFilterChange, checkedResourceTypes} : ResourcetypeFilterProps ) => {
+const ResourceTypeFilter = ({/*{onFilterChange, checkedResourceTypes} : ResourcetypeFilterProps*/} ) => {
   const resourceTypes = [
     "Affordable Housing",
     "Charity",
@@ -23,14 +23,20 @@ const ResourceTypeFilter = ({onFilterChange, checkedResourceTypes} : Resourcetyp
     "Homeless shelter",
 ];
 
-  const handleCheckboxToggle = (type: string) => {
-    onFilterChange(type, !checkedResourceTypes.includes(type), 'resourceType');
-  };
+  // const handleCheckboxToggle = (type: string) => {
+  //   onFilterChange(type, !checkedResourceTypes.includes(type), 'resourceType');
+  // };
 
-  const handleConfirm = () => {
-    checkedResourceTypes.forEach((type) => {
-      onFilterChange(type, true, 'resourceType'); // Assuming you want to set all checked resource types to true
-    });
+  // const handleConfirm = () => {
+  //   checkedResourceTypes.forEach((type) => {
+  //     onFilterChange(type, true, 'resourceType'); // Assuming you want to set all checked resource types to true
+  //   });
+  // };
+
+  const [checkedStates, setCheckedStates] = React.useState<Record<string, boolean>>({}); // Explicitly define the type
+
+  const handleCheckboxToggle = (type: string) => {
+    setCheckedStates((prev) => ({ ...prev, [type]: !prev[type] }));
   };
 
     return(
@@ -38,23 +44,22 @@ const ResourceTypeFilter = ({onFilterChange, checkedResourceTypes} : Resourcetyp
             <Card>
             <Card.Title title="Resource" subtitle="Filter Search By Resource Type" />
             <Card.Content>
-              <List.Accordion
-                title="Resource Type"
-                left={(props) => <List.Icon {...props} icon="folder" />}
-              >
-                {resourceTypes.map((type) => (
-                  <List.Item
-                    key={type}
-                    title={type}
-                    onPress={() => handleCheckboxToggle(type)}
-                    left={(props) => <Checkbox status={checkedResourceTypes.includes(type) ? 'checked' : 'unchecked'} />}
-                  />
-                ))}
-              </List.Accordion>
+            <List.Accordion title="Resource Type" left={(props) => <List.Icon {...props} icon="folder" />}>
+                  {resourceTypes.map((type) => (
+                    <List.Item
+                      key={type}
+                      title={type}
+                      onPress={() => {
+                        handleCheckboxToggle(type);
+                      }}
+                      left={(props) => <Checkbox status={checkedStates[type] ? 'checked' : 'unchecked'} />}
+                    />
+                  ))}
+                </List.Accordion>
             </Card.Content>
             <Card.Actions>
-            <Button onPress={handleConfirm}>Confirm</Button>
-          </Card.Actions>
+              <Button>Confirm</Button>
+            </Card.Actions>
           </Card>
         </>
     )
