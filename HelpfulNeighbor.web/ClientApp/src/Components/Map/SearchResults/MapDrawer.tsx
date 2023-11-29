@@ -67,7 +67,6 @@ export default function MapDrawer({ isOpen, onClose, searchResults }: MapDrawerP
   });
 
   useEffect(() => {
-    console.log("useEffect triggered");
     navigator.geolocation.getCurrentPosition((pos) => {
       setViewport((prevViewport) => ({
         ...prevViewport,

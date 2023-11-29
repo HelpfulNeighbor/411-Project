@@ -9,10 +9,11 @@ interface SavedResourceCardProps{
     // PhoneNumber: string;
     // Latitude: number;
     // Longitude: number;
-    // Distance: number;
+    Distance?: number;
 }
 
-export default function SavedResourceCard(props: SavedResourceCardProps) {
+
+export default function SavedResourceCard({ Name, ResourceType, Distance }: SavedResourceCardProps) {
   return (
     <>
     <Card maxW='md'>
@@ -26,9 +27,9 @@ export default function SavedResourceCard(props: SavedResourceCardProps) {
             />
             </Flex>
             <Stack spacing='3'>
-                <Heading textAlign='center' size='sm' color='purple.500'>{props.Name}</Heading>
-                <Text>{props.ResourceType}</Text>
-                <Text>Distance: </Text>
+                <Heading textAlign='center' size='sm' color='purple.500'>{Name}</Heading>
+                <Text>{ResourceType}</Text>
+                <Text>Distance: {Distance !== undefined ? Distance.toFixed(2) : 'N/A'} miles</Text>
                 <Button>View More Details</Button>
                 <Button>Go to Map</Button>
             </Stack>

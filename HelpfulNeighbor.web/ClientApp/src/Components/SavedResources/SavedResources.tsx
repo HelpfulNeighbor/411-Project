@@ -5,6 +5,44 @@ import api from "../../Api/config";
 import { fetchSavedResources, deleteSavedResource, SavedResourceDto } from "../../Data/Queries/SavedResourceQueries";
 import { UserGetDto } from "../../Data/Types/UserTypes";
 
+interface Viewport {
+  latitude: number;
+  longitude: number;
+  zoom: number;
+}
+
+function distance(userLat: number, userLong: number, resourceLat: number, resourceLong: number): number {
+  if (Math.abs(userLat) > 90 || Math.abs(resourceLat) > 90 || Math.abs(userLong) > 180 || Math.abs(resourceLong) > 180) {
+    throw new Error("Invalid latitude or longitude value");
+  }
+
+  const userLatRad = toRadians(userLat);
+  const userLongRad = toRadians(userLong);
+  const resourceLatRad = toRadians(resourceLat);
+  const resourceLongRad = toRadians(resourceLong);
+
+  const earthRadius = 6371;
+
+  const deltaLat = resourceLatRad - userLatRad;
+  const deltaLong = resourceLongRad - userLongRad;
+
+  const formula1 = Math.sin(deltaLat / 2) * Math.sin(deltaLat / 2) +
+    Math.cos(userLatRad) * Math.cos(resourceLatRad) *
+    Math.sin(deltaLong / 2) * Math.sin(deltaLong / 2);
+  const formula2 = 2 * Math.atan2(Math.sqrt(formula1), Math.sqrt(1 - formula1));
+  const calculatedDistance = earthRadius * formula2 * 0.621371;
+
+  const roundedNum: string = calculatedDistance.toFixed(2); 
+  
+  console.log("Distance = ", { roundedNum }, "miles");
+
+  return calculatedDistance;
+}
+
+function toRadians(degrees: number): number {
+  return degrees * (Math.PI / 180);
+}
+
 export default function SavedResources() {
   const [user, setUser] = useState<UserGetDto | null>(null);
   const [savedResources, setSavedResources] = useState<SavedResourceDto[] | null>(null);
@@ -41,6 +79,23 @@ export default function SavedResources() {
     fetchData();
   }, [user]);
 
+  const [viewport, setViewport] = useState<Viewport>({
+    latitude: 30.51675,
+    longitude: -90.47158,
+    zoom: 12
+  });
+
+  useEffect(() => {
+    navigator.geolocation.getCurrentPosition((pos) => {
+      setViewport((prevViewport) => ({
+        ...prevViewport,
+        latitude: pos.coords.latitude,
+        longitude: pos.coords.longitude,
+        zoom: 16,
+      }));
+    });
+  }, []);
+
   return (
     <>
       <div>
@@ -50,14 +105,27 @@ export default function SavedResources() {
       </div>
       {savedResources && savedResources.length > 0 ? (
         <SimpleGrid spacing={4} templateColumns='repeat(auto-fill, minmax(300px, 1fr))'>
-          {savedResources.map((resource) => (
-            <div key={resource.resourceId}>
+          {savedResources.map((savedResource) => {
+            const calculatedDistance =
+            typeof savedResource.latitude === 'number' &&
+            typeof savedResource.longitude === 'number'
+              ? distance(
+                  viewport.latitude,
+                  viewport.longitude,
+                  savedResource.latitude,
+                  savedResource.longitude
+                )
+              : undefined;
+            return (
+              <div key={savedResource.resourceId}>
               <SavedResourceCard
-                Name={resource.name || 'N/A'}
-                ResourceType={resource.resourceType || 'N/A'}
+                Name={savedResource.name || 'N/A'}
+                ResourceType={savedResource.resourceType || 'N/A'}
+                Distance={calculatedDistance || 0}
               />
             </div>
-          ))}
+            );
+          })}
         </SimpleGrid>
       ) : (
         <Box textAlign="center">
