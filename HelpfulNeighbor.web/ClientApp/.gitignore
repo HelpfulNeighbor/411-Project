@@ -21,3 +21,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+HelpfulNeighbor.web\bin\Debug\net7.0\HelpfulNeighbor.web.dll
+HelpfulNeighbor.web\bin\Debug\net7.0\HelpfulNeighbor.web.exe
+HelpfulNeighbor.web\bin\Debug\net7.0\HelpfulNeighbor.web.pdb

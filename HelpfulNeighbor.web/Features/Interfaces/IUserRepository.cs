@@ -8,6 +8,7 @@ namespace HelpfulNeighbor.web.Features.Interfaces
         Task<UserDto> GetUserById(int id); 
         Task<bool> UpdateUser(UserDto user);
         Task<bool> DeleteUser(User user);
+        bool UserExist(int id);
 
     }
 }
