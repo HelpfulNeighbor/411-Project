@@ -1,5 +1,4 @@
 import api from "../../Api/config";
-import { Resource } from "../Types/ResourceTypes";
 
 export interface SavedResourceDto {
   savedResourceId: number;

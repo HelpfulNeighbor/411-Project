@@ -2,7 +2,7 @@ import { Heading, SimpleGrid, Box, Text } from "@chakra-ui/react";
 import SavedResourceCard from "./SavedResourceCard";
 import React, { useEffect, useState } from "react";
 import api from "../../Api/config";
-import { fetchSavedResources, deleteSavedResource, SavedResourceDto } from "../../Data/Queries/SavedResourceQueries";
+import { fetchSavedResources, SavedResourceDto } from "../../Data/Queries/SavedResourceQueries";
 import { UserGetDto } from "../../Data/Types/UserTypes";
 
 interface Viewport {
@@ -33,8 +33,6 @@ function distance(userLat: number, userLong: number, resourceLat: number, resour
   const calculatedDistance = earthRadius * formula2 * 0.621371;
 
   const roundedNum: string = calculatedDistance.toFixed(2); 
-  
-  console.log("Distance = ", { roundedNum }, "miles");
 
   return calculatedDistance;
 }

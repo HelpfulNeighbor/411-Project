@@ -3,8 +3,8 @@ import { Button, Card, CardBody, Flex, Heading, IconButton,Stack, Text } from "@
 import { deleteSavedResource, fetchSavedResources, SavedResourceDto } from "../../Data/Queries/SavedResourceQueries";
 
 interface SavedResourceCardProps{
-  userId: number; // Add userId as a prop
-  resource: SavedResourceDto; // Change the prop name to resource
+  userId: number; 
+  resource: SavedResourceDto;
   Distance?: number;
   setSavedResources: React.Dispatch<React.SetStateAction<SavedResourceDto[] | null>>;
 }
@@ -12,9 +12,7 @@ interface SavedResourceCardProps{
 export default function SavedResourceCard({ userId, resource, Distance, setSavedResources }: SavedResourceCardProps) {
 
   const handleDeleteSavedResource = async (resourceId: number) => {
-    // Delete a saved resource
     await deleteSavedResource(userId, resourceId);
-    // Refresh the list of saved resources
     const updatedResources = await fetchSavedResources(userId);
     setSavedResources(updatedResources);
   };

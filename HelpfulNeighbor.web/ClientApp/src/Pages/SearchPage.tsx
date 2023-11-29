@@ -44,8 +44,6 @@ export default function SearchPage() {
           <VStack spacing='6px'>
             <br/>
             <IconButton variant='ghost'size='lg' colorScheme="purple" icon={<HamburgerIcon />} aria-label={"Search Results"} onClick={openDrawer}/>
-            <br/>
-            <IconButton icon={<GoBookmark/>} variant='ghost' size='lg' colorScheme="purple"  aria-label={"Bookmark Resource"}/>
           </VStack>
         </GridItem>
         <GridItem pl='0' area={'main'} style={{ height: '100%' }}>
