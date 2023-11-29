@@ -46,9 +46,7 @@ function distance(userLat: number, userLong: number, resourceLat: number, resour
   const formula2 = 2 * Math.atan2(Math.sqrt(formula1), Math.sqrt(1 - formula1));
   const calculatedDistance = earthRadius * formula2 * 0.621371;
 
-  const roundedNum: string = calculatedDistance.toFixed(2); 
-  
-  console.log("Distance = ", { roundedNum }, "miles");
+  //const roundedNum: string = calculatedDistance.toFixed(2); 
 
   return calculatedDistance;
 }
@@ -58,7 +56,6 @@ function toRadians(degrees: number): number {
 }
 
 export default function MapDrawer({ isOpen, onClose, searchResults }: MapDrawerProps) {
-  console.log("Search Results in MapDrawer:", searchResults);
 
   const [viewport, setViewport] = useState<Viewport>({
     latitude: 30.51675,
@@ -67,7 +64,6 @@ export default function MapDrawer({ isOpen, onClose, searchResults }: MapDrawerP
   });
 
   useEffect(() => {
-    console.log("useEffect triggered");
     navigator.geolocation.getCurrentPosition((pos) => {
       setViewport((prevViewport) => ({
         ...prevViewport,
@@ -102,6 +98,7 @@ export default function MapDrawer({ isOpen, onClose, searchResults }: MapDrawerP
                     return (
                       <div key={index}>
                         <InfoCard
+                          resourceId={result.resource.ResourceId}
                           Name={result.resource.Name}
                           ResourceType={result.resource.ResourceType}
                           Address={result.resource.Address}
