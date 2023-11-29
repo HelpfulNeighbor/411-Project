@@ -14,7 +14,7 @@ import {
 } from "@chakra-ui/react";
 import api from "../../Api/config";
 import { UserGetDto } from "../../Data/Types/UserTypes";
-import SavedLocations from "../../Components/SavedLocations/SavedLocations";
+import SavedResources from "../../Components/SavedResources/SavedResources";
 import EditAccountInfo from "../../Components/EditAccountInfo/EditAccountInfo";
 import ProfileSettings from "../../Components/ProfileSettings/ProfileSettings";
 
@@ -120,7 +120,7 @@ export default function AuthProfilePage() {
               </VStack>
             </GridItem>
             <GridItem pl="10" pr="10" bg="white" area={"main"}>
-              {activeSection === "savedLocations" && <SavedLocations />}
+              {activeSection === "savedLocations" && <SavedResources />}
               {activeSection === "editAccountInfo" && <EditAccountInfo />}
               {activeSection === "settings" && <ProfileSettings />}
             </GridItem>

@@ -10,17 +10,17 @@ export type Resource = {
     ResourceType: string,
     Latitude: number,
     Longitude: number,
-
 }
 
 export type GetResourcePreview = {
+    ResourceId: number,
     Name: string,
+    ResourceType: string,
     Latitude: number,
     Longitude: number,
 }
 
 export type GetResourceDetails = {
-    ResourceType: string,
     Address: string,
     Website: string,
     PhoneNumber: string,

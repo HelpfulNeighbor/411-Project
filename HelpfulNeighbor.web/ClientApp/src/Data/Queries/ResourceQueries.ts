@@ -1,5 +1,3 @@
-// ResourceQueries.ts
-
 import api from "../../Api/config";
 import { HoursOfOperation } from "../Types/HoursOfOpTypes";
 import { Resource } from "../Types/ResourceTypes";
