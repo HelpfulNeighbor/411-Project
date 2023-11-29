@@ -17,14 +17,17 @@ namespace HelpfulNeighbor.web.Helper
             .ForMember(dest => dest.HoursOfOperation, opt => opt.MapFrom(src => src.HoursOfOperation));
 
             CreateMap<SavedResource, SavedResourceDto>()
-                .ForMember(dest => dest.UserId, opt => opt.MapFrom(src => src.UserId))
-                .ForMember(dest => dest.ResourceId, opt => opt.MapFrom(src => src.ResourceId));
+            .ForMember(dest => dest.UserId, opt => opt.MapFrom(src => src.UserId))
+            .ForMember(dest => dest.ResourceId, opt => opt.MapFrom(src => src.ResourceId))
+            .ForMember(dest => dest.Resource, opt => opt.MapFrom(src => src.Resource));
+
 
             CreateMap<User, UserDto>();
 
             CreateMap<SavedResourceDto, SavedResource>()
-                .ForMember(dest => dest.UserId, opt => opt.MapFrom(src => src.UserId))
-                .ForMember(dest => dest.ResourceId, opt => opt.MapFrom(src => src.ResourceId));
+            .ForMember(dest => dest.UserId, opt => opt.MapFrom(src => src.UserId))
+            .ForMember(dest => dest.ResourceId, opt => opt.MapFrom(src => src.ResourceId))
+            .ForMember(dest => dest.Resource, opt => opt.MapFrom(src => src.Resource));
         }
     }
 }

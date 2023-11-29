@@ -2,7 +2,8 @@
 {
     public class SavedResourceDto
     {
-        public int UserId { get; set; } 
+        public int UserId { get; set; }
         public int ResourceId { get; set; }
+        public ResourceDto? Resource { get; set; }
     }
 }
