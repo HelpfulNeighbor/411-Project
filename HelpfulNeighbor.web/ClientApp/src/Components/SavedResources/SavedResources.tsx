@@ -119,9 +119,10 @@ export default function SavedResources() {
             return (
               <div key={savedResource.resourceId}>
               <SavedResourceCard
-                Name={savedResource.name || 'N/A'}
-                ResourceType={savedResource.resourceType || 'N/A'}
+                userId={user?.id || 0}
+                resource={savedResource}
                 Distance={calculatedDistance || 0}
+                setSavedResources={setSavedResources}
               />
             </div>
             );
