@@ -2,7 +2,6 @@ import {Flex, Heading, Grid, GridItem, VStack, IconButton} from "@chakra-ui/reac
 import NavBar from "../Components/NavBar/NavBar";
 import { useState } from "react";
 import { HamburgerIcon } from "@chakra-ui/icons";
-import { GoBookmark } from 'react-icons/go'
 import MapDrawer from "../Components/Map/SearchResults/MapDrawer";
 import MapWithSearch from "../Components/Map/MapWithSearch";
 import { SearchResults } from "../Data/Queries/ResourceQueries";

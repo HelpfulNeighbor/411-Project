@@ -52,6 +52,8 @@ import { useAuth } from "../../../Authentication/AuthProvider";
     const [savedResources, setSavedResources] = useState<SavedResourceDto[] | null>(null);
     const [isSaved, setIsSaved] = useState(false);
 
+    console.log(savedResources);
+
     useEffect(() => {
       const fetchUser = async () => {
         try {
@@ -63,10 +65,10 @@ import { useAuth } from "../../../Authentication/AuthProvider";
             });
             setUser(response.data);
           } else {
-            console.error("Token not available.");
+            //console.error("Token not available.");
           }
         } catch (error) {
-          console.error("Error fetching user:", error);
+          //console.error("Error fetching user:", error);
         }
       };
   
@@ -80,7 +82,7 @@ import { useAuth } from "../../../Authentication/AuthProvider";
             setIsSaved(isSaved);
           }
         } catch (error) {
-          console.error("Error checking saved status:", error);
+          //console.error("Error checking saved status:", error);
         }
       };
   
@@ -94,12 +96,12 @@ import { useAuth } from "../../../Authentication/AuthProvider";
           await createSavedResource({ savedResourceId: 0, userId: user.id, resourceId });
           const updatedResources = await fetchSavedResources(user.id);
           setSavedResources(updatedResources);
-          setIsSaved(true); // Set saved status to true after saving
+          setIsSaved(true);
         } else {
-          console.error("User information not available.");
+          //console.error("User information not available.");
         }
       } catch (error) {
-        console.error("Error creating saved resource", error);
+        //console.error("Error creating saved resource", error);
       }
     };
 

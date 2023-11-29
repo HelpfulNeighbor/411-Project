@@ -32,7 +32,7 @@ function distance(userLat: number, userLong: number, resourceLat: number, resour
   const formula2 = 2 * Math.atan2(Math.sqrt(formula1), Math.sqrt(1 - formula1));
   const calculatedDistance = earthRadius * formula2 * 0.621371;
 
-  const roundedNum: string = calculatedDistance.toFixed(2); 
+  //const roundedNum: string = calculatedDistance.toFixed(2); 
 
   return calculatedDistance;
 }
@@ -59,7 +59,6 @@ export default function SavedResources() {
       try {
         if (user) {
           const resources = await fetchSavedResources(user.id);
-          console.log("Fetched resources:", resources);
           if (Array.isArray(resources)) {
             setSavedResources(resources);
           } else {
