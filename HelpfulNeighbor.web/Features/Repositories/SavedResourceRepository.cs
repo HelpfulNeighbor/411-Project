@@ -1,7 +1,6 @@
 ﻿using HelpfulNeighbor.web.Data;
 using HelpfulNeighbor.web.Features.Interfaces;
 using HelpfulNeighbor.web.Features.Models;
-using Microsoft.EntityFrameworkCore;
 
 namespace HelpfulNeighbor.web.Features.Repositories
 {
@@ -10,7 +9,7 @@ namespace HelpfulNeighbor.web.Features.Repositories
         private readonly DataContext _context;
         public SavedResourceRepository(DataContext context)
         {
-               _context = context;
+            _context = context;
         }
 
         public bool CreateSavedResource(SavedResource savedResource)
@@ -21,11 +20,7 @@ namespace HelpfulNeighbor.web.Features.Repositories
 
         public ICollection<SavedResource> GetSavedResources(int userId)
         {
-            return _context.SavedResources
-                .Include(sr => sr.Resource) 
-                .Where(u => u.UserId == userId)
-                .OrderBy(sr => sr.SavedResourceId)
-                .ToList();
+            return _context.SavedResources.Where(u => u.UserId == userId).OrderBy(sr => sr.SavedResourceId).ToList();
         }
 
         public bool SavedResourceExists(int userId, int resourceId)

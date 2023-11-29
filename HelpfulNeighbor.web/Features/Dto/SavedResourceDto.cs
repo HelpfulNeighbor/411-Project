@@ -4,6 +4,5 @@
     {
         public int UserId { get; set; }
         public int ResourceId { get; set; }
-        public ResourceDto? Resource { get; set; }
     }
 }

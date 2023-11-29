@@ -51,10 +51,10 @@ export default function SavedResources() {
       {savedResources && savedResources.length > 0 ? (
         <SimpleGrid spacing={4} templateColumns='repeat(auto-fill, minmax(300px, 1fr))'>
           {savedResources.map((resource) => (
-            <div key={resource.savedResourceId}>
+            <div key={resource.resourceId}>
               <SavedResourceCard
-                Name={resource.resourceId.Name}
-                ResourceType={resource.resourceId.ResourceType}
+                Name={resource.name || 'N/A'}
+                ResourceType={resource.resourceType || 'N/A'}
               />
             </div>
           ))}
