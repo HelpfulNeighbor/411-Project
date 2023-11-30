@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { View, Text } from 'react-native';
 import SavedResourceCard from './SavedResourceCard';
+import { SearchResult, SearchResults } from '../../data/queries/ResourceQueries';
 
-// interface ResultsProps {
-//     searchResults: SearchResults;
-// }
+
+interface ResultsProps {
+    searchResults: SearchResults;
+}
 
 interface Viewport {
     latitude: number;
@@ -43,51 +45,51 @@ function distance(userLat: number, userLong: number, resourceLat: number, resour
       return degrees * (Math.PI / 180);
     }
     
-// export default function Results({ searchResults }: ResultsProps) {
-//     const [viewport, setViewport] = useState<Viewport>({
-//         latitude: 30.51675,
-//         longitude: -90.47158,
-//     });
+export default function Results({ searchResults }: ResultsProps) {
+    const [viewport, setViewport] = useState<Viewport>({
+        latitude: 30.51675,
+        longitude: -90.47158,
+    });
 
-//     useEffect(() => {
-//         navigator.geolocation.getCurrentPosition((pos) => {
-//             setViewport({
-//                 latitude: pos.coords.latitude,
-//                 longitude: pos.coords.longitude,
-//             });
-//         });
-//     }, []);
+    useEffect(() => {
+        navigator.geolocation.getCurrentPosition((pos) => {
+            setViewport({
+                latitude: pos.coords.latitude,
+                longitude: pos.coords.longitude,
+            });
+        });
+    }, []);
 
-//     return (
-//         <View>
-//             {searchResults.resources && searchResults.resources.length > 0 ? (
-//                 searchResults.resources.map((result: SearchResult, index: number) => {
-//                     const calculatedDistance = distance(
-//                         viewport.latitude,
-//                         viewport.longitude,
-//                         result.resource.Latitude,
-//                         result.resource.Longitude
-//                     );
+    return (
+        <View>
+            {searchResults.resources && searchResults.resources.length > 0 ? (
+                searchResults.resources.map((result: SearchResult, index: number) => {
+                    const calculatedDistance = distance(
+                        viewport.latitude,
+                        viewport.longitude,
+                        result.resource.Latitude,
+                        result.resource.Longitude
+                    );
 
-//                     return (
-//                         <View key={index}>
-//                             <SavedResourceCard
-//                                 Name={result.resource.Name}
-//                                 ResourceType={result.resource.ResourceType}
-//                                 Address={result.resource.Address}
-//                                 hoursOfOperation={result.hoursOfOperation || []}
-//                                 Website={result.resource.Website}
-//                                 PhoneNumber={result.resource.PhoneNumber}
-//                                 Latitude={result.resource.Latitude}
-//                                 Longitude={result.resource.Longitude}
-//                                 Distance={calculatedDistance || 0}
-//                             />
-//                         </View>
-//                     );
-//                 })
-//             ) : (
-//                 <Text>No search results found.</Text>
-//             )}
-//         </View>
-//     )
-// }
+                    return (
+                        <View key={index}>
+                            <SavedResourceCard
+                                Name={result.resource.Name}
+                                ResourceType={result.resource.ResourceType}
+                                Address={result.resource.Address}
+                                hoursOfOperation={result.hoursOfOperation || []}
+                                Website={result.resource.Website}
+                                PhoneNumber={result.resource.PhoneNumber}
+                                Latitude={result.resource.Latitude}
+                                Longitude={result.resource.Longitude}
+                                Distance={calculatedDistance || 0}
+                            />
+                        </View>
+                    );
+                })
+            ) : (
+                <Text>No search results found.</Text>
+            )}
+        </View>
+    )
+}

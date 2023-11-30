@@ -4,10 +4,18 @@ import Style from "./Style";
 import { Button } from 'react-native-paper';
 import { useAuth } from '../../authentication/AuthContext';
 import SavedResourceCard from '../../components/Search/SavedResourceCard';
+import { UserGetDto } from '../../data/types/UserTypes';
+import { useEffect, useState } from 'react';
+import api from '../../api/config';
 
 const ProfileScreen = () => {
     const { onLogout } = useAuth();
+    const [data, setData] = useState<UserGetDto | null>(null);
 
+    useFocusEffect(() => {
+        api.get<UserGeDto>("api/authentication/me")
+        .then(response) =>
+    })
 
     return (
         <SafeAreaView style={Style.container}>
