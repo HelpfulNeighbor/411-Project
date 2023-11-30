@@ -40,7 +40,6 @@ const MapWithSearch: React.FC<MapWithSearchProps> = ({ setSearchResults }) => {
         );
 
         setSearchResults(results); 
-        console.log('searchResults in MapWithSearch:', results);
       }
     };
 

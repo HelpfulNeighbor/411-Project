@@ -1,19 +1,39 @@
-import React from 'react';
-import 'react-native-gesture-handler';
-//import { AuthProvider } from "./authentication/AuthContext";
-//import AppNav from './navigation/app.nav';
-import { NavigationContainer } from '@react-navigation/native';
-import BottomTabNavigator from './navigation/BottomTabNav';
+import React from "react";
+import "react-native-gesture-handler";
+import { NavigationContainer } from "@react-navigation/native";
+import BottomTabNavigator from "./navigation/BottomTabNav";
+import { AuthProvider, useAuth } from "./authentication/AuthContext";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import LoginScreen from "./screens/AuthScreen/LoginScreen";
+import RegisterScreen from "./screens/AuthScreen/RegisterScreen";
 
+const Stack = createNativeStackNavigator();
 
-const App: React.FC = () => {
+export default function App() {
   return (
-    <NavigationContainer>
-      <BottomTabNavigator/>
-    </NavigationContainer>
+    <AuthProvider>
+      <NavigationContainer>
+        <Layout></Layout>
+      </NavigationContainer>
+    </AuthProvider>
   );
 }
 
-export default App;
+export const Layout = () => {
 
-
+  return (
+    <Stack.Navigator screenOptions={{ headerShown: false }}>
+      <>
+        <Stack.Screen
+          name="Home"
+          component={BottomTabNavigator}
+          options={{
+            headerTitle: "",
+          }}
+        ></Stack.Screen>
+        <Stack.Screen name="Login" component={LoginScreen}></Stack.Screen>
+        <Stack.Screen name="Register" component={RegisterScreen}></Stack.Screen>
+      </>
+    </Stack.Navigator>
+  );
+};

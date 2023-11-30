@@ -63,7 +63,6 @@ export default function MapView() {
         }
       }, [centerOnUserLocation]);
 
-      console.log("UserCurrentLocation: ", viewport );
     return (
         <div>
             {viewport.latitude && viewport.longitude && (

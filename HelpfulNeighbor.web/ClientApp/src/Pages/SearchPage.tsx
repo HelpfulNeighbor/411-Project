@@ -2,7 +2,6 @@ import {Flex, Heading, Grid, GridItem, VStack, IconButton} from "@chakra-ui/reac
 import NavBar from "../Components/NavBar/NavBar";
 import { useState } from "react";
 import { HamburgerIcon } from "@chakra-ui/icons";
-import { GoBookmark } from 'react-icons/go'
 import MapDrawer from "../Components/Map/SearchResults/MapDrawer";
 import MapWithSearch from "../Components/Map/MapWithSearch";
 import { SearchResults } from "../Data/Queries/ResourceQueries";
@@ -44,8 +43,6 @@ export default function SearchPage() {
           <VStack spacing='6px'>
             <br/>
             <IconButton variant='ghost'size='lg' colorScheme="purple" icon={<HamburgerIcon />} aria-label={"Search Results"} onClick={openDrawer}/>
-            <br/>
-            <IconButton icon={<GoBookmark/>} variant='ghost' size='lg' colorScheme="purple"  aria-label={"Bookmark Resource"}/>
           </VStack>
         </GridItem>
         <GridItem pl='0' area={'main'} style={{ height: '100%' }}>

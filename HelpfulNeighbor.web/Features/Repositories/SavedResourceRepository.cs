@@ -9,7 +9,7 @@ namespace HelpfulNeighbor.web.Features.Repositories
         private readonly DataContext _context;
         public SavedResourceRepository(DataContext context)
         {
-               _context = context;
+            _context = context;
         }
 
         public bool CreateSavedResource(SavedResource savedResource)
