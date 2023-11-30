@@ -12,10 +12,14 @@ const ProfileScreen = () => {
     const { onLogout } = useAuth();
     const [data, setData] = useState<UserGetDto | null>(null);
 
-    useFocusEffect(() => {
-        api.get<UserGeDto>("api/authentication/me")
-        .then(response) =>
-    })
+    useEffect(() => {
+        api
+          .get<UserGetDto>("/api/authentication/me")
+          .then((response) => {
+            setData(response.data);
+          })
+          .catch((error) => {});
+      }, []);
 
     return (
         <SafeAreaView style={Style.container}>
